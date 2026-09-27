@@ -1,0 +1,2707 @@
+{
+  "collaboration_sha256": "a254442cdf5d684712578b630c2e0d7543518ab154ef2341cabb607572ce7230",
+  "collaboration_source": "https://snap.stanford.edu/data/ca-GrQc.html",
+  "files": {
+    "ACCEPTANCE.md": "5f47ea328cafd88c555887e626c3fb7edd4a917aaa3fa26a98fa834724932354",
+    "cache_reference.py": "b03b2678c8db6c078af6895ec900e7f1fab33421e8757f6b9da1359a9948e9a7",
+    "collaboration-graph.npz": "a703e19df7b9053a93b1104bad091fb8e4218d4619bb5f11e184238eee34d82e",
+    "collaboration-model.npz": "81e3ce378013aef7278428e96c3cde5e9077f16edee51f0b5d1b6bb13c00d086",
+    "collaboration-queries.json": "e092d8785c18e774983b5ec683842fd23a09a0348200e2b6bfdae7274b5cfd98",
+    "movies-graph.npz": "781c10eb375322998ad361dc85a6d4ecb79f02cb05253af7ab9a950141be323e",
+    "movies-model.npz": "71db89837f2a595d0dd6e9528bd8eee71126ecdc750c00d1fae4c874181f73e6",
+    "movies-queries.json": "427fd51fe542ca41f42824a5172c1684dbeb81ac0c05f5c4ccc96aea3469ffa0",
+    "source/orbweaver_query/MODEL_REPRODUCTION_PROTOCOL.md": "a17696c17e952210d363fb8e185ba327f25b654f59323288519e4fc1269452b8",
+    "source/orbweaver_query/__init__.py": "c99754504b16e00ffe1d58883ef5188bb7dd0117d038bfb31bbaaae04b680d82",
+    "source/orbweaver_query/_validation.py": "a90531db8085af5d553812eb459c37e0a27c8aa7964043aba6c7a16b090184d1",
+    "source/orbweaver_query/assets/THIRD_PARTY_NOTICES.md": "822f0a321c216b0cd2497ecdc4add3a3bbedfe703c5140e1bcabbcfd77deb6d9",
+    "source/orbweaver_query/assets/wn18rr-path71.json": "b6a521a25472a90f8086a11893dc7ac515e56f947ce3cec2e2586ccf128dbdf0",
+    "source/orbweaver_query/assets/wn18rr-path71.npz": "8ba275ef547e407cd5e28e5d7cb023e20fde6c5d90c7618a195c93eb685e0871",
+    "source/orbweaver_query/bindings.py": "768767c6efab7a262e28f1fd72f4dd6f4559d5d18aca3fef3412933cf0d54642",
+    "source/orbweaver_query/cache.py": "714a29cc1d788f7e842f0d36a505d382fdc914649b9eedb897c38eb3495c9c71",
+    "source/orbweaver_query/datasets.py": "edf697c9b56f6504ab0bf0837d55d8db6d276592d912cc533670b86c96361b60",
+    "source/orbweaver_query/demo.py": "7073d42f67ab1cf4cb5b9d0ea75206616cdeeb7a26908432eca02c2563a4e926",
+    "source/orbweaver_query/graph.py": "a8a7a7ddf5431cfcc7b697ac3b28358080f147d5920eaec3b98ebfda5a44de42",
+    "source/orbweaver_query/model.py": "80ccfa008db8d945614c2314a7f598abe808022ce61da493e2ed65474f7ae81f",
+    "source/orbweaver_query/neo4j.py": "a03dcccc943041cf4159c4669b92daa7edeec182c37f80b335bf849d0fc88ed4",
+    "source/orbweaver_query/reproduce.py": "b03986383ac1dc1877c0b21915b8c4c3cf8698f62fcecaa8a04c5379bbd3d45d",
+    "source/orbweaver_query/session.py": "6f24e8ae0ace0002eb7b24e474184c8ba4f3d175cfa8483ec72900a5ff010ea2",
+    "source/orbweaver_query/training.py": "3635ae5ca9d23ea5017fb15447a21cce17961cd2e4538d6588bb55b6e8db3af2",
+    "targeted.py": "ff9b97b1db4fd22def6607521ee89e4797357db466d1c7a22ab6f80e3c530f95",
+    "wordnet-graph.npz": "e56dc16cd1ecb11673609a5f76aa923d1673d32c565c9d62067836b5c90b5d0e",
+    "wordnet-model.npz": "8ba275ef547e407cd5e28e5d7cb023e20fde6c5d90c7618a195c93eb685e0871",
+    "wordnet-queries.json": "8395a10cb352a5d6cf1b5ef4adad7380e28680d0d81a48615f5bb2160a4b5dcc"
+  },
+  "format": "bound-target-development-v1",
+  "inventory": {
+    "collaboration": {
+      "edges": 14484,
+      "graph_id": "980786923143bc5ee6836df65d9e9bd38670929bb584e551176ce36267380a1f",
+      "model_id": "e387218fd52b2acdaa61a109db5d4f687c32d6325fb8a3d0c38f0fed8c4883ab",
+      "nodes": 5242
+    },
+    "movies": {
+      "edges": 253,
+      "graph_id": "0683650c159f0f48929ab5ae0af26e62429198444f6d0b35c549d5eb85f70a66",
+      "model_id": "5a92c358520c847efade049ae34dc08ebeaf6507cc97d53a61964f624010a37d",
+      "nodes": 171
+    },
+    "wordnet": {
+      "edges": 69420,
+      "graph_id": "e280974d0ab115be4e721d0e1dc11452914e0c8f4b83e433919aa0f7156849b7",
+      "model_id": "64d5c3f7652b84f3d24f22beeaf7f7cd49d5a2218af91b4ee89942584674506a",
+      "nodes": 40559
+    }
+  },
+  "jobs": [
+    {
+      "arm": "full",
+      "graph": "collaboration",
+      "replicate": 1,
+      "workload": "interleaved256"
+    },
+    {
+      "arm": "cached_warm",
+      "graph": "collaboration",
+      "replicate": 2,
+      "workload": "hubs16"
+    },
+    {
+      "arm": "lru64k",
+      "graph": "movies",
+      "replicate": 1,
+      "workload": "hubs16"
+    },
+    {
+      "arm": "full",
+      "graph": "movies",
+      "replicate": 1,
+      "workload": "clustered256"
+    },
+    {
+      "arm": "targeted",
+      "graph": "movies",
+      "replicate": 0,
+      "workload": "hubs16"
+    },
+    {
+      "arm": "lru64k",
+      "graph": "collaboration",
+      "replicate": 0,
+      "workload": "clustered256"
+    },
+    {
+      "arm": "targeted",
+      "graph": "wordnet",
+      "replicate": 2,
+      "workload": "duplicates256"
+    },
+    {
+      "arm": "lru16m",
+      "graph": "movies",
+      "replicate": 0,
+      "workload": "clustered256"
+    },
+    {
+      "arm": "precomputed",
+      "graph": "collaboration",
+      "replicate": 0,
+      "workload": "interleaved256"
+    },
+    {
+      "arm": "cached_warm",
+      "graph": "movies",
+      "replicate": 0,
+      "workload": "clustered256"
+    },
+    {
+      "arm": "full",
+      "graph": "collaboration",
+      "replicate": 0,
+      "workload": "distinct128"
+    },
+    {
+      "arm": "targeted",
+      "graph": "movies",
+      "replicate": 2,
+      "workload": "single"
+    },
+    {
+      "arm": "cached_warm",
+      "graph": "wordnet",
+      "replicate": 0,
+      "workload": "many_targets256"
+    },
+    {
+      "arm": "lru16m",
+      "graph": "wordnet",
+      "replicate": 0,
+      "workload": "clustered256"
+    },
+    {
+      "arm": "full",
+      "graph": "collaboration",
+      "replicate": 2,
+      "workload": "single"
+    },
+    {
+      "arm": "targeted",
+      "graph": "wordnet",
+      "replicate": 0,
+      "workload": "single"
+    },
+    {
+      "arm": "lru16m",
+      "graph": "wordnet",
+      "replicate": 1,
+      "workload": "distinct128"
+    },
+    {
+      "arm": "lru16m",
+      "graph": "wordnet",
+      "replicate": 1,
+      "workload": "hubs16"
+    },
+    {
+      "arm": "precomputed",
+      "graph": "wordnet",
+      "replicate": 2,
+      "workload": "single"
+    },
+    {
+      "arm": "cached_warm",
+      "graph": "collaboration",
+      "replicate": 0,
+      "workload": "distinct128"
+    },
+    {
+      "arm": "cached_cold",
+      "graph": "collaboration",
+      "replicate": 0,
+      "workload": "interleaved256"
+    },
+    {
+      "arm": "cached_cold",
+      "graph": "collaboration",
+      "replicate": 2,
+      "workload": "distinct128"
+    },
+    {
+      "arm": "lru64k",
+      "graph": "movies",
+      "replicate": 2,
+      "workload": "clustered256"
+    },
+    {
+      "arm": "lru16m",
+      "graph": "movies",
+      "replicate": 1,
+      "workload": "distinct128"
+    },
+    {
+      "arm": "cached_warm",
+      "graph": "wordnet",
+      "replicate": 1,
+      "workload": "hubs16"
+    },
+    {
+      "arm": "lru64k",
+      "graph": "collaboration",
+      "replicate": 1,
+      "workload": "clustered256"
+    },
+    {
+      "arm": "targeted",
+      "graph": "wordnet",
+      "replicate": 2,
+      "workload": "many_targets256"
+    },
+    {
+      "arm": "cached_warm",
+      "graph": "wordnet",
+      "replicate": 1,
+      "workload": "interleaved256"
+    },
+    {
+      "arm": "cached_warm",
+      "graph": "wordnet",
+      "replicate": 0,
+      "workload": "single"
+    },
+    {
+      "arm": "cached_warm",
+      "graph": "collaboration",
+      "replicate": 0,
+      "workload": "many_targets256"
+    },
+    {
+      "arm": "cached_cold",
+      "graph": "movies",
+      "replicate": 1,
+      "workload": "clustered256"
+    },
+    {
+      "arm": "cached_warm",
+      "graph": "wordnet",
+      "replicate": 2,
+      "workload": "interleaved256"
+    },
+    {
+      "arm": "lru64k",
+      "graph": "collaboration",
+      "replicate": 0,
+      "workload": "hubs16"
+    },
+    {
+      "arm": "lru64k",
+      "graph": "movies",
+      "replicate": 1,
+      "workload": "duplicates256"
+    },
+    {
+      "arm": "cached_cold",
+      "graph": "collaboration",
+      "replicate": 1,
+      "workload": "many_targets256"
+    },
+    {
+      "arm": "cached_cold",
+      "graph": "collaboration",
+      "replicate": 1,
+      "workload": "single"
+    },
+    {
+      "arm": "precomputed",
+      "graph": "movies",
+      "replicate": 0,
+      "workload": "duplicates256"
+    },
+    {
+      "arm": "full",
+      "graph": "movies",
+      "replicate": 1,
+      "workload": "single"
+    },
+    {
+      "arm": "lru64k",
+      "graph": "wordnet",
+      "replicate": 1,
+      "workload": "clustered256"
+    },
+    {
+      "arm": "lru16m",
+      "graph": "collaboration",
+      "replicate": 1,
+      "workload": "clustered256"
+    },
+    {
+      "arm": "targeted",
+      "graph": "wordnet",
+      "replicate": 0,
+      "workload": "clustered256"
+    },
+    {
+      "arm": "precomputed",
+      "graph": "movies",
+      "replicate": 0,
+      "workload": "single"
+    },
+    {
+      "arm": "lru16m",
+      "graph": "movies",
+      "replicate": 1,
+      "workload": "single"
+    },
+    {
+      "arm": "targeted",
+      "graph": "movies",
+      "replicate": 1,
+      "workload": "many_targets256"
+    },
+    {
+      "arm": "cached_cold",
+      "graph": "wordnet",
+      "replicate": 2,
+      "workload": "single"
+    },
+    {
+      "arm": "cached_cold",
+      "graph": "collaboration",
+      "replicate": 1,
+      "workload": "duplicates256"
+    },
+    {
+      "arm": "full",
+      "graph": "wordnet",
+      "replicate": 1,
+      "workload": "clustered256"
+    },
+    {
+      "arm": "targeted",
+      "graph": "collaboration",
+      "replicate": 2,
+      "workload": "interleaved256"
+    },
+    {
+      "arm": "precomputed",
+      "graph": "movies",
+      "replicate": 2,
+      "workload": "distinct128"
+    },
+    {
+      "arm": "precomputed",
+      "graph": "wordnet",
+      "replicate": 0,
+      "workload": "duplicates256"
+    },
+    {
+      "arm": "cached_cold",
+      "graph": "movies",
+      "replicate": 0,
+      "workload": "many_targets256"
+    },
+    {
+      "arm": "full",
+      "graph": "wordnet",
+      "replicate": 0,
+      "workload": "clustered256"
+    },
+    {
+      "arm": "full",
+      "graph": "wordnet",
+      "replicate": 2,
+      "workload": "clustered256"
+    },
+    {
+      "arm": "precomputed",
+      "graph": "collaboration",
+      "replicate": 2,
+      "workload": "interleaved256"
+    },
+    {
+      "arm": "cached_warm",
+      "graph": "collaboration",
+      "replicate": 2,
+      "workload": "clustered256"
+    },
+    {
+      "arm": "full",
+      "graph": "collaboration",
+      "replicate": 0,
+      "workload": "interleaved256"
+    },
+    {
+      "arm": "cached_warm",
+      "graph": "wordnet",
+      "replicate": 0,
+      "workload": "duplicates256"
+    },
+    {
+      "arm": "precomputed",
+      "graph": "movies",
+      "replicate": 2,
+      "workload": "many_targets256"
+    },
+    {
+      "arm": "precomputed",
+      "graph": "movies",
+      "replicate": 1,
+      "workload": "interleaved256"
+    },
+    {
+      "arm": "cached_cold",
+      "graph": "wordnet",
+      "replicate": 0,
+      "workload": "single"
+    },
+    {
+      "arm": "cached_warm",
+      "graph": "wordnet",
+      "replicate": 2,
+      "workload": "many_targets256"
+    },
+    {
+      "arm": "lru64k",
+      "graph": "movies",
+      "replicate": 0,
+      "workload": "distinct128"
+    },
+    {
+      "arm": "precomputed",
+      "graph": "movies",
+      "replicate": 2,
+      "workload": "single"
+    },
+    {
+      "arm": "cached_warm",
+      "graph": "wordnet",
+      "replicate": 2,
+      "workload": "duplicates256"
+    },
+    {
+      "arm": "targeted",
+      "graph": "movies",
+      "replicate": 0,
+      "workload": "duplicates256"
+    },
+    {
+      "arm": "cached_cold",
+      "graph": "movies",
+      "replicate": 0,
+      "workload": "clustered256"
+    },
+    {
+      "arm": "precomputed",
+      "graph": "movies",
+      "replicate": 2,
+      "workload": "duplicates256"
+    },
+    {
+      "arm": "targeted",
+      "graph": "collaboration",
+      "replicate": 1,
+      "workload": "duplicates256"
+    },
+    {
+      "arm": "full",
+      "graph": "wordnet",
+      "replicate": 0,
+      "workload": "duplicates256"
+    },
+    {
+      "arm": "cached_cold",
+      "graph": "wordnet",
+      "replicate": 2,
+      "workload": "distinct128"
+    },
+    {
+      "arm": "lru64k",
+      "graph": "wordnet",
+      "replicate": 2,
+      "workload": "many_targets256"
+    },
+    {
+      "arm": "cached_warm",
+      "graph": "movies",
+      "replicate": 2,
+      "workload": "duplicates256"
+    },
+    {
+      "arm": "lru16m",
+      "graph": "wordnet",
+      "replicate": 2,
+      "workload": "many_targets256"
+    },
+    {
+      "arm": "cached_cold",
+      "graph": "collaboration",
+      "replicate": 2,
+      "workload": "many_targets256"
+    },
+    {
+      "arm": "targeted",
+      "graph": "collaboration",
+      "replicate": 2,
+      "workload": "distinct128"
+    },
+    {
+      "arm": "cached_cold",
+      "graph": "collaboration",
+      "replicate": 0,
+      "workload": "single"
+    },
+    {
+      "arm": "targeted",
+      "graph": "collaboration",
+      "replicate": 0,
+      "workload": "hubs16"
+    },
+    {
+      "arm": "targeted",
+      "graph": "movies",
+      "replicate": 2,
+      "workload": "interleaved256"
+    },
+    {
+      "arm": "lru64k",
+      "graph": "wordnet",
+      "replicate": 1,
+      "workload": "hubs16"
+    },
+    {
+      "arm": "cached_cold",
+      "graph": "collaboration",
+      "replicate": 0,
+      "workload": "distinct128"
+    },
+    {
+      "arm": "precomputed",
+      "graph": "movies",
+      "replicate": 1,
+      "workload": "distinct128"
+    },
+    {
+      "arm": "lru64k",
+      "graph": "collaboration",
+      "replicate": 2,
+      "workload": "single"
+    },
+    {
+      "arm": "lru64k",
+      "graph": "collaboration",
+      "replicate": 0,
+      "workload": "interleaved256"
+    },
+    {
+      "arm": "precomputed",
+      "graph": "wordnet",
+      "replicate": 1,
+      "workload": "clustered256"
+    },
+    {
+      "arm": "cached_warm",
+      "graph": "wordnet",
+      "replicate": 1,
+      "workload": "distinct128"
+    },
+    {
+      "arm": "precomputed",
+      "graph": "collaboration",
+      "replicate": 1,
+      "workload": "many_targets256"
+    },
+    {
+      "arm": "cached_warm",
+      "graph": "movies",
+      "replicate": 0,
+      "workload": "hubs16"
+    },
+    {
+      "arm": "lru64k",
+      "graph": "collaboration",
+      "replicate": 0,
+      "workload": "duplicates256"
+    },
+    {
+      "arm": "cached_cold",
+      "graph": "wordnet",
+      "replicate": 0,
+      "workload": "duplicates256"
+    },
+    {
+      "arm": "cached_cold",
+      "graph": "movies",
+      "replicate": 2,
+      "workload": "duplicates256"
+    },
+    {
+      "arm": "full",
+      "graph": "movies",
+      "replicate": 0,
+      "workload": "many_targets256"
+    },
+    {
+      "arm": "precomputed",
+      "graph": "movies",
+      "replicate": 1,
+      "workload": "single"
+    },
+    {
+      "arm": "lru64k",
+      "graph": "movies",
+      "replicate": 0,
+      "workload": "interleaved256"
+    },
+    {
+      "arm": "lru16m",
+      "graph": "wordnet",
+      "replicate": 2,
+      "workload": "single"
+    },
+    {
+      "arm": "lru16m",
+      "graph": "collaboration",
+      "replicate": 2,
+      "workload": "hubs16"
+    },
+    {
+      "arm": "targeted",
+      "graph": "wordnet",
+      "replicate": 2,
+      "workload": "clustered256"
+    },
+    {
+      "arm": "lru64k",
+      "graph": "collaboration",
+      "replicate": 1,
+      "workload": "many_targets256"
+    },
+    {
+      "arm": "cached_cold",
+      "graph": "movies",
+      "replicate": 0,
+      "workload": "single"
+    },
+    {
+      "arm": "lru16m",
+      "graph": "collaboration",
+      "replicate": 0,
+      "workload": "single"
+    },
+    {
+      "arm": "lru64k",
+      "graph": "movies",
+      "replicate": 2,
+      "workload": "hubs16"
+    },
+    {
+      "arm": "cached_cold",
+      "graph": "wordnet",
+      "replicate": 0,
+      "workload": "distinct128"
+    },
+    {
+      "arm": "targeted",
+      "graph": "movies",
+      "replicate": 0,
+      "workload": "interleaved256"
+    },
+    {
+      "arm": "lru64k",
+      "graph": "wordnet",
+      "replicate": 1,
+      "workload": "interleaved256"
+    },
+    {
+      "arm": "targeted",
+      "graph": "wordnet",
+      "replicate": 0,
+      "workload": "hubs16"
+    },
+    {
+      "arm": "targeted",
+      "graph": "movies",
+      "replicate": 1,
+      "workload": "distinct128"
+    },
+    {
+      "arm": "cached_cold",
+      "graph": "collaboration",
+      "replicate": 1,
+      "workload": "distinct128"
+    },
+    {
+      "arm": "precomputed",
+      "graph": "wordnet",
+      "replicate": 2,
+      "workload": "many_targets256"
+    },
+    {
+      "arm": "cached_warm",
+      "graph": "movies",
+      "replicate": 1,
+      "workload": "many_targets256"
+    },
+    {
+      "arm": "targeted",
+      "graph": "movies",
+      "replicate": 1,
+      "workload": "hubs16"
+    },
+    {
+      "arm": "lru16m",
+      "graph": "collaboration",
+      "replicate": 0,
+      "workload": "hubs16"
+    },
+    {
+      "arm": "lru16m",
+      "graph": "wordnet",
+      "replicate": 1,
+      "workload": "interleaved256"
+    },
+    {
+      "arm": "cached_cold",
+      "graph": "wordnet",
+      "replicate": 2,
+      "workload": "clustered256"
+    },
+    {
+      "arm": "cached_warm",
+      "graph": "wordnet",
+      "replicate": 0,
+      "workload": "hubs16"
+    },
+    {
+      "arm": "targeted",
+      "graph": "movies",
+      "replicate": 2,
+      "workload": "duplicates256"
+    },
+    {
+      "arm": "cached_warm",
+      "graph": "movies",
+      "replicate": 0,
+      "workload": "many_targets256"
+    },
+    {
+      "arm": "lru16m",
+      "graph": "wordnet",
+      "replicate": 1,
+      "workload": "single"
+    },
+    {
+      "arm": "targeted",
+      "graph": "movies",
+      "replicate": 2,
+      "workload": "many_targets256"
+    },
+    {
+      "arm": "cached_cold",
+      "graph": "movies",
+      "replicate": 1,
+      "workload": "single"
+    },
+    {
+      "arm": "cached_warm",
+      "graph": "collaboration",
+      "replicate": 0,
+      "workload": "interleaved256"
+    },
+    {
+      "arm": "cached_warm",
+      "graph": "wordnet",
+      "replicate": 1,
+      "workload": "many_targets256"
+    },
+    {
+      "arm": "precomputed",
+      "graph": "collaboration",
+      "replicate": 1,
+      "workload": "single"
+    },
+    {
+      "arm": "cached_warm",
+      "graph": "wordnet",
+      "replicate": 0,
+      "workload": "interleaved256"
+    },
+    {
+      "arm": "full",
+      "graph": "movies",
+      "replicate": 1,
+      "workload": "duplicates256"
+    },
+    {
+      "arm": "lru64k",
+      "graph": "movies",
+      "replicate": 0,
+      "workload": "hubs16"
+    },
+    {
+      "arm": "precomputed",
+      "graph": "movies",
+      "replicate": 2,
+      "workload": "interleaved256"
+    },
+    {
+      "arm": "cached_warm",
+      "graph": "wordnet",
+      "replicate": 2,
+      "workload": "single"
+    },
+    {
+      "arm": "full",
+      "graph": "wordnet",
+      "replicate": 2,
+      "workload": "distinct128"
+    },
+    {
+      "arm": "lru64k",
+      "graph": "movies",
+      "replicate": 0,
+      "workload": "clustered256"
+    },
+    {
+      "arm": "precomputed",
+      "graph": "collaboration",
+      "replicate": 2,
+      "workload": "hubs16"
+    },
+    {
+      "arm": "lru16m",
+      "graph": "movies",
+      "replicate": 2,
+      "workload": "single"
+    },
+    {
+      "arm": "lru64k",
+      "graph": "wordnet",
+      "replicate": 1,
+      "workload": "distinct128"
+    },
+    {
+      "arm": "lru64k",
+      "graph": "collaboration",
+      "replicate": 1,
+      "workload": "distinct128"
+    },
+    {
+      "arm": "cached_warm",
+      "graph": "movies",
+      "replicate": 2,
+      "workload": "single"
+    },
+    {
+      "arm": "lru64k",
+      "graph": "movies",
+      "replicate": 2,
+      "workload": "distinct128"
+    },
+    {
+      "arm": "precomputed",
+      "graph": "collaboration",
+      "replicate": 1,
+      "workload": "hubs16"
+    },
+    {
+      "arm": "lru64k",
+      "graph": "movies",
+      "replicate": 1,
+      "workload": "clustered256"
+    },
+    {
+      "arm": "cached_warm",
+      "graph": "wordnet",
+      "replicate": 0,
+      "workload": "distinct128"
+    },
+    {
+      "arm": "lru16m",
+      "graph": "wordnet",
+      "replicate": 1,
+      "workload": "many_targets256"
+    },
+    {
+      "arm": "full",
+      "graph": "wordnet",
+      "replicate": 1,
+      "workload": "hubs16"
+    },
+    {
+      "arm": "lru16m",
+      "graph": "wordnet",
+      "replicate": 2,
+      "workload": "clustered256"
+    },
+    {
+      "arm": "full",
+      "graph": "movies",
+      "replicate": 0,
+      "workload": "clustered256"
+    },
+    {
+      "arm": "full",
+      "graph": "collaboration",
+      "replicate": 1,
+      "workload": "duplicates256"
+    },
+    {
+      "arm": "lru64k",
+      "graph": "collaboration",
+      "replicate": 1,
+      "workload": "single"
+    },
+    {
+      "arm": "lru64k",
+      "graph": "collaboration",
+      "replicate": 2,
+      "workload": "many_targets256"
+    },
+    {
+      "arm": "cached_cold",
+      "graph": "collaboration",
+      "replicate": 0,
+      "workload": "duplicates256"
+    },
+    {
+      "arm": "cached_cold",
+      "graph": "collaboration",
+      "replicate": 1,
+      "workload": "interleaved256"
+    },
+    {
+      "arm": "full",
+      "graph": "wordnet",
+      "replicate": 0,
+      "workload": "interleaved256"
+    },
+    {
+      "arm": "full",
+      "graph": "collaboration",
+      "replicate": 2,
+      "workload": "distinct128"
+    },
+    {
+      "arm": "full",
+      "graph": "wordnet",
+      "replicate": 0,
+      "workload": "distinct128"
+    },
+    {
+      "arm": "targeted",
+      "graph": "movies",
+      "replicate": 1,
+      "workload": "interleaved256"
+    },
+    {
+      "arm": "precomputed",
+      "graph": "wordnet",
+      "replicate": 2,
+      "workload": "clustered256"
+    },
+    {
+      "arm": "cached_cold",
+      "graph": "movies",
+      "replicate": 1,
+      "workload": "distinct128"
+    },
+    {
+      "arm": "targeted",
+      "graph": "movies",
+      "replicate": 0,
+      "workload": "clustered256"
+    },
+    {
+      "arm": "lru64k",
+      "graph": "wordnet",
+      "replicate": 2,
+      "workload": "single"
+    },
+    {
+      "arm": "cached_warm",
+      "graph": "collaboration",
+      "replicate": 0,
+      "workload": "clustered256"
+    },
+    {
+      "arm": "precomputed",
+      "graph": "movies",
+      "replicate": 0,
+      "workload": "clustered256"
+    },
+    {
+      "arm": "targeted",
+      "graph": "collaboration",
+      "replicate": 0,
+      "workload": "distinct128"
+    },
+    {
+      "arm": "cached_cold",
+      "graph": "wordnet",
+      "replicate": 1,
+      "workload": "distinct128"
+    },
+    {
+      "arm": "cached_cold",
+      "graph": "movies",
+      "replicate": 1,
+      "workload": "interleaved256"
+    },
+    {
+      "arm": "lru16m",
+      "graph": "movies",
+      "replicate": 0,
+      "workload": "duplicates256"
+    },
+    {
+      "arm": "cached_cold",
+      "graph": "collaboration",
+      "replicate": 1,
+      "workload": "clustered256"
+    },
+    {
+      "arm": "cached_cold",
+      "graph": "movies",
+      "replicate": 1,
+      "workload": "many_targets256"
+    },
+    {
+      "arm": "lru16m",
+      "graph": "movies",
+      "replicate": 1,
+      "workload": "clustered256"
+    },
+    {
+      "arm": "cached_warm",
+      "graph": "wordnet",
+      "replicate": 1,
+      "workload": "single"
+    },
+    {
+      "arm": "lru64k",
+      "graph": "wordnet",
+      "replicate": 2,
+      "workload": "distinct128"
+    },
+    {
+      "arm": "lru64k",
+      "graph": "collaboration",
+      "replicate": 0,
+      "workload": "single"
+    },
+    {
+      "arm": "targeted",
+      "graph": "movies",
+      "replicate": 0,
+      "workload": "many_targets256"
+    },
+    {
+      "arm": "cached_warm",
+      "graph": "collaboration",
+      "replicate": 1,
+      "workload": "interleaved256"
+    },
+    {
+      "arm": "precomputed",
+      "graph": "wordnet",
+      "replicate": 1,
+      "workload": "distinct128"
+    },
+    {
+      "arm": "cached_cold",
+      "graph": "wordnet",
+      "replicate": 1,
+      "workload": "single"
+    },
+    {
+      "arm": "precomputed",
+      "graph": "collaboration",
+      "replicate": 2,
+      "workload": "distinct128"
+    },
+    {
+      "arm": "targeted",
+      "graph": "collaboration",
+      "replicate": 2,
+      "workload": "duplicates256"
+    },
+    {
+      "arm": "precomputed",
+      "graph": "collaboration",
+      "replicate": 0,
+      "workload": "duplicates256"
+    },
+    {
+      "arm": "full",
+      "graph": "movies",
+      "replicate": 1,
+      "workload": "hubs16"
+    },
+    {
+      "arm": "targeted",
+      "graph": "collaboration",
+      "replicate": 0,
+      "workload": "duplicates256"
+    },
+    {
+      "arm": "lru16m",
+      "graph": "wordnet",
+      "replicate": 2,
+      "workload": "interleaved256"
+    },
+    {
+      "arm": "lru64k",
+      "graph": "movies",
+      "replicate": 1,
+      "workload": "single"
+    },
+    {
+      "arm": "cached_warm",
+      "graph": "collaboration",
+      "replicate": 0,
+      "workload": "duplicates256"
+    },
+    {
+      "arm": "lru64k",
+      "graph": "wordnet",
+      "replicate": 0,
+      "workload": "interleaved256"
+    },
+    {
+      "arm": "cached_warm",
+      "graph": "movies",
+      "replicate": 0,
+      "workload": "duplicates256"
+    },
+    {
+      "arm": "lru64k",
+      "graph": "wordnet",
+      "replicate": 2,
+      "workload": "hubs16"
+    },
+    {
+      "arm": "full",
+      "graph": "movies",
+      "replicate": 0,
+      "workload": "hubs16"
+    },
+    {
+      "arm": "lru64k",
+      "graph": "wordnet",
+      "replicate": 1,
+      "workload": "single"
+    },
+    {
+      "arm": "lru64k",
+      "graph": "wordnet",
+      "replicate": 2,
+      "workload": "interleaved256"
+    },
+    {
+      "arm": "cached_warm",
+      "graph": "movies",
+      "replicate": 1,
+      "workload": "clustered256"
+    },
+    {
+      "arm": "lru16m",
+      "graph": "collaboration",
+      "replicate": 1,
+      "workload": "single"
+    },
+    {
+      "arm": "cached_warm",
+      "graph": "movies",
+      "replicate": 2,
+      "workload": "clustered256"
+    },
+    {
+      "arm": "lru16m",
+      "graph": "movies",
+      "replicate": 1,
+      "workload": "duplicates256"
+    },
+    {
+      "arm": "lru16m",
+      "graph": "movies",
+      "replicate": 2,
+      "workload": "interleaved256"
+    },
+    {
+      "arm": "lru64k",
+      "graph": "movies",
+      "replicate": 1,
+      "workload": "distinct128"
+    },
+    {
+      "arm": "lru64k",
+      "graph": "wordnet",
+      "replicate": 0,
+      "workload": "distinct128"
+    },
+    {
+      "arm": "lru64k",
+      "graph": "wordnet",
+      "replicate": 0,
+      "workload": "clustered256"
+    },
+    {
+      "arm": "cached_warm",
+      "graph": "wordnet",
+      "replicate": 1,
+      "workload": "clustered256"
+    },
+    {
+      "arm": "lru64k",
+      "graph": "collaboration",
+      "replicate": 0,
+      "workload": "many_targets256"
+    },
+    {
+      "arm": "targeted",
+      "graph": "wordnet",
+      "replicate": 1,
+      "workload": "single"
+    },
+    {
+      "arm": "cached_warm",
+      "graph": "collaboration",
+      "replicate": 1,
+      "workload": "single"
+    },
+    {
+      "arm": "targeted",
+      "graph": "wordnet",
+      "replicate": 0,
+      "workload": "distinct128"
+    },
+    {
+      "arm": "cached_cold",
+      "graph": "wordnet",
+      "replicate": 1,
+      "workload": "duplicates256"
+    },
+    {
+      "arm": "precomputed",
+      "graph": "wordnet",
+      "replicate": 1,
+      "workload": "hubs16"
+    },
+    {
+      "arm": "lru16m",
+      "graph": "wordnet",
+      "replicate": 0,
+      "workload": "single"
+    },
+    {
+      "arm": "cached_warm",
+      "graph": "movies",
+      "replicate": 0,
+      "workload": "interleaved256"
+    },
+    {
+      "arm": "targeted",
+      "graph": "movies",
+      "replicate": 1,
+      "workload": "clustered256"
+    },
+    {
+      "arm": "cached_warm",
+      "graph": "collaboration",
+      "replicate": 2,
+      "workload": "single"
+    },
+    {
+      "arm": "cached_cold",
+      "graph": "collaboration",
+      "replicate": 2,
+      "workload": "single"
+    },
+    {
+      "arm": "precomputed",
+      "graph": "wordnet",
+      "replicate": 0,
+      "workload": "interleaved256"
+    },
+    {
+      "arm": "cached_warm",
+      "graph": "movies",
+      "replicate": 1,
+      "workload": "duplicates256"
+    },
+    {
+      "arm": "lru16m",
+      "graph": "movies",
+      "replicate": 2,
+      "workload": "many_targets256"
+    },
+    {
+      "arm": "lru64k",
+      "graph": "collaboration",
+      "replicate": 1,
+      "workload": "hubs16"
+    },
+    {
+      "arm": "precomputed",
+      "graph": "movies",
+      "replicate": 0,
+      "workload": "hubs16"
+    },
+    {
+      "arm": "cached_warm",
+      "graph": "wordnet",
+      "replicate": 2,
+      "workload": "hubs16"
+    },
+    {
+      "arm": "targeted",
+      "graph": "wordnet",
+      "replicate": 1,
+      "workload": "many_targets256"
+    },
+    {
+      "arm": "cached_warm",
+      "graph": "collaboration",
+      "replicate": 0,
+      "workload": "single"
+    },
+    {
+      "arm": "full",
+      "graph": "collaboration",
+      "replicate": 2,
+      "workload": "clustered256"
+    },
+    {
+      "arm": "targeted",
+      "graph": "collaboration",
+      "replicate": 0,
+      "workload": "single"
+    },
+    {
+      "arm": "full",
+      "graph": "movies",
+      "replicate": 2,
+      "workload": "duplicates256"
+    },
+    {
+      "arm": "cached_warm",
+      "graph": "collaboration",
+      "replicate": 1,
+      "workload": "duplicates256"
+    },
+    {
+      "arm": "lru16m",
+      "graph": "movies",
+      "replicate": 2,
+      "workload": "distinct128"
+    },
+    {
+      "arm": "full",
+      "graph": "wordnet",
+      "replicate": 1,
+      "workload": "interleaved256"
+    },
+    {
+      "arm": "targeted",
+      "graph": "movies",
+      "replicate": 2,
+      "workload": "hubs16"
+    },
+    {
+      "arm": "cached_cold",
+      "graph": "wordnet",
+      "replicate": 1,
+      "workload": "clustered256"
+    },
+    {
+      "arm": "targeted",
+      "graph": "collaboration",
+      "replicate": 0,
+      "workload": "interleaved256"
+    },
+    {
+      "arm": "lru16m",
+      "graph": "collaboration",
+      "replicate": 0,
+      "workload": "duplicates256"
+    },
+    {
+      "arm": "targeted",
+      "graph": "collaboration",
+      "replicate": 2,
+      "workload": "clustered256"
+    },
+    {
+      "arm": "cached_warm",
+      "graph": "collaboration",
+      "replicate": 1,
+      "workload": "distinct128"
+    },
+    {
+      "arm": "precomputed",
+      "graph": "wordnet",
+      "replicate": 2,
+      "workload": "interleaved256"
+    },
+    {
+      "arm": "cached_cold",
+      "graph": "wordnet",
+      "replicate": 1,
+      "workload": "many_targets256"
+    },
+    {
+      "arm": "lru16m",
+      "graph": "collaboration",
+      "replicate": 2,
+      "workload": "interleaved256"
+    },
+    {
+      "arm": "lru64k",
+      "graph": "collaboration",
+      "replicate": 2,
+      "workload": "clustered256"
+    },
+    {
+      "arm": "cached_warm",
+      "graph": "movies",
+      "replicate": 0,
+      "workload": "single"
+    },
+    {
+      "arm": "precomputed",
+      "graph": "collaboration",
+      "replicate": 1,
+      "workload": "distinct128"
+    },
+    {
+      "arm": "cached_cold",
+      "graph": "movies",
+      "replicate": 2,
+      "workload": "clustered256"
+    },
+    {
+      "arm": "precomputed",
+      "graph": "collaboration",
+      "replicate": 0,
+      "workload": "single"
+    },
+    {
+      "arm": "lru64k",
+      "graph": "movies",
+      "replicate": 0,
+      "workload": "many_targets256"
+    },
+    {
+      "arm": "cached_cold",
+      "graph": "movies",
+      "replicate": 2,
+      "workload": "single"
+    },
+    {
+      "arm": "precomputed",
+      "graph": "wordnet",
+      "replicate": 1,
+      "workload": "duplicates256"
+    },
+    {
+      "arm": "targeted",
+      "graph": "collaboration",
+      "replicate": 1,
+      "workload": "single"
+    },
+    {
+      "arm": "full",
+      "graph": "collaboration",
+      "replicate": 0,
+      "workload": "duplicates256"
+    },
+    {
+      "arm": "lru64k",
+      "graph": "wordnet",
+      "replicate": 0,
+      "workload": "hubs16"
+    },
+    {
+      "arm": "targeted",
+      "graph": "movies",
+      "replicate": 2,
+      "workload": "clustered256"
+    },
+    {
+      "arm": "targeted",
+      "graph": "wordnet",
+      "replicate": 1,
+      "workload": "duplicates256"
+    },
+    {
+      "arm": "lru16m",
+      "graph": "movies",
+      "replicate": 1,
+      "workload": "many_targets256"
+    },
+    {
+      "arm": "precomputed",
+      "graph": "wordnet",
+      "replicate": 0,
+      "workload": "clustered256"
+    },
+    {
+      "arm": "cached_cold",
+      "graph": "movies",
+      "replicate": 2,
+      "workload": "many_targets256"
+    },
+    {
+      "arm": "lru16m",
+      "graph": "collaboration",
+      "replicate": 2,
+      "workload": "duplicates256"
+    },
+    {
+      "arm": "full",
+      "graph": "collaboration",
+      "replicate": 2,
+      "workload": "many_targets256"
+    },
+    {
+      "arm": "full",
+      "graph": "movies",
+      "replicate": 2,
+      "workload": "single"
+    },
+    {
+      "arm": "cached_warm",
+      "graph": "wordnet",
+      "replicate": 2,
+      "workload": "clustered256"
+    },
+    {
+      "arm": "lru16m",
+      "graph": "wordnet",
+      "replicate": 2,
+      "workload": "distinct128"
+    },
+    {
+      "arm": "lru16m",
+      "graph": "wordnet",
+      "replicate": 0,
+      "workload": "duplicates256"
+    },
+    {
+      "arm": "targeted",
+      "graph": "collaboration",
+      "replicate": 0,
+      "workload": "many_targets256"
+    },
+    {
+      "arm": "lru64k",
+      "graph": "collaboration",
+      "replicate": 2,
+      "workload": "hubs16"
+    },
+    {
+      "arm": "lru16m",
+      "graph": "movies",
+      "replicate": 1,
+      "workload": "hubs16"
+    },
+    {
+      "arm": "cached_cold",
+      "graph": "movies",
+      "replicate": 1,
+      "workload": "hubs16"
+    },
+    {
+      "arm": "targeted",
+      "graph": "wordnet",
+      "replicate": 1,
+      "workload": "clustered256"
+    },
+    {
+      "arm": "full",
+      "graph": "movies",
+      "replicate": 0,
+      "workload": "single"
+    },
+    {
+      "arm": "cached_cold",
+      "graph": "collaboration",
+      "replicate": 0,
+      "workload": "clustered256"
+    },
+    {
+      "arm": "lru64k",
+      "graph": "wordnet",
+      "replicate": 1,
+      "workload": "duplicates256"
+    },
+    {
+      "arm": "targeted",
+      "graph": "wordnet",
+      "replicate": 1,
+      "workload": "hubs16"
+    },
+    {
+      "arm": "precomputed",
+      "graph": "wordnet",
+      "replicate": 0,
+      "workload": "distinct128"
+    },
+    {
+      "arm": "targeted",
+      "graph": "wordnet",
+      "replicate": 2,
+      "workload": "interleaved256"
+    },
+    {
+      "arm": "precomputed",
+      "graph": "wordnet",
+      "replicate": 0,
+      "workload": "many_targets256"
+    },
+    {
+      "arm": "full",
+      "graph": "movies",
+      "replicate": 0,
+      "workload": "interleaved256"
+    },
+    {
+      "arm": "precomputed",
+      "graph": "wordnet",
+      "replicate": 1,
+      "workload": "single"
+    },
+    {
+      "arm": "lru16m",
+      "graph": "collaboration",
+      "replicate": 1,
+      "workload": "duplicates256"
+    },
+    {
+      "arm": "cached_warm",
+      "graph": "wordnet",
+      "replicate": 0,
+      "workload": "clustered256"
+    },
+    {
+      "arm": "cached_cold",
+      "graph": "movies",
+      "replicate": 2,
+      "workload": "interleaved256"
+    },
+    {
+      "arm": "cached_cold",
+      "graph": "wordnet",
+      "replicate": 1,
+      "workload": "interleaved256"
+    },
+    {
+      "arm": "precomputed",
+      "graph": "wordnet",
+      "replicate": 2,
+      "workload": "duplicates256"
+    },
+    {
+      "arm": "lru16m",
+      "graph": "movies",
+      "replicate": 2,
+      "workload": "clustered256"
+    },
+    {
+      "arm": "precomputed",
+      "graph": "collaboration",
+      "replicate": 0,
+      "workload": "many_targets256"
+    },
+    {
+      "arm": "cached_cold",
+      "graph": "wordnet",
+      "replicate": 2,
+      "workload": "duplicates256"
+    },
+    {
+      "arm": "precomputed",
+      "graph": "collaboration",
+      "replicate": 1,
+      "workload": "duplicates256"
+    },
+    {
+      "arm": "cached_warm",
+      "graph": "movies",
+      "replicate": 2,
+      "workload": "interleaved256"
+    },
+    {
+      "arm": "cached_cold",
+      "graph": "collaboration",
+      "replicate": 2,
+      "workload": "duplicates256"
+    },
+    {
+      "arm": "lru16m",
+      "graph": "collaboration",
+      "replicate": 1,
+      "workload": "interleaved256"
+    },
+    {
+      "arm": "full",
+      "graph": "wordnet",
+      "replicate": 2,
+      "workload": "hubs16"
+    },
+    {
+      "arm": "full",
+      "graph": "collaboration",
+      "replicate": 1,
+      "workload": "single"
+    },
+    {
+      "arm": "full",
+      "graph": "movies",
+      "replicate": 2,
+      "workload": "interleaved256"
+    },
+    {
+      "arm": "cached_cold",
+      "graph": "wordnet",
+      "replicate": 2,
+      "workload": "hubs16"
+    },
+    {
+      "arm": "full",
+      "graph": "collaboration",
+      "replicate": 0,
+      "workload": "many_targets256"
+    },
+    {
+      "arm": "lru16m",
+      "graph": "wordnet",
+      "replicate": 1,
+      "workload": "clustered256"
+    },
+    {
+      "arm": "lru64k",
+      "graph": "wordnet",
+      "replicate": 1,
+      "workload": "many_targets256"
+    },
+    {
+      "arm": "cached_cold",
+      "graph": "collaboration",
+      "replicate": 2,
+      "workload": "interleaved256"
+    },
+    {
+      "arm": "cached_warm",
+      "graph": "movies",
+      "replicate": 2,
+      "workload": "many_targets256"
+    },
+    {
+      "arm": "targeted",
+      "graph": "collaboration",
+      "replicate": 2,
+      "workload": "hubs16"
+    },
+    {
+      "arm": "lru64k",
+      "graph": "wordnet",
+      "replicate": 2,
+      "workload": "clustered256"
+    },
+    {
+      "arm": "full",
+      "graph": "wordnet",
+      "replicate": 1,
+      "workload": "many_targets256"
+    },
+    {
+      "arm": "lru16m",
+      "graph": "collaboration",
+      "replicate": 2,
+      "workload": "clustered256"
+    },
+    {
+      "arm": "targeted",
+      "graph": "wordnet",
+      "replicate": 1,
+      "workload": "distinct128"
+    },
+    {
+      "arm": "cached_cold",
+      "graph": "movies",
+      "replicate": 0,
+      "workload": "hubs16"
+    },
+    {
+      "arm": "full",
+      "graph": "collaboration",
+      "replicate": 2,
+      "workload": "interleaved256"
+    },
+    {
+      "arm": "precomputed",
+      "graph": "wordnet",
+      "replicate": 2,
+      "workload": "distinct128"
+    },
+    {
+      "arm": "targeted",
+      "graph": "movies",
+      "replicate": 1,
+      "workload": "single"
+    },
+    {
+      "arm": "cached_cold",
+      "graph": "collaboration",
+      "replicate": 2,
+      "workload": "hubs16"
+    },
+    {
+      "arm": "precomputed",
+      "graph": "wordnet",
+      "replicate": 0,
+      "workload": "single"
+    },
+    {
+      "arm": "cached_cold",
+      "graph": "movies",
+      "replicate": 2,
+      "workload": "hubs16"
+    },
+    {
+      "arm": "precomputed",
+      "graph": "wordnet",
+      "replicate": 1,
+      "workload": "many_targets256"
+    },
+    {
+      "arm": "targeted",
+      "graph": "collaboration",
+      "replicate": 1,
+      "workload": "distinct128"
+    },
+    {
+      "arm": "lru64k",
+      "graph": "collaboration",
+      "replicate": 2,
+      "workload": "interleaved256"
+    },
+    {
+      "arm": "targeted",
+      "graph": "wordnet",
+      "replicate": 0,
+      "workload": "many_targets256"
+    },
+    {
+      "arm": "targeted",
+      "graph": "wordnet",
+      "replicate": 1,
+      "workload": "interleaved256"
+    },
+    {
+      "arm": "cached_cold",
+      "graph": "movies",
+      "replicate": 0,
+      "workload": "distinct128"
+    },
+    {
+      "arm": "lru64k",
+      "graph": "collaboration",
+      "replicate": 2,
+      "workload": "duplicates256"
+    },
+    {
+      "arm": "cached_cold",
+      "graph": "collaboration",
+      "replicate": 0,
+      "workload": "hubs16"
+    },
+    {
+      "arm": "cached_warm",
+      "graph": "collaboration",
+      "replicate": 2,
+      "workload": "many_targets256"
+    },
+    {
+      "arm": "lru16m",
+      "graph": "collaboration",
+      "replicate": 2,
+      "workload": "distinct128"
+    },
+    {
+      "arm": "targeted",
+      "graph": "movies",
+      "replicate": 1,
+      "workload": "duplicates256"
+    },
+    {
+      "arm": "full",
+      "graph": "wordnet",
+      "replicate": 1,
+      "workload": "distinct128"
+    },
+    {
+      "arm": "cached_cold",
+      "graph": "collaboration",
+      "replicate": 1,
+      "workload": "hubs16"
+    },
+    {
+      "arm": "full",
+      "graph": "movies",
+      "replicate": 2,
+      "workload": "distinct128"
+    },
+    {
+      "arm": "lru64k",
+      "graph": "movies",
+      "replicate": 2,
+      "workload": "single"
+    },
+    {
+      "arm": "cached_warm",
+      "graph": "movies",
+      "replicate": 2,
+      "workload": "distinct128"
+    },
+    {
+      "arm": "lru16m",
+      "graph": "collaboration",
+      "replicate": 1,
+      "workload": "many_targets256"
+    },
+    {
+      "arm": "full",
+      "graph": "collaboration",
+      "replicate": 1,
+      "workload": "hubs16"
+    },
+    {
+      "arm": "full",
+      "graph": "movies",
+      "replicate": 1,
+      "workload": "many_targets256"
+    },
+    {
+      "arm": "cached_cold",
+      "graph": "movies",
+      "replicate": 2,
+      "workload": "distinct128"
+    },
+    {
+      "arm": "targeted",
+      "graph": "wordnet",
+      "replicate": 0,
+      "workload": "duplicates256"
+    },
+    {
+      "arm": "targeted",
+      "graph": "wordnet",
+      "replicate": 2,
+      "workload": "distinct128"
+    },
+    {
+      "arm": "cached_cold",
+      "graph": "wordnet",
+      "replicate": 2,
+      "workload": "interleaved256"
+    },
+    {
+      "arm": "cached_cold",
+      "graph": "wordnet",
+      "replicate": 0,
+      "workload": "many_targets256"
+    },
+    {
+      "arm": "targeted",
+      "graph": "collaboration",
+      "replicate": 1,
+      "workload": "clustered256"
+    },
+    {
+      "arm": "lru16m",
+      "graph": "wordnet",
+      "replicate": 2,
+      "workload": "hubs16"
+    },
+    {
+      "arm": "cached_warm",
+      "graph": "movies",
+      "replicate": 1,
+      "workload": "single"
+    },
+    {
+      "arm": "cached_cold",
+      "graph": "collaboration",
+      "replicate": 2,
+      "workload": "clustered256"
+    },
+    {
+      "arm": "lru16m",
+      "graph": "movies",
+      "replicate": 0,
+      "workload": "many_targets256"
+    },
+    {
+      "arm": "lru16m",
+      "graph": "wordnet",
+      "replicate": 2,
+      "workload": "duplicates256"
+    },
+    {
+      "arm": "precomputed",
+      "graph": "wordnet",
+      "replicate": 1,
+      "workload": "interleaved256"
+    },
+    {
+      "arm": "targeted",
+      "graph": "collaboration",
+      "replicate": 2,
+      "workload": "many_targets256"
+    },
+    {
+      "arm": "lru16m",
+      "graph": "wordnet",
+      "replicate": 1,
+      "workload": "duplicates256"
+    },
+    {
+      "arm": "lru64k",
+      "graph": "wordnet",
+      "replicate": 0,
+      "workload": "single"
+    },
+    {
+      "arm": "lru64k",
+      "graph": "collaboration",
+      "replicate": 1,
+      "workload": "interleaved256"
+    },
+    {
+      "arm": "lru16m",
+      "graph": "movies",
+      "replicate": 1,
+      "workload": "interleaved256"
+    },
+    {
+      "arm": "lru64k",
+      "graph": "collaboration",
+      "replicate": 1,
+      "workload": "duplicates256"
+    },
+    {
+      "arm": "precomputed",
+      "graph": "collaboration",
+      "replicate": 2,
+      "workload": "duplicates256"
+    },
+    {
+      "arm": "cached_cold",
+      "graph": "collaboration",
+      "replicate": 0,
+      "workload": "many_targets256"
+    },
+    {
+      "arm": "full",
+      "graph": "movies",
+      "replicate": 0,
+      "workload": "distinct128"
+    },
+    {
+      "arm": "full",
+      "graph": "collaboration",
+      "replicate": 1,
+      "workload": "many_targets256"
+    },
+    {
+      "arm": "lru16m",
+      "graph": "collaboration",
+      "replicate": 0,
+      "workload": "interleaved256"
+    },
+    {
+      "arm": "full",
+      "graph": "collaboration",
+      "replicate": 0,
+      "workload": "hubs16"
+    },
+    {
+      "arm": "lru16m",
+      "graph": "collaboration",
+      "replicate": 1,
+      "workload": "hubs16"
+    },
+    {
+      "arm": "full",
+      "graph": "collaboration",
+      "replicate": 0,
+      "workload": "single"
+    },
+    {
+      "arm": "full",
+      "graph": "movies",
+      "replicate": 2,
+      "workload": "hubs16"
+    },
+    {
+      "arm": "lru16m",
+      "graph": "collaboration",
+      "replicate": 0,
+      "workload": "clustered256"
+    },
+    {
+      "arm": "lru64k",
+      "graph": "collaboration",
+      "replicate": 0,
+      "workload": "distinct128"
+    },
+    {
+      "arm": "full",
+      "graph": "movies",
+      "replicate": 1,
+      "workload": "distinct128"
+    },
+    {
+      "arm": "full",
+      "graph": "movies",
+      "replicate": 0,
+      "workload": "duplicates256"
+    },
+    {
+      "arm": "cached_warm",
+      "graph": "movies",
+      "replicate": 1,
+      "workload": "hubs16"
+    },
+    {
+      "arm": "precomputed",
+      "graph": "movies",
+      "replicate": 2,
+      "workload": "hubs16"
+    },
+    {
+      "arm": "cached_cold",
+      "graph": "wordnet",
+      "replicate": 0,
+      "workload": "clustered256"
+    },
+    {
+      "arm": "full",
+      "graph": "wordnet",
+      "replicate": 2,
+      "workload": "duplicates256"
+    },
+    {
+      "arm": "cached_warm",
+      "graph": "collaboration",
+      "replicate": 1,
+      "workload": "clustered256"
+    },
+    {
+      "arm": "targeted",
+      "graph": "wordnet",
+      "replicate": 2,
+      "workload": "hubs16"
+    },
+    {
+      "arm": "cached_warm",
+      "graph": "collaboration",
+      "replicate": 0,
+      "workload": "hubs16"
+    },
+    {
+      "arm": "lru16m",
+      "graph": "movies",
+      "replicate": 0,
+      "workload": "hubs16"
+    },
+    {
+      "arm": "full",
+      "graph": "movies",
+      "replicate": 2,
+      "workload": "clustered256"
+    },
+    {
+      "arm": "full",
+      "graph": "collaboration",
+      "replicate": 1,
+      "workload": "clustered256"
+    },
+    {
+      "arm": "targeted",
+      "graph": "movies",
+      "replicate": 0,
+      "workload": "single"
+    },
+    {
+      "arm": "precomputed",
+      "graph": "movies",
+      "replicate": 0,
+      "workload": "interleaved256"
+    },
+    {
+      "arm": "precomputed",
+      "graph": "wordnet",
+      "replicate": 0,
+      "workload": "hubs16"
+    },
+    {
+      "arm": "lru16m",
+      "graph": "collaboration",
+      "replicate": 0,
+      "workload": "many_targets256"
+    },
+    {
+      "arm": "precomputed",
+      "graph": "movies",
+      "replicate": 2,
+      "workload": "clustered256"
+    },
+    {
+      "arm": "lru16m",
+      "graph": "movies",
+      "replicate": 2,
+      "workload": "hubs16"
+    },
+    {
+      "arm": "lru16m",
+      "graph": "collaboration",
+      "replicate": 2,
+      "workload": "many_targets256"
+    },
+    {
+      "arm": "cached_warm",
+      "graph": "collaboration",
+      "replicate": 2,
+      "workload": "duplicates256"
+    },
+    {
+      "arm": "lru64k",
+      "graph": "movies",
+      "replicate": 0,
+      "workload": "single"
+    },
+    {
+      "arm": "cached_warm",
+      "graph": "movies",
+      "replicate": 2,
+      "workload": "hubs16"
+    },
+    {
+      "arm": "full",
+      "graph": "collaboration",
+      "replicate": 0,
+      "workload": "clustered256"
+    },
+    {
+      "arm": "lru16m",
+      "graph": "movies",
+      "replicate": 0,
+      "workload": "distinct128"
+    },
+    {
+      "arm": "cached_cold",
+      "graph": "wordnet",
+      "replicate": 2,
+      "workload": "many_targets256"
+    },
+    {
+      "arm": "full",
+      "graph": "wordnet",
+      "replicate": 1,
+      "workload": "single"
+    },
+    {
+      "arm": "targeted",
+      "graph": "collaboration",
+      "replicate": 1,
+      "workload": "interleaved256"
+    },
+    {
+      "arm": "lru16m",
+      "graph": "movies",
+      "replicate": 2,
+      "workload": "duplicates256"
+    },
+    {
+      "arm": "precomputed",
+      "graph": "collaboration",
+      "replicate": 2,
+      "workload": "many_targets256"
+    },
+    {
+      "arm": "targeted",
+      "graph": "collaboration",
+      "replicate": 2,
+      "workload": "single"
+    },
+    {
+      "arm": "cached_cold",
+      "graph": "movies",
+      "replicate": 0,
+      "workload": "duplicates256"
+    },
+    {
+      "arm": "full",
+      "graph": "collaboration",
+      "replicate": 1,
+      "workload": "distinct128"
+    },
+    {
+      "arm": "lru64k",
+      "graph": "collaboration",
+      "replicate": 2,
+      "workload": "distinct128"
+    },
+    {
+      "arm": "full",
+      "graph": "wordnet",
+      "replicate": 2,
+      "workload": "single"
+    },
+    {
+      "arm": "precomputed",
+      "graph": "movies",
+      "replicate": 1,
+      "workload": "clustered256"
+    },
+    {
+      "arm": "full",
+      "graph": "movies",
+      "replicate": 1,
+      "workload": "interleaved256"
+    },
+    {
+      "arm": "cached_cold",
+      "graph": "wordnet",
+      "replicate": 1,
+      "workload": "hubs16"
+    },
+    {
+      "arm": "full",
+      "graph": "collaboration",
+      "replicate": 2,
+      "workload": "duplicates256"
+    },
+    {
+      "arm": "cached_warm",
+      "graph": "collaboration",
+      "replicate": 2,
+      "workload": "distinct128"
+    },
+    {
+      "arm": "targeted",
+      "graph": "movies",
+      "replicate": 2,
+      "workload": "distinct128"
+    },
+    {
+      "arm": "full",
+      "graph": "wordnet",
+      "replicate": 1,
+      "workload": "duplicates256"
+    },
+    {
+      "arm": "precomputed",
+      "graph": "movies",
+      "replicate": 0,
+      "workload": "distinct128"
+    },
+    {
+      "arm": "targeted",
+      "graph": "collaboration",
+      "replicate": 0,
+      "workload": "clustered256"
+    },
+    {
+      "arm": "targeted",
+      "graph": "collaboration",
+      "replicate": 1,
+      "workload": "many_targets256"
+    },
+    {
+      "arm": "precomputed",
+      "graph": "collaboration",
+      "replicate": 2,
+      "workload": "single"
+    },
+    {
+      "arm": "lru16m",
+      "graph": "collaboration",
+      "replicate": 0,
+      "workload": "distinct128"
+    },
+    {
+      "arm": "precomputed",
+      "graph": "collaboration",
+      "replicate": 1,
+      "workload": "interleaved256"
+    },
+    {
+      "arm": "cached_cold",
+      "graph": "wordnet",
+      "replicate": 0,
+      "workload": "interleaved256"
+    },
+    {
+      "arm": "cached_warm",
+      "graph": "wordnet",
+      "replicate": 2,
+      "workload": "distinct128"
+    },
+    {
+      "arm": "cached_warm",
+      "graph": "movies",
+      "replicate": 1,
+      "workload": "distinct128"
+    },
+    {
+      "arm": "cached_warm",
+      "graph": "collaboration",
+      "replicate": 1,
+      "workload": "hubs16"
+    },
+    {
+      "arm": "targeted",
+      "graph": "collaboration",
+      "replicate": 1,
+      "workload": "hubs16"
+    },
+    {
+      "arm": "cached_cold",
+      "graph": "movies",
+      "replicate": 0,
+      "workload": "interleaved256"
+    },
+    {
+      "arm": "cached_warm",
+      "graph": "collaboration",
+      "replicate": 2,
+      "workload": "interleaved256"
+    },
+    {
+      "arm": "lru16m",
+      "graph": "wordnet",
+      "replicate": 0,
+      "workload": "interleaved256"
+    },
+    {
+      "arm": "lru16m",
+      "graph": "wordnet",
+      "replicate": 0,
+      "workload": "many_targets256"
+    },
+    {
+      "arm": "precomputed",
+      "graph": "collaboration",
+      "replicate": 0,
+      "workload": "hubs16"
+    },
+    {
+      "arm": "full",
+      "graph": "collaboration",
+      "replicate": 2,
+      "workload": "hubs16"
+    },
+    {
+      "arm": "full",
+      "graph": "wordnet",
+      "replicate": 2,
+      "workload": "interleaved256"
+    },
+    {
+      "arm": "full",
+      "graph": "wordnet",
+      "replicate": 0,
+      "workload": "single"
+    },
+    {
+      "arm": "full",
+      "graph": "wordnet",
+      "replicate": 2,
+      "workload": "many_targets256"
+    },
+    {
+      "arm": "precomputed",
+      "graph": "movies",
+      "replicate": 1,
+      "workload": "many_targets256"
+    },
+    {
+      "arm": "lru16m",
+      "graph": "wordnet",
+      "replicate": 0,
+      "workload": "hubs16"
+    },
+    {
+      "arm": "lru16m",
+      "graph": "collaboration",
+      "replicate": 2,
+      "workload": "single"
+    },
+    {
+      "arm": "lru64k",
+      "graph": "wordnet",
+      "replicate": 0,
+      "workload": "many_targets256"
+    },
+    {
+      "arm": "precomputed",
+      "graph": "movies",
+      "replicate": 1,
+      "workload": "duplicates256"
+    },
+    {
+      "arm": "lru64k",
+      "graph": "movies",
+      "replicate": 1,
+      "workload": "interleaved256"
+    },
+    {
+      "arm": "cached_cold",
+      "graph": "wordnet",
+      "replicate": 0,
+      "workload": "hubs16"
+    },
+    {
+      "arm": "precomputed",
+      "graph": "collaboration",
+      "replicate": 2,
+      "workload": "clustered256"
+    },
+    {
+      "arm": "lru64k",
+      "graph": "wordnet",
+      "replicate": 0,
+      "workload": "duplicates256"
+    },
+    {
+      "arm": "lru64k",
+      "graph": "wordnet",
+      "replicate": 2,
+      "workload": "duplicates256"
+    },
+    {
+      "arm": "lru16m",
+      "graph": "movies",
+      "replicate": 0,
+      "workload": "interleaved256"
+    },
+    {
+      "arm": "full",
+      "graph": "wordnet",
+      "replicate": 0,
+      "workload": "hubs16"
+    },
+    {
+      "arm": "lru16m",
+      "graph": "wordnet",
+      "replicate": 0,
+      "workload": "distinct128"
+    },
+    {
+      "arm": "targeted",
+      "graph": "wordnet",
+      "replicate": 2,
+      "workload": "single"
+    },
+    {
+      "arm": "precomputed",
+      "graph": "collaboration",
+      "replicate": 0,
+      "workload": "clustered256"
+    },
+    {
+      "arm": "cached_warm",
+      "graph": "movies",
+      "replicate": 0,
+      "workload": "distinct128"
+    },
+    {
+      "arm": "targeted",
+      "graph": "movies",
+      "replicate": 0,
+      "workload": "distinct128"
+    },
+    {
+      "arm": "targeted",
+      "graph": "wordnet",
+      "replicate": 0,
+      "workload": "interleaved256"
+    },
+    {
+      "arm": "precomputed",
+      "graph": "collaboration",
+      "replicate": 1,
+      "workload": "clustered256"
+    },
+    {
+      "arm": "cached_warm",
+      "graph": "collaboration",
+      "replicate": 1,
+      "workload": "many_targets256"
+    },
+    {
+      "arm": "cached_warm",
+      "graph": "wordnet",
+      "replicate": 1,
+      "workload": "duplicates256"
+    },
+    {
+      "arm": "lru64k",
+      "graph": "movies",
+      "replicate": 2,
+      "workload": "many_targets256"
+    },
+    {
+      "arm": "precomputed",
+      "graph": "movies",
+      "replicate": 0,
+      "workload": "many_targets256"
+    },
+    {
+      "arm": "precomputed",
+      "graph": "collaboration",
+      "replicate": 0,
+      "workload": "distinct128"
+    },
+    {
+      "arm": "lru64k",
+      "graph": "movies",
+      "replicate": 1,
+      "workload": "many_targets256"
+    },
+    {
+      "arm": "precomputed",
+      "graph": "movies",
+      "replicate": 1,
+      "workload": "hubs16"
+    },
+    {
+      "arm": "full",
+      "graph": "movies",
+      "replicate": 2,
+      "workload": "many_targets256"
+    },
+    {
+      "arm": "full",
+      "graph": "wordnet",
+      "replicate": 0,
+      "workload": "many_targets256"
+    },
+    {
+      "arm": "cached_warm",
+      "graph": "movies",
+      "replicate": 1,
+      "workload": "interleaved256"
+    },
+    {
+      "arm": "lru64k",
+      "graph": "movies",
+      "replicate": 2,
+      "workload": "duplicates256"
+    },
+    {
+      "arm": "cached_cold",
+      "graph": "movies",
+      "replicate": 1,
+      "workload": "duplicates256"
+    },
+    {
+      "arm": "lru16m",
+      "graph": "movies",
+      "replicate": 0,
+      "workload": "single"
+    },
+    {
+      "arm": "lru64k",
+      "graph": "movies",
+      "replicate": 2,
+      "workload": "interleaved256"
+    },
+    {
+      "arm": "lru16m",
+      "graph": "collaboration",
+      "replicate": 1,
+      "workload": "distinct128"
+    },
+    {
+      "arm": "lru64k",
+      "graph": "movies",
+      "replicate": 0,
+      "workload": "duplicates256"
+    },
+    {
+      "arm": "precomputed",
+      "graph": "wordnet",
+      "replicate": 2,
+      "workload": "hubs16"
+    }
+  ],
+  "precomputation": "Oracle working set of requested sources and relations; full candidate output. Warm lookup is a floor, not a free cold-start baseline.",
+  "quality_claim": false,
+  "samples": 3,
+  "warmup": 1
+}

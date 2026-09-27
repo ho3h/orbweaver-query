@@ -1,0 +1,9 @@
+{
+  "archive_sha256": "69323545ec3ddc14aabd9d82e4d15b937c88a7e4bb51a2290141961d34b61f93",
+  "files": 663,
+  "manifest_sha256": "07d9cc294a682933148adad4cfb932f50cb9ba732c7fb6f1bbcbbee604b6c855",
+  "results_sha256": "003c8f67afb462bde18bd71caa969707f2c985650be7e271e0c641d38aad515b",
+  "wheel_sha256": "c4293575816a657ca043706c402deab6139e251c11f4701f3d8e58a53825ed7e",
+  "protocol_commit": "dbd287e",
+  "workers": 648
+}

@@ -1,0 +1,103 @@
+name: query-engine
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ["packages/query/**", ".github/workflows/query.yml"]
+  pull_request:
+    paths: ["packages/query/**", ".github/workflows/query.yml"]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: query-engine-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  package:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+        python: ["3.11", "3.12", "3.13", "3.14"]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: python -m pip install build pytest ruff==0.16.9
+      - run: python -m build packages/query --outdir packages/query/dist
+      - name: Audit distribution contents
+        run: python packages/query/tools/audit_distribution.py packages/query/dist
+      - name: Install wheel
+        shell: bash
+        run: python -m pip install packages/query/dist/*.whl
+      - name: Test installed runtime
+        run: python -I -m pytest -q packages/query/tests -o pythonpath=
+      - name: Run installed trained quickstart
+        run: python -I -m orbweaver_query.demo --data-dir query-demo-data
+      - name: Record runtime environment
+        run: python -c "import platform,sys,numpy; print(platform.platform(), platform.machine(), sys.version, numpy.__version__)"
+      - name: Lint current implementation
+        run: ruff check packages/query/src packages/query/tests packages/query/tools packages/query/examples packages/query/benchmarks/runtime.py packages/query/benchmarks/standalone.py packages/query/benchmarks/cache_reference.py packages/query/benchmarks/neo4j_workflow.py packages/query/benchmarks/mac_release.py packages/query/benchmarks/movie_workflow.py packages/query/benchmarks/v1
+
+  minimum-numpy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: python -m pip install './packages/query[dev]' 'numpy==1.26.4'
+      - run: python -I -m pytest -q packages/query/tests -o pythonpath=
+
+  training:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m pip install './packages/query[train,dev]'
+      - run: python -I -m pytest -q packages/query/tests/test_training.py -o pythonpath=
+      - run: python -I -m orbweaver_query.reproduce freeze model-run
+      - run: python -I -m orbweaver_query.reproduce execute model-run
+      - run: python -I -m orbweaver_query.reproduce verify model-run
+      - name: Require the declared model-quality gates
+        run: python -c "import json; r=json.load(open('model-run/verification.json')); assert r['verified'] and r['gate_passed'], r"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: model-reproduction-receipts
+          path: |
+            model-run/manifest.json
+            model-run/results.json
+            model-run/verification.json
+
+  neo4j:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        driver: ["neo4j==5.28.0", "neo4j>=6,<7"]
+    services:
+      database:
+        image: neo4j:5.26-community
+        env:
+          NEO4J_AUTH: none
+        ports: ["7687:7687"]
+        options: >-
+          --health-cmd "cypher-shell 'RETURN 1'"
+          --health-interval 5s --health-timeout 10s --health-retries 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m pip install './packages/query[neo4j,dev]' '${{ matrix.driver }}'
+      - run: python -I -m pytest -q packages/query/tests/test_neo4j_live.py -o pythonpath=
+        env:
+          ORBWEAVER_QUERY_TEST_URI: bolt://localhost:7687

@@ -1,0 +1,50 @@
+{
+  "candidates": {
+    "candidate_pairs": 339,
+    "identity": "b39846ffb79f32b310084dd004ac67a791a7619ead63c2eb44be190c68529750",
+    "input_bindings": 342,
+    "left_documents": 300,
+    "null_bindings": 2,
+    "right_documents": 283,
+    "text_bytes": 486018
+  },
+  "conditions": [
+    {
+      "candidate_pairs": 339,
+      "kind": "per_batch",
+      "native_rows_equal": true,
+      "output_bindings": 113,
+      "output_sha256": "8e61bb77ee35dcedee92581682d5029aadc9498f35e200ed1ed9688a563b12a3",
+      "pair_domain_sha256": "5ba3a70fdaacc7a5041cdb99d6854d723ab054de8da2817a7e8e2becdc0014a5",
+      "plan": "                                                                    est. rows   est. pass\nProject: l.id, r.id\n  AiJoin: anchor=r\n    KV: anchor=not resident, retain after join=no\n    join 1 full (r, l) over pairs from apply:orbweaver_candidates      84,900        20%*\n    Scan: r [2]                                                           283\n      tokens=458,905, mean_doc_tokens=1,621.6\n    Scan: l [1]                                                           300\n      tokens=27,113, mean_doc_tokens=90.4\n    Foreign: orbweaver_candidates (per_batch, pairs) on l, r\n      columns: l.id, r.id\n      Reuse [1]\n      Reuse [2]\n* no selectivity was given; the planner assumes 20%"
+    },
+    {
+      "candidate_pairs": 339,
+      "kind": "barrier",
+      "native_rows_equal": true,
+      "output_bindings": 113,
+      "output_sha256": "8e61bb77ee35dcedee92581682d5029aadc9498f35e200ed1ed9688a563b12a3",
+      "pair_domain_sha256": "5ba3a70fdaacc7a5041cdb99d6854d723ab054de8da2817a7e8e2becdc0014a5",
+      "plan": "                                                                    est. rows   est. pass\nProject: l.id, r.id\n  AiJoin: anchor=r\n    KV: anchor=not resident, retain after join=no\n    join 1 full (r, l) over pairs from apply:orbweaver_candidates      84,900        20%*\n    Scan: r [2]                                                           283\n      tokens=458,905, mean_doc_tokens=1,621.6\n    Scan: l [1]                                                           300\n      tokens=27,113, mean_doc_tokens=90.4\n    Foreign: orbweaver_candidates (barrier, pairs) on l, r\n      columns: l.id, r.id\n      Reuse [1]\n      Reuse [2]\n* no selectivity was given; the planner assumes 20%"
+    }
+  ],
+  "dependencies": {
+    "neo4j": "6.3.1",
+    "numpy": "2.3.5",
+    "pyarrow": "25.0.1",
+    "quail-engine": "0.1.0"
+  },
+  "input_sha256": "678d0fb5e2c3f23a6d629bd1f12c222c9eb1c066090697c532cb7b6db9d2c8a2",
+  "kind": "CPU integration correctness; no inference, quality or performance claim",
+  "oracle": "sha256([head,target]) first 32 bits modulo 3 equals 0; not model predictions",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "python": "3.12.13",
+  "quail_commit": "41b883b838687cfbf018080f068f3e81bf2f8e64",
+  "readonly_guard": true,
+  "source_sha256": {
+    "disposable_neo4j.py": "178f013ef072436628c4a81afdab142630c9f3490e16c44f863baa15bcf01fb3",
+    "neo4j.py": "5e34f58c631ece10bad47ef016448f1d807f4f2a0d10719f1e1ecd0a6c7f0274",
+    "quail.py": "22632bc3ac49edc59b99ae2290210e1dc679581e9ff416460e3dbe86802043e8",
+    "quail_bridge_check.py": "6d09bf5cb92c0eeb9002a9b5d0a2c9d4cd7716fe8653bfc3411b037604b6ed33"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "format": "orbweaver-query-example-v1",
+  "name": "WN18RR explicit-path example",
+  "model_id": "64d5c3f7652b84f3d24f22beeaf7f7cd49d5a2218af91b4ee89942584674506a",
+  "snapshot_id": "e280974d0ab115be4e721d0e1dc11452914e0c8f4b83e433919aa0f7156849b7",
+  "artifact_sha256": "8ba275ef547e407cd5e28e5d7cb023e20fde6c5d90c7618a195c93eb685e0871",
+  "seed": 71,
+  "train_sha256": "038612e783c215ee5f3ca9fbfca27b8d0739be1028fe4ee7c174aecf0b83d5df",
+  "source_revision": "f3c0eb286025410fa5b4c04696c918264163d0ca",
+  "reproduction_manifest_sha256": "0c0e25094dd3c42f0c447dcd792e758e1a5e228775ebd4799a9565382380686a",
+  "relations": [
+    "_also_see",
+    "_derivationally_related_form",
+    "_has_part",
+    "_hypernym",
+    "_instance_hypernym",
+    "_member_meronym",
+    "_member_of_domain_region",
+    "_member_of_domain_usage",
+    "_similar_to",
+    "_synset_domain_topic_of",
+    "_verb_group"
+  ],
+  "untrained_relations": [
+    "_similar_to"
+  ],
+  "score_kind": "ranking_logit",
+  "evidence_triples": 69420,
+  "node_count": 40559
+}

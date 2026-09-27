@@ -1,0 +1,8 @@
+{
+  "all_recorded_json_equal": true,
+  "dependent_conditions": 6,
+  "inference_executed": false,
+  "replayed_report_sha256": "83960e901df9f1ecee099514c70b3c3f7415829445c2b7e533b86c5578876d4a",
+  "restored_archive_native_replay_passed": true,
+  "source_and_input_hashes_equal": true
+}

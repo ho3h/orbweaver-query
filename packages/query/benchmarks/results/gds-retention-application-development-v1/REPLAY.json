@@ -1,0 +1,48 @@
+{
+  "audit_sha256": "a802bfd9715b1081dae2e149db25ee712e124eef2448ff0de6a7139e187093ce",
+  "guards": {
+    "restored_summary_matches": true,
+    "scope": "saved-evidence audit guards; no new database or model execution",
+    "semantic_rejections": [
+      {
+        "case": "missing terminal outcomes",
+        "error_type": "FileNotFoundError",
+        "rejected": true
+      },
+      {
+        "case": "failed terminal process",
+        "error_type": "ValueError",
+        "rejected": true
+      },
+      {
+        "case": "missing repeated output",
+        "error_type": "ValueError",
+        "rejected": true
+      },
+      {
+        "case": "changed returned answer",
+        "error_type": "ValueError",
+        "rejected": true
+      },
+      {
+        "case": "unreleased reservation",
+        "error_type": "ValueError",
+        "rejected": true
+      },
+      {
+        "case": "unexpired task records",
+        "error_type": "ValueError",
+        "rejected": true
+      },
+      {
+        "case": "changed recorded quality",
+        "error_type": "ValueError",
+        "rejected": true
+      }
+    ]
+  },
+  "guards_source_sha256": "c8feec3c5754ec2d81eb511ace187d6449476c5c75e8ea0eee31fb4c165460b4",
+  "restored_manifest_sha256": "83c57c7502a156091309a22d28f8bfc0cffa9016db8116bd62232cd021c3cc83",
+  "summary_replayed_byte_identically": true,
+  "summary_sha256": "b0ff84b0c2df4f722a0271f39d1660f5a70e43737790db3712c958b9afe947b3"
+}

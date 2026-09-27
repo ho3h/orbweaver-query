@@ -1,0 +1,58 @@
+{
+  "version": "0.1.0",
+  "date_utc": "2026-09-26",
+  "runtime_validation_commit": "5ea28aa34ebc3d676326e9fdfe3167e91e4e11a8",
+  "ci_run": "https://github.com/ho3h/orbweaver/actions/runs/36252781748",
+  "ci_result": "16 jobs passed: 12 Python/OS pairs, minimum NumPy, two Neo4j drivers, complete training/replay",
+  "source_tests": {
+    "passed": 51,
+    "skipped": 1
+  },
+  "installed_tests": {
+    "passed": 49,
+    "skipped": 3,
+    "separate_live_passed": 1
+  },
+  "archives_sha256": {
+    "orbweaver_query-0.1.0-py3-none-any.whl": "e06aa9f5b92e5fad23212b19ebdb5ce5629992966d03d46c9d32a984ada52ad0",
+    "orbweaver_query-0.1.0.tar.gz": "e6279ea1aaaaac3413474e9a9d58785b466847d111ed2905a504e5a90b4cefdc"
+  },
+  "wheel_members": 19,
+  "sdist_members": 458,
+  "archive_checks": [
+    "built wheel through sdist",
+    "metadata checks passed",
+    "complete Apache license",
+    "model/data notices",
+    "runtime byte-for-byte identical to tested source",
+    "source archive excludes local runs and bytecode"
+  ],
+  "documented_python_examples": {
+    "readme_minimal": true,
+    "readme_cypher": true,
+    "article_cypher_filter_projection": true,
+    "article_trained_example": true
+  },
+  "distribution_command_checks": {
+    "standalone_189_workers": {
+      "gate_passed": true,
+      "output_parity": true,
+      "results_sha256": "9b66c8e4a4440d4a708614768fb48d3ce42313eabc497bc132999d49a8c3f507",
+      "verified": true
+    },
+    "neo4j_36_workers": {
+      "output_parity": true,
+      "primary_gate_passed": true,
+      "results_sha256": "4b6ccbb49d4f892a7c8689dc951124044f813a78a39604b1da4852caf9afa584",
+      "verified": true
+    }
+  },
+  "training_ci": {
+    "checks": "Rebuilt evidence, sampling/features, model parity, all outcomes/digests/metrics/gates",
+    "gate_passed": true,
+    "manifest_sha256": "6f369596636fac1c21be681c64de444a005c202c1390f7a5260cf0f710c88436",
+    "results_sha256": "2cc363851885feeb6f0c64e11c01b6cb25e6d314e5e80c8468c3a8ea9c1e3f03",
+    "verified": true
+  },
+  "note": "Final docs and an additional graph/model replacement test were added after the full distribution command check. All runtime, tool and benchmark source files remain byte-identical. The final archive installed-test counts above include the added test. Benchmark repeat timings do not replace the published frozen measurements."
+}

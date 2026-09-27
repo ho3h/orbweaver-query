@@ -1,0 +1,146 @@
+{
+  "conditions": [
+    {
+      "candidate_count": 335071,
+      "completed_tasks_by_stage": {
+        "after-retention-expiry": 0,
+        "fitted": 1,
+        "full-score-reference": 1,
+        "prediction-1": 268,
+        "prediction-2": 534,
+        "prediction-3": 655,
+        "prediction-4": 679,
+        "prediction-5": 661,
+        "projected": 1
+      },
+      "condition": "collaboration-t1",
+      "model_training_sha256": "b8c113cbc86a7ef4b14fa8d1d85b4fc1eb68ccc6cc056baf6a5d37b455e6622b",
+      "no_active_tasks_at_all_checkpoints": true,
+      "observed_heap_used_bytes": {
+        "maximum": 638992960,
+        "minimum": 123600176
+      },
+      "output_sha256": "f808df9f5549ccdc57b1859c788a6b246cc5ca62f9d8413ea67ff006285a9926",
+      "positive_queries": 46,
+      "prior_max_absolute_score_difference": 0.0,
+      "quality_metrics": {
+        "recall16": 0.7481884057971014,
+        "recall64": 0.8478260869565217,
+        "reciprocal_rank": 0.3089448699003921,
+        "supported": 1.0
+      },
+      "recomputed_request_outputs": 5,
+      "request_counters": [
+        {
+          "max_top_n": 5241,
+          "procedure_calls": 89,
+          "returned_pairs": 29682,
+          "rounds": 9
+        },
+        {
+          "max_top_n": 5241,
+          "procedure_calls": 89,
+          "returned_pairs": 29682,
+          "rounds": 9
+        },
+        {
+          "max_top_n": 5241,
+          "procedure_calls": 89,
+          "returned_pairs": 29682,
+          "rounds": 9
+        },
+        {
+          "max_top_n": 5241,
+          "procedure_calls": 89,
+          "returned_pairs": 29682,
+          "rounds": 9
+        },
+        {
+          "max_top_n": 5241,
+          "procedure_calls": 89,
+          "returned_pairs": 29682,
+          "rounds": 9
+        }
+      ],
+      "scores_sha256": "0ec688707e5327f089a5c776e1cc797185df725e9d65b2716b3fca9a1d7465c7",
+      "selected_method": "RandomForest",
+      "threads": 1,
+      "zero_task_reservations_at_all_checkpoints": true
+    },
+    {
+      "candidate_count": 335071,
+      "completed_tasks_by_stage": {
+        "after-retention-expiry": 0,
+        "fitted": 1,
+        "full-score-reference": 1,
+        "prediction-1": 268,
+        "prediction-2": 535,
+        "prediction-3": 802,
+        "prediction-4": 1068,
+        "prediction-5": 1321,
+        "projected": 1
+      },
+      "condition": "collaboration-t4",
+      "model_training_sha256": "1733d7b667d4728963e1b200d97a870609b609ee38eb2eec200d183ae194b45e",
+      "no_active_tasks_at_all_checkpoints": true,
+      "observed_heap_used_bytes": {
+        "maximum": 708510224,
+        "minimum": 108732160
+      },
+      "output_sha256": "f808df9f5549ccdc57b1859c788a6b246cc5ca62f9d8413ea67ff006285a9926",
+      "positive_queries": 46,
+      "prior_max_absolute_score_difference": 0.0,
+      "quality_metrics": {
+        "recall16": 0.7481884057971014,
+        "recall64": 0.8478260869565217,
+        "reciprocal_rank": 0.3089448699003921,
+        "supported": 1.0
+      },
+      "recomputed_request_outputs": 5,
+      "request_counters": [
+        {
+          "max_top_n": 5241,
+          "procedure_calls": 89,
+          "returned_pairs": 29682,
+          "rounds": 9
+        },
+        {
+          "max_top_n": 5241,
+          "procedure_calls": 89,
+          "returned_pairs": 29682,
+          "rounds": 9
+        },
+        {
+          "max_top_n": 5241,
+          "procedure_calls": 89,
+          "returned_pairs": 29682,
+          "rounds": 9
+        },
+        {
+          "max_top_n": 5241,
+          "procedure_calls": 89,
+          "returned_pairs": 29682,
+          "rounds": 9
+        },
+        {
+          "max_top_n": 5241,
+          "procedure_calls": 89,
+          "returned_pairs": 29682,
+          "rounds": 9
+        }
+      ],
+      "scores_sha256": "0ec688707e5327f089a5c776e1cc797185df725e9d65b2716b3fca9a1d7465c7",
+      "selected_method": "RandomForest",
+      "threads": 4,
+      "zero_task_reservations_at_all_checkpoints": true
+    }
+  ],
+  "confirmation_contents_read": false,
+  "cross_condition_outputs_equal": true,
+  "format": "orbweaver-gds-retention-application-audit-v1",
+  "scope": "bounded original-workload resource/correctness check; no timing or long-running stability claim",
+  "suite_sha256": "cedab50afebcc9e34a441d0c5182649506a5d43e4c4d441be219aaa37f1ab30d",
+  "timing_claim": false,
+  "verified_conditions": 2,
+  "verified_request_outputs": 10
+}

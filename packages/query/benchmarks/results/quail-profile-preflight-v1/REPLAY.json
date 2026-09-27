@@ -1,0 +1,7 @@
+{
+  "cuda_launched": false,
+  "preflight_sha256": "cba55ff5db25ecf2b5fefa8195ec293412eca3801a38c301bad4777e2a89b13c",
+  "profile_manifest_sha256": "afb084c98422c69056e258631dcdf482eab97f22b1fe59d0d8865e672580141c",
+  "restored_preflight_byte_identical": true,
+  "restored_trace_tests_passed": 7
+}

@@ -1,0 +1,102 @@
+{
+  "one_expansion": [
+    {
+      "head": "22184",
+      "ordinal": 0,
+      "relation": "LINK",
+      "seed": "2826"
+    },
+    {
+      "head": "5626",
+      "ordinal": 1,
+      "relation": "LINK",
+      "seed": "4019"
+    },
+    {
+      "head": "5712",
+      "ordinal": 2,
+      "relation": "LINK",
+      "seed": "2959"
+    },
+    {
+      "head": "4773",
+      "ordinal": 3,
+      "relation": "LINK",
+      "seed": "8549"
+    },
+    {
+      "head": "17345",
+      "ordinal": 4,
+      "relation": "LINK",
+      "seed": "3526"
+    },
+    {
+      "head": "14093",
+      "ordinal": 5,
+      "relation": "LINK",
+      "seed": "23806"
+    },
+    {
+      "head": "8711",
+      "ordinal": 6,
+      "relation": "LINK",
+      "seed": "5084"
+    },
+    {
+      "head": "22507",
+      "ordinal": 7,
+      "relation": "LINK",
+      "seed": "4713"
+    },
+    {
+      "head": "22184",
+      "ordinal": 1000,
+      "relation": "LINK",
+      "seed": "2826"
+    },
+    {
+      "head": null,
+      "ordinal": -1,
+      "relation": "LINK",
+      "seed": null
+    }
+  ],
+  "two_expansions": [
+    {
+      "head": "22184",
+      "ordinal": 0,
+      "relation": "LINK",
+      "seed": "2826"
+    },
+    {
+      "head": "5626",
+      "ordinal": 1,
+      "relation": "LINK",
+      "seed": "4019"
+    },
+    {
+      "head": "5712",
+      "ordinal": 2,
+      "relation": "LINK",
+      "seed": "2959"
+    },
+    {
+      "head": "4773",
+      "ordinal": 3,
+      "relation": "LINK",
+      "seed": "8549"
+    },
+    {
+      "head": "22184",
+      "ordinal": 1000,
+      "relation": "LINK",
+      "seed": "2826"
+    },
+    {
+      "head": null,
+      "ordinal": -1,
+      "relation": "LINK",
+      "seed": null
+    }
+  ]
+}

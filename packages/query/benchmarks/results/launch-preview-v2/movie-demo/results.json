@@ -1,0 +1,956 @@
+{
+  "candidate_count": 28,
+  "parameters": {
+    "minimum": 1,
+    "since": 1990,
+    "titles": [
+      "The Matrix",
+      "Top Gun",
+      "Apollo 13"
+    ]
+  },
+  "plan": {
+    "graph_snapshot": "e9560abe07ba1f9c7c1b4245a86a04745cd763344bf51e267f679f355d4f1978",
+    "limits": {
+      "max_expansion_states": 1000000,
+      "max_intermediate_rows": 100000,
+      "max_neighbor_visits": 10000000,
+      "max_prepared_bytes": 16777216,
+      "max_type_visits": 10000000,
+      "window_size": 256
+    },
+    "logical_predictions": [
+      {
+        "columns": [
+          "head",
+          "relation",
+          "target"
+        ],
+        "feature_contract": "orbweaver-neighborhood-features-v1",
+        "model": "48f3d6cc5f2cfe23040ab519a305f3c3fa24b815c44cf2338ee3d92a4017709b",
+        "output": "shared_cast",
+        "score_kind": "structural_link_score",
+        "support": "all_nonself_nonadjacent_nodes"
+      },
+      {
+        "columns": [
+          "head",
+          "relation",
+          "target"
+        ],
+        "feature_contract": "orbweaver-neighborhood-features-v1",
+        "model": "b1014f258bae423631409541025d0542896605cc77eb49c50e41bc1c43f8c230",
+        "output": "affinity",
+        "score_kind": "structural_link_score",
+        "support": "all_nonself_nonadjacent_nodes"
+      }
+    ],
+    "ordering": "filtered groups first, stable ties",
+    "physical_groups": [
+      [
+        "shared_cast",
+        "affinity"
+      ]
+    ],
+    "plan_id": "f3694aaacb46802ed75ee5af049173b6a76af2e4cbadcb3cc06c371534faaf09",
+    "preserves_order_and_bags": true,
+    "projection": [
+      "ordinal",
+      "head",
+      "relation",
+      "target",
+      "source_title",
+      "title",
+      "released",
+      "shared_names",
+      "shared_cast",
+      "affinity"
+    ],
+    "shared_preparation": true,
+    "statistics": null,
+    "thresholds": {
+      "shared_cast": 1
+    },
+    "validation": "all declared inputs before model execution",
+    "within_group_order": [
+      [
+        "shared_cast",
+        "affinity"
+      ]
+    ]
+  },
+  "provenance": {
+    "edges": 172,
+    "evidence_relations": [
+      "ACTED_IN"
+    ],
+    "nodes": 140,
+    "score_kind": "conventional structural ranking; no fitted model",
+    "snapshot_id": "e9560abe07ba1f9c7c1b4245a86a04745cd763344bf51e267f679f355d4f1978",
+    "source_sha256": "7be04aba2193790e0051308e6aa8550236e651cae652ea7da44b7dc01f4c4e69",
+    "source_url": "https://raw.githubusercontent.com/neo4j-graph-examples/movies/51cf90d18c1a7f74bce7a77083543697dfb0139d/scripts/movies.cypher"
+  },
+  "records": [
+    {
+      "affinity": {
+        "model_id": "b1014f258bae423631409541025d0542896605cc77eb49c50e41bc1c43f8c230",
+        "score": 0.2,
+        "score_kind": "structural_link_score",
+        "snapshot_id": "e9560abe07ba1f9c7c1b4245a86a04745cd763344bf51e267f679f355d4f1978",
+        "status": "scored"
+      },
+      "head": "movie:The Matrix",
+      "ordinal": 0,
+      "relation": "ACTED_IN",
+      "released": 2012,
+      "shared_cast": {
+        "model_id": "48f3d6cc5f2cfe23040ab519a305f3c3fa24b815c44cf2338ee3d92a4017709b",
+        "score": 1.0,
+        "score_kind": "structural_link_score",
+        "snapshot_id": "e9560abe07ba1f9c7c1b4245a86a04745cd763344bf51e267f679f355d4f1978",
+        "status": "scored"
+      },
+      "shared_names": [
+        "Hugo Weaving"
+      ],
+      "source_title": "The Matrix",
+      "target": "movie:Cloud Atlas",
+      "title": "Cloud Atlas"
+    },
+    {
+      "affinity": {
+        "model_id": "b1014f258bae423631409541025d0542896605cc77eb49c50e41bc1c43f8c230",
+        "score": 0.14285714285714285,
+        "score_kind": "structural_link_score",
+        "snapshot_id": "e9560abe07ba1f9c7c1b4245a86a04745cd763344bf51e267f679f355d4f1978",
+        "status": "scored"
+      },
+      "head": "movie:The Matrix",
+      "ordinal": 0,
+      "relation": "ACTED_IN",
+      "released": 1995,
+      "shared_cast": {
+        "model_id": "48f3d6cc5f2cfe23040ab519a305f3c3fa24b815c44cf2338ee3d92a4017709b",
+        "score": 1.0,
+        "score_kind": "structural_link_score",
+        "snapshot_id": "e9560abe07ba1f9c7c1b4245a86a04745cd763344bf51e267f679f355d4f1978",
+        "status": "scored"
+      },
+      "shared_names": [
+        "Keanu Reeves"
+      ],
+      "source_title": "The Matrix",
+      "target": "movie:Johnny Mnemonic",
+      "title": "Johnny Mnemonic"
+    },
+    {
+      "affinity": {
+        "model_id": "b1014f258bae423631409541025d0542896605cc77eb49c50e41bc1c43f8c230",
+        "score": 0.14285714285714285,
+        "score_kind": "structural_link_score",
+        "snapshot_id": "e9560abe07ba1f9c7c1b4245a86a04745cd763344bf51e267f679f355d4f1978",
+        "status": "scored"
+      },
+      "head": "movie:The Matrix",
+      "ordinal": 0,
+      "relation": "ACTED_IN",
+      "released": 2003,
+      "shared_cast": {
+        "model_id": "48f3d6cc5f2cfe23040ab519a305f3c3fa24b815c44cf2338ee3d92a4017709b",
+        "score": 1.0,
+        "score_kind": "structural_link_score",
+        "snapshot_id": "e9560abe07ba1f9c7c1b4245a86a04745cd763344bf51e267f679f355d4f1978",
+        "status": "scored"
+      },
+      "shared_names": [
+        "Keanu Reeves"
+      ],
+      "source_title": "The Matrix",
+      "target": "movie:Something's Gotta Give",
+      "title": "Something's Gotta Give"
+    },
+    {
+      "affinity": {
+        "model_id": "b1014f258bae423631409541025d0542896605cc77eb49c50e41bc1c43f8c230",
+        "score": 0.14285714285714285,
+        "score_kind": "structural_link_score",
+        "snapshot_id": "e9560abe07ba1f9c7c1b4245a86a04745cd763344bf51e267f679f355d4f1978",
+        "status": "scored"
+      },
+      "head": "movie:The Matrix",
+      "ordinal": 0,
+      "relation": "ACTED_IN",
+      "released": 1997,
+      "shared_cast": {
+        "model_id": "48f3d6cc5f2cfe23040ab519a305f3c3fa24b815c44cf2338ee3d92a4017709b",
+        "score": 1.0,
+        "score_kind": "structural_link_score",
+        "snapshot_id": "e9560abe07ba1f9c7c1b4245a86a04745cd763344bf51e267f679f355d4f1978",
+        "status": "scored"
+      },
+      "shared_names": [
+        "Keanu Reeves"
+      ],
+      "source_title": "The Matrix",
+      "target": "movie:The Devil's Advocate",
+      "title": "The Devil's Advocate"
+    },
+    {
+      "affinity": {
+        "model_id": "b1014f258bae423631409541025d0542896605cc77eb49c50e41bc1c43f8c230",
+        "score": 1.0095238095238095,
+        "score_kind": "structural_link_score",
+        "snapshot_id": "e9560abe07ba1f9c7c1b4245a86a04745cd763344bf51e267f679f355d4f1978",
+        "status": "scored"
+      },
+      "head": "movie:The Matrix",
+      "ordinal": 0,
+      "relation": "ACTED_IN",
+      "released": 2003,
+      "shared_cast": {
+        "model_id": "48f3d6cc5f2cfe23040ab519a305f3c3fa24b815c44cf2338ee3d92a4017709b",
+        "score": 4.0,
+        "score_kind": "structural_link_score",
+        "snapshot_id": "e9560abe07ba1f9c7c1b4245a86a04745cd763344bf51e267f679f355d4f1978",
+        "status": "scored"
+      },
+      "shared_names": [
+        "Carrie-Anne Moss",
+        "Hugo Weaving",
+        "Keanu Reeves",
+        "Laurence Fishburne"
+      ],
+      "source_title": "The Matrix",
+      "target": "movie:The Matrix Reloaded",
+      "title": "The Matrix Reloaded"
+    },
+    {
+      "affinity": {
+        "model_id": "b1014f258bae423631409541025d0542896605cc77eb49c50e41bc1c43f8c230",
+        "score": 1.0095238095238095,
+        "score_kind": "structural_link_score",
+        "snapshot_id": "e9560abe07ba1f9c7c1b4245a86a04745cd763344bf51e267f679f355d4f1978",
+        "status": "scored"
+      },
+      "head": "movie:The Matrix",
+      "ordinal": 0,
+      "relation": "ACTED_IN",
+      "released": 2003,
+      "shared_cast": {
+        "model_id": "48f3d6cc5f2cfe23040ab519a305f3c3fa24b815c44cf2338ee3d92a4017709b",
+        "score": 4.0,
+        "score_kind": "structural_link_score",
+        "snapshot_id": "e9560abe07ba1f9c7c1b4245a86a04745cd763344bf51e267f679f355d4f1978",
+        "status": "scored"
+      },
+      "shared_names": [
+        "Carrie-Anne Moss",
+        "Hugo Weaving",
+        "Keanu Reeves",
+        "Laurence Fishburne"
+      ],
+      "source_title": "The Matrix",
+      "target": "movie:The Matrix Revolutions",
+      "title": "The Matrix Revolutions"
+    },
+    {
+      "affinity": {
+        "model_id": "b1014f258bae423631409541025d0542896605cc77eb49c50e41bc1c43f8c230",
+        "score": 0.14285714285714285,
+        "score_kind": "structural_link_score",
+        "snapshot_id": "e9560abe07ba1f9c7c1b4245a86a04745cd763344bf51e267f679f355d4f1978",
+        "status": "scored"
+      },
+      "head": "movie:The Matrix",
+      "ordinal": 0,
+      "relation": "ACTED_IN",
+      "released": 2000,
+      "shared_cast": {
+        "model_id": "48f3d6cc5f2cfe23040ab519a305f3c3fa24b815c44cf2338ee3d92a4017709b",
+        "score": 1.0,
+        "score_kind": "structural_link_score",
+        "snapshot_id": "e9560abe07ba1f9c7c1b4245a86a04745cd763344bf51e267f679f355d4f1978",
+        "status": "scored"
+      },
+      "shared_names": [
+        "Keanu Reeves"
+      ],
+      "source_title": "The Matrix",
+      "target": "movie:The Replacements",
+      "title": "The Replacements"
+    },
+    {
+      "affinity": {
+        "model_id": "b1014f258bae423631409541025d0542896605cc77eb49c50e41bc1c43f8c230",
+        "score": 0.2,
+        "score_kind": "structural_link_score",
+        "snapshot_id": "e9560abe07ba1f9c7c1b4245a86a04745cd763344bf51e267f679f355d4f1978",
+        "status": "scored"
+      },
+      "head": "movie:The Matrix",
+      "ordinal": 0,
+      "relation": "ACTED_IN",
+      "released": 2006,
+      "shared_cast": {
+        "model_id": "48f3d6cc5f2cfe23040ab519a305f3c3fa24b815c44cf2338ee3d92a4017709b",
+        "score": 1.0,
+        "score_kind": "structural_link_score",
+        "snapshot_id": "e9560abe07ba1f9c7c1b4245a86a04745cd763344bf51e267f679f355d4f1978",
+        "status": "scored"
+      },
+      "shared_names": [
+        "Hugo Weaving"
+      ],
+      "source_title": "The Matrix",
+      "target": "movie:V for Vendetta",
+      "title": "V for Vendetta"
+    },
+    {
+      "affinity": {
+        "model_id": "b1014f258bae423631409541025d0542896605cc77eb49c50e41bc1c43f8c230",
+        "score": 0.3333333333333333,
+        "score_kind": "structural_link_score",
+        "snapshot_id": "e9560abe07ba1f9c7c1b4245a86a04745cd763344bf51e267f679f355d4f1978",
+        "status": "scored"
+      },
+      "head": "movie:Top Gun",
+      "ordinal": 1,
+      "relation": "ACTED_IN",
+      "released": 1992,
+      "shared_cast": {
+        "model_id": "48f3d6cc5f2cfe23040ab519a305f3c3fa24b815c44cf2338ee3d92a4017709b",
+        "score": 1.0,
+        "score_kind": "structural_link_score",
+        "snapshot_id": "e9560abe07ba1f9c7c1b4245a86a04745cd763344bf51e267f679f355d4f1978",
+        "status": "scored"
+      },
+      "shared_names": [
+        "Tom Cruise"
+      ],
+      "source_title": "Top Gun",
+      "target": "movie:A Few Good Men",
+      "title": "A Few Good Men"
+    },
+    {
+      "affinity": {
+        "model_id": "b1014f258bae423631409541025d0542896605cc77eb49c50e41bc1c43f8c230",
+        "score": 0.3333333333333333,
+        "score_kind": "structural_link_score",
+        "snapshot_id": "e9560abe07ba1f9c7c1b4245a86a04745cd763344bf51e267f679f355d4f1978",
+        "status": "scored"
+      },
+      "head": "movie:Top Gun",
+      "ordinal": 1,
+      "relation": "ACTED_IN",
+      "released": 2000,
+      "shared_cast": {
+        "model_id": "48f3d6cc5f2cfe23040ab519a305f3c3fa24b815c44cf2338ee3d92a4017709b",
+        "score": 1.0,
+        "score_kind": "structural_link_score",
+        "snapshot_id": "e9560abe07ba1f9c7c1b4245a86a04745cd763344bf51e267f679f355d4f1978",
+        "status": "scored"
+      },
+      "shared_names": [
+        "Tom Cruise"
+      ],
+      "source_title": "Top Gun",
+      "target": "movie:Jerry Maguire",
+      "title": "Jerry Maguire"
+    },
+    {
+      "affinity": {
+        "model_id": "b1014f258bae423631409541025d0542896605cc77eb49c50e41bc1c43f8c230",
+        "score": 0.2,
+        "score_kind": "structural_link_score",
+        "snapshot_id": "e9560abe07ba1f9c7c1b4245a86a04745cd763344bf51e267f679f355d4f1978",
+        "status": "scored"
+      },
+      "head": "movie:Top Gun",
+      "ordinal": 1,
+      "relation": "ACTED_IN",
+      "released": 1990,
+      "shared_cast": {
+        "model_id": "48f3d6cc5f2cfe23040ab519a305f3c3fa24b815c44cf2338ee3d92a4017709b",
+        "score": 1.0,
+        "score_kind": "structural_link_score",
+        "snapshot_id": "e9560abe07ba1f9c7c1b4245a86a04745cd763344bf51e267f679f355d4f1978",
+        "status": "scored"
+      },
+      "shared_names": [
+        "Meg Ryan"
+      ],
+      "source_title": "Top Gun",
+      "target": "movie:Joe Versus the Volcano",
+      "title": "Joe Versus the Volcano"
+    },
+    {
+      "affinity": {
+        "model_id": "b1014f258bae423631409541025d0542896605cc77eb49c50e41bc1c43f8c230",
+        "score": 0.2,
+        "score_kind": "structural_link_score",
+        "snapshot_id": "e9560abe07ba1f9c7c1b4245a86a04745cd763344bf51e267f679f355d4f1978",
+        "status": "scored"
+      },
+      "head": "movie:Top Gun",
+      "ordinal": 1,
+      "relation": "ACTED_IN",
+      "released": 1993,
+      "shared_cast": {
+        "model_id": "48f3d6cc5f2cfe23040ab519a305f3c3fa24b815c44cf2338ee3d92a4017709b",
+        "score": 1.0,
+        "score_kind": "structural_link_score",
+        "snapshot_id": "e9560abe07ba1f9c7c1b4245a86a04745cd763344bf51e267f679f355d4f1978",
+        "status": "scored"
+      },
+      "shared_names": [
+        "Meg Ryan"
+      ],
+      "source_title": "Top Gun",
+      "target": "movie:Sleepless in Seattle",
+      "title": "Sleepless in Seattle"
+    },
+    {
+      "affinity": {
+        "model_id": "b1014f258bae423631409541025d0542896605cc77eb49c50e41bc1c43f8c230",
+        "score": 0.2,
+        "score_kind": "structural_link_score",
+        "snapshot_id": "e9560abe07ba1f9c7c1b4245a86a04745cd763344bf51e267f679f355d4f1978",
+        "status": "scored"
+      },
+      "head": "movie:Top Gun",
+      "ordinal": 1,
+      "relation": "ACTED_IN",
+      "released": 1998,
+      "shared_cast": {
+        "model_id": "48f3d6cc5f2cfe23040ab519a305f3c3fa24b815c44cf2338ee3d92a4017709b",
+        "score": 1.0,
+        "score_kind": "structural_link_score",
+        "snapshot_id": "e9560abe07ba1f9c7c1b4245a86a04745cd763344bf51e267f679f355d4f1978",
+        "status": "scored"
+      },
+      "shared_names": [
+        "Meg Ryan"
+      ],
+      "source_title": "Top Gun",
+      "target": "movie:When Harry Met Sally",
+      "title": "When Harry Met Sally"
+    },
+    {
+      "affinity": {
+        "model_id": "b1014f258bae423631409541025d0542896605cc77eb49c50e41bc1c43f8c230",
+        "score": 0.2,
+        "score_kind": "structural_link_score",
+        "snapshot_id": "e9560abe07ba1f9c7c1b4245a86a04745cd763344bf51e267f679f355d4f1978",
+        "status": "scored"
+      },
+      "head": "movie:Top Gun",
+      "ordinal": 1,
+      "relation": "ACTED_IN",
+      "released": 1998,
+      "shared_cast": {
+        "model_id": "48f3d6cc5f2cfe23040ab519a305f3c3fa24b815c44cf2338ee3d92a4017709b",
+        "score": 1.0,
+        "score_kind": "structural_link_score",
+        "snapshot_id": "e9560abe07ba1f9c7c1b4245a86a04745cd763344bf51e267f679f355d4f1978",
+        "status": "scored"
+      },
+      "shared_names": [
+        "Meg Ryan"
+      ],
+      "source_title": "Top Gun",
+      "target": "movie:You've Got Mail",
+      "title": "You've Got Mail"
+    },
+    {
+      "affinity": {
+        "model_id": "b1014f258bae423631409541025d0542896605cc77eb49c50e41bc1c43f8c230",
+        "score": 0.3333333333333333,
+        "score_kind": "structural_link_score",
+        "snapshot_id": "e9560abe07ba1f9c7c1b4245a86a04745cd763344bf51e267f679f355d4f1978",
+        "status": "scored"
+      },
+      "head": "movie:Apollo 13",
+      "ordinal": 2,
+      "relation": "ACTED_IN",
+      "released": 1992,
+      "shared_cast": {
+        "model_id": "48f3d6cc5f2cfe23040ab519a305f3c3fa24b815c44cf2338ee3d92a4017709b",
+        "score": 1.0,
+        "score_kind": "structural_link_score",
+        "snapshot_id": "e9560abe07ba1f9c7c1b4245a86a04745cd763344bf51e267f679f355d4f1978",
+        "status": "scored"
+      },
+      "shared_names": [
+        "Kevin Bacon"
+      ],
+      "source_title": "Apollo 13",
+      "target": "movie:A Few Good Men",
+      "title": "A Few Good Men"
+    },
+    {
+      "affinity": {
+        "model_id": "b1014f258bae423631409541025d0542896605cc77eb49c50e41bc1c43f8c230",
+        "score": 0.41666666666666663,
+        "score_kind": "structural_link_score",
+        "snapshot_id": "e9560abe07ba1f9c7c1b4245a86a04745cd763344bf51e267f679f355d4f1978",
+        "status": "scored"
+      },
+      "head": "movie:Apollo 13",
+      "ordinal": 2,
+      "relation": "ACTED_IN",
+      "released": 1992,
+      "shared_cast": {
+        "model_id": "48f3d6cc5f2cfe23040ab519a305f3c3fa24b815c44cf2338ee3d92a4017709b",
+        "score": 2.0,
+        "score_kind": "structural_link_score",
+        "snapshot_id": "e9560abe07ba1f9c7c1b4245a86a04745cd763344bf51e267f679f355d4f1978",
+        "status": "scored"
+      },
+      "shared_names": [
+        "Bill Paxton",
+        "Tom Hanks"
+      ],
+      "source_title": "Apollo 13",
+      "target": "movie:A League of Their Own",
+      "title": "A League of Their Own"
+    },
+    {
+      "affinity": {
+        "model_id": "b1014f258bae423631409541025d0542896605cc77eb49c50e41bc1c43f8c230",
+        "score": 0.08333333333333333,
+        "score_kind": "structural_link_score",
+        "snapshot_id": "e9560abe07ba1f9c7c1b4245a86a04745cd763344bf51e267f679f355d4f1978",
+        "status": "scored"
+      },
+      "head": "movie:Apollo 13",
+      "ordinal": 2,
+      "relation": "ACTED_IN",
+      "released": 2000,
+      "shared_cast": {
+        "model_id": "48f3d6cc5f2cfe23040ab519a305f3c3fa24b815c44cf2338ee3d92a4017709b",
+        "score": 1.0,
+        "score_kind": "structural_link_score",
+        "snapshot_id": "e9560abe07ba1f9c7c1b4245a86a04745cd763344bf51e267f679f355d4f1978",
+        "status": "scored"
+      },
+      "shared_names": [
+        "Tom Hanks"
+      ],
+      "source_title": "Apollo 13",
+      "target": "movie:Cast Away",
+      "title": "Cast Away"
+    },
+    {
+      "affinity": {
+        "model_id": "b1014f258bae423631409541025d0542896605cc77eb49c50e41bc1c43f8c230",
+        "score": 0.08333333333333333,
+        "score_kind": "structural_link_score",
+        "snapshot_id": "e9560abe07ba1f9c7c1b4245a86a04745cd763344bf51e267f679f355d4f1978",
+        "status": "scored"
+      },
+      "head": "movie:Apollo 13",
+      "ordinal": 2,
+      "relation": "ACTED_IN",
+      "released": 2007,
+      "shared_cast": {
+        "model_id": "48f3d6cc5f2cfe23040ab519a305f3c3fa24b815c44cf2338ee3d92a4017709b",
+        "score": 1.0,
+        "score_kind": "structural_link_score",
+        "snapshot_id": "e9560abe07ba1f9c7c1b4245a86a04745cd763344bf51e267f679f355d4f1978",
+        "status": "scored"
+      },
+      "shared_names": [
+        "Tom Hanks"
+      ],
+      "source_title": "Apollo 13",
+      "target": "movie:Charlie Wilson's War",
+      "title": "Charlie Wilson's War"
+    },
+    {
+      "affinity": {
+        "model_id": "b1014f258bae423631409541025d0542896605cc77eb49c50e41bc1c43f8c230",
+        "score": 0.08333333333333333,
+        "score_kind": "structural_link_score",
+        "snapshot_id": "e9560abe07ba1f9c7c1b4245a86a04745cd763344bf51e267f679f355d4f1978",
+        "status": "scored"
+      },
+      "head": "movie:Apollo 13",
+      "ordinal": 2,
+      "relation": "ACTED_IN",
+      "released": 2012,
+      "shared_cast": {
+        "model_id": "48f3d6cc5f2cfe23040ab519a305f3c3fa24b815c44cf2338ee3d92a4017709b",
+        "score": 1.0,
+        "score_kind": "structural_link_score",
+        "snapshot_id": "e9560abe07ba1f9c7c1b4245a86a04745cd763344bf51e267f679f355d4f1978",
+        "status": "scored"
+      },
+      "shared_names": [
+        "Tom Hanks"
+      ],
+      "source_title": "Apollo 13",
+      "target": "movie:Cloud Atlas",
+      "title": "Cloud Atlas"
+    },
+    {
+      "affinity": {
+        "model_id": "b1014f258bae423631409541025d0542896605cc77eb49c50e41bc1c43f8c230",
+        "score": 0.3333333333333333,
+        "score_kind": "structural_link_score",
+        "snapshot_id": "e9560abe07ba1f9c7c1b4245a86a04745cd763344bf51e267f679f355d4f1978",
+        "status": "scored"
+      },
+      "head": "movie:Apollo 13",
+      "ordinal": 2,
+      "relation": "ACTED_IN",
+      "released": 2008,
+      "shared_cast": {
+        "model_id": "48f3d6cc5f2cfe23040ab519a305f3c3fa24b815c44cf2338ee3d92a4017709b",
+        "score": 1.0,
+        "score_kind": "structural_link_score",
+        "snapshot_id": "e9560abe07ba1f9c7c1b4245a86a04745cd763344bf51e267f679f355d4f1978",
+        "status": "scored"
+      },
+      "shared_names": [
+        "Kevin Bacon"
+      ],
+      "source_title": "Apollo 13",
+      "target": "movie:Frost/Nixon",
+      "title": "Frost/Nixon"
+    },
+    {
+      "affinity": {
+        "model_id": "b1014f258bae423631409541025d0542896605cc77eb49c50e41bc1c43f8c230",
+        "score": 0.08333333333333333,
+        "score_kind": "structural_link_score",
+        "snapshot_id": "e9560abe07ba1f9c7c1b4245a86a04745cd763344bf51e267f679f355d4f1978",
+        "status": "scored"
+      },
+      "head": "movie:Apollo 13",
+      "ordinal": 2,
+      "relation": "ACTED_IN",
+      "released": 1990,
+      "shared_cast": {
+        "model_id": "48f3d6cc5f2cfe23040ab519a305f3c3fa24b815c44cf2338ee3d92a4017709b",
+        "score": 1.0,
+        "score_kind": "structural_link_score",
+        "snapshot_id": "e9560abe07ba1f9c7c1b4245a86a04745cd763344bf51e267f679f355d4f1978",
+        "status": "scored"
+      },
+      "shared_names": [
+        "Tom Hanks"
+      ],
+      "source_title": "Apollo 13",
+      "target": "movie:Joe Versus the Volcano",
+      "title": "Joe Versus the Volcano"
+    },
+    {
+      "affinity": {
+        "model_id": "b1014f258bae423631409541025d0542896605cc77eb49c50e41bc1c43f8c230",
+        "score": 0.08333333333333333,
+        "score_kind": "structural_link_score",
+        "snapshot_id": "e9560abe07ba1f9c7c1b4245a86a04745cd763344bf51e267f679f355d4f1978",
+        "status": "scored"
+      },
+      "head": "movie:Apollo 13",
+      "ordinal": 2,
+      "relation": "ACTED_IN",
+      "released": 1993,
+      "shared_cast": {
+        "model_id": "48f3d6cc5f2cfe23040ab519a305f3c3fa24b815c44cf2338ee3d92a4017709b",
+        "score": 1.0,
+        "score_kind": "structural_link_score",
+        "snapshot_id": "e9560abe07ba1f9c7c1b4245a86a04745cd763344bf51e267f679f355d4f1978",
+        "status": "scored"
+      },
+      "shared_names": [
+        "Tom Hanks"
+      ],
+      "source_title": "Apollo 13",
+      "target": "movie:Sleepless in Seattle",
+      "title": "Sleepless in Seattle"
+    },
+    {
+      "affinity": {
+        "model_id": "b1014f258bae423631409541025d0542896605cc77eb49c50e41bc1c43f8c230",
+        "score": 0.08333333333333333,
+        "score_kind": "structural_link_score",
+        "snapshot_id": "e9560abe07ba1f9c7c1b4245a86a04745cd763344bf51e267f679f355d4f1978",
+        "status": "scored"
+      },
+      "head": "movie:Apollo 13",
+      "ordinal": 2,
+      "relation": "ACTED_IN",
+      "released": 1996,
+      "shared_cast": {
+        "model_id": "48f3d6cc5f2cfe23040ab519a305f3c3fa24b815c44cf2338ee3d92a4017709b",
+        "score": 1.0,
+        "score_kind": "structural_link_score",
+        "snapshot_id": "e9560abe07ba1f9c7c1b4245a86a04745cd763344bf51e267f679f355d4f1978",
+        "status": "scored"
+      },
+      "shared_names": [
+        "Tom Hanks"
+      ],
+      "source_title": "Apollo 13",
+      "target": "movie:That Thing You Do",
+      "title": "That Thing You Do"
+    },
+    {
+      "affinity": {
+        "model_id": "b1014f258bae423631409541025d0542896605cc77eb49c50e41bc1c43f8c230",
+        "score": 0.08333333333333333,
+        "score_kind": "structural_link_score",
+        "snapshot_id": "e9560abe07ba1f9c7c1b4245a86a04745cd763344bf51e267f679f355d4f1978",
+        "status": "scored"
+      },
+      "head": "movie:Apollo 13",
+      "ordinal": 2,
+      "relation": "ACTED_IN",
+      "released": 2006,
+      "shared_cast": {
+        "model_id": "48f3d6cc5f2cfe23040ab519a305f3c3fa24b815c44cf2338ee3d92a4017709b",
+        "score": 1.0,
+        "score_kind": "structural_link_score",
+        "snapshot_id": "e9560abe07ba1f9c7c1b4245a86a04745cd763344bf51e267f679f355d4f1978",
+        "status": "scored"
+      },
+      "shared_names": [
+        "Tom Hanks"
+      ],
+      "source_title": "Apollo 13",
+      "target": "movie:The Da Vinci Code",
+      "title": "The Da Vinci Code"
+    },
+    {
+      "affinity": {
+        "model_id": "b1014f258bae423631409541025d0542896605cc77eb49c50e41bc1c43f8c230",
+        "score": 0.5833333333333334,
+        "score_kind": "structural_link_score",
+        "snapshot_id": "e9560abe07ba1f9c7c1b4245a86a04745cd763344bf51e267f679f355d4f1978",
+        "status": "scored"
+      },
+      "head": "movie:Apollo 13",
+      "ordinal": 2,
+      "relation": "ACTED_IN",
+      "released": 1999,
+      "shared_cast": {
+        "model_id": "48f3d6cc5f2cfe23040ab519a305f3c3fa24b815c44cf2338ee3d92a4017709b",
+        "score": 2.0,
+        "score_kind": "structural_link_score",
+        "snapshot_id": "e9560abe07ba1f9c7c1b4245a86a04745cd763344bf51e267f679f355d4f1978",
+        "status": "scored"
+      },
+      "shared_names": [
+        "Gary Sinise",
+        "Tom Hanks"
+      ],
+      "source_title": "Apollo 13",
+      "target": "movie:The Green Mile",
+      "title": "The Green Mile"
+    },
+    {
+      "affinity": {
+        "model_id": "b1014f258bae423631409541025d0542896605cc77eb49c50e41bc1c43f8c230",
+        "score": 0.08333333333333333,
+        "score_kind": "structural_link_score",
+        "snapshot_id": "e9560abe07ba1f9c7c1b4245a86a04745cd763344bf51e267f679f355d4f1978",
+        "status": "scored"
+      },
+      "head": "movie:Apollo 13",
+      "ordinal": 2,
+      "relation": "ACTED_IN",
+      "released": 2004,
+      "shared_cast": {
+        "model_id": "48f3d6cc5f2cfe23040ab519a305f3c3fa24b815c44cf2338ee3d92a4017709b",
+        "score": 1.0,
+        "score_kind": "structural_link_score",
+        "snapshot_id": "e9560abe07ba1f9c7c1b4245a86a04745cd763344bf51e267f679f355d4f1978",
+        "status": "scored"
+      },
+      "shared_names": [
+        "Tom Hanks"
+      ],
+      "source_title": "Apollo 13",
+      "target": "movie:The Polar Express",
+      "title": "The Polar Express"
+    },
+    {
+      "affinity": {
+        "model_id": "b1014f258bae423631409541025d0542896605cc77eb49c50e41bc1c43f8c230",
+        "score": 0.3333333333333333,
+        "score_kind": "structural_link_score",
+        "snapshot_id": "e9560abe07ba1f9c7c1b4245a86a04745cd763344bf51e267f679f355d4f1978",
+        "status": "scored"
+      },
+      "head": "movie:Apollo 13",
+      "ordinal": 2,
+      "relation": "ACTED_IN",
+      "released": 1996,
+      "shared_cast": {
+        "model_id": "48f3d6cc5f2cfe23040ab519a305f3c3fa24b815c44cf2338ee3d92a4017709b",
+        "score": 1.0,
+        "score_kind": "structural_link_score",
+        "snapshot_id": "e9560abe07ba1f9c7c1b4245a86a04745cd763344bf51e267f679f355d4f1978",
+        "status": "scored"
+      },
+      "shared_names": [
+        "Bill Paxton"
+      ],
+      "source_title": "Apollo 13",
+      "target": "movie:Twister",
+      "title": "Twister"
+    },
+    {
+      "affinity": {
+        "model_id": "b1014f258bae423631409541025d0542896605cc77eb49c50e41bc1c43f8c230",
+        "score": 0.08333333333333333,
+        "score_kind": "structural_link_score",
+        "snapshot_id": "e9560abe07ba1f9c7c1b4245a86a04745cd763344bf51e267f679f355d4f1978",
+        "status": "scored"
+      },
+      "head": "movie:Apollo 13",
+      "ordinal": 2,
+      "relation": "ACTED_IN",
+      "released": 1998,
+      "shared_cast": {
+        "model_id": "48f3d6cc5f2cfe23040ab519a305f3c3fa24b815c44cf2338ee3d92a4017709b",
+        "score": 1.0,
+        "score_kind": "structural_link_score",
+        "snapshot_id": "e9560abe07ba1f9c7c1b4245a86a04745cd763344bf51e267f679f355d4f1978",
+        "status": "scored"
+      },
+      "shared_names": [
+        "Tom Hanks"
+      ],
+      "source_title": "Apollo 13",
+      "target": "movie:You've Got Mail",
+      "title": "You've Got Mail"
+    }
+  ],
+  "runtime": {
+    "hardware_architecture": "arm64",
+    "java_architecture": "aarch64",
+    "java_runtime_version": "21.0.10+7-LTS",
+    "java_vendor": "Eclipse Adoptium",
+    "native_architecture": "arm64",
+    "python_architecture": "arm64"
+  },
+  "snapshot_export_seconds": 0.41926449997117743,
+  "unfused_work": {
+    "binding_evaluations": 56,
+    "cache_hits": 0,
+    "cache_misses": 0,
+    "duplicate_bindings": 0,
+    "edge_visits": 0,
+    "expansions": 6,
+    "model_calls": 6,
+    "neighbor_visits": 336,
+    "output_rows": 28,
+    "peak_preparation_bytes": 0,
+    "plan_id": "f3694aaacb46802ed75ee5af049173b6a76af2e4cbadcb3cc06c371534faaf09",
+    "preparation_builds": 0,
+    "preparation_hits": 0,
+    "steps": [
+      {
+        "binding_evaluations": 28,
+        "cache_hits": 0,
+        "cache_misses": 0,
+        "duplicate_bindings": 0,
+        "edge_visits": 0,
+        "elapsed_seconds": 0.00044804095523431897,
+        "expansions": 3,
+        "feature_bytes": 448,
+        "input_rows": 28,
+        "model_calls": 3,
+        "neighbor_visits": 168,
+        "operator": "predict",
+        "output_rows": 28,
+        "outputs": [
+          "shared_cast"
+        ],
+        "preparation_builds": 0,
+        "preparation_bytes": 0,
+        "preparation_hits": 0,
+        "stage": 0,
+        "target_preparation_builds": 0,
+        "target_preparation_hits": 0,
+        "type_visits": 0
+      },
+      {
+        "binding_evaluations": 28,
+        "cache_hits": 0,
+        "cache_misses": 0,
+        "duplicate_bindings": 0,
+        "edge_visits": 0,
+        "elapsed_seconds": 0.00036491703940555453,
+        "expansions": 3,
+        "feature_bytes": 448,
+        "input_rows": 28,
+        "model_calls": 3,
+        "neighbor_visits": 168,
+        "operator": "predict",
+        "output_rows": 28,
+        "outputs": [
+          "affinity"
+        ],
+        "preparation_builds": 0,
+        "preparation_bytes": 0,
+        "preparation_hits": 0,
+        "stage": 0,
+        "target_preparation_builds": 0,
+        "target_preparation_hits": 0,
+        "type_visits": 0
+      }
+    ],
+    "target_preparation_builds": 0,
+    "target_preparation_hits": 0,
+    "type_visits": 0
+  },
+  "work": {
+    "binding_evaluations": 28,
+    "cache_hits": 0,
+    "cache_misses": 0,
+    "duplicate_bindings": 0,
+    "edge_visits": 0,
+    "expansions": 3,
+    "model_calls": 6,
+    "neighbor_visits": 168,
+    "output_rows": 28,
+    "peak_preparation_bytes": 0,
+    "plan_id": "f3694aaacb46802ed75ee5af049173b6a76af2e4cbadcb3cc06c371534faaf09",
+    "preparation_builds": 0,
+    "preparation_hits": 0,
+    "steps": [
+      {
+        "binding_evaluations": 28,
+        "cache_hits": 0,
+        "cache_misses": 0,
+        "duplicate_bindings": 0,
+        "edge_visits": 0,
+        "elapsed_seconds": 0.0011958329705521464,
+        "expansions": 3,
+        "feature_bytes": 448,
+        "input_rows": 28,
+        "model_calls": 6,
+        "neighbor_visits": 168,
+        "operator": "predict",
+        "output_rows": 28,
+        "outputs": [
+          "shared_cast",
+          "affinity"
+        ],
+        "preparation_builds": 0,
+        "preparation_bytes": 0,
+        "preparation_hits": 0,
+        "stage": 0,
+        "target_preparation_builds": 0,
+        "target_preparation_hits": 0,
+        "type_visits": 0
+      }
+    ],
+    "target_preparation_builds": 0,
+    "target_preparation_hits": 0,
+    "type_visits": 0
+  }
+}

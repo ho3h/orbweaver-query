@@ -1,0 +1,56 @@
+{
+  "config": {
+    "C": 10,
+    "budgets": [
+      16,
+      64,
+      256
+    ],
+    "dev_permutation_offset": 730000,
+    "distributable_seed": 71,
+    "fit_intercept": false,
+    "fit_permutation_offset": 720000,
+    "fit_sampling_offset": 710000,
+    "limits": {
+      "max_expansion_states": 1000000,
+      "max_type_visits": 10000000,
+      "window_size": 256
+    },
+    "max_iter": 2000,
+    "methods": [
+      "base",
+      "marginal",
+      "pattern",
+      "permuted",
+      "uniform"
+    ],
+    "native_threads": 1,
+    "negative_samples": 16,
+    "random_state": 0,
+    "seeds": [
+      71,
+      83,
+      97
+    ],
+    "solver": "liblinear",
+    "source_revision": "f3c0eb286025410fa5b4c04696c918264163d0ca",
+    "tol": 1e-06
+  },
+  "schema": "orbweaver-query-model-reproduction-v1",
+  "source_sha256": {
+    "MODEL_REPRODUCTION_PROTOCOL.md": "a17696c17e952210d363fb8e185ba327f25b654f59323288519e4fc1269452b8",
+    "__init__.py": "595a4bc0310d34a084abe165bef7c148afd66784161a0b2335a2dcb0c9896d8f",
+    "_validation.py": "26408f5e251fedc57350c3201fb1d3532857fb81d6cc0979f652498e2a6635bf",
+    "bindings.py": "f6ab237edf91a798d70ab7fa897ccbe00e47d5e6210e2f3fcf1faf9915fb5583",
+    "datasets.py": "23e06f179ec16b40618fac9c1dc067d017f8f7e59ae677b42e7199229ef78b3c",
+    "demo.py": "4f9a6ba82def27ed3ae0558222bef73f119afa5526cd415660b7d2e102a74e5c",
+    "graph.py": "b95d436d132034976865eb2f7be90fd2b70b685a2f6d22f5b4605eb28a031f96",
+    "model.py": "ad34ff0a6a2379675b8214fdfe27ee5037e9ba181a72c903f8f2ab4a34f441d5",
+    "neo4j.py": "9e3e46baf1c356b2c2fdacb70cd421ef42351412b61d15c695c8d4c9f81d7999",
+    "reproduce.py": "b8605decc09044509c958e8ccf6ee4ad1487ff874a43bf2bd29bbefc3e15eaf8",
+    "session.py": "a9fdafb192a2d42a7b47fd2dbf2b7b600bcdf08751e56315fdf3a585e3c7c2db",
+    "training.py": "5f41b3ad2cb50b986a20f84e9ba186db32a1220a0ea52796b5515582d2f4fd72"
+  },
+  "train_path": "/Users/tedsandtads/Documents/GitHub/orbweaver/packages/query/runs/installed-demo-data/train.txt",
+  "train_sha256": "038612e783c215ee5f3ca9fbfca27b8d0739be1028fe4ee7c174aecf0b83d5df"
+}

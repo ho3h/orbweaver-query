@@ -1,0 +1,184 @@
+{
+  "artifacts": {
+    "graph.npz": "781c10eb375322998ad361dc85a6d4ecb79f02cb05253af7ab9a950141be323e",
+    "test-model.npz": "71db89837f2a595d0dd6e9528bd8eee71126ecdc750c00d1fae4c874181f73e6"
+  },
+  "checks": {
+    "max_absolute_error": 4.440892098500626e-16,
+    "oracle_score_pairs": 3894,
+    "oracle_sources": [
+      0,
+      4,
+      7,
+      10,
+      15,
+      39,
+      63,
+      64,
+      74,
+      84,
+      87,
+      94,
+      117,
+      126,
+      146,
+      150,
+      151,
+      161
+    ],
+    "passed": true,
+    "workloads": {
+      "clustered192": {
+        "output_sha256": "860340c175c370889bccba8413498e70c313e34bac328753ac3d1139f3f53391",
+        "queries": 192,
+        "work": {
+          "consecutive": {
+            "expansions": 32,
+            "model_calls": 192,
+            "peak_feature_bytes": 4752,
+            "type_visits": 2393
+          },
+          "grouped": {
+            "expansions": 32,
+            "model_calls": 192,
+            "peak_feature_bytes": 4752,
+            "type_visits": 2393
+          },
+          "independent": {
+            "expansions": 192,
+            "model_calls": 192,
+            "peak_feature_bytes": 4752,
+            "type_visits": 14358
+          },
+          "lru": {
+            "cached_sources_at_end": 32,
+            "expansions": 32,
+            "max_numeric_bytes": 16777216,
+            "max_sources": 256,
+            "model_calls": 192,
+            "peak_cached_numeric_bytes": 99872,
+            "peak_source_feature_bytes": 4752,
+            "type_visits": 2393
+          }
+        }
+      },
+      "distinct128": {
+        "output_sha256": "5e165c5e26854e55453e453c1d8a9da213065ad4df5815efd37dc7c0fc665824",
+        "queries": 128,
+        "work": {
+          "consecutive": {
+            "expansions": 128,
+            "model_calls": 128,
+            "peak_feature_bytes": 5888,
+            "type_visits": 9579
+          },
+          "grouped": {
+            "expansions": 128,
+            "model_calls": 128,
+            "peak_feature_bytes": 5888,
+            "type_visits": 9579
+          },
+          "independent": {
+            "expansions": 128,
+            "model_calls": 128,
+            "peak_feature_bytes": 5888,
+            "type_visits": 9579
+          },
+          "lru": {
+            "cached_sources_at_end": 128,
+            "expansions": 128,
+            "max_numeric_bytes": 16777216,
+            "max_sources": 256,
+            "model_calls": 128,
+            "peak_cached_numeric_bytes": 273840,
+            "peak_source_feature_bytes": 5888,
+            "type_visits": 9579
+          }
+        }
+      },
+      "hubs16": {
+        "output_sha256": "75d9383e23c8d0c25ff4415f95e10b79fcaba98f975181b03b4b96d9acb5536b",
+        "queries": 16,
+        "work": {
+          "consecutive": {
+            "expansions": 16,
+            "model_calls": 16,
+            "peak_feature_bytes": 7368,
+            "type_visits": 3415
+          },
+          "grouped": {
+            "expansions": 16,
+            "model_calls": 16,
+            "peak_feature_bytes": 7368,
+            "type_visits": 3415
+          },
+          "independent": {
+            "expansions": 16,
+            "model_calls": 16,
+            "peak_feature_bytes": 7368,
+            "type_visits": 3415
+          },
+          "lru": {
+            "cached_sources_at_end": 16,
+            "expansions": 16,
+            "max_numeric_bytes": 16777216,
+            "max_sources": 256,
+            "model_calls": 16,
+            "peak_cached_numeric_bytes": 77808,
+            "peak_source_feature_bytes": 7368,
+            "type_visits": 3415
+          }
+        }
+      },
+      "interleaved192": {
+        "output_sha256": "55188ddd7cd68008320df1dc13082bd720569c949a377f512ad57f28d7b1d158",
+        "queries": 192,
+        "work": {
+          "consecutive": {
+            "expansions": 192,
+            "model_calls": 192,
+            "peak_feature_bytes": 4752,
+            "type_visits": 14358
+          },
+          "grouped": {
+            "expansions": 32,
+            "model_calls": 192,
+            "peak_feature_bytes": 4752,
+            "type_visits": 2393
+          },
+          "independent": {
+            "expansions": 192,
+            "model_calls": 192,
+            "peak_feature_bytes": 4752,
+            "type_visits": 14358
+          },
+          "lru": {
+            "cached_sources_at_end": 32,
+            "expansions": 32,
+            "max_numeric_bytes": 16777216,
+            "max_sources": 256,
+            "model_calls": 192,
+            "peak_cached_numeric_bytes": 99872,
+            "peak_source_feature_bytes": 4752,
+            "type_visits": 2393
+          }
+        }
+      }
+    }
+  },
+  "edges": 253,
+  "graph_id": "0683650c159f0f48929ab5ae0af26e62429198444f6d0b35c549d5eb85f70a66",
+  "manifest_sha256": "485583857f673592eb8be605afcd960e46d296f9b00c9c9f3b0f2fda69090e0b",
+  "max_neighbor_degree": 13,
+  "model_id": "5a92c358520c847efade049ae34dc08ebeaf6507cc97d53a61964f624010a37d",
+  "nodes": 171,
+  "relations": [
+    "ACTED_IN",
+    "DIRECTED",
+    "FOLLOWS",
+    "PRODUCED",
+    "REVIEWED",
+    "WROTE"
+  ],
+  "scope": "Runtime correctness on a different graph/schema; random test coefficients have no predictive-quality claim"
+}

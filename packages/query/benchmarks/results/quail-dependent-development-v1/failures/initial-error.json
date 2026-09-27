@@ -1,0 +1,9 @@
+{
+  "error": "Neo.ClientError.Statement.SyntaxError: AND was inserted after the RETURN clause by the independent reference query builder.",
+  "stage": "EXPLAIN of first dependent native reference",
+  "completed_dependent_conditions": 0,
+  "completed_base_conditions": 2,
+  "inference_executed": false,
+  "failed_source_sha256": "420e9082c8f1e8c50bded5ea5e6dc4ac7413d7dce65a78980c00b077a07d571b",
+  "resolution": "Use an explicit Cypher query with predicates in WHERE; do not splice at ORDER BY."
+}

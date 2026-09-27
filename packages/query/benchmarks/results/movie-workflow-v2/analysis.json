@@ -1,0 +1,412 @@
+{
+  "archive_files": 85,
+  "archive_sha256": "33717705f8c6b5dbde70cf8952d087ce08a1dbadb2e916b23ab7350068f1bf66",
+  "campaign": {
+    "database_heap_mib": 256,
+    "database_startup_seconds": 4.714122375007719,
+    "fixture_import_seconds": 5.868176624993794,
+    "host_use": "quiet-window",
+    "page_cache_mib": 64,
+    "preflight": false
+  },
+  "checked_clients": 63,
+  "conditions": [
+    {
+      "arms": {
+        "full_source_shared": {
+          "export_ms": 14.78104101261124,
+          "first_use_ms": 27.101167012006044,
+          "peak_client_rss_mib": 72.90625,
+          "preparation_ms": 0.09050004882737994,
+          "process_first_use_ms": [
+            29.9476669752039,
+            27.059291023761034,
+            27.101167012006044
+          ],
+          "process_request_medians_ms": [
+            7.1352499653585255,
+            6.5734999952837825,
+            6.393832969479263
+          ],
+          "request_ms": 6.5734999952837825
+        },
+        "manual_intersection": {
+          "export_ms": 10.633707977831364,
+          "first_use_ms": 21.546415984630585,
+          "peak_client_rss_mib": 73.703125,
+          "preparation_ms": 0.18375000217929482,
+          "process_first_use_ms": [
+            21.546415984630585,
+            19.714082998689264,
+            50.15962495235726
+          ],
+          "process_request_medians_ms": [
+            5.060416995547712,
+            4.308667033910751,
+            9.862750011961907
+          ],
+          "request_ms": 5.060416995547712
+        },
+        "native_cypher": {
+          "export_ms": 0.0,
+          "first_use_ms": 16.05354098137468,
+          "peak_client_rss_mib": 72.578125,
+          "preparation_ms": 0.0,
+          "process_first_use_ms": [
+            11.752000020351261,
+            20.948207995388657,
+            16.05354098137468
+          ],
+          "process_request_medians_ms": [
+            5.769499985035509,
+            9.414875006768852,
+            8.242250012699515
+          ],
+          "request_ms": 8.242250012699515
+        },
+        "plan": {
+          "export_ms": 13.108459010254592,
+          "first_use_ms": 26.018375006970018,
+          "peak_client_rss_mib": 74.28125,
+          "preparation_ms": 0.09470898658037186,
+          "process_first_use_ms": [
+            21.557750005740672,
+            132.54312495701015,
+            26.018375006970018
+          ],
+          "process_request_medians_ms": [
+            5.815999989863485,
+            11.259249993599951,
+            7.153541955631226
+          ],
+          "request_ms": 7.153541955631226
+        },
+        "plan_unfused": {
+          "export_ms": 13.646750012412667,
+          "first_use_ms": 25.8509170380421,
+          "peak_client_rss_mib": 72.984375,
+          "preparation_ms": 0.09308295557275414,
+          "process_first_use_ms": [
+            21.078832971397787,
+            25.8509170380421,
+            36.70908301137388
+          ],
+          "process_request_medians_ms": [
+            5.48420799896121,
+            5.568291002418846,
+            9.355208021588624
+          ],
+          "request_ms": 5.568291002418846
+        },
+        "precomputed_scores": {
+          "export_ms": 16.91637496696785,
+          "first_use_ms": 32.04320801887661,
+          "peak_client_rss_mib": 72.953125,
+          "preparation_ms": 0.29266701312735677,
+          "process_first_use_ms": [
+            32.04320801887661,
+            19.201292016077787,
+            48.36779099423438
+          ],
+          "process_request_medians_ms": [
+            6.140125042293221,
+            4.618000006303191,
+            9.494707977864891
+          ],
+          "request_ms": 6.140125042293221
+        },
+        "warm_pair_cache": {
+          "export_ms": 10.27720799902454,
+          "first_use_ms": 26.57474996522069,
+          "peak_client_rss_mib": 72.796875,
+          "preparation_ms": 6.204458011779934,
+          "process_first_use_ms": [
+            26.57474996522069,
+            24.068124999757856,
+            29.554750013630837
+          ],
+          "process_request_medians_ms": [
+            5.3887919639237225,
+            5.599332973361015,
+            5.968165991362184
+          ],
+          "request_ms": 5.599332973361015
+        }
+      },
+      "output_rows": 36,
+      "plan_speedup": 0.7074001979626584,
+      "strongest_ondemand": "manual_intersection",
+      "workload": "basket_with_repeat"
+    },
+    {
+      "arms": {
+        "full_source_shared": {
+          "export_ms": 20.510583999566734,
+          "first_use_ms": 36.31100000347942,
+          "peak_client_rss_mib": 72.734375,
+          "preparation_ms": 0.09225000394508243,
+          "process_first_use_ms": [
+            18.07545800693333,
+            36.31100000347942,
+            37.49600000446662
+          ],
+          "process_request_medians_ms": [
+            4.310708027333021,
+            7.833250041585416,
+            9.209458017721772
+          ],
+          "request_ms": 7.833250041585416
+        },
+        "manual_intersection": {
+          "export_ms": 16.89974998589605,
+          "first_use_ms": 31.406750029418617,
+          "peak_client_rss_mib": 72.59375,
+          "preparation_ms": 0.23845804389566183,
+          "process_first_use_ms": [
+            20.711791003122926,
+            35.10116698453203,
+            31.406750029418617
+          ],
+          "process_request_medians_ms": [
+            4.497000016272068,
+            7.351125008426607,
+            7.1377919521182775
+          ],
+          "request_ms": 7.1377919521182775
+        },
+        "native_cypher": {
+          "export_ms": 0.0,
+          "first_use_ms": 12.84699997631833,
+          "peak_client_rss_mib": 72.453125,
+          "preparation_ms": 0.0,
+          "process_first_use_ms": [
+            11.234750039875507,
+            243.5847499873489,
+            12.84699997631833
+          ],
+          "process_request_medians_ms": [
+            4.98179200803861,
+            10.93233295250684,
+            5.9466250240802765
+          ],
+          "request_ms": 5.9466250240802765
+        },
+        "plan": {
+          "export_ms": 11.370291991624981,
+          "first_use_ms": 20.919749978929758,
+          "peak_client_rss_mib": 72.75,
+          "preparation_ms": 0.08541700663045049,
+          "process_first_use_ms": [
+            22.877750045154244,
+            20.919749978929758,
+            19.06324998708442
+          ],
+          "process_request_medians_ms": [
+            5.251707974821329,
+            4.84029104700312,
+            4.402916005346924
+          ],
+          "request_ms": 4.84029104700312
+        },
+        "plan_unfused": {
+          "export_ms": 10.663125023711473,
+          "first_use_ms": 20.412207988556474,
+          "peak_client_rss_mib": 72.78125,
+          "preparation_ms": 0.0772910425439477,
+          "process_first_use_ms": [
+            20.412207988556474,
+            24.12104100221768,
+            18.869500025175512
+          ],
+          "process_request_medians_ms": [
+            5.1170000224374235,
+            5.520000006072223,
+            4.273416008800268
+          ],
+          "request_ms": 5.1170000224374235
+        },
+        "precomputed_scores": {
+          "export_ms": 14.189041976351291,
+          "first_use_ms": 26.264249987434596,
+          "peak_client_rss_mib": 72.6875,
+          "preparation_ms": 0.2977499971166253,
+          "process_first_use_ms": [
+            26.264249987434596,
+            27.80016598990187,
+            19.342040992341936
+          ],
+          "process_request_medians_ms": [
+            6.017291976604611,
+            5.712750018574297,
+            3.905791963916272
+          ],
+          "request_ms": 5.712750018574297
+        },
+        "warm_pair_cache": {
+          "export_ms": 11.530250019859523,
+          "first_use_ms": 27.332458004821092,
+          "peak_client_rss_mib": 72.546875,
+          "preparation_ms": 6.330624979455024,
+          "process_first_use_ms": [
+            24.09558300860226,
+            27.332458004821092,
+            46.854833024553955
+          ],
+          "process_request_medians_ms": [
+            4.247041011694819,
+            4.679500008933246,
+            9.559666970744729
+          ],
+          "request_ms": 4.679500008933246
+        }
+      },
+      "output_rows": 4,
+      "plan_speedup": 1.2285676556086738,
+      "strongest_ondemand": "native_cypher",
+      "workload": "filtered_basket"
+    },
+    {
+      "arms": {
+        "full_source_shared": {
+          "export_ms": 12.272667023353279,
+          "first_use_ms": 21.19016699725762,
+          "peak_client_rss_mib": 72.703125,
+          "preparation_ms": 0.08066603913903236,
+          "process_first_use_ms": [
+            28.982208983507007,
+            18.37154198437929,
+            21.19016699725762
+          ],
+          "process_request_medians_ms": [
+            4.847917007282376,
+            4.130917019210756,
+            4.236290988046676
+          ],
+          "request_ms": 4.236290988046676
+        },
+        "manual_intersection": {
+          "export_ms": 12.623916962184012,
+          "first_use_ms": 22.98475004499778,
+          "peak_client_rss_mib": 72.828125,
+          "preparation_ms": 0.1860000193119049,
+          "process_first_use_ms": [
+            586.0923330183141,
+            22.98475004499778,
+            17.956333002075553
+          ],
+          "process_request_medians_ms": [
+            9.56937501905486,
+            4.583125002682209,
+            3.6670840345323086
+          ],
+          "request_ms": 4.583125002682209
+        },
+        "native_cypher": {
+          "export_ms": 0.0,
+          "first_use_ms": 13.946041988674551,
+          "peak_client_rss_mib": 73.75,
+          "preparation_ms": 0.0,
+          "process_first_use_ms": [
+            188.6345840175636,
+            13.946041988674551,
+            10.006209020502865
+          ],
+          "process_request_medians_ms": [
+            7.397750043310225,
+            4.865916969720274,
+            4.67354099964723
+          ],
+          "request_ms": 4.865916969720274
+        },
+        "plan": {
+          "export_ms": 12.050332967191935,
+          "first_use_ms": 23.719082993920892,
+          "peak_client_rss_mib": 72.796875,
+          "preparation_ms": 0.08975004311650991,
+          "process_first_use_ms": [
+            32.93766698334366,
+            23.719082993920892,
+            22.197916987352073
+          ],
+          "process_request_medians_ms": [
+            6.975292053539306,
+            4.925417015329003,
+            4.326750000473112
+          ],
+          "request_ms": 4.925417015329003
+        },
+        "plan_unfused": {
+          "export_ms": 12.079040985554457,
+          "first_use_ms": 22.504125023260713,
+          "peak_client_rss_mib": 72.625,
+          "preparation_ms": 0.08933298522606492,
+          "process_first_use_ms": [
+            21.711459034122527,
+            31.72183403512463,
+            22.504125023260713
+          ],
+          "process_request_medians_ms": [
+            4.641083010938019,
+            6.931249983608723,
+            4.934625001624227
+          ],
+          "request_ms": 4.934625001624227
+        },
+        "precomputed_scores": {
+          "export_ms": 11.023125029169023,
+          "first_use_ms": 20.486374967731535,
+          "peak_client_rss_mib": 72.578125,
+          "preparation_ms": 0.22995797917246819,
+          "process_first_use_ms": [
+            19.096541975159198,
+            20.486374967731535,
+            34.923208004329354
+          ],
+          "process_request_medians_ms": [
+            3.270292014349252,
+            4.776000045239925,
+            7.834666990675032
+          ],
+          "request_ms": 4.776000045239925
+        },
+        "warm_pair_cache": {
+          "export_ms": 10.064583970233798,
+          "first_use_ms": 22.734041966032237,
+          "peak_client_rss_mib": 72.875,
+          "preparation_ms": 5.294332979246974,
+          "process_first_use_ms": [
+            22.471083037089556,
+            22.734041966032237,
+            29.282582981977612
+          ],
+          "process_request_medians_ms": [
+            3.7535419687628746,
+            3.7679580273106694,
+            5.524125008378178
+          ],
+          "request_ms": 3.7679580273106694
+        }
+      },
+      "output_rows": 8,
+      "plan_speedup": 0.86008778035695,
+      "strongest_ondemand": "full_source_shared",
+      "workload": "single"
+    }
+  ],
+  "host_context": {
+    "aggregate_cpu_definition": "Summed per-process CPU percentages; 100% is approximately one logical CPU, not the whole Mac.",
+    "aggregate_process_cpu_percent_min_median_max": [
+      367.7,
+      460.05,
+      761.3000000000003
+    ],
+    "observed": "substantial background activity; not an isolated latency measurement",
+    "requested_label": "quiet-window"
+  },
+  "manifest_sha256": "14e36defbafcd71e549aae278daa2913c90ee8684520cdf17de3e9039fc244ee",
+  "measured_calls": 504,
+  "new_measurements": false,
+  "release_gate_complete": false,
+  "total_subprocess_wall_seconds": 24.995748505054507,
+  "verified": true
+}

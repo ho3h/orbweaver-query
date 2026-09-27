@@ -1,0 +1,217 @@
+{
+  "application_manifest_sha256": "8d7cf9d8cdf429c190782559e045873953e35cc16dc46df469b125b9b020aba1",
+  "auditor_sha256": "67603cdbc3682769097d32ab0f1f2525bab13fea5f85623a7d46312ed132fe51",
+  "confirmation_labels_parsed": false,
+  "development_positive_queries": {
+    "collaboration": 46,
+    "communication": 208,
+    "friendship": 225
+  },
+  "independent_worker_reconstructions": 18,
+  "metrics_sha256": "fba1c89e6f04e1943b230ae1a86738718db355c1dcdfc1a400cdff4e98e9ee45",
+  "original_sources_per_graph": {
+    "collaboration": 64,
+    "communication": 64,
+    "friendship": 64
+  },
+  "workers": [
+    {
+      "gds_training_record_sha256": "6af4668e6d2b30f3c8a202a11b31cacea0936b96d1fdcab5c181b7c22c1f80e6",
+      "job": {
+        "dataset": "friendship",
+        "replicate": 1,
+        "threads": 1
+      },
+      "local_model_id": "7fbe094eea916e196fabd0221d9e7a8ef3e0333279287ec2a7ce23a5791747ab",
+      "score_sha256": "8c19034942f1d9504a4e0149d46508c4b0759a512eb394303b063902e741f650",
+      "worker_sha256": "067384fd8917d0347053801f33b6741106975e6ef53328672aaf55102d67c5be"
+    },
+    {
+      "gds_training_record_sha256": "3dc7b68dc85d2b0d3bfe2fcab3faf8f9244030a40e847ca5e308fd43be09a249",
+      "job": {
+        "dataset": "communication",
+        "replicate": 2,
+        "threads": 1
+      },
+      "local_model_id": "30eed2684af54d725367cf0983a47913390fe1c395e9a99d030cb275246d3a39",
+      "score_sha256": "c7e3115b389a7fab32654be9d086a47e2e51cece7b3835512d9eca23a8b190aa",
+      "worker_sha256": "44fe834e34033252cac0017d2c3ca8857b9251791f31823054b9f940ad49bdf3"
+    },
+    {
+      "gds_training_record_sha256": "143700bb34f6db4c7362c0452eb92c7b9d9bd2b0f4fb252153979624c20c7149",
+      "job": {
+        "dataset": "communication",
+        "replicate": 1,
+        "threads": 1
+      },
+      "local_model_id": "30eed2684af54d725367cf0983a47913390fe1c395e9a99d030cb275246d3a39",
+      "score_sha256": "c7e3115b389a7fab32654be9d086a47e2e51cece7b3835512d9eca23a8b190aa",
+      "worker_sha256": "ce6ac82404f212712291bc92a8a1943a7e7575f79051ab23a47d80f7849aad33"
+    },
+    {
+      "gds_training_record_sha256": "ad11065ae8a2b52a6672ac837a35e06b45431ebe567c5e537fa85cc5541f4f78",
+      "job": {
+        "dataset": "collaboration",
+        "replicate": 0,
+        "threads": 4
+      },
+      "local_model_id": "7fbe094eea916e196fabd0221d9e7a8ef3e0333279287ec2a7ce23a5791747ab",
+      "score_sha256": "76c653f0c8931e64f516cd5a90fabc0729de53286d03a12e93725d3355949e15",
+      "worker_sha256": "6156643b81bf2a21edacfb596d49443044e25e876adf0c91fd669009ef2bf996"
+    },
+    {
+      "gds_training_record_sha256": "9772fca44e8067c9cc9063826912bb3b3fc4332303822647767cf8458e2f04eb",
+      "job": {
+        "dataset": "friendship",
+        "replicate": 0,
+        "threads": 1
+      },
+      "local_model_id": "7fbe094eea916e196fabd0221d9e7a8ef3e0333279287ec2a7ce23a5791747ab",
+      "score_sha256": "8c19034942f1d9504a4e0149d46508c4b0759a512eb394303b063902e741f650",
+      "worker_sha256": "81bd236dfd46b8cf5fa7ec28bbb35ebc2595113dfb657f6d37849ac30f0b1fac"
+    },
+    {
+      "gds_training_record_sha256": "61e7c999fd326443eb534ac2e155480c1caa297dfcbf2a0bbd67e685b65e5f99",
+      "job": {
+        "dataset": "friendship",
+        "replicate": 0,
+        "threads": 4
+      },
+      "local_model_id": "7fbe094eea916e196fabd0221d9e7a8ef3e0333279287ec2a7ce23a5791747ab",
+      "score_sha256": "f3bab9ad717f4d03b56c26a63b8c2c4ae9fdc6cac62587fb6dd5231689373ffa",
+      "worker_sha256": "b96d0b9ef4caa0d388723231ce0d73979e4db6e702563560533cdc2c9ea44fab"
+    },
+    {
+      "gds_training_record_sha256": "2308e51cb4125d313d4b73ba473f62022eedf4abf6a467d4894f9cb6f34fa377",
+      "job": {
+        "dataset": "collaboration",
+        "replicate": 0,
+        "threads": 1
+      },
+      "local_model_id": "7fbe094eea916e196fabd0221d9e7a8ef3e0333279287ec2a7ce23a5791747ab",
+      "score_sha256": "76c653f0c8931e64f516cd5a90fabc0729de53286d03a12e93725d3355949e15",
+      "worker_sha256": "6df4c696ebf47ba859836949f85393746503a8f51ef7381a37f658c87df8a985"
+    },
+    {
+      "gds_training_record_sha256": "bd3e22689319d868b161fedc9fccfff808bbfff9182198875c4d0d8b60487925",
+      "job": {
+        "dataset": "collaboration",
+        "replicate": 1,
+        "threads": 4
+      },
+      "local_model_id": "7fbe094eea916e196fabd0221d9e7a8ef3e0333279287ec2a7ce23a5791747ab",
+      "score_sha256": "76c653f0c8931e64f516cd5a90fabc0729de53286d03a12e93725d3355949e15",
+      "worker_sha256": "b2f1d61cc0b973300631d3c987a965813a4abb065ce77503ecaecaa13c84f42b"
+    },
+    {
+      "gds_training_record_sha256": "96b7e584f6e7458997f7a05c8c66c80228f36c6fd48aed96c63eabc3a965dde3",
+      "job": {
+        "dataset": "communication",
+        "replicate": 1,
+        "threads": 4
+      },
+      "local_model_id": "30eed2684af54d725367cf0983a47913390fe1c395e9a99d030cb275246d3a39",
+      "score_sha256": "8e358738955ba7adba77709320afe4cd1871b069331666667ee4dbaaf026b1d6",
+      "worker_sha256": "7064f6edb5af205380436c6f51816aaa106dd834fa1c550cfce9097d793fce0d"
+    },
+    {
+      "gds_training_record_sha256": "b9ece65729ef29f339e62ac00c9c05d666c7607e69644170c9ac790cdcf6c7a1",
+      "job": {
+        "dataset": "communication",
+        "replicate": 0,
+        "threads": 1
+      },
+      "local_model_id": "30eed2684af54d725367cf0983a47913390fe1c395e9a99d030cb275246d3a39",
+      "score_sha256": "c7e3115b389a7fab32654be9d086a47e2e51cece7b3835512d9eca23a8b190aa",
+      "worker_sha256": "1766908ffdebcea0111a085e25dc769c82bfca0b6445a30500d3c11d88ca91d8"
+    },
+    {
+      "gds_training_record_sha256": "8e9f913a085353bb5aca6cd027fd046595f3c8b7d806e599c479ae08c49f1e34",
+      "job": {
+        "dataset": "collaboration",
+        "replicate": 2,
+        "threads": 4
+      },
+      "local_model_id": "7fbe094eea916e196fabd0221d9e7a8ef3e0333279287ec2a7ce23a5791747ab",
+      "score_sha256": "76c653f0c8931e64f516cd5a90fabc0729de53286d03a12e93725d3355949e15",
+      "worker_sha256": "2182ec0a455ddb9f5ab7618f75f01ff56ab35b92435a529fee8d7ee318339cfb"
+    },
+    {
+      "gds_training_record_sha256": "27d8e63a5ba4da0a72ad7cd4af7c22abac8843c1f672440449445aa1feb5d6c9",
+      "job": {
+        "dataset": "collaboration",
+        "replicate": 2,
+        "threads": 1
+      },
+      "local_model_id": "7fbe094eea916e196fabd0221d9e7a8ef3e0333279287ec2a7ce23a5791747ab",
+      "score_sha256": "76c653f0c8931e64f516cd5a90fabc0729de53286d03a12e93725d3355949e15",
+      "worker_sha256": "098e746213b3eabde12fa5fbc6c846399abcf2d0dfef1a7bea0d88b07af7cdaf"
+    },
+    {
+      "gds_training_record_sha256": "8110b836532ab501b7b4052b6a99cc0fe865f265bf3a380ae9455577e352b0e4",
+      "job": {
+        "dataset": "communication",
+        "replicate": 0,
+        "threads": 4
+      },
+      "local_model_id": "30eed2684af54d725367cf0983a47913390fe1c395e9a99d030cb275246d3a39",
+      "score_sha256": "9406fd5c14d52e1e7e77ba492a21609b3222c5c2380053da4ccce77ff2f19af0",
+      "worker_sha256": "abf7cd9e0b811f03a4a1ec12e957aa9ea63300e8d2cbd03af04d3079714b2626"
+    },
+    {
+      "gds_training_record_sha256": "f48236c21fa33af67f8c0fdaa089054f01b0c9ee1f41284aef3fb374acfe9b53",
+      "job": {
+        "dataset": "friendship",
+        "replicate": 2,
+        "threads": 4
+      },
+      "local_model_id": "7fbe094eea916e196fabd0221d9e7a8ef3e0333279287ec2a7ce23a5791747ab",
+      "score_sha256": "7b53ee0ef76994d54f57f22d2db17c36a01c7534a9ba691d6fd9b667cfb70fd6",
+      "worker_sha256": "2f69e0345085a1de852e0f215d40dbbe1038f53dea98994b9c3113897c1ad378"
+    },
+    {
+      "gds_training_record_sha256": "31bd3ec70b69862ddaf3c7fe3cacbf15ee2c126f23d12652ce7afc7770c68285",
+      "job": {
+        "dataset": "communication",
+        "replicate": 2,
+        "threads": 4
+      },
+      "local_model_id": "30eed2684af54d725367cf0983a47913390fe1c395e9a99d030cb275246d3a39",
+      "score_sha256": "a99f1b4e89d56d9cfe43c1b2d32cfee5b53e3fb455fce45099b64e60d088a696",
+      "worker_sha256": "f2c85eafdd87a691a1b9f9f23a09a371c55f4140f910750467f748040929411e"
+    },
+    {
+      "gds_training_record_sha256": "81aae1b6a8a1d5670ef7cb73ea787ca4c92e76ee94e069214c2d082541177848",
+      "job": {
+        "dataset": "collaboration",
+        "replicate": 1,
+        "threads": 1
+      },
+      "local_model_id": "7fbe094eea916e196fabd0221d9e7a8ef3e0333279287ec2a7ce23a5791747ab",
+      "score_sha256": "76c653f0c8931e64f516cd5a90fabc0729de53286d03a12e93725d3355949e15",
+      "worker_sha256": "fbf5d63d7f1f1e111e6647d3997a0f0bcac1d9e06a69000e0ec80e94d237891a"
+    },
+    {
+      "gds_training_record_sha256": "96b1f27f44af7dba5aba04940dcd15930c9bf76121da332250c406c54bfbab74",
+      "job": {
+        "dataset": "friendship",
+        "replicate": 2,
+        "threads": 1
+      },
+      "local_model_id": "7fbe094eea916e196fabd0221d9e7a8ef3e0333279287ec2a7ce23a5791747ab",
+      "score_sha256": "8c19034942f1d9504a4e0149d46508c4b0759a512eb394303b063902e741f650",
+      "worker_sha256": "2c5c33d140992b9660b265d8895983894efa9049665dfc4c4e4ad4f33ce6aa88"
+    },
+    {
+      "gds_training_record_sha256": "6d409d1496f35a3d0cde3a458febc966194d66999e2d5b4794c81954a40719bb",
+      "job": {
+        "dataset": "friendship",
+        "replicate": 1,
+        "threads": 4
+      },
+      "local_model_id": "7fbe094eea916e196fabd0221d9e7a8ef3e0333279287ec2a7ce23a5791747ab",
+      "score_sha256": "2201c556b397ef049d6cc222e8ad275dbefbf7ed804a9647869d3faf6133769d",
+      "worker_sha256": "07d35efb7e9ffbc8dc316b404aae5cc40d9a56549db65ca8175a5637e504bdb1"
+    }
+  ]
+}

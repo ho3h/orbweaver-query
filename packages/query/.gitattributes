@@ -1,0 +1,3 @@
+# Keep frozen machine observations and source snapshots out of the default PR diff.
+benchmarks/results/** linguist-generated=true
+benchmarks/results/**/FINDINGS.md linguist-generated=false

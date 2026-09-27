@@ -1,0 +1,25 @@
+name: Performance report
+description: Share a reproducible performance observation, including regressions.
+title: "[Performance] "
+body:
+  - type: textarea
+    id: workload
+    attributes:
+      label: Task and workload
+      description: Public/synthetic inputs, graph size, requested pairs, reuse and output count.
+    validations:
+      required: true
+  - type: textarea
+    id: controls
+    attributes:
+      label: Controls and correctness
+      description: Baseline code, cache state, matching output contract and correctness checks.
+    validations:
+      required: true
+  - type: textarea
+    id: measurements
+    attributes:
+      label: Measurement boundary and raw results
+      description: Include setup/export, serialization, repetitions, host activity, runtime versions and adverse cases.
+    validations:
+      required: true

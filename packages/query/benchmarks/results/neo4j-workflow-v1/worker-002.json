@@ -1,0 +1,70 @@
+{
+  "binding_sha256": "830ee3ebcaed7eadefbdcac5b791de7f9860c0af23980eb37b55a90364517a90",
+  "connection_seconds": 0.02533025000593625,
+  "environment": {
+    "neo4j_driver": "6.1.0",
+    "numpy": "2.4.4",
+    "platform": "darwin",
+    "python": "3.11.15 (main, Mar 25 2026, 02:58:47) [Clang 22.1.1 ]"
+  },
+  "evidence_export_pack_seconds": 0.9674299159960356,
+  "first_batch": {
+    "candidate_query_transfer_seconds": 0.0585872920055408,
+    "inference_seconds": 0.07112754200352356,
+    "serialization_seconds": 0.0004004160000476986,
+    "worker_start_to_first_result_seconds": 1.240306125022471,
+    "workflow_seconds": 0.13011525000911206
+  },
+  "graph_id": "e280974d0ab115be4e721d0e1dc11452914e0c8f4b83e433919aa0f7156849b7",
+  "import_seconds": 0.08105483400868252,
+  "job": {
+    "replicate": 0,
+    "strategy": "independent",
+    "workload": "interleaved256"
+  },
+  "model_id": "64d5c3f7652b84f3d24f22beeaf7f7cd49d5a2218af91b4ee89942584674506a",
+  "model_load_seconds": 0.005751791992224753,
+  "null_inputs": 0,
+  "output_bytes": 86023,
+  "output_sha256": "b86fe60cb164f289119954fe583137bb256207552634a7ff0d5e68431be44f9e",
+  "peak_client_process_rss_bytes": 125222912,
+  "row_count": 256,
+  "samples": [
+    {
+      "candidate_query_transfer_seconds": 0.02751829201588407,
+      "inference_seconds": 0.0746050410089083,
+      "serialization_seconds": 0.00040208399877883494,
+      "workflow_seconds": 0.10252541702357121
+    },
+    {
+      "candidate_query_transfer_seconds": 0.039033333014231175,
+      "inference_seconds": 0.0707083749875892,
+      "serialization_seconds": 0.00040058299782685935,
+      "workflow_seconds": 0.11014229099964723
+    },
+    {
+      "candidate_query_transfer_seconds": 0.023882332985522225,
+      "inference_seconds": 0.0707426670123823,
+      "serialization_seconds": 0.0004010419943369925,
+      "workflow_seconds": 0.09502604199224152
+    },
+    {
+      "candidate_query_transfer_seconds": 0.024537332996260375,
+      "inference_seconds": 0.0746324580104556,
+      "serialization_seconds": 0.00038137499359436333,
+      "workflow_seconds": 0.09955116600031033
+    },
+    {
+      "candidate_query_transfer_seconds": 0.023754791996907443,
+      "inference_seconds": 0.0716051250055898,
+      "serialization_seconds": 0.0004002499917987734,
+      "workflow_seconds": 0.09576016699429601
+    }
+  ],
+  "work": {
+    "expansions": 256,
+    "model_calls": 256,
+    "peak_source_feature_bytes": 44440,
+    "type_visits": 73384
+  }
+}

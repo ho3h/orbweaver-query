@@ -1,0 +1,8 @@
+{
+  "files": {
+    "analysis.json": "7a625eb65596ce24777d79872531f2c9e5748ed2f11a12500b113d1eb0559ef7",
+    "structural_analysis.py": "4101973158320dbfe4776dd41aaa16c5588266e89467028c93c94cb4aa2646f0"
+  },
+  "kind": "post-collection descriptive analysis",
+  "runtime_manifest_sha256": "bfaa9b97994d332d110858a96053e22c7372b7d694dc368ad18ee200a2c4f28d"
+}

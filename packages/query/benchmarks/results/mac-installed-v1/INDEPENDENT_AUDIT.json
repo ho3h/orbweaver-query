@@ -1,0 +1,7 @@
+{
+  "verified": true,
+  "workers": 648,
+  "conditions": 24,
+  "max_absolute_error": 8.881784197001252e-16,
+  "geometric_mean_ondemand_speedup": 2.5946926937425947
+}

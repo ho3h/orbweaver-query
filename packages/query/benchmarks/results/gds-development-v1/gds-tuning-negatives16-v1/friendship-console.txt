@@ -1,0 +1,43 @@
+database_start 11.168
+gds_import_projection 5.902
+neo4j.exceptions.GqlError: {gql_status: 52U00} {gql_status_description: error: procedure exception - custom procedure execution error cause. Execution of the procedure gds.beta.pipeline.linkPrediction.train() failed due to java.lang.RuntimeException: org.neo4j.gds.termination.TerminatedException: The execution has been terminated..} {message: 52U00: Execution of the procedure gds.beta.pipeline.linkPrediction.train() failed due to java.lang.RuntimeException: org.neo4j.gds.termination.TerminatedException: The execution has been terminated..} {diagnostic_record: {'OPERATION': '', 'OPERATION_CODE': '0', 'CURRENT_SCHEMA': '/'}} {raw_classification: None}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/tedsandtads/.codex/worktrees/query-v1-development/orbweaver/packages/query/runs/gds-tuning-negatives16-v1/gds_quality.py", line 307, in <module>
+    result=worker(run,args.dataset,args.neo4j_home,args.java,args.gds_jar)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tedsandtads/.codex/worktrees/query-v1-development/orbweaver/packages/query/runs/gds-tuning-negatives16-v1/gds_quality.py", line 237, in worker
+    fitted=query("CALL gds.beta.pipeline.linkPrediction.train('graph',"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tedsandtads/.codex/worktrees/query-v1-development/orbweaver/packages/query/runs/gds-tuning-negatives16-v1/gds_quality.py", line 208, in query
+    return [r.data() for r in driver.execute_query(cypher,parameters_=params)[0]]
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tedsandtads/Documents/GitHub/orbweaver/.venv/lib/python3.11/site-packages/neo4j/_sync/driver.py", line 946, in execute_query
+    return session._run_transaction(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tedsandtads/Documents/GitHub/orbweaver/.venv/lib/python3.11/site-packages/neo4j/_sync/work/session.py", line 543, in _run_transaction
+    result = transaction_function(tx, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tedsandtads/Documents/GitHub/orbweaver/.venv/lib/python3.11/site-packages/neo4j/_sync/driver.py", line 1299, in _work
+    return transformer(res)
+           ^^^^^^^^^^^^^^^^
+  File "/Users/tedsandtads/Documents/GitHub/orbweaver/.venv/lib/python3.11/site-packages/neo4j/_sync/work/result.py", line 812, in to_eager_result
+    self._buffer_all()
+  File "/Users/tedsandtads/Documents/GitHub/orbweaver/.venv/lib/python3.11/site-packages/neo4j/_sync/work/result.py", line 468, in _buffer_all
+    self._buffer()
+  File "/Users/tedsandtads/Documents/GitHub/orbweaver/.venv/lib/python3.11/site-packages/neo4j/_sync/work/result.py", line 457, in _buffer
+    for record in self:
+  File "/Users/tedsandtads/Documents/GitHub/orbweaver/.venv/lib/python3.11/site-packages/neo4j/_sync/work/result.py", line 407, in __iter__
+    self._connection.fetch_message()
+  File "/Users/tedsandtads/Documents/GitHub/orbweaver/.venv/lib/python3.11/site-packages/neo4j/_sync/io/_common.py", line 193, in inner
+    func(*args, **kwargs)
+  File "/Users/tedsandtads/Documents/GitHub/orbweaver/.venv/lib/python3.11/site-packages/neo4j/_sync/io/_bolt.py", line 867, in fetch_message
+    res = self._process_message(tag, fields)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tedsandtads/Documents/GitHub/orbweaver/.venv/lib/python3.11/site-packages/neo4j/_sync/io/_bolt6.py", line 548, in _process_message
+    response.on_failure(summary_metadata or {})
+  File "/Users/tedsandtads/Documents/GitHub/orbweaver/.venv/lib/python3.11/site-packages/neo4j/_sync/io/_common.py", line 263, in on_failure
+    raise self._hydrate_error(metadata)
+neo4j.exceptions.ClientError: {neo4j_code: Neo.ClientError.Procedure.ProcedureCallFailed} {message: Failed to invoke procedure `gds.beta.pipeline.linkPrediction.train`: Caused by: org.neo4j.gds.termination.TerminatedException: The execution has been terminated.} {gql_status: 52N37} {gql_status_description: error: procedure exception - procedure execution error. Execution of the procedure gds.beta.pipeline.linkPrediction.train() failed.}

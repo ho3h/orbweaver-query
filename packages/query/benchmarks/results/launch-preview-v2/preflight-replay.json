@@ -1,0 +1,9 @@
+{
+  "restored_archive_checks_passed": true,
+  "frozen_files_checked": 12,
+  "workers_checked": 7,
+  "native_reference_order_bag_provenance_scores": true,
+  "output_digests_and_timing_arithmetic": true,
+  "new_measurements_started": false,
+  "omitted_fixture_restored_from_checksum_checked_original": true
+}

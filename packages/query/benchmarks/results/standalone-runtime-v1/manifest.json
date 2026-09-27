@@ -1,0 +1,1173 @@
+{
+  "files": {
+    "71-graph.npz": "e56dc16cd1ecb11673609a5f76aa923d1673d32c565c9d62067836b5c90b5d0e",
+    "71-model.npz": "8ba275ef547e407cd5e28e5d7cb023e20fde6c5d90c7618a195c93eb685e0871",
+    "71-queries.npz": "d57ea059c9fa60fcf38b4646fc9984662a6ae3e110c989e355027eff96ca6924",
+    "83-graph.npz": "ef8f10ae25668d18492237c0802c80803cef78e86fd82951e4d1bb52f33c42e7",
+    "83-model.npz": "6b9ec97a10b2800ba4772de6d9978b6a528cef0e6a7d4f8be1f4a1c4ee054d4f",
+    "83-queries.npz": "b30bb2142af6f3cfbb6db2e8b453d6d9ad8eb7dedb1ef1a65cdd9be35d473f5c",
+    "97-graph.npz": "4be811a34dfefd04f85922bdc35c54c46ecb51e29acfc617da0c0cd4d584bf18",
+    "97-model.npz": "3bcc2b8cc3146c46cf2fdef04798be55e2cfa6a72e4f859c79ebad2da8b86ca5",
+    "97-queries.npz": "8d7c967d6de34a241fe225b48605967b90134fb42d8e3a15f3d9f83edded25ac",
+    "STANDALONE_RUNTIME_PROTOCOL.md": "14ecd79971d687bb6f6e596ebf3272ba864f6853c30960c8c6e57a408f159a4d",
+    "source/orbweaver_query/MODEL_REPRODUCTION_PROTOCOL.md": "a17696c17e952210d363fb8e185ba327f25b654f59323288519e4fc1269452b8",
+    "source/orbweaver_query/__init__.py": "595a4bc0310d34a084abe165bef7c148afd66784161a0b2335a2dcb0c9896d8f",
+    "source/orbweaver_query/_validation.py": "26408f5e251fedc57350c3201fb1d3532857fb81d6cc0979f652498e2a6635bf",
+    "source/orbweaver_query/assets/THIRD_PARTY_NOTICES.md": "822f0a321c216b0cd2497ecdc4add3a3bbedfe703c5140e1bcabbcfd77deb6d9",
+    "source/orbweaver_query/assets/wn18rr-path71.json": "b6a521a25472a90f8086a11893dc7ac515e56f947ce3cec2e2586ccf128dbdf0",
+    "source/orbweaver_query/assets/wn18rr-path71.npz": "8ba275ef547e407cd5e28e5d7cb023e20fde6c5d90c7618a195c93eb685e0871",
+    "source/orbweaver_query/bindings.py": "f6ab237edf91a798d70ab7fa897ccbe00e47d5e6210e2f3fcf1faf9915fb5583",
+    "source/orbweaver_query/datasets.py": "23e06f179ec16b40618fac9c1dc067d017f8f7e59ae677b42e7199229ef78b3c",
+    "source/orbweaver_query/demo.py": "4f9a6ba82def27ed3ae0558222bef73f119afa5526cd415660b7d2e102a74e5c",
+    "source/orbweaver_query/graph.py": "b95d436d132034976865eb2f7be90fd2b70b685a2f6d22f5b4605eb28a031f96",
+    "source/orbweaver_query/model.py": "ad34ff0a6a2379675b8214fdfe27ee5037e9ba181a72c903f8f2ab4a34f441d5",
+    "source/orbweaver_query/neo4j.py": "9e3e46baf1c356b2c2fdacb70cd421ef42351412b61d15c695c8d4c9f81d7999",
+    "source/orbweaver_query/reproduce.py": "b8605decc09044509c958e8ccf6ee4ad1487ff874a43bf2bd29bbefc3e15eaf8",
+    "source/orbweaver_query/session.py": "a9fdafb192a2d42a7b47fd2dbf2b7b600bcdf08751e56315fdf3a585e3c7c2db",
+    "source/orbweaver_query/training.py": "5f41b3ad2cb50b986a20f84e9ba186db32a1220a0ea52796b5515582d2f4fd72",
+    "standalone.py": "6566ccdc7cc3c5ce0029ebb45a777b0920c10fb19b4d1b44e60547fee7992587"
+  },
+  "format": "orbweaver-query-standalone-runtime-v1",
+  "jobs": [
+    {
+      "replicate": 2,
+      "seed": 97,
+      "strategy": "independent",
+      "workload": "interleaved256"
+    },
+    {
+      "replicate": 2,
+      "seed": 83,
+      "strategy": "grouped",
+      "workload": "interleaved256"
+    },
+    {
+      "replicate": 1,
+      "seed": 83,
+      "strategy": "grouped",
+      "workload": "hubs16"
+    },
+    {
+      "replicate": 2,
+      "seed": 71,
+      "strategy": "independent",
+      "workload": "distinct256"
+    },
+    {
+      "replicate": 2,
+      "seed": 83,
+      "strategy": "grouped",
+      "workload": "interleaved1024"
+    },
+    {
+      "replicate": 2,
+      "seed": 83,
+      "strategy": "grouped",
+      "workload": "clustered256"
+    },
+    {
+      "replicate": 1,
+      "seed": 83,
+      "strategy": "consecutive",
+      "workload": "interleaved256"
+    },
+    {
+      "replicate": 2,
+      "seed": 83,
+      "strategy": "consecutive",
+      "workload": "clustered256"
+    },
+    {
+      "replicate": 2,
+      "seed": 83,
+      "strategy": "consecutive",
+      "workload": "hubs16"
+    },
+    {
+      "replicate": 1,
+      "seed": 83,
+      "strategy": "grouped",
+      "workload": "clustered256"
+    },
+    {
+      "replicate": 0,
+      "seed": 71,
+      "strategy": "consecutive",
+      "workload": "duplicates256"
+    },
+    {
+      "replicate": 2,
+      "seed": 97,
+      "strategy": "consecutive",
+      "workload": "duplicates256"
+    },
+    {
+      "replicate": 2,
+      "seed": 97,
+      "strategy": "grouped",
+      "workload": "duplicates256"
+    },
+    {
+      "replicate": 1,
+      "seed": 71,
+      "strategy": "consecutive",
+      "workload": "distinct256"
+    },
+    {
+      "replicate": 1,
+      "seed": 71,
+      "strategy": "grouped",
+      "workload": "single"
+    },
+    {
+      "replicate": 2,
+      "seed": 71,
+      "strategy": "consecutive",
+      "workload": "duplicates256"
+    },
+    {
+      "replicate": 0,
+      "seed": 83,
+      "strategy": "independent",
+      "workload": "hubs16"
+    },
+    {
+      "replicate": 1,
+      "seed": 83,
+      "strategy": "consecutive",
+      "workload": "interleaved1024"
+    },
+    {
+      "replicate": 2,
+      "seed": 71,
+      "strategy": "independent",
+      "workload": "duplicates256"
+    },
+    {
+      "replicate": 1,
+      "seed": 97,
+      "strategy": "independent",
+      "workload": "distinct256"
+    },
+    {
+      "replicate": 0,
+      "seed": 71,
+      "strategy": "independent",
+      "workload": "single"
+    },
+    {
+      "replicate": 1,
+      "seed": 97,
+      "strategy": "consecutive",
+      "workload": "clustered256"
+    },
+    {
+      "replicate": 0,
+      "seed": 71,
+      "strategy": "independent",
+      "workload": "duplicates256"
+    },
+    {
+      "replicate": 2,
+      "seed": 71,
+      "strategy": "independent",
+      "workload": "clustered256"
+    },
+    {
+      "replicate": 0,
+      "seed": 97,
+      "strategy": "independent",
+      "workload": "clustered256"
+    },
+    {
+      "replicate": 1,
+      "seed": 83,
+      "strategy": "grouped",
+      "workload": "single"
+    },
+    {
+      "replicate": 0,
+      "seed": 97,
+      "strategy": "consecutive",
+      "workload": "duplicates256"
+    },
+    {
+      "replicate": 1,
+      "seed": 83,
+      "strategy": "grouped",
+      "workload": "interleaved1024"
+    },
+    {
+      "replicate": 0,
+      "seed": 71,
+      "strategy": "consecutive",
+      "workload": "interleaved256"
+    },
+    {
+      "replicate": 2,
+      "seed": 97,
+      "strategy": "grouped",
+      "workload": "interleaved256"
+    },
+    {
+      "replicate": 0,
+      "seed": 71,
+      "strategy": "grouped",
+      "workload": "single"
+    },
+    {
+      "replicate": 2,
+      "seed": 71,
+      "strategy": "consecutive",
+      "workload": "distinct256"
+    },
+    {
+      "replicate": 2,
+      "seed": 83,
+      "strategy": "independent",
+      "workload": "interleaved1024"
+    },
+    {
+      "replicate": 0,
+      "seed": 83,
+      "strategy": "consecutive",
+      "workload": "hubs16"
+    },
+    {
+      "replicate": 2,
+      "seed": 97,
+      "strategy": "consecutive",
+      "workload": "clustered256"
+    },
+    {
+      "replicate": 1,
+      "seed": 97,
+      "strategy": "grouped",
+      "workload": "clustered256"
+    },
+    {
+      "replicate": 2,
+      "seed": 97,
+      "strategy": "consecutive",
+      "workload": "single"
+    },
+    {
+      "replicate": 1,
+      "seed": 83,
+      "strategy": "grouped",
+      "workload": "distinct256"
+    },
+    {
+      "replicate": 0,
+      "seed": 97,
+      "strategy": "consecutive",
+      "workload": "interleaved1024"
+    },
+    {
+      "replicate": 1,
+      "seed": 97,
+      "strategy": "consecutive",
+      "workload": "hubs16"
+    },
+    {
+      "replicate": 0,
+      "seed": 83,
+      "strategy": "independent",
+      "workload": "interleaved1024"
+    },
+    {
+      "replicate": 2,
+      "seed": 71,
+      "strategy": "grouped",
+      "workload": "interleaved256"
+    },
+    {
+      "replicate": 2,
+      "seed": 97,
+      "strategy": "consecutive",
+      "workload": "hubs16"
+    },
+    {
+      "replicate": 0,
+      "seed": 71,
+      "strategy": "consecutive",
+      "workload": "hubs16"
+    },
+    {
+      "replicate": 2,
+      "seed": 97,
+      "strategy": "grouped",
+      "workload": "interleaved1024"
+    },
+    {
+      "replicate": 1,
+      "seed": 71,
+      "strategy": "grouped",
+      "workload": "duplicates256"
+    },
+    {
+      "replicate": 1,
+      "seed": 97,
+      "strategy": "independent",
+      "workload": "single"
+    },
+    {
+      "replicate": 1,
+      "seed": 71,
+      "strategy": "grouped",
+      "workload": "distinct256"
+    },
+    {
+      "replicate": 0,
+      "seed": 71,
+      "strategy": "grouped",
+      "workload": "interleaved1024"
+    },
+    {
+      "replicate": 0,
+      "seed": 97,
+      "strategy": "grouped",
+      "workload": "single"
+    },
+    {
+      "replicate": 2,
+      "seed": 97,
+      "strategy": "independent",
+      "workload": "hubs16"
+    },
+    {
+      "replicate": 0,
+      "seed": 83,
+      "strategy": "grouped",
+      "workload": "clustered256"
+    },
+    {
+      "replicate": 0,
+      "seed": 71,
+      "strategy": "consecutive",
+      "workload": "distinct256"
+    },
+    {
+      "replicate": 1,
+      "seed": 97,
+      "strategy": "consecutive",
+      "workload": "distinct256"
+    },
+    {
+      "replicate": 2,
+      "seed": 97,
+      "strategy": "grouped",
+      "workload": "clustered256"
+    },
+    {
+      "replicate": 1,
+      "seed": 83,
+      "strategy": "independent",
+      "workload": "distinct256"
+    },
+    {
+      "replicate": 1,
+      "seed": 71,
+      "strategy": "consecutive",
+      "workload": "hubs16"
+    },
+    {
+      "replicate": 1,
+      "seed": 97,
+      "strategy": "consecutive",
+      "workload": "interleaved1024"
+    },
+    {
+      "replicate": 2,
+      "seed": 83,
+      "strategy": "consecutive",
+      "workload": "duplicates256"
+    },
+    {
+      "replicate": 1,
+      "seed": 71,
+      "strategy": "consecutive",
+      "workload": "duplicates256"
+    },
+    {
+      "replicate": 2,
+      "seed": 71,
+      "strategy": "grouped",
+      "workload": "duplicates256"
+    },
+    {
+      "replicate": 1,
+      "seed": 83,
+      "strategy": "consecutive",
+      "workload": "single"
+    },
+    {
+      "replicate": 2,
+      "seed": 97,
+      "strategy": "independent",
+      "workload": "single"
+    },
+    {
+      "replicate": 1,
+      "seed": 97,
+      "strategy": "independent",
+      "workload": "clustered256"
+    },
+    {
+      "replicate": 1,
+      "seed": 97,
+      "strategy": "grouped",
+      "workload": "interleaved1024"
+    },
+    {
+      "replicate": 2,
+      "seed": 71,
+      "strategy": "independent",
+      "workload": "single"
+    },
+    {
+      "replicate": 1,
+      "seed": 97,
+      "strategy": "consecutive",
+      "workload": "interleaved256"
+    },
+    {
+      "replicate": 1,
+      "seed": 97,
+      "strategy": "grouped",
+      "workload": "single"
+    },
+    {
+      "replicate": 2,
+      "seed": 71,
+      "strategy": "consecutive",
+      "workload": "single"
+    },
+    {
+      "replicate": 2,
+      "seed": 83,
+      "strategy": "independent",
+      "workload": "hubs16"
+    },
+    {
+      "replicate": 0,
+      "seed": 83,
+      "strategy": "grouped",
+      "workload": "duplicates256"
+    },
+    {
+      "replicate": 0,
+      "seed": 97,
+      "strategy": "consecutive",
+      "workload": "hubs16"
+    },
+    {
+      "replicate": 2,
+      "seed": 97,
+      "strategy": "consecutive",
+      "workload": "distinct256"
+    },
+    {
+      "replicate": 2,
+      "seed": 97,
+      "strategy": "grouped",
+      "workload": "hubs16"
+    },
+    {
+      "replicate": 2,
+      "seed": 83,
+      "strategy": "consecutive",
+      "workload": "distinct256"
+    },
+    {
+      "replicate": 2,
+      "seed": 83,
+      "strategy": "independent",
+      "workload": "duplicates256"
+    },
+    {
+      "replicate": 1,
+      "seed": 83,
+      "strategy": "independent",
+      "workload": "interleaved256"
+    },
+    {
+      "replicate": 1,
+      "seed": 71,
+      "strategy": "independent",
+      "workload": "single"
+    },
+    {
+      "replicate": 2,
+      "seed": 97,
+      "strategy": "grouped",
+      "workload": "distinct256"
+    },
+    {
+      "replicate": 2,
+      "seed": 83,
+      "strategy": "grouped",
+      "workload": "duplicates256"
+    },
+    {
+      "replicate": 0,
+      "seed": 71,
+      "strategy": "consecutive",
+      "workload": "single"
+    },
+    {
+      "replicate": 0,
+      "seed": 83,
+      "strategy": "grouped",
+      "workload": "interleaved256"
+    },
+    {
+      "replicate": 0,
+      "seed": 83,
+      "strategy": "consecutive",
+      "workload": "clustered256"
+    },
+    {
+      "replicate": 1,
+      "seed": 83,
+      "strategy": "consecutive",
+      "workload": "duplicates256"
+    },
+    {
+      "replicate": 1,
+      "seed": 83,
+      "strategy": "consecutive",
+      "workload": "hubs16"
+    },
+    {
+      "replicate": 0,
+      "seed": 97,
+      "strategy": "grouped",
+      "workload": "distinct256"
+    },
+    {
+      "replicate": 2,
+      "seed": 83,
+      "strategy": "independent",
+      "workload": "clustered256"
+    },
+    {
+      "replicate": 2,
+      "seed": 83,
+      "strategy": "independent",
+      "workload": "single"
+    },
+    {
+      "replicate": 2,
+      "seed": 83,
+      "strategy": "independent",
+      "workload": "distinct256"
+    },
+    {
+      "replicate": 0,
+      "seed": 83,
+      "strategy": "independent",
+      "workload": "interleaved256"
+    },
+    {
+      "replicate": 0,
+      "seed": 97,
+      "strategy": "independent",
+      "workload": "duplicates256"
+    },
+    {
+      "replicate": 0,
+      "seed": 97,
+      "strategy": "grouped",
+      "workload": "clustered256"
+    },
+    {
+      "replicate": 0,
+      "seed": 97,
+      "strategy": "independent",
+      "workload": "interleaved256"
+    },
+    {
+      "replicate": 0,
+      "seed": 97,
+      "strategy": "grouped",
+      "workload": "hubs16"
+    },
+    {
+      "replicate": 1,
+      "seed": 71,
+      "strategy": "grouped",
+      "workload": "interleaved256"
+    },
+    {
+      "replicate": 2,
+      "seed": 71,
+      "strategy": "grouped",
+      "workload": "interleaved1024"
+    },
+    {
+      "replicate": 1,
+      "seed": 97,
+      "strategy": "independent",
+      "workload": "interleaved1024"
+    },
+    {
+      "replicate": 0,
+      "seed": 97,
+      "strategy": "grouped",
+      "workload": "interleaved256"
+    },
+    {
+      "replicate": 1,
+      "seed": 71,
+      "strategy": "independent",
+      "workload": "interleaved1024"
+    },
+    {
+      "replicate": 2,
+      "seed": 97,
+      "strategy": "consecutive",
+      "workload": "interleaved1024"
+    },
+    {
+      "replicate": 2,
+      "seed": 83,
+      "strategy": "grouped",
+      "workload": "hubs16"
+    },
+    {
+      "replicate": 2,
+      "seed": 71,
+      "strategy": "independent",
+      "workload": "hubs16"
+    },
+    {
+      "replicate": 2,
+      "seed": 97,
+      "strategy": "independent",
+      "workload": "interleaved1024"
+    },
+    {
+      "replicate": 0,
+      "seed": 97,
+      "strategy": "grouped",
+      "workload": "duplicates256"
+    },
+    {
+      "replicate": 2,
+      "seed": 71,
+      "strategy": "grouped",
+      "workload": "clustered256"
+    },
+    {
+      "replicate": 1,
+      "seed": 97,
+      "strategy": "grouped",
+      "workload": "hubs16"
+    },
+    {
+      "replicate": 0,
+      "seed": 83,
+      "strategy": "independent",
+      "workload": "distinct256"
+    },
+    {
+      "replicate": 1,
+      "seed": 97,
+      "strategy": "grouped",
+      "workload": "duplicates256"
+    },
+    {
+      "replicate": 0,
+      "seed": 97,
+      "strategy": "consecutive",
+      "workload": "single"
+    },
+    {
+      "replicate": 2,
+      "seed": 97,
+      "strategy": "grouped",
+      "workload": "single"
+    },
+    {
+      "replicate": 1,
+      "seed": 71,
+      "strategy": "consecutive",
+      "workload": "clustered256"
+    },
+    {
+      "replicate": 0,
+      "seed": 83,
+      "strategy": "independent",
+      "workload": "duplicates256"
+    },
+    {
+      "replicate": 1,
+      "seed": 71,
+      "strategy": "independent",
+      "workload": "clustered256"
+    },
+    {
+      "replicate": 2,
+      "seed": 83,
+      "strategy": "independent",
+      "workload": "interleaved256"
+    },
+    {
+      "replicate": 1,
+      "seed": 83,
+      "strategy": "independent",
+      "workload": "clustered256"
+    },
+    {
+      "replicate": 2,
+      "seed": 97,
+      "strategy": "independent",
+      "workload": "distinct256"
+    },
+    {
+      "replicate": 0,
+      "seed": 83,
+      "strategy": "grouped",
+      "workload": "hubs16"
+    },
+    {
+      "replicate": 1,
+      "seed": 97,
+      "strategy": "grouped",
+      "workload": "interleaved256"
+    },
+    {
+      "replicate": 1,
+      "seed": 97,
+      "strategy": "independent",
+      "workload": "interleaved256"
+    },
+    {
+      "replicate": 1,
+      "seed": 71,
+      "strategy": "independent",
+      "workload": "hubs16"
+    },
+    {
+      "replicate": 1,
+      "seed": 97,
+      "strategy": "grouped",
+      "workload": "distinct256"
+    },
+    {
+      "replicate": 0,
+      "seed": 83,
+      "strategy": "consecutive",
+      "workload": "distinct256"
+    },
+    {
+      "replicate": 0,
+      "seed": 97,
+      "strategy": "grouped",
+      "workload": "interleaved1024"
+    },
+    {
+      "replicate": 2,
+      "seed": 83,
+      "strategy": "grouped",
+      "workload": "single"
+    },
+    {
+      "replicate": 2,
+      "seed": 83,
+      "strategy": "grouped",
+      "workload": "distinct256"
+    },
+    {
+      "replicate": 0,
+      "seed": 83,
+      "strategy": "consecutive",
+      "workload": "single"
+    },
+    {
+      "replicate": 0,
+      "seed": 71,
+      "strategy": "grouped",
+      "workload": "duplicates256"
+    },
+    {
+      "replicate": 1,
+      "seed": 83,
+      "strategy": "independent",
+      "workload": "duplicates256"
+    },
+    {
+      "replicate": 0,
+      "seed": 83,
+      "strategy": "independent",
+      "workload": "clustered256"
+    },
+    {
+      "replicate": 2,
+      "seed": 71,
+      "strategy": "grouped",
+      "workload": "hubs16"
+    },
+    {
+      "replicate": 1,
+      "seed": 83,
+      "strategy": "grouped",
+      "workload": "duplicates256"
+    },
+    {
+      "replicate": 0,
+      "seed": 71,
+      "strategy": "independent",
+      "workload": "hubs16"
+    },
+    {
+      "replicate": 1,
+      "seed": 71,
+      "strategy": "independent",
+      "workload": "interleaved256"
+    },
+    {
+      "replicate": 0,
+      "seed": 83,
+      "strategy": "consecutive",
+      "workload": "interleaved256"
+    },
+    {
+      "replicate": 2,
+      "seed": 71,
+      "strategy": "independent",
+      "workload": "interleaved1024"
+    },
+    {
+      "replicate": 0,
+      "seed": 71,
+      "strategy": "grouped",
+      "workload": "clustered256"
+    },
+    {
+      "replicate": 0,
+      "seed": 97,
+      "strategy": "independent",
+      "workload": "interleaved1024"
+    },
+    {
+      "replicate": 1,
+      "seed": 71,
+      "strategy": "consecutive",
+      "workload": "interleaved1024"
+    },
+    {
+      "replicate": 0,
+      "seed": 71,
+      "strategy": "consecutive",
+      "workload": "interleaved1024"
+    },
+    {
+      "replicate": 0,
+      "seed": 83,
+      "strategy": "consecutive",
+      "workload": "interleaved1024"
+    },
+    {
+      "replicate": 2,
+      "seed": 71,
+      "strategy": "consecutive",
+      "workload": "hubs16"
+    },
+    {
+      "replicate": 2,
+      "seed": 97,
+      "strategy": "independent",
+      "workload": "duplicates256"
+    },
+    {
+      "replicate": 0,
+      "seed": 71,
+      "strategy": "consecutive",
+      "workload": "clustered256"
+    },
+    {
+      "replicate": 0,
+      "seed": 83,
+      "strategy": "grouped",
+      "workload": "single"
+    },
+    {
+      "replicate": 2,
+      "seed": 71,
+      "strategy": "grouped",
+      "workload": "single"
+    },
+    {
+      "replicate": 0,
+      "seed": 83,
+      "strategy": "grouped",
+      "workload": "interleaved1024"
+    },
+    {
+      "replicate": 0,
+      "seed": 83,
+      "strategy": "consecutive",
+      "workload": "duplicates256"
+    },
+    {
+      "replicate": 1,
+      "seed": 97,
+      "strategy": "independent",
+      "workload": "hubs16"
+    },
+    {
+      "replicate": 0,
+      "seed": 71,
+      "strategy": "grouped",
+      "workload": "distinct256"
+    },
+    {
+      "replicate": 1,
+      "seed": 71,
+      "strategy": "consecutive",
+      "workload": "single"
+    },
+    {
+      "replicate": 0,
+      "seed": 71,
+      "strategy": "independent",
+      "workload": "clustered256"
+    },
+    {
+      "replicate": 2,
+      "seed": 97,
+      "strategy": "consecutive",
+      "workload": "interleaved256"
+    },
+    {
+      "replicate": 0,
+      "seed": 97,
+      "strategy": "independent",
+      "workload": "hubs16"
+    },
+    {
+      "replicate": 1,
+      "seed": 83,
+      "strategy": "consecutive",
+      "workload": "clustered256"
+    },
+    {
+      "replicate": 0,
+      "seed": 83,
+      "strategy": "grouped",
+      "workload": "distinct256"
+    },
+    {
+      "replicate": 0,
+      "seed": 71,
+      "strategy": "independent",
+      "workload": "distinct256"
+    },
+    {
+      "replicate": 2,
+      "seed": 83,
+      "strategy": "consecutive",
+      "workload": "single"
+    },
+    {
+      "replicate": 1,
+      "seed": 71,
+      "strategy": "grouped",
+      "workload": "interleaved1024"
+    },
+    {
+      "replicate": 1,
+      "seed": 83,
+      "strategy": "independent",
+      "workload": "single"
+    },
+    {
+      "replicate": 1,
+      "seed": 83,
+      "strategy": "consecutive",
+      "workload": "distinct256"
+    },
+    {
+      "replicate": 1,
+      "seed": 83,
+      "strategy": "independent",
+      "workload": "interleaved1024"
+    },
+    {
+      "replicate": 2,
+      "seed": 97,
+      "strategy": "independent",
+      "workload": "clustered256"
+    },
+    {
+      "replicate": 1,
+      "seed": 71,
+      "strategy": "consecutive",
+      "workload": "interleaved256"
+    },
+    {
+      "replicate": 1,
+      "seed": 71,
+      "strategy": "grouped",
+      "workload": "clustered256"
+    },
+    {
+      "replicate": 2,
+      "seed": 71,
+      "strategy": "consecutive",
+      "workload": "interleaved1024"
+    },
+    {
+      "replicate": 1,
+      "seed": 83,
+      "strategy": "grouped",
+      "workload": "interleaved256"
+    },
+    {
+      "replicate": 0,
+      "seed": 97,
+      "strategy": "consecutive",
+      "workload": "clustered256"
+    },
+    {
+      "replicate": 1,
+      "seed": 97,
+      "strategy": "consecutive",
+      "workload": "single"
+    },
+    {
+      "replicate": 0,
+      "seed": 71,
+      "strategy": "grouped",
+      "workload": "interleaved256"
+    },
+    {
+      "replicate": 0,
+      "seed": 97,
+      "strategy": "consecutive",
+      "workload": "interleaved256"
+    },
+    {
+      "replicate": 1,
+      "seed": 97,
+      "strategy": "independent",
+      "workload": "duplicates256"
+    },
+    {
+      "replicate": 1,
+      "seed": 83,
+      "strategy": "independent",
+      "workload": "hubs16"
+    },
+    {
+      "replicate": 1,
+      "seed": 71,
+      "strategy": "independent",
+      "workload": "duplicates256"
+    },
+    {
+      "replicate": 2,
+      "seed": 83,
+      "strategy": "consecutive",
+      "workload": "interleaved1024"
+    },
+    {
+      "replicate": 2,
+      "seed": 71,
+      "strategy": "consecutive",
+      "workload": "interleaved256"
+    },
+    {
+      "replicate": 0,
+      "seed": 71,
+      "strategy": "grouped",
+      "workload": "hubs16"
+    },
+    {
+      "replicate": 0,
+      "seed": 83,
+      "strategy": "independent",
+      "workload": "single"
+    },
+    {
+      "replicate": 0,
+      "seed": 97,
+      "strategy": "independent",
+      "workload": "single"
+    },
+    {
+      "replicate": 2,
+      "seed": 83,
+      "strategy": "consecutive",
+      "workload": "interleaved256"
+    },
+    {
+      "replicate": 2,
+      "seed": 71,
+      "strategy": "consecutive",
+      "workload": "clustered256"
+    },
+    {
+      "replicate": 0,
+      "seed": 71,
+      "strategy": "independent",
+      "workload": "interleaved256"
+    },
+    {
+      "replicate": 1,
+      "seed": 97,
+      "strategy": "consecutive",
+      "workload": "duplicates256"
+    },
+    {
+      "replicate": 2,
+      "seed": 71,
+      "strategy": "grouped",
+      "workload": "distinct256"
+    },
+    {
+      "replicate": 0,
+      "seed": 97,
+      "strategy": "independent",
+      "workload": "distinct256"
+    },
+    {
+      "replicate": 1,
+      "seed": 71,
+      "strategy": "grouped",
+      "workload": "hubs16"
+    },
+    {
+      "replicate": 0,
+      "seed": 97,
+      "strategy": "consecutive",
+      "workload": "distinct256"
+    },
+    {
+      "replicate": 1,
+      "seed": 71,
+      "strategy": "independent",
+      "workload": "distinct256"
+    },
+    {
+      "replicate": 2,
+      "seed": 71,
+      "strategy": "independent",
+      "workload": "interleaved256"
+    },
+    {
+      "replicate": 0,
+      "seed": 71,
+      "strategy": "independent",
+      "workload": "interleaved1024"
+    }
+  ],
+  "maximum_regression": 1.15,
+  "parent_manifest_sha256": "5f9240e013afac291432ce3f3102fa664ac0da9406130ccd6f1eab5c511ca25f",
+  "parent_results_sha256": "6f2da60eea841ff55805a37014af4a2eeb8a70ebd719826f95a02cdbf8025640",
+  "primary_min_speedup": 1.25,
+  "timed_batches": 5,
+  "warmup_batches": 1
+}

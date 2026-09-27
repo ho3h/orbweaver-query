@@ -1,0 +1,19 @@
+{
+  "artifacts": {
+    "orbweaver_query-1.0.0.dev1-py3-none-any.whl": {
+      "bytes": 100412,
+      "sha256": "c881f159f5fec435d3778c1884cd54ee8b4a0ed2bbf8dbd93932f4d8f9916f1b"
+    },
+    "orbweaver_query-1.0.0.dev1.tar.gz": {
+      "bytes": 1049603,
+      "sha256": "4840a0f351b6dcc6b92a867660a55676c2272b0d5483b1c7f775d4ecfbba099c"
+    }
+  },
+  "core_dependencies": [
+    "numpy>=1.26"
+  ],
+  "package": "orbweaver-query",
+  "sdist_members": 167,
+  "version": "1.0.0.dev1",
+  "wheel_members": 25
+}

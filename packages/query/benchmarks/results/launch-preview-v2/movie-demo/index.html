@@ -1,0 +1,234 @@
+<!doctype html><html lang="en"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Orbweaver Query · Movie night</title>
+<style>body{font:16px/1.55 system-ui,sans-serif;background:#f4f2eb;color:#203230;max-width:1100px;margin:0 auto;padding:36px 24px}header{border-bottom:2px solid #203230;margin-bottom:28px}h1{font-size:44px;letter-spacing:-1.5px;margin:10px 0}h2{font-size:23px}small,.muted{color:#52635f}.badge{display:inline-block;background:#d8eadd;padding:5px 12px;border-radius:20px;font-size:13px}section{background:white;border:1px solid #d9dfd9;border-radius:12px;padding:22px;margin:20px 0;overflow:auto}table{border-collapse:collapse;width:100%;text-align:left}th,td{padding:10px 12px;border-bottom:1px solid #e3e7e3;vertical-align:top}th{font-size:12px;text-transform:uppercase;letter-spacing:.6px}pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:12px}summary{cursor:pointer;font-weight:650}input{font:inherit;padding:10px;border:1px solid #899f98;border-radius:6px;width:min(360px,90%)}a{color:#17664f}.metric{font-size:28px;font-weight:700}footer{font-size:13px;margin-top:30px}</style>
+<header><span class="badge">Public data · Local scoring · Development preview</span>
+<h1>Movie night, with evidence.</h1><p>Find related films through shared cast, then inspect every ranking.</p></header>
+<p>Affinity sums <code>1 / actor's film count</code> for each shared cast member in this fixture.
+A less frequent cast member contributes more. This is a conventional structural score—not a
+learned taste model, probability, or claim that you will enjoy a film.</p>
+<label>Filter visible recommendations <input id="filter" placeholder="Film or cast member"></label>
+<section><h2>Because you chose The Matrix</h2><table><thead><tr><th>Related film</th><th>Year</th><th>Affinity</th><th>Shared cast</th></tr></thead><tbody><tr><td>The Matrix Reloaded</td><td>2003</td><td>1.010</td><td>Carrie-Anne Moss, Hugo Weaving, Keanu Reeves, Laurence Fishburne</td></tr><tr><td>The Matrix Revolutions</td><td>2003</td><td>1.010</td><td>Carrie-Anne Moss, Hugo Weaving, Keanu Reeves, Laurence Fishburne</td></tr><tr><td>Cloud Atlas</td><td>2012</td><td>0.200</td><td>Hugo Weaving</td></tr><tr><td>V for Vendetta</td><td>2006</td><td>0.200</td><td>Hugo Weaving</td></tr><tr><td>Johnny Mnemonic</td><td>1995</td><td>0.143</td><td>Keanu Reeves</td></tr><tr><td>Something&#x27;s Gotta Give</td><td>2003</td><td>0.143</td><td>Keanu Reeves</td></tr><tr><td>The Devil&#x27;s Advocate</td><td>1997</td><td>0.143</td><td>Keanu Reeves</td></tr><tr><td>The Replacements</td><td>2000</td><td>0.143</td><td>Keanu Reeves</td></tr></tbody></table></section><section><h2>Because you chose Top Gun</h2><table><thead><tr><th>Related film</th><th>Year</th><th>Affinity</th><th>Shared cast</th></tr></thead><tbody><tr><td>A Few Good Men</td><td>1992</td><td>0.333</td><td>Tom Cruise</td></tr><tr><td>Jerry Maguire</td><td>2000</td><td>0.333</td><td>Tom Cruise</td></tr><tr><td>Joe Versus the Volcano</td><td>1990</td><td>0.200</td><td>Meg Ryan</td></tr><tr><td>Sleepless in Seattle</td><td>1993</td><td>0.200</td><td>Meg Ryan</td></tr><tr><td>When Harry Met Sally</td><td>1998</td><td>0.200</td><td>Meg Ryan</td></tr><tr><td>You&#x27;ve Got Mail</td><td>1998</td><td>0.200</td><td>Meg Ryan</td></tr></tbody></table></section><section><h2>Because you chose Apollo 13</h2><table><thead><tr><th>Related film</th><th>Year</th><th>Affinity</th><th>Shared cast</th></tr></thead><tbody><tr><td>The Green Mile</td><td>1999</td><td>0.583</td><td>Gary Sinise, Tom Hanks</td></tr><tr><td>A League of Their Own</td><td>1992</td><td>0.417</td><td>Bill Paxton, Tom Hanks</td></tr><tr><td>A Few Good Men</td><td>1992</td><td>0.333</td><td>Kevin Bacon</td></tr><tr><td>Frost/Nixon</td><td>2008</td><td>0.333</td><td>Kevin Bacon</td></tr><tr><td>Twister</td><td>1996</td><td>0.333</td><td>Bill Paxton</td></tr><tr><td>Cast Away</td><td>2000</td><td>0.083</td><td>Tom Hanks</td></tr><tr><td>Charlie Wilson&#x27;s War</td><td>2007</td><td>0.083</td><td>Tom Hanks</td></tr><tr><td>Cloud Atlas</td><td>2012</td><td>0.083</td><td>Tom Hanks</td></tr><tr><td>Joe Versus the Volcano</td><td>1990</td><td>0.083</td><td>Tom Hanks</td></tr><tr><td>Sleepless in Seattle</td><td>1993</td><td>0.083</td><td>Tom Hanks</td></tr><tr><td>That Thing You Do</td><td>1996</td><td>0.083</td><td>Tom Hanks</td></tr><tr><td>The Da Vinci Code</td><td>2006</td><td>0.083</td><td>Tom Hanks</td></tr><tr><td>The Polar Express</td><td>2004</td><td>0.083</td><td>Tom Hanks</td></tr><tr><td>You&#x27;ve Got Mail</td><td>1998</td><td>0.083</td><td>Tom Hanks</td></tr></tbody></table></section>
+<section><h2>What the plan did</h2><p class="metric">28 candidates → 28 matching rows</p>
+<p>The composed plan shares neighborhood preparation between the cast-count filter and affinity score.
+It built 3 source expansions versus 6 with sharing disabled: 3 fewer expansions.
+Both plans and the independent native Cypher query return the same records within 1e-12.</p>
+<p class="muted">These are work counts. This demonstration does not claim a speedup over Neo4j.
+The separate end-to-end benchmark charges snapshot export, transfer and serialization.</p>
+<details><summary>Inspect the physical plan and work</summary><pre>{
+  &quot;plan&quot;: {
+    &quot;plan_id&quot;: &quot;f3694aaacb46802ed75ee5af049173b6a76af2e4cbadcb3cc06c371534faaf09&quot;,
+    &quot;graph_snapshot&quot;: &quot;e9560abe07ba1f9c7c1b4245a86a04745cd763344bf51e267f679f355d4f1978&quot;,
+    &quot;logical_predictions&quot;: [
+      {
+        &quot;output&quot;: &quot;shared_cast&quot;,
+        &quot;model&quot;: &quot;48f3d6cc5f2cfe23040ab519a305f3c3fa24b815c44cf2338ee3d92a4017709b&quot;,
+        &quot;feature_contract&quot;: &quot;orbweaver-neighborhood-features-v1&quot;,
+        &quot;support&quot;: &quot;all_nonself_nonadjacent_nodes&quot;,
+        &quot;score_kind&quot;: &quot;structural_link_score&quot;,
+        &quot;columns&quot;: [
+          &quot;head&quot;,
+          &quot;relation&quot;,
+          &quot;target&quot;
+        ]
+      },
+      {
+        &quot;output&quot;: &quot;affinity&quot;,
+        &quot;model&quot;: &quot;b1014f258bae423631409541025d0542896605cc77eb49c50e41bc1c43f8c230&quot;,
+        &quot;feature_contract&quot;: &quot;orbweaver-neighborhood-features-v1&quot;,
+        &quot;support&quot;: &quot;all_nonself_nonadjacent_nodes&quot;,
+        &quot;score_kind&quot;: &quot;structural_link_score&quot;,
+        &quot;columns&quot;: [
+          &quot;head&quot;,
+          &quot;relation&quot;,
+          &quot;target&quot;
+        ]
+      }
+    ],
+    &quot;thresholds&quot;: {
+      &quot;shared_cast&quot;: 1
+    },
+    &quot;projection&quot;: [
+      &quot;ordinal&quot;,
+      &quot;head&quot;,
+      &quot;relation&quot;,
+      &quot;target&quot;,
+      &quot;source_title&quot;,
+      &quot;title&quot;,
+      &quot;released&quot;,
+      &quot;shared_names&quot;,
+      &quot;shared_cast&quot;,
+      &quot;affinity&quot;
+    ],
+    &quot;physical_groups&quot;: [
+      [
+        &quot;shared_cast&quot;,
+        &quot;affinity&quot;
+      ]
+    ],
+    &quot;ordering&quot;: &quot;filtered groups first, stable ties&quot;,
+    &quot;within_group_order&quot;: [
+      [
+        &quot;shared_cast&quot;,
+        &quot;affinity&quot;
+      ]
+    ],
+    &quot;statistics&quot;: null,
+    &quot;shared_preparation&quot;: true,
+    &quot;preserves_order_and_bags&quot;: true,
+    &quot;validation&quot;: &quot;all declared inputs before model execution&quot;,
+    &quot;limits&quot;: {
+      &quot;window_size&quot;: 256,
+      &quot;max_expansion_states&quot;: 1000000,
+      &quot;max_type_visits&quot;: 10000000,
+      &quot;max_neighbor_visits&quot;: 10000000,
+      &quot;max_intermediate_rows&quot;: 100000,
+      &quot;max_prepared_bytes&quot;: 16777216
+    }
+  },
+  &quot;work&quot;: {
+    &quot;plan_id&quot;: &quot;f3694aaacb46802ed75ee5af049173b6a76af2e4cbadcb3cc06c371534faaf09&quot;,
+    &quot;output_rows&quot;: 28,
+    &quot;expansions&quot;: 3,
+    &quot;model_calls&quot;: 6,
+    &quot;type_visits&quot;: 0,
+    &quot;neighbor_visits&quot;: 168,
+    &quot;cache_hits&quot;: 0,
+    &quot;cache_misses&quot;: 0,
+    &quot;edge_visits&quot;: 0,
+    &quot;preparation_builds&quot;: 0,
+    &quot;preparation_hits&quot;: 0,
+    &quot;target_preparation_builds&quot;: 0,
+    &quot;target_preparation_hits&quot;: 0,
+    &quot;binding_evaluations&quot;: 28,
+    &quot;duplicate_bindings&quot;: 0,
+    &quot;peak_preparation_bytes&quot;: 0,
+    &quot;steps&quot;: [
+      {
+        &quot;outputs&quot;: [
+          &quot;shared_cast&quot;,
+          &quot;affinity&quot;
+        ],
+        &quot;input_rows&quot;: 28,
+        &quot;output_rows&quot;: 28,
+        &quot;expansions&quot;: 3,
+        &quot;model_calls&quot;: 6,
+        &quot;feature_bytes&quot;: 448,
+        &quot;type_visits&quot;: 0,
+        &quot;neighbor_visits&quot;: 168,
+        &quot;elapsed_seconds&quot;: 0.0011958329705521464,
+        &quot;cache_hits&quot;: 0,
+        &quot;cache_misses&quot;: 0,
+        &quot;operator&quot;: &quot;predict&quot;,
+        &quot;stage&quot;: 0,
+        &quot;edge_visits&quot;: 0,
+        &quot;preparation_builds&quot;: 0,
+        &quot;preparation_hits&quot;: 0,
+        &quot;preparation_bytes&quot;: 0,
+        &quot;target_preparation_builds&quot;: 0,
+        &quot;target_preparation_hits&quot;: 0,
+        &quot;binding_evaluations&quot;: 28,
+        &quot;duplicate_bindings&quot;: 0
+      }
+    ]
+  },
+  &quot;without_sharing&quot;: {
+    &quot;plan_id&quot;: &quot;f3694aaacb46802ed75ee5af049173b6a76af2e4cbadcb3cc06c371534faaf09&quot;,
+    &quot;output_rows&quot;: 28,
+    &quot;expansions&quot;: 6,
+    &quot;model_calls&quot;: 6,
+    &quot;type_visits&quot;: 0,
+    &quot;neighbor_visits&quot;: 336,
+    &quot;cache_hits&quot;: 0,
+    &quot;cache_misses&quot;: 0,
+    &quot;edge_visits&quot;: 0,
+    &quot;preparation_builds&quot;: 0,
+    &quot;preparation_hits&quot;: 0,
+    &quot;target_preparation_builds&quot;: 0,
+    &quot;target_preparation_hits&quot;: 0,
+    &quot;binding_evaluations&quot;: 56,
+    &quot;duplicate_bindings&quot;: 0,
+    &quot;peak_preparation_bytes&quot;: 0,
+    &quot;steps&quot;: [
+      {
+        &quot;outputs&quot;: [
+          &quot;shared_cast&quot;
+        ],
+        &quot;input_rows&quot;: 28,
+        &quot;output_rows&quot;: 28,
+        &quot;expansions&quot;: 3,
+        &quot;model_calls&quot;: 3,
+        &quot;feature_bytes&quot;: 448,
+        &quot;type_visits&quot;: 0,
+        &quot;neighbor_visits&quot;: 168,
+        &quot;elapsed_seconds&quot;: 0.00044804095523431897,
+        &quot;cache_hits&quot;: 0,
+        &quot;cache_misses&quot;: 0,
+        &quot;operator&quot;: &quot;predict&quot;,
+        &quot;stage&quot;: 0,
+        &quot;edge_visits&quot;: 0,
+        &quot;preparation_builds&quot;: 0,
+        &quot;preparation_hits&quot;: 0,
+        &quot;preparation_bytes&quot;: 0,
+        &quot;target_preparation_builds&quot;: 0,
+        &quot;target_preparation_hits&quot;: 0,
+        &quot;binding_evaluations&quot;: 28,
+        &quot;duplicate_bindings&quot;: 0
+      },
+      {
+        &quot;outputs&quot;: [
+          &quot;affinity&quot;
+        ],
+        &quot;input_rows&quot;: 28,
+        &quot;output_rows&quot;: 28,
+        &quot;expansions&quot;: 3,
+        &quot;model_calls&quot;: 3,
+        &quot;feature_bytes&quot;: 448,
+        &quot;type_visits&quot;: 0,
+        &quot;neighbor_visits&quot;: 168,
+        &quot;elapsed_seconds&quot;: 0.00036491703940555453,
+        &quot;cache_hits&quot;: 0,
+        &quot;cache_misses&quot;: 0,
+        &quot;operator&quot;: &quot;predict&quot;,
+        &quot;stage&quot;: 0,
+        &quot;edge_visits&quot;: 0,
+        &quot;preparation_builds&quot;: 0,
+        &quot;preparation_hits&quot;: 0,
+        &quot;preparation_bytes&quot;: 0,
+        &quot;target_preparation_builds&quot;: 0,
+        &quot;target_preparation_hits&quot;: 0,
+        &quot;binding_evaluations&quot;: 28,
+        &quot;duplicate_bindings&quot;: 0
+      }
+    ]
+  }
+}</pre></details>
+<details><summary>Inspect the candidate Cypher</summary><pre>
+UNWIND range(0, size($titles)-1) AS ordinal
+MATCH (h:Movie {title:$titles[ordinal]})&lt;-[:ACTED_IN]-(p:Person)-[:ACTED_IN]-&gt;(t:Movie)
+WHERE h &lt;&gt; t AND t.released &gt;= $since
+WITH DISTINCT ordinal, h, t, p
+ORDER BY ordinal, t.title, p.name
+
+WITH ordinal, h, t, collect(p.name) AS shared_names
+RETURN ordinal, &#x27;movie:&#x27; + h.title AS head, &#x27;ACTED_IN&#x27; AS relation,
+       &#x27;movie:&#x27; + t.title AS target, h.title AS source_title, t.title AS title,
+       t.released AS released, shared_names
+ORDER BY ordinal, title
+</pre></details>
+<details><summary>Data and snapshot identity</summary><pre>{
+  &quot;source_url&quot;: &quot;https://raw.githubusercontent.com/neo4j-graph-examples/movies/51cf90d18c1a7f74bce7a77083543697dfb0139d/scripts/movies.cypher&quot;,
+  &quot;source_sha256&quot;: &quot;7be04aba2193790e0051308e6aa8550236e651cae652ea7da44b7dc01f4c4e69&quot;,
+  &quot;snapshot_id&quot;: &quot;e9560abe07ba1f9c7c1b4245a86a04745cd763344bf51e267f679f355d4f1978&quot;,
+  &quot;nodes&quot;: 140,
+  &quot;edges&quot;: 172,
+  &quot;evidence_relations&quot;: [
+    &quot;ACTED_IN&quot;
+  ],
+  &quot;score_kind&quot;: &quot;conventional structural ranking; no fitted model&quot;
+}</pre></details>
+</section><footer>The graph includes only Movie, acting Person and ACTED_IN evidence. It is an intentionally small
+Neo4j example, not a complete film database. Direction/type information is ignored by the two structural scorers.
+JSON beside this file retains every row, plan and timing boundary. Results are ranked only for display;
+the JSON retains candidate order and duplicate request identity.</footer>
+<script>document.querySelector('#filter').addEventListener('input',e=>{const q=e.target.value.toLocaleLowerCase();document.querySelectorAll('tbody tr').forEach(r=>r.hidden=!r.textContent.toLocaleLowerCase().includes(q));});</script></html>

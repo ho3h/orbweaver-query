@@ -1,0 +1,1462 @@
+{
+  "application_results_sha256": "2e2f53ae5891cce38b48a82b901b87c035cf8bb3cc81934cb5abe4939b33f15b",
+  "confirmation_labels_parsed": true,
+  "cost_scope": "Reuse the separately verified fixed-source development application costs; common neighbors is an untimed quality control. No new confirmation timing or per-arm memory claim.",
+  "format": "orbweaver-gds-confirmation-v1",
+  "manifest_sha256": "e284f7ad4fd1bc7035dcd86b7bcaab4a23d5ad41ed1e13fa3101c6421e9eb1d9",
+  "mean_quality": [
+    {
+      "aggregation": "Arithmetic mean of three process metrics; not an ensemble",
+      "dataset": "collaboration",
+      "local_minus_strongest_raw_recall16": 0.0,
+      "methods": {
+        "adamic_adar": {
+          "deterministic_id_recall16": 0.8409090909090909,
+          "raw": {
+            "recall16": 0.8305805755903415,
+            "recall64": 0.8876698173735035,
+            "reciprocal_rank": 0.5120963433760116,
+            "supported": 1.0
+          },
+          "rounded": {
+            "recall16": 0.8305805755903415,
+            "recall64": 0.8876698173735035,
+            "reciprocal_rank": 0.5120963433760116,
+            "supported": 1.0
+          }
+        },
+        "common_neighbors": {
+          "deterministic_id_recall16": 0.8181818181818182,
+          "raw": {
+            "recall16": 0.8220578483176143,
+            "recall64": 0.8876698173735035,
+            "reciprocal_rank": 0.4902870893713794,
+            "supported": 1.0
+          },
+          "rounded": {
+            "recall16": 0.8220578483176143,
+            "recall64": 0.8876698173735035,
+            "reciprocal_rank": 0.4902870893713794,
+            "supported": 1.0
+          }
+        },
+        "gds": {
+          "deterministic_id_recall16": 0.75,
+          "raw": {
+            "recall16": 0.7502081490347088,
+            "recall64": 0.8558694511756904,
+            "reciprocal_rank": 0.3288881109850231,
+            "supported": 1.0
+          },
+          "rounded": {
+            "recall16": 0.7502081490347088,
+            "recall64": 0.8558694511756904,
+            "reciprocal_rank": 0.3288881109850231,
+            "supported": 1.0
+          }
+        },
+        "local": {
+          "deterministic_id_recall16": 0.8409090909090909,
+          "raw": {
+            "recall16": 0.8305805755903415,
+            "recall64": 0.8876698173735035,
+            "reciprocal_rank": 0.49909469203849394,
+            "supported": 1.0
+          },
+          "rounded": {
+            "recall16": 0.8305805755903415,
+            "recall64": 0.8876698173735035,
+            "reciprocal_rank": 0.49909469203849394,
+            "supported": 1.0
+          }
+        },
+        "resource_allocation": {
+          "deterministic_id_recall16": 0.8409090909090909,
+          "raw": {
+            "recall16": 0.8305805755903415,
+            "recall64": 0.8876698173735035,
+            "reciprocal_rank": 0.49909469203849394,
+            "supported": 1.0
+          },
+          "rounded": {
+            "recall16": 0.8305805755903415,
+            "recall64": 0.8876698173735035,
+            "reciprocal_rank": 0.49909469203849394,
+            "supported": 1.0
+          }
+        }
+      },
+      "positive_queries": 44,
+      "strongest_control_methods": [
+        "resource_allocation",
+        "adamic_adar"
+      ],
+      "strongest_control_raw_recall16": 0.8305805755903415,
+      "threads": 1
+    },
+    {
+      "aggregation": "Arithmetic mean of three process metrics; not an ensemble",
+      "dataset": "collaboration",
+      "local_minus_strongest_raw_recall16": 0.0,
+      "methods": {
+        "adamic_adar": {
+          "deterministic_id_recall16": 0.8409090909090909,
+          "raw": {
+            "recall16": 0.8305805755903415,
+            "recall64": 0.8876698173735035,
+            "reciprocal_rank": 0.5120963433760116,
+            "supported": 1.0
+          },
+          "rounded": {
+            "recall16": 0.8305805755903415,
+            "recall64": 0.8876698173735035,
+            "reciprocal_rank": 0.5120963433760116,
+            "supported": 1.0
+          }
+        },
+        "common_neighbors": {
+          "deterministic_id_recall16": 0.8181818181818182,
+          "raw": {
+            "recall16": 0.8220578483176143,
+            "recall64": 0.8876698173735035,
+            "reciprocal_rank": 0.4902870893713794,
+            "supported": 1.0
+          },
+          "rounded": {
+            "recall16": 0.8220578483176143,
+            "recall64": 0.8876698173735035,
+            "reciprocal_rank": 0.4902870893713794,
+            "supported": 1.0
+          }
+        },
+        "gds": {
+          "deterministic_id_recall16": 0.75,
+          "raw": {
+            "recall16": 0.7502081490347088,
+            "recall64": 0.8558694511756904,
+            "reciprocal_rank": 0.3288881109850231,
+            "supported": 1.0
+          },
+          "rounded": {
+            "recall16": 0.7502081490347088,
+            "recall64": 0.8558694511756904,
+            "reciprocal_rank": 0.3288881109850231,
+            "supported": 1.0
+          }
+        },
+        "local": {
+          "deterministic_id_recall16": 0.8409090909090909,
+          "raw": {
+            "recall16": 0.8305805755903415,
+            "recall64": 0.8876698173735035,
+            "reciprocal_rank": 0.49909469203849394,
+            "supported": 1.0
+          },
+          "rounded": {
+            "recall16": 0.8305805755903415,
+            "recall64": 0.8876698173735035,
+            "reciprocal_rank": 0.49909469203849394,
+            "supported": 1.0
+          }
+        },
+        "resource_allocation": {
+          "deterministic_id_recall16": 0.8409090909090909,
+          "raw": {
+            "recall16": 0.8305805755903415,
+            "recall64": 0.8876698173735035,
+            "reciprocal_rank": 0.49909469203849394,
+            "supported": 1.0
+          },
+          "rounded": {
+            "recall16": 0.8305805755903415,
+            "recall64": 0.8876698173735035,
+            "reciprocal_rank": 0.49909469203849394,
+            "supported": 1.0
+          }
+        }
+      },
+      "positive_queries": 44,
+      "strongest_control_methods": [
+        "resource_allocation",
+        "adamic_adar"
+      ],
+      "strongest_control_raw_recall16": 0.8305805755903415,
+      "threads": 4
+    },
+    {
+      "aggregation": "Arithmetic mean of three process metrics; not an ensemble",
+      "dataset": "friendship",
+      "local_minus_strongest_raw_recall16": 0.0,
+      "methods": {
+        "adamic_adar": {
+          "deterministic_id_recall16": 0.5118483412322274,
+          "raw": {
+            "recall16": 0.5099151908206535,
+            "recall64": 0.8294393101960003,
+            "reciprocal_rank": 0.19407786143220115,
+            "supported": 1.0
+          },
+          "rounded": {
+            "recall16": 0.5099151908206535,
+            "recall64": 0.8294393101960003,
+            "reciprocal_rank": 0.19407786143220115,
+            "supported": 1.0
+          }
+        },
+        "common_neighbors": {
+          "deterministic_id_recall16": 0.4786729857819905,
+          "raw": {
+            "recall16": 0.48360637588624616,
+            "recall64": 0.8305003332659272,
+            "reciprocal_rank": 0.18378544876525363,
+            "supported": 1.0
+          },
+          "rounded": {
+            "recall16": 0.48360637588624616,
+            "recall64": 0.8305003332659272,
+            "reciprocal_rank": 0.18378544876525363,
+            "supported": 1.0
+          }
+        },
+        "gds": {
+          "deterministic_id_recall16": 0.4218009478672986,
+          "raw": {
+            "recall16": 0.4218009478672986,
+            "recall64": 0.7867298578199052,
+            "reciprocal_rank": 0.14642188434176864,
+            "supported": 1.0
+          },
+          "rounded": {
+            "recall16": 0.4218009478672986,
+            "recall64": 0.7867298578199052,
+            "reciprocal_rank": 0.14642188434176864,
+            "supported": 1.0
+          }
+        },
+        "local": {
+          "deterministic_id_recall16": 0.5118483412322274,
+          "raw": {
+            "recall16": 0.5099151908206535,
+            "recall64": 0.8626146656462371,
+            "reciprocal_rank": 0.19915516212126252,
+            "supported": 1.0
+          },
+          "rounded": {
+            "recall16": 0.5099151908206535,
+            "recall64": 0.8626146656462371,
+            "reciprocal_rank": 0.19915516212126252,
+            "supported": 1.0
+          }
+        },
+        "resource_allocation": {
+          "deterministic_id_recall16": 0.5118483412322274,
+          "raw": {
+            "recall16": 0.5099151908206535,
+            "recall64": 0.8626146656462371,
+            "reciprocal_rank": 0.19915516212126252,
+            "supported": 1.0
+          },
+          "rounded": {
+            "recall16": 0.5099151908206535,
+            "recall64": 0.8626146656462371,
+            "reciprocal_rank": 0.19915516212126252,
+            "supported": 1.0
+          }
+        }
+      },
+      "positive_queries": 211,
+      "strongest_control_methods": [
+        "resource_allocation",
+        "adamic_adar"
+      ],
+      "strongest_control_raw_recall16": 0.5099151908206535,
+      "threads": 1
+    },
+    {
+      "aggregation": "Arithmetic mean of three process metrics; not an ensemble",
+      "dataset": "friendship",
+      "local_minus_strongest_raw_recall16": 0.0,
+      "methods": {
+        "adamic_adar": {
+          "deterministic_id_recall16": 0.5118483412322274,
+          "raw": {
+            "recall16": 0.5099151908206535,
+            "recall64": 0.8294393101960003,
+            "reciprocal_rank": 0.19407786143220115,
+            "supported": 1.0
+          },
+          "rounded": {
+            "recall16": 0.5099151908206535,
+            "recall64": 0.8294393101960003,
+            "reciprocal_rank": 0.19407786143220115,
+            "supported": 1.0
+          }
+        },
+        "common_neighbors": {
+          "deterministic_id_recall16": 0.4786729857819905,
+          "raw": {
+            "recall16": 0.48360637588624616,
+            "recall64": 0.8305003332659272,
+            "reciprocal_rank": 0.18378544876525363,
+            "supported": 1.0
+          },
+          "rounded": {
+            "recall16": 0.48360637588624616,
+            "recall64": 0.8305003332659272,
+            "reciprocal_rank": 0.18378544876525363,
+            "supported": 1.0
+          }
+        },
+        "gds": {
+          "deterministic_id_recall16": 0.4218009478672986,
+          "raw": {
+            "recall16": 0.4218009478672986,
+            "recall64": 0.7867298578199052,
+            "reciprocal_rank": 0.14642188434176864,
+            "supported": 1.0
+          },
+          "rounded": {
+            "recall16": 0.4218009478672986,
+            "recall64": 0.7867298578199052,
+            "reciprocal_rank": 0.14642188434176864,
+            "supported": 1.0
+          }
+        },
+        "local": {
+          "deterministic_id_recall16": 0.5118483412322274,
+          "raw": {
+            "recall16": 0.5099151908206535,
+            "recall64": 0.8626146656462371,
+            "reciprocal_rank": 0.19915516212126252,
+            "supported": 1.0
+          },
+          "rounded": {
+            "recall16": 0.5099151908206535,
+            "recall64": 0.8626146656462371,
+            "reciprocal_rank": 0.19915516212126252,
+            "supported": 1.0
+          }
+        },
+        "resource_allocation": {
+          "deterministic_id_recall16": 0.5118483412322274,
+          "raw": {
+            "recall16": 0.5099151908206535,
+            "recall64": 0.8626146656462371,
+            "reciprocal_rank": 0.19915516212126252,
+            "supported": 1.0
+          },
+          "rounded": {
+            "recall16": 0.5099151908206535,
+            "recall64": 0.8626146656462371,
+            "reciprocal_rank": 0.19915516212126252,
+            "supported": 1.0
+          }
+        }
+      },
+      "positive_queries": 211,
+      "strongest_control_methods": [
+        "resource_allocation",
+        "adamic_adar"
+      ],
+      "strongest_control_raw_recall16": 0.5099151908206535,
+      "threads": 4
+    },
+    {
+      "aggregation": "Arithmetic mean of three process metrics; not an ensemble",
+      "dataset": "communication",
+      "local_minus_strongest_raw_recall16": 0.01455640851229234,
+      "methods": {
+        "adamic_adar": {
+          "deterministic_id_recall16": 0.4146341463414634,
+          "raw": {
+            "recall16": 0.41471188417063454,
+            "recall64": 0.7159564004541027,
+            "reciprocal_rank": 0.13360942798728206,
+            "supported": 1.0
+          },
+          "rounded": {
+            "recall16": 0.41471188417063454,
+            "recall64": 0.7159564004541027,
+            "reciprocal_rank": 0.13360942798728206,
+            "supported": 1.0
+          }
+        },
+        "common_neighbors": {
+          "deterministic_id_recall16": 0.38536585365853665,
+          "raw": {
+            "recall16": 0.39046294882413807,
+            "recall64": 0.6798577968251301,
+            "reciprocal_rank": 0.12048212703723644,
+            "supported": 1.0
+          },
+          "rounded": {
+            "recall16": 0.39046294882413807,
+            "recall64": 0.6798577968251301,
+            "reciprocal_rank": 0.12048212703723644,
+            "supported": 1.0
+          }
+        },
+        "gds": {
+          "deterministic_id_recall16": 0.32195121951219513,
+          "raw": {
+            "recall16": 0.3220289573413662,
+            "recall64": 0.6149450976581479,
+            "reciprocal_rank": 0.10354156113713435,
+            "supported": 1.0
+          },
+          "rounded": {
+            "recall16": 0.3220289573413662,
+            "recall64": 0.6149450976581479,
+            "reciprocal_rank": 0.10354156113713435,
+            "supported": 1.0
+          }
+        },
+        "local": {
+          "deterministic_id_recall16": 0.45365853658536587,
+          "raw": {
+            "recall16": 0.45365853658536587,
+            "recall64": 0.7317073170731708,
+            "reciprocal_rank": 0.15820159633164368,
+            "supported": 0.9902439024390244
+          },
+          "rounded": {
+            "recall16": 0.45365853658536587,
+            "recall64": 0.7317073170731708,
+            "reciprocal_rank": 0.15820159633164368,
+            "supported": 0.9902439024390244
+          }
+        },
+        "resource_allocation": {
+          "deterministic_id_recall16": 0.43902439024390244,
+          "raw": {
+            "recall16": 0.4391021280730735,
+            "recall64": 0.7208344492345905,
+            "reciprocal_rank": 0.15716760096820112,
+            "supported": 1.0
+          },
+          "rounded": {
+            "recall16": 0.4391021280730735,
+            "recall64": 0.7208344492345905,
+            "reciprocal_rank": 0.15716760096820112,
+            "supported": 1.0
+          }
+        }
+      },
+      "positive_queries": 205,
+      "strongest_control_methods": [
+        "resource_allocation"
+      ],
+      "strongest_control_raw_recall16": 0.4391021280730735,
+      "threads": 1
+    },
+    {
+      "aggregation": "Arithmetic mean of three process metrics; not an ensemble",
+      "dataset": "communication",
+      "local_minus_strongest_raw_recall16": 0.01455640851229234,
+      "methods": {
+        "adamic_adar": {
+          "deterministic_id_recall16": 0.4146341463414634,
+          "raw": {
+            "recall16": 0.41471188417063454,
+            "recall64": 0.7159564004541027,
+            "reciprocal_rank": 0.13360942798728206,
+            "supported": 1.0
+          },
+          "rounded": {
+            "recall16": 0.41471188417063454,
+            "recall64": 0.7159564004541027,
+            "reciprocal_rank": 0.13360942798728206,
+            "supported": 1.0
+          }
+        },
+        "common_neighbors": {
+          "deterministic_id_recall16": 0.38536585365853665,
+          "raw": {
+            "recall16": 0.39046294882413807,
+            "recall64": 0.6798577968251301,
+            "reciprocal_rank": 0.12048212703723644,
+            "supported": 1.0
+          },
+          "rounded": {
+            "recall16": 0.39046294882413807,
+            "recall64": 0.6798577968251301,
+            "reciprocal_rank": 0.12048212703723644,
+            "supported": 1.0
+          }
+        },
+        "gds": {
+          "deterministic_id_recall16": 0.32195121951219513,
+          "raw": {
+            "recall16": 0.3220289573413662,
+            "recall64": 0.6149450976581479,
+            "reciprocal_rank": 0.10354156113713435,
+            "supported": 1.0
+          },
+          "rounded": {
+            "recall16": 0.3220289573413662,
+            "recall64": 0.6149450976581479,
+            "reciprocal_rank": 0.10354156113713435,
+            "supported": 1.0
+          }
+        },
+        "local": {
+          "deterministic_id_recall16": 0.45365853658536587,
+          "raw": {
+            "recall16": 0.45365853658536587,
+            "recall64": 0.7317073170731708,
+            "reciprocal_rank": 0.15820159633164368,
+            "supported": 0.9902439024390244
+          },
+          "rounded": {
+            "recall16": 0.45365853658536587,
+            "recall64": 0.7317073170731708,
+            "reciprocal_rank": 0.15820159633164368,
+            "supported": 0.9902439024390244
+          }
+        },
+        "resource_allocation": {
+          "deterministic_id_recall16": 0.43902439024390244,
+          "raw": {
+            "recall16": 0.4391021280730735,
+            "recall64": 0.7208344492345905,
+            "reciprocal_rank": 0.15716760096820112,
+            "supported": 1.0
+          },
+          "rounded": {
+            "recall16": 0.4391021280730735,
+            "recall64": 0.7208344492345905,
+            "reciprocal_rank": 0.15716760096820112,
+            "supported": 1.0
+          }
+        }
+      },
+      "positive_queries": 205,
+      "strongest_control_methods": [
+        "resource_allocation"
+      ],
+      "strongest_control_raw_recall16": 0.4391021280730735,
+      "threads": 4
+    }
+  ],
+  "paired_analysis": {
+    "comparisons": [
+      {
+        "control": "gds",
+        "difference": 0.08037242655563266,
+        "one_point_noninferiority": true,
+        "percentile_95": [
+          0.013636768447837181,
+          0.1675213675213675
+        ],
+        "simultaneous_95": [
+          0.0,
+          0.2395221964740098
+        ],
+        "supported_improvement": false,
+        "supported_loss": false,
+        "threads": 1,
+        "view": "collaboration"
+      },
+      {
+        "control": "common_neighbors",
+        "difference": 0.008522727272727272,
+        "one_point_noninferiority": true,
+        "percentile_95": [
+          0.0,
+          0.02727272727272727
+        ],
+        "simultaneous_95": [
+          0.0,
+          0.04285714285714286
+        ],
+        "supported_improvement": false,
+        "supported_loss": false,
+        "threads": 1,
+        "view": "collaboration"
+      },
+      {
+        "control": "resource_allocation",
+        "difference": 0.0,
+        "one_point_noninferiority": true,
+        "percentile_95": [
+          0.0,
+          0.0
+        ],
+        "simultaneous_95": [
+          0.0,
+          0.0
+        ],
+        "supported_improvement": false,
+        "supported_loss": false,
+        "threads": 1,
+        "view": "collaboration"
+      },
+      {
+        "control": "adamic_adar",
+        "difference": 0.0,
+        "one_point_noninferiority": true,
+        "percentile_95": [
+          0.0,
+          0.0
+        ],
+        "simultaneous_95": [
+          0.0,
+          0.0
+        ],
+        "supported_improvement": false,
+        "supported_loss": false,
+        "threads": 1,
+        "view": "collaboration"
+      },
+      {
+        "control": "gds",
+        "difference": 0.08037242655563266,
+        "one_point_noninferiority": true,
+        "percentile_95": [
+          0.013636768447837181,
+          0.1675213675213675
+        ],
+        "simultaneous_95": [
+          0.0,
+          0.2395221964740098
+        ],
+        "supported_improvement": false,
+        "supported_loss": false,
+        "threads": 4,
+        "view": "collaboration"
+      },
+      {
+        "control": "common_neighbors",
+        "difference": 0.008522727272727272,
+        "one_point_noninferiority": true,
+        "percentile_95": [
+          0.0,
+          0.02727272727272727
+        ],
+        "simultaneous_95": [
+          0.0,
+          0.04285714285714286
+        ],
+        "supported_improvement": false,
+        "supported_loss": false,
+        "threads": 4,
+        "view": "collaboration"
+      },
+      {
+        "control": "resource_allocation",
+        "difference": 0.0,
+        "one_point_noninferiority": true,
+        "percentile_95": [
+          0.0,
+          0.0
+        ],
+        "simultaneous_95": [
+          0.0,
+          0.0
+        ],
+        "supported_improvement": false,
+        "supported_loss": false,
+        "threads": 4,
+        "view": "collaboration"
+      },
+      {
+        "control": "adamic_adar",
+        "difference": 0.0,
+        "one_point_noninferiority": true,
+        "percentile_95": [
+          0.0,
+          0.0
+        ],
+        "simultaneous_95": [
+          0.0,
+          0.0
+        ],
+        "supported_improvement": false,
+        "supported_loss": false,
+        "threads": 4,
+        "view": "collaboration"
+      },
+      {
+        "control": "gds",
+        "difference": 0.08811424295335495,
+        "one_point_noninferiority": false,
+        "percentile_95": [
+          0.013783979178716026,
+          0.17591935850063775
+        ],
+        "simultaneous_95": [
+          -0.02841083491294155,
+          0.23765473757439431
+        ],
+        "supported_improvement": false,
+        "supported_loss": false,
+        "threads": 1,
+        "view": "friendship"
+      },
+      {
+        "control": "common_neighbors",
+        "difference": 0.026308814934407353,
+        "one_point_noninferiority": false,
+        "percentile_95": [
+          -0.009567767467996218,
+          0.06776604039109708
+        ],
+        "simultaneous_95": [
+          -0.0323782262445383,
+          0.10114670225607732
+        ],
+        "supported_improvement": false,
+        "supported_loss": false,
+        "threads": 1,
+        "view": "friendship"
+      },
+      {
+        "control": "resource_allocation",
+        "difference": 0.0,
+        "one_point_noninferiority": true,
+        "percentile_95": [
+          0.0,
+          0.0
+        ],
+        "simultaneous_95": [
+          0.0,
+          0.0
+        ],
+        "supported_improvement": false,
+        "supported_loss": false,
+        "threads": 1,
+        "view": "friendship"
+      },
+      {
+        "control": "adamic_adar",
+        "difference": 0.0,
+        "one_point_noninferiority": false,
+        "percentile_95": [
+          -0.02976190476190476,
+          0.03015075376884422
+        ],
+        "simultaneous_95": [
+          -0.0502653104910025,
+          0.051474220782349055
+        ],
+        "supported_improvement": false,
+        "supported_loss": false,
+        "threads": 1,
+        "view": "friendship"
+      },
+      {
+        "control": "gds",
+        "difference": 0.08811424295335495,
+        "one_point_noninferiority": false,
+        "percentile_95": [
+          0.013783979178716026,
+          0.17591935850063775
+        ],
+        "simultaneous_95": [
+          -0.02841083491294155,
+          0.23765473757439431
+        ],
+        "supported_improvement": false,
+        "supported_loss": false,
+        "threads": 4,
+        "view": "friendship"
+      },
+      {
+        "control": "common_neighbors",
+        "difference": 0.026308814934407353,
+        "one_point_noninferiority": false,
+        "percentile_95": [
+          -0.009567767467996218,
+          0.06776604039109708
+        ],
+        "simultaneous_95": [
+          -0.0323782262445383,
+          0.10114670225607732
+        ],
+        "supported_improvement": false,
+        "supported_loss": false,
+        "threads": 4,
+        "view": "friendship"
+      },
+      {
+        "control": "resource_allocation",
+        "difference": 0.0,
+        "one_point_noninferiority": true,
+        "percentile_95": [
+          0.0,
+          0.0
+        ],
+        "simultaneous_95": [
+          0.0,
+          0.0
+        ],
+        "supported_improvement": false,
+        "supported_loss": false,
+        "threads": 4,
+        "view": "friendship"
+      },
+      {
+        "control": "adamic_adar",
+        "difference": 0.0,
+        "one_point_noninferiority": false,
+        "percentile_95": [
+          -0.02976190476190476,
+          0.03015075376884422
+        ],
+        "simultaneous_95": [
+          -0.0502653104910025,
+          0.051474220782349055
+        ],
+        "supported_improvement": false,
+        "supported_loss": false,
+        "threads": 4,
+        "view": "friendship"
+      },
+      {
+        "control": "gds",
+        "difference": 0.13162957924399962,
+        "one_point_noninferiority": true,
+        "percentile_95": [
+          0.055225815800437957,
+          0.22395663248644762
+        ],
+        "simultaneous_95": [
+          0.011468737786091667,
+          0.2845240429355012
+        ],
+        "supported_improvement": true,
+        "supported_loss": false,
+        "threads": 1,
+        "view": "communication"
+      },
+      {
+        "control": "common_neighbors",
+        "difference": 0.06319558776122765,
+        "one_point_noninferiority": false,
+        "percentile_95": [
+          -0.0028285151138010118,
+          0.1325335118764765
+        ],
+        "simultaneous_95": [
+          -0.047908259259294796,
+          0.1746466207952586
+        ],
+        "supported_improvement": false,
+        "supported_loss": false,
+        "threads": 1,
+        "view": "communication"
+      },
+      {
+        "control": "resource_allocation",
+        "difference": 0.014556408512292294,
+        "one_point_noninferiority": false,
+        "percentile_95": [
+          -0.030771674361642867,
+          0.058823529411764705
+        ],
+        "simultaneous_95": [
+          -0.06286947464146786,
+          0.08990351503405866
+        ],
+        "supported_improvement": false,
+        "supported_loss": false,
+        "threads": 1,
+        "view": "communication"
+      },
+      {
+        "control": "adamic_adar",
+        "difference": 0.03894665241473132,
+        "one_point_noninferiority": false,
+        "percentile_95": [
+          -0.022727272727272728,
+          0.10204081632653061
+        ],
+        "simultaneous_95": [
+          -0.06624377193419972,
+          0.14281653996259863
+        ],
+        "supported_improvement": false,
+        "supported_loss": false,
+        "threads": 1,
+        "view": "communication"
+      },
+      {
+        "control": "gds",
+        "difference": 0.13162957924399962,
+        "one_point_noninferiority": true,
+        "percentile_95": [
+          0.055225815800437957,
+          0.22395663248644762
+        ],
+        "simultaneous_95": [
+          0.011468737786091667,
+          0.2845240429355012
+        ],
+        "supported_improvement": true,
+        "supported_loss": false,
+        "threads": 4,
+        "view": "communication"
+      },
+      {
+        "control": "common_neighbors",
+        "difference": 0.06319558776122765,
+        "one_point_noninferiority": false,
+        "percentile_95": [
+          -0.0028285151138010118,
+          0.1325335118764765
+        ],
+        "simultaneous_95": [
+          -0.047908259259294796,
+          0.1746466207952586
+        ],
+        "supported_improvement": false,
+        "supported_loss": false,
+        "threads": 4,
+        "view": "communication"
+      },
+      {
+        "control": "resource_allocation",
+        "difference": 0.014556408512292294,
+        "one_point_noninferiority": false,
+        "percentile_95": [
+          -0.030771674361642867,
+          0.058823529411764705
+        ],
+        "simultaneous_95": [
+          -0.06286947464146786,
+          0.08990351503405866
+        ],
+        "supported_improvement": false,
+        "supported_loss": false,
+        "threads": 4,
+        "view": "communication"
+      },
+      {
+        "control": "adamic_adar",
+        "difference": 0.03894665241473132,
+        "one_point_noninferiority": false,
+        "percentile_95": [
+          -0.022727272727272728,
+          0.10204081632653061
+        ],
+        "simultaneous_95": [
+          -0.06624377193419972,
+          0.14281653996259863
+        ],
+        "supported_improvement": false,
+        "supported_loss": false,
+        "threads": 4,
+        "view": "communication"
+      },
+      {
+        "control": "gds",
+        "difference": 0.10003874958432908,
+        "one_point_noninferiority": true,
+        "percentile_95": [
+          0.05718043728614603,
+          0.15071689192567428
+        ],
+        "simultaneous_95": [
+          0.03174631264948502,
+          0.18580376919965796
+        ],
+        "supported_improvement": true,
+        "supported_loss": false,
+        "threads": 1,
+        "view": "equal_application"
+      },
+      {
+        "control": "common_neighbors",
+        "difference": 0.03267570998945409,
+        "one_point_noninferiority": true,
+        "percentile_95": [
+          0.007186118568741677,
+          0.06015446985024528
+        ],
+        "simultaneous_95": [
+          -0.009217984326579765,
+          0.07803865568396484
+        ],
+        "supported_improvement": false,
+        "supported_loss": false,
+        "threads": 1,
+        "view": "equal_application"
+      },
+      {
+        "control": "resource_allocation",
+        "difference": 0.004852136170764098,
+        "one_point_noninferiority": false,
+        "percentile_95": [
+          -0.010257224787214289,
+          0.0196078431372549
+        ],
+        "simultaneous_95": [
+          -0.020956491547155957,
+          0.02996783834468622
+        ],
+        "supported_improvement": false,
+        "supported_loss": false,
+        "threads": 1,
+        "view": "equal_application"
+      },
+      {
+        "control": "adamic_adar",
+        "difference": 0.012982217471577106,
+        "one_point_noninferiority": false,
+        "percentile_95": [
+          -0.0097334132929622,
+          0.03639408499549347
+        ],
+        "simultaneous_95": [
+          -0.025647019991700597,
+          0.051312927663587984
+        ],
+        "supported_improvement": false,
+        "supported_loss": false,
+        "threads": 1,
+        "view": "equal_application"
+      },
+      {
+        "control": "gds",
+        "difference": 0.10003874958432908,
+        "one_point_noninferiority": true,
+        "percentile_95": [
+          0.05718043728614603,
+          0.15071689192567428
+        ],
+        "simultaneous_95": [
+          0.03174631264948502,
+          0.18580376919965796
+        ],
+        "supported_improvement": true,
+        "supported_loss": false,
+        "threads": 4,
+        "view": "equal_application"
+      },
+      {
+        "control": "common_neighbors",
+        "difference": 0.03267570998945409,
+        "one_point_noninferiority": true,
+        "percentile_95": [
+          0.007186118568741677,
+          0.06015446985024528
+        ],
+        "simultaneous_95": [
+          -0.009217984326579765,
+          0.07803865568396484
+        ],
+        "supported_improvement": false,
+        "supported_loss": false,
+        "threads": 4,
+        "view": "equal_application"
+      },
+      {
+        "control": "resource_allocation",
+        "difference": 0.004852136170764098,
+        "one_point_noninferiority": false,
+        "percentile_95": [
+          -0.010257224787214289,
+          0.0196078431372549
+        ],
+        "simultaneous_95": [
+          -0.020956491547155957,
+          0.02996783834468622
+        ],
+        "supported_improvement": false,
+        "supported_loss": false,
+        "threads": 4,
+        "view": "equal_application"
+      },
+      {
+        "control": "adamic_adar",
+        "difference": 0.012982217471577106,
+        "one_point_noninferiority": false,
+        "percentile_95": [
+          -0.0097334132929622,
+          0.03639408499549347
+        ],
+        "simultaneous_95": [
+          -0.025647019991700597,
+          0.051312927663587984
+        ],
+        "supported_improvement": false,
+        "supported_loss": false,
+        "threads": 4,
+        "view": "equal_application"
+      },
+      {
+        "control": "gds",
+        "difference": 0.10676642560136011,
+        "one_point_noninferiority": true,
+        "percentile_95": [
+          0.05711697284843338,
+          0.16251793990606833
+        ],
+        "simultaneous_95": [
+          0.026948142537208824,
+          0.20047217986031524
+        ],
+        "supported_improvement": true,
+        "supported_loss": false,
+        "threads": 1,
+        "view": "positive_weighted"
+      },
+      {
+        "control": "common_neighbors",
+        "difference": 0.04104620748306873,
+        "one_point_noninferiority": false,
+        "percentile_95": [
+          0.0072996982621819735,
+          0.07587266208630317
+        ],
+        "simultaneous_95": [
+          -0.015225672467258582,
+          0.09899778643680167
+        ],
+        "supported_improvement": false,
+        "supported_loss": false,
+        "threads": 1,
+        "view": "positive_weighted"
+      },
+      {
+        "control": "resource_allocation",
+        "difference": 0.006487095097869392,
+        "one_point_noninferiority": false,
+        "percentile_95": [
+          -0.013888888888888888,
+          0.025315431312723784
+        ],
+        "simultaneous_95": [
+          -0.02887280335656745,
+          0.03672440668946018
+        ],
+        "supported_improvement": false,
+        "supported_loss": false,
+        "threads": 1,
+        "view": "positive_weighted"
+      },
+      {
+        "control": "adamic_adar",
+        "difference": 0.017356660315260695,
+        "one_point_noninferiority": false,
+        "percentile_95": [
+          -0.013212685979246854,
+          0.04751131221719457
+        ],
+        "simultaneous_95": [
+          -0.03475043033307839,
+          0.0669718275378191
+        ],
+        "supported_improvement": false,
+        "supported_loss": false,
+        "threads": 1,
+        "view": "positive_weighted"
+      },
+      {
+        "control": "gds",
+        "difference": 0.10676642560136011,
+        "one_point_noninferiority": true,
+        "percentile_95": [
+          0.05711697284843338,
+          0.16251793990606833
+        ],
+        "simultaneous_95": [
+          0.026948142537208824,
+          0.20047217986031524
+        ],
+        "supported_improvement": true,
+        "supported_loss": false,
+        "threads": 4,
+        "view": "positive_weighted"
+      },
+      {
+        "control": "common_neighbors",
+        "difference": 0.04104620748306873,
+        "one_point_noninferiority": false,
+        "percentile_95": [
+          0.0072996982621819735,
+          0.07587266208630317
+        ],
+        "simultaneous_95": [
+          -0.015225672467258582,
+          0.09899778643680167
+        ],
+        "supported_improvement": false,
+        "supported_loss": false,
+        "threads": 4,
+        "view": "positive_weighted"
+      },
+      {
+        "control": "resource_allocation",
+        "difference": 0.006487095097869392,
+        "one_point_noninferiority": false,
+        "percentile_95": [
+          -0.013888888888888888,
+          0.025315431312723784
+        ],
+        "simultaneous_95": [
+          -0.02887280335656745,
+          0.03672440668946018
+        ],
+        "supported_improvement": false,
+        "supported_loss": false,
+        "threads": 4,
+        "view": "positive_weighted"
+      },
+      {
+        "control": "adamic_adar",
+        "difference": 0.017356660315260695,
+        "one_point_noninferiority": false,
+        "percentile_95": [
+          -0.013212685979246854,
+          0.04751131221719457
+        ],
+        "simultaneous_95": [
+          -0.03475043033307839,
+          0.0669718275378191
+        ],
+        "supported_improvement": false,
+        "supported_loss": false,
+        "threads": 4,
+        "view": "positive_weighted"
+      }
+    ],
+    "configuration": {
+      "decision_absolute_tolerance": 1e-12,
+      "draws": 100000,
+      "numpy_version": "2.4.4",
+      "percentile_method": "linear",
+      "process_repetitions_are_not_label_samples": true,
+      "resampling_unit": "source",
+      "seed": 20260928,
+      "simultaneous_comparisons": 40,
+      "simultaneous_tail_probability": 0.000625
+    },
+    "exclusions": {
+      "any_application": 0,
+      "by_application": {
+        "collaboration": 0,
+        "communication": 0,
+        "friendship": 0
+      },
+      "retained_draws": 100000
+    },
+    "interpretation": "Conditional on three fixed graphs; connected sources need not be independent. Quality conditions alone do not close gate B or any release gate.",
+    "quality_rule": {
+      "1": {
+        "one_point_noninferiority_all_views": false,
+        "original_quality_conditions_met": true,
+        "point_estimates_within_one_point_on_every_application": true,
+        "statistically_supported_pooled_loss": false
+      },
+      "4": {
+        "one_point_noninferiority_all_views": false,
+        "original_quality_conditions_met": true,
+        "point_estimates_within_one_point_on_every_application": true,
+        "statistically_supported_pooled_loss": false
+      }
+    },
+    "status": "evaluated"
+  },
+  "release_gate_closed": false,
+  "source_positive_counts": {
+    "collaboration": [
+      0,
+      0,
+      2,
+      0,
+      0,
+      0,
+      1,
+      1,
+      2,
+      3,
+      4,
+      0,
+      0,
+      0,
+      1,
+      0,
+      3,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      2,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      2,
+      0,
+      4,
+      0,
+      0,
+      0,
+      0,
+      2,
+      0,
+      1,
+      0,
+      1,
+      1,
+      0,
+      2,
+      0,
+      2
+    ],
+    "communication": [
+      5,
+      3,
+      2,
+      6,
+      9,
+      4,
+      12,
+      4,
+      4,
+      26,
+      6,
+      3,
+      4,
+      5,
+      10,
+      8,
+      4,
+      5,
+      6,
+      3,
+      10,
+      7,
+      0,
+      3,
+      1,
+      3,
+      3,
+      4,
+      4,
+      1,
+      2,
+      3,
+      1,
+      3,
+      0,
+      0,
+      3,
+      1,
+      1,
+      3,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      4,
+      0,
+      0,
+      0,
+      1,
+      0,
+      3,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      11,
+      2
+    ],
+    "friendship": [
+      0,
+      0,
+      0,
+      2,
+      5,
+      1,
+      4,
+      2,
+      0,
+      1,
+      0,
+      5,
+      6,
+      12,
+      1,
+      4,
+      4,
+      1,
+      0,
+      2,
+      3,
+      0,
+      10,
+      2,
+      5,
+      11,
+      4,
+      13,
+      0,
+      4,
+      0,
+      13,
+      0,
+      7,
+      1,
+      4,
+      15,
+      1,
+      12,
+      4,
+      7,
+      5,
+      2,
+      4,
+      2,
+      2,
+      1,
+      1,
+      7,
+      0,
+      3,
+      0,
+      1,
+      0,
+      1,
+      4,
+      3,
+      1,
+      5,
+      1,
+      0,
+      2,
+      0,
+      0
+    ]
+  }
+}

@@ -1,0 +1,232 @@
+Using CPython 3.14.3 interpreter at: <HOME>/.local/share/uv/python/cpython-3.14.3-macos-aarch64-none/bin/python3.14
+Creating virtual environment at: $VALIDATION/env-3.14
+Activate with: source $VALIDATION/env-3.14/bin/activate
+
+Using Python 3.14.3 environment at: $VALIDATION/env-3.14
+Resolved 7 packages in 3ms
+Installed 7 packages in 63ms
+ + iniconfig==2.3.0
+ + numpy==2.4.6
+ + orbweaver-query==1.0.0.dev1 (from file://$DIST/orbweaver_query-1.0.0.dev1-py3-none-any.whl)
+ + packaging==26.3
+ + pluggy==1.6.0
+ + pygments==2.21.0
+ + pytest==9.1.1
+
+{"python": "3.14.3", "architecture": "arm64", "numpy": "2.4.6", "package": "1.0.0.dev1", "origin": "$VALIDATION/env-3.14/lib/python3.14/site-packages/orbweaver_query/__init__.py"}
+
+.....................s.................................................. [ 23%]
+...............................................................s........ [ 46%]
+s..........................sss.......................................... [ 69%]
+....................................................................s..s [ 92%]
+..................ss...                                                  [100%]
+301 passed, 12 skipped in 6.82s
+
+{
+  "example": "WN18RR explicit-path example",
+  "score_kind": "ranking_logit",
+  "untrained_relations": [
+    "_similar_to"
+  ],
+  "plan": {
+    "operator": "PredictLinks",
+    "strategy": "grouped",
+    "graph_snapshot": "e280974d0ab115be4e721d0e1dc11452914e0c8f4b83e433919aa0f7156849b7",
+    "model": "64d5c3f7652b84f3d24f22beeaf7f7cd49d5a2218af91b4ee89942584674506a",
+    "reuse_key": [
+      "graph_snapshot",
+      "model",
+      "source"
+    ],
+    "score_key": [
+      "graph_snapshot",
+      "model",
+      "source",
+      "relation"
+    ],
+    "limits": {
+      "window_size": 256,
+      "max_expansion_states": 1000000,
+      "max_type_visits": 10000000,
+      "max_neighbor_visits": 10000000,
+      "max_intermediate_rows": 100000,
+      "max_prepared_bytes": 16777216
+    },
+    "preserves_input_order_and_duplicates": true,
+    "candidate_pruning": false,
+    "candidate_support": "two_or_three_hops_excluding_source_and_existing_neighbors",
+    "score_kind": "ranking_logit",
+    "bound_target_expansion": true,
+    "feature_contract": "orbweaver-explicit-path-features-v1"
+  },
+  "profile": {
+    "strategy": "grouped",
+    "queries": 8,
+    "windows": 1,
+    "expansions": 4,
+    "model_calls": 4,
+    "reused_expansions": 4,
+    "reused_scores": 4,
+    "candidate_scores": 530,
+    "type_visits": 1409,
+    "peak_feature_bytes": 24896,
+    "elapsed_seconds": 0.00317874999018386,
+    "candidate_selection": "all",
+    "neighbor_visits": 0
+  },
+  "rows": [
+    {
+      "head": "00192836",
+      "relation": "_hypernym",
+      "candidate_count": 69,
+      "top": [
+        [
+          "00126264",
+          0.7433425916343954
+        ],
+        [
+          "02413480",
+          -1.1630586408628079
+        ],
+        [
+          "01712704",
+          -1.3218729671939753
+        ]
+      ]
+    },
+    {
+      "head": "12134300",
+      "relation": "_hypernym",
+      "candidate_count": 365,
+      "top": [
+        [
+          "12205694",
+          1.0006064467997486
+        ],
+        [
+          "12039743",
+          -0.5237285229464048
+        ],
+        [
+          "12141495",
+          -0.9107557878882662
+        ]
+      ]
+    },
+    {
+      "head": "07941945",
+      "relation": "_hypernym",
+      "candidate_count": 80,
+      "top": [
+        [
+          "07951464",
+          -0.7706392475304724
+        ],
+        [
+          "00002684",
+          -0.7927253970348151
+        ],
+        [
+          "07950920",
+          -1.4227759301683613
+        ]
+      ]
+    },
+    {
+      "head": "01316401",
+      "relation": "_hypernym",
+      "candidate_count": 16,
+      "top": [
+        [
+          "01315613",
+          -0.7171434601202602
+        ],
+        [
+          "02269894",
+          -2.48863493236306
+        ],
+        [
+          "02240881",
+          -2.7912306036059715
+        ]
+      ]
+    },
+    {
+      "head": "00192836",
+      "relation": "_hypernym",
+      "candidate_count": 69,
+      "top": [
+        [
+          "00126264",
+          0.7433425916343954
+        ],
+        [
+          "02413480",
+          -1.1630586408628079
+        ],
+        [
+          "01712704",
+          -1.3218729671939753
+        ]
+      ]
+    },
+    {
+      "head": "12134300",
+      "relation": "_hypernym",
+      "candidate_count": 365,
+      "top": [
+        [
+          "12205694",
+          1.0006064467997486
+        ],
+        [
+          "12039743",
+          -0.5237285229464048
+        ],
+        [
+          "12141495",
+          -0.9107557878882662
+        ]
+      ]
+    },
+    {
+      "head": "07941945",
+      "relation": "_hypernym",
+      "candidate_count": 80,
+      "top": [
+        [
+          "07951464",
+          -0.7706392475304724
+        ],
+        [
+          "00002684",
+          -0.7927253970348151
+        ],
+        [
+          "07950920",
+          -1.4227759301683613
+        ]
+      ]
+    },
+    {
+      "head": "01316401",
+      "relation": "_hypernym",
+      "candidate_count": 16,
+      "top": [
+        [
+          "01315613",
+          -0.7171434601202602
+        ],
+        [
+          "02269894",
+          -2.48863493236306
+        ],
+        [
+          "02240881",
+          -2.7912306036059715
+        ]
+      ]
+    }
+  ]
+}
+

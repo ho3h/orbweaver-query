@@ -1,0 +1,91 @@
+{
+  "browser_check": {
+    "cast_filter_checked": true,
+    "expandable_plan_checked": true,
+    "layout_inspected": true
+  },
+  "build_revision": "59964460526e3f17d67695bc76ba3803a266b42c",
+  "csv_cli": {
+    "documented_scores_statuses_duplicates": true,
+    "rows": 5
+  },
+  "format": "public-preview-validation-v2",
+  "installed_tests": [
+    {
+      "extras": "scientific and neo4j",
+      "log": "installed-scientific.log",
+      "numpy": "2.4.6",
+      "passed": 318,
+      "python": "3.11.15",
+      "skipped": 8
+    },
+    {
+      "extras": "none",
+      "log": "installed-minimal.log",
+      "numpy": "2.4.6",
+      "passed": 314,
+      "python": "3.14.3",
+      "skipped": 12
+    }
+  ],
+  "isolated_python": true,
+  "movie_demo": {
+    "candidate_rows": 28,
+    "native_and_unfused_parity": true,
+    "output_rows": 28,
+    "report": "movie-demo/index.html",
+    "results_sha256": "4c3714f99b993ccaef6cc60d7dccad851cfa5cc1259fca290056f9a841df037f",
+    "shared_expansions": 3,
+    "unfused_expansions": 6
+  },
+  "preflight": {
+    "all_native_reference_checks_passed": true,
+    "archive_sha256": "aa0aca075d1da2a83de0a96562fdc7ea37c8f05ed2e9645d74cf740ac612ac24",
+    "arms": [
+      "full_source_shared",
+      "manual_intersection",
+      "native_cypher",
+      "plan",
+      "plan_unfused",
+      "precomputed_scores",
+      "warm_pair_cache"
+    ],
+    "campaign_workers_completed": 0,
+    "campaign_workers_planned": 63,
+    "driver": "6.1.0",
+    "manifest_sha256": "14e36defbafcd71e549aae278daa2913c90ee8684520cdf17de3e9039fc244ee",
+    "omitted_archive_file": "movies.cypher; download from pinned upstream URL and verify manifest SHA before replay",
+    "quiet_campaign_status": "pending user-arranged idle interval",
+    "workers": 7,
+    "workload_candidate_counts": {
+      "basket_with_repeat": 36,
+      "filtered_basket": 19,
+      "single": 8
+    },
+    "workload_output_counts": {
+      "basket_with_repeat": 36,
+      "filtered_basket": 4,
+      "single": 8
+    }
+  },
+  "publication_performed": false,
+  "release_gate_complete": false,
+  "retained_attempts": [
+    {
+      "attempt": "public-preview-v2",
+      "result": "stopped safely at 512 MiB decoded-size cap; no publication; largest retained stream is about 726 MiB; scan bound raised to 1 GiB"
+    },
+    {
+      "attempt": "movie-workflow-v1 freeze",
+      "manifest_sha256": "a3b6ade2bf6851f8edd40a6aaa8d8c5bf7176f962174ec9c38d92c8442f17ecf",
+      "result": "setup only; superseded before client measurements to pin Neo4j driver and retain output before correctness checks"
+    }
+  ],
+  "runtime_members_identical_to_previous_five_environment_validation": 21,
+  "source_revision": "b9a405eee2939a6144b789db3cf6f423801d0300",
+  "tests_from_extracted_sdist": true,
+  "trained_cli": {
+    "passed": true,
+    "python": "3.14.3"
+  }
+}

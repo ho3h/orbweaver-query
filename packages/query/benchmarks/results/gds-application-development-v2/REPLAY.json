@@ -1,0 +1,10 @@
+{
+  "archive_sha256": "d84d25764c990bebf26d1f867b10c61945bbfa566283981e85f97e7e5b9501f2",
+  "byte_identical_result": true,
+  "confirmation_labels_parsed": false,
+  "independent_audit_sha256": "13f3101676d8a00f4cf72f04f510a88842669b12f16f1e7325625e7a9b9b67a6",
+  "performance_isolation_established": false,
+  "results_sha256": "2e2f53ae5891cce38b48a82b901b87c035cf8bb3cc81934cb5abe4939b33f15b",
+  "verified_files": 352,
+  "verified_workers": 18
+}

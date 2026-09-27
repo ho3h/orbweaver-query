@@ -1,0 +1,52 @@
+Using CPython 3.12.13 interpreter at: <HOME>/.local/share/uv/python/cpython-3.12-macos-aarch64-none/bin/python3.12
+Creating virtual environment at: $VALIDATION/env-3.12
+Activate with: source $VALIDATION/env-3.12/bin/activate
+
+Using Python 3.12.13 environment at: $VALIDATION/env-3.12
+Resolved 7 packages in 93ms
+Downloading numpy (5.0MiB)
+ Downloaded numpy
+Prepared 1 package in 334ms
+Installed 7 packages in 22ms
+ + iniconfig==2.3.0
+ + numpy==2.4.6
+ + orbweaver-query==1.0.0.dev1 (from file:///tmp/orbweaver-mac-candidate-dist/orbweaver_query-1.0.0.dev1-py3-none-any.whl)
+ + packaging==26.3
+ + pluggy==1.6.0
+ + pygments==2.21.0
+ + pytest==9.1.1
+
+{"python": "3.12.13", "architecture": "arm64", "numpy": "2.4.6", "package": "1.0.0.dev1", "origin": "$VALIDATION/env-3.12/lib/python3.12/site-packages/orbweaver_query/__init__.py"}
+
+.....................s.................................................. [ 23%]
+...............................................................F........ [ 46%]
+s..........................sss.......................................... [ 69%]
+....................................................................s..s [ 92%]
+..................ss...                                                  [100%]
+=================================== FAILURES ===================================
+_____________ test_local_ranking_matches_independent_sparse_scores _____________
+
+    def test_local_ranking_matches_independent_sparse_scores():
+        h = harness()
+        graph, sources = fixture()
+        for metric in ('resource_allocation', 'adamic_adar'):
+>           oracle = h.structural_scores(graph, sources, metric)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+$VALIDATION/source/orbweaver_query-1.0.0.dev1/tests/test_gds_ranking.py:36: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+graph = GraphSnapshot(node_ids=('n0', 'n1', 'n2', 'n3', 'n4', 'n5', 'n6', 'n7', 'n8', 'n9', 'n10', 'n11', 'n12', 'n13', 'n14',...89': 89, 'n90': 90, 'n91': 91, 'n92': 92, 'n93': 93, 'n94': 94, 'n95': 95}), _relation_index=mappingproxy({'LINK': 0}))
+sources = array([ 0,  3, 12, 93, 94, 95]), metric = 'resource_allocation'
+
+    def structural_scores(graph, sources, metric):
+        """Independent sparse-algebra oracle, also a strong manual execution control."""
+        import numpy as np
+>       from scipy import sparse
+E       ModuleNotFoundError: No module named 'scipy'
+
+benchmarks/v1/gds_ranking.py:216: ModuleNotFoundError
+=========================== short test summary info ============================
+FAILED ../../../../..$VALIDATION/source/orbweaver_query-1.0.0.dev1/tests/test_gds_ranking.py::test_local_ranking_matches_independent_sparse_scores
+1 failed, 301 passed, 11 skipped in 7.88s
+

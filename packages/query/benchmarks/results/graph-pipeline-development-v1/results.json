@@ -1,0 +1,358 @@
+{
+  "automatic_vs_strongest_manual": {
+    "one_request": {
+      "conditional_process_bootstrap_95_interval": [
+        18.19110257933962,
+        24.668764476131678
+      ],
+      "geometric_mean_speedup": 22.768468873915765
+    },
+    "steady": {
+      "conditional_process_bootstrap_95_interval": [
+        0.4455020643607174,
+        0.6016759152805617
+      ],
+      "geometric_mean_speedup": 0.5253577211360927
+    }
+  },
+  "failed_workers": 3,
+  "failures": [
+    {
+      "job": {
+        "arm": "eager",
+        "dataset": "friendship",
+        "replicate": 1,
+        "shape": "two_expansions"
+      },
+      "returncode": 1,
+      "stderr": "Traceback (most recent call last):\n  File \"/Users/tedsandtads/.codex/worktrees/query-v1-development/orbweaver/packages/query/runs/graph-pipeline-development-v1/graph_pipeline.py\", line 301, in <module>\n    report = worker(root, args.index)\n             ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/tedsandtads/.codex/worktrees/query-v1-development/orbweaver/packages/query/runs/graph-pipeline-development-v1/graph_pipeline.py\", line 176, in worker\n    result = plan.run(rows, optimize=job[\"arm\"] == \"automatic\", cache=pair_cache)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/tedsandtads/.codex/worktrees/query-v1-development/orbweaver/packages/query/runs/graph-pipeline-development-v1/source/orbweaver_query/pipeline.py\", line 304, in run\n    for batch in self.iter_batches(bindings, fused=fused, optimize=optimize, cache=cache):\n  File \"/Users/tedsandtads/.codex/worktrees/query-v1-development/orbweaver/packages/query/runs/graph-pipeline-development-v1/source/orbweaver_query/pipeline.py\", line 284, in iter_batches\n    rows, profile = self._expand(rows, self.expansions[i], i)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/tedsandtads/.codex/worktrees/query-v1-development/orbweaver/packages/query/runs/graph-pipeline-development-v1/source/orbweaver_query/pipeline.py\", line 255, in _expand\n    append(row, graph.node_ids[graph.indices[edge]], graph.relations[symbol % r])\n  File \"/Users/tedsandtads/.codex/worktrees/query-v1-development/orbweaver/packages/query/runs/graph-pipeline-development-v1/source/orbweaver_query/pipeline.py\", line 232, in append\n    raise ResourceLimitError(\"Graph expansion exceeds max_intermediate_rows\")\norbweaver_query.model.ResourceLimitError: Graph expansion exceeds max_intermediate_rows\n"
+    },
+    {
+      "job": {
+        "arm": "eager",
+        "dataset": "friendship",
+        "replicate": 2,
+        "shape": "two_expansions"
+      },
+      "returncode": 1,
+      "stderr": "Traceback (most recent call last):\n  File \"/Users/tedsandtads/.codex/worktrees/query-v1-development/orbweaver/packages/query/runs/graph-pipeline-development-v1/graph_pipeline.py\", line 301, in <module>\n    report = worker(root, args.index)\n             ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/tedsandtads/.codex/worktrees/query-v1-development/orbweaver/packages/query/runs/graph-pipeline-development-v1/graph_pipeline.py\", line 176, in worker\n    result = plan.run(rows, optimize=job[\"arm\"] == \"automatic\", cache=pair_cache)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/tedsandtads/.codex/worktrees/query-v1-development/orbweaver/packages/query/runs/graph-pipeline-development-v1/source/orbweaver_query/pipeline.py\", line 304, in run\n    for batch in self.iter_batches(bindings, fused=fused, optimize=optimize, cache=cache):\n  File \"/Users/tedsandtads/.codex/worktrees/query-v1-development/orbweaver/packages/query/runs/graph-pipeline-development-v1/source/orbweaver_query/pipeline.py\", line 284, in iter_batches\n    rows, profile = self._expand(rows, self.expansions[i], i)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/tedsandtads/.codex/worktrees/query-v1-development/orbweaver/packages/query/runs/graph-pipeline-development-v1/source/orbweaver_query/pipeline.py\", line 255, in _expand\n    append(row, graph.node_ids[graph.indices[edge]], graph.relations[symbol % r])\n  File \"/Users/tedsandtads/.codex/worktrees/query-v1-development/orbweaver/packages/query/runs/graph-pipeline-development-v1/source/orbweaver_query/pipeline.py\", line 232, in append\n    raise ResourceLimitError(\"Graph expansion exceeds max_intermediate_rows\")\norbweaver_query.model.ResourceLimitError: Graph expansion exceeds max_intermediate_rows\n"
+    },
+    {
+      "job": {
+        "arm": "eager",
+        "dataset": "friendship",
+        "replicate": 0,
+        "shape": "two_expansions"
+      },
+      "returncode": 1,
+      "stderr": "Traceback (most recent call last):\n  File \"/Users/tedsandtads/.codex/worktrees/query-v1-development/orbweaver/packages/query/runs/graph-pipeline-development-v1/graph_pipeline.py\", line 301, in <module>\n    report = worker(root, args.index)\n             ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/tedsandtads/.codex/worktrees/query-v1-development/orbweaver/packages/query/runs/graph-pipeline-development-v1/graph_pipeline.py\", line 176, in worker\n    result = plan.run(rows, optimize=job[\"arm\"] == \"automatic\", cache=pair_cache)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/tedsandtads/.codex/worktrees/query-v1-development/orbweaver/packages/query/runs/graph-pipeline-development-v1/source/orbweaver_query/pipeline.py\", line 304, in run\n    for batch in self.iter_batches(bindings, fused=fused, optimize=optimize, cache=cache):\n  File \"/Users/tedsandtads/.codex/worktrees/query-v1-development/orbweaver/packages/query/runs/graph-pipeline-development-v1/source/orbweaver_query/pipeline.py\", line 284, in iter_batches\n    rows, profile = self._expand(rows, self.expansions[i], i)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/tedsandtads/.codex/worktrees/query-v1-development/orbweaver/packages/query/runs/graph-pipeline-development-v1/source/orbweaver_query/pipeline.py\", line 255, in _expand\n    append(row, graph.node_ids[graph.indices[edge]], graph.relations[symbol % r])\n  File \"/Users/tedsandtads/.codex/worktrees/query-v1-development/orbweaver/packages/query/runs/graph-pipeline-development-v1/source/orbweaver_query/pipeline.py\", line 232, in append\n    raise ResourceLimitError(\"Graph expansion exceeds max_intermediate_rows\")\norbweaver_query.model.ResourceLimitError: Graph expansion exceeds max_intermediate_rows\n"
+    }
+  ],
+  "manifest_sha256": "fdcd803d6d6a34ee46a0fc8a264cae40882e5344260972790245e9af5c910230",
+  "max_absolute_error": 0.0,
+  "numerical_parity": true,
+  "outcomes": [
+    {
+      "arms": {
+        "automatic": {
+          "ms": 0.5329999839887023,
+          "peak_rss_mib": 41.265625,
+          "setup_ms": 0.19358302233740687,
+          "work": {
+            "edge_visits": 0,
+            "expansions": 4,
+            "model_calls": 4,
+            "type_visits": 0
+          }
+        },
+        "eager": {
+          "ms": 1.0066250106319785,
+          "peak_rss_mib": 42.765625,
+          "setup_ms": 0.18366699805483222,
+          "work": {
+            "edge_visits": 84,
+            "expansions": 4,
+            "model_calls": 4,
+            "type_visits": 0
+          }
+        },
+        "manual_full_lru": {
+          "ms": 2.3904580157250166,
+          "peak_rss_mib": 48.390625,
+          "setup_ms": 38.31862501101568,
+          "work": {
+            "edge_visits": 0,
+            "expansions": 4,
+            "model_calls": 4,
+            "type_visits": 0
+          }
+        },
+        "manual_targeted": {
+          "ms": 0.24979098816402256,
+          "peak_rss_mib": 46.890625,
+          "setup_ms": 36.299083003541455,
+          "work": {
+            "edge_visits": 0,
+            "expansions": 4,
+            "model_calls": 4,
+            "type_visits": 0
+          }
+        }
+      },
+      "dataset": "collaboration",
+      "output_rows": 0,
+      "shape": "one_expansion"
+    },
+    {
+      "arms": {
+        "automatic": {
+          "ms": 0.46754200593568385,
+          "peak_rss_mib": 41.203125,
+          "setup_ms": 0.2825419942382723,
+          "work": {
+            "edge_visits": 0,
+            "expansions": 1,
+            "model_calls": 1,
+            "type_visits": 0
+          }
+        },
+        "eager": {
+          "ms": 8.314624981721863,
+          "peak_rss_mib": 41.328125,
+          "setup_ms": 0.28945799567736685,
+          "work": {
+            "edge_visits": 998,
+            "expansions": 1,
+            "model_calls": 1,
+            "type_visits": 0
+          }
+        },
+        "manual_full_lru": {
+          "ms": 0.5171249795239419,
+          "peak_rss_mib": 49.296875,
+          "setup_ms": 29.85012502176687,
+          "work": {
+            "edge_visits": 0,
+            "expansions": 1,
+            "model_calls": 1,
+            "type_visits": 0
+          }
+        },
+        "manual_targeted": {
+          "ms": 0.12599999899975955,
+          "peak_rss_mib": 49.171875,
+          "setup_ms": 37.609040999086574,
+          "work": {
+            "edge_visits": 0,
+            "expansions": 1,
+            "model_calls": 1,
+            "type_visits": 0
+          }
+        }
+      },
+      "dataset": "collaboration",
+      "output_rows": 0,
+      "shape": "two_expansions"
+    },
+    {
+      "arms": {
+        "automatic": {
+          "ms": 17.558040999574587,
+          "peak_rss_mib": 81.53125,
+          "setup_ms": 0.1800829777494073,
+          "work": {
+            "edge_visits": 262,
+            "expansions": 7,
+            "model_calls": 7,
+            "type_visits": 27896
+          }
+        },
+        "eager": {
+          "ms": 29.202125006122515,
+          "peak_rss_mib": 81.96875,
+          "setup_ms": 0.21537498105317354,
+          "work": {
+            "edge_visits": 1392,
+            "expansions": 7,
+            "model_calls": 7,
+            "type_visits": 40168
+          }
+        },
+        "manual_full_lru": {
+          "ms": 16.22141699772328,
+          "peak_rss_mib": 124.03125,
+          "setup_ms": 151.25537500716746,
+          "work": {
+            "edge_visits": 262,
+            "expansions": 7,
+            "model_calls": 7,
+            "type_visits": 20300
+          }
+        },
+        "manual_targeted": {
+          "ms": 13.930374989286065,
+          "peak_rss_mib": 124.15625,
+          "setup_ms": 132.75537500157952,
+          "work": {
+            "edge_visits": 262,
+            "expansions": 7,
+            "model_calls": 7,
+            "type_visits": 27896
+          }
+        }
+      },
+      "dataset": "friendship",
+      "output_rows": 262,
+      "shape": "one_expansion"
+    },
+    {
+      "arms": {
+        "automatic": {
+          "ms": 31.63520901580341,
+          "peak_rss_mib": 83.015625,
+          "setup_ms": 0.25933299912139773,
+          "work": {
+            "edge_visits": 762,
+            "expansions": 7,
+            "model_calls": 7,
+            "type_visits": 40408
+          }
+        },
+        "eager": {
+          "completed_workers": 0,
+          "status": "failed"
+        },
+        "manual_full_lru": {
+          "ms": 20.06579199223779,
+          "peak_rss_mib": 124.375,
+          "setup_ms": 132.31300000916235,
+          "work": {
+            "edge_visits": 762,
+            "expansions": 7,
+            "model_calls": 7,
+            "type_visits": 20300
+          }
+        },
+        "manual_targeted": {
+          "ms": 21.550999983446673,
+          "peak_rss_mib": 127.421875,
+          "setup_ms": 142.94329201220535,
+          "work": {
+            "edge_visits": 762,
+            "expansions": 7,
+            "model_calls": 7,
+            "type_visits": 34992
+          }
+        }
+      },
+      "dataset": "friendship",
+      "output_rows": 500,
+      "shape": "two_expansions"
+    },
+    {
+      "arms": {
+        "automatic": {
+          "ms": 0.6045839982107282,
+          "peak_rss_mib": 42.71875,
+          "setup_ms": 0.17449998995289207,
+          "work": {
+            "edge_visits": 0,
+            "expansions": 8,
+            "model_calls": 8,
+            "type_visits": 0
+          }
+        },
+        "eager": {
+          "ms": 9.323707985458896,
+          "peak_rss_mib": 43.921875,
+          "setup_ms": 0.1832919951993972,
+          "work": {
+            "edge_visits": 1272,
+            "expansions": 8,
+            "model_calls": 8,
+            "type_visits": 0
+          }
+        },
+        "manual_full_lru": {
+          "ms": 1.3281670107971877,
+          "peak_rss_mib": 49.203125,
+          "setup_ms": 30.393875000299886,
+          "work": {
+            "edge_visits": 0,
+            "expansions": 8,
+            "model_calls": 8,
+            "type_visits": 0
+          }
+        },
+        "manual_targeted": {
+          "ms": 0.3996669838670641,
+          "peak_rss_mib": 49.453125,
+          "setup_ms": 32.05199999501929,
+          "work": {
+            "edge_visits": 0,
+            "expansions": 8,
+            "model_calls": 8,
+            "type_visits": 0
+          }
+        }
+      },
+      "dataset": "communication",
+      "output_rows": 0,
+      "shape": "one_expansion"
+    },
+    {
+      "arms": {
+        "automatic": {
+          "ms": 0.5213329859543592,
+          "peak_rss_mib": 41.34375,
+          "setup_ms": 0.23233398678712547,
+          "work": {
+            "edge_visits": 0,
+            "expansions": 4,
+            "model_calls": 4,
+            "type_visits": 0
+          }
+        },
+        "eager": {
+          "ms": 622.2442920261528,
+          "peak_rss_mib": 65.78125,
+          "setup_ms": 0.23575001978315413,
+          "work": {
+            "edge_visits": 73786,
+            "expansions": 4,
+            "model_calls": 4,
+            "type_visits": 0
+          }
+        },
+        "manual_full_lru": {
+          "ms": 0.7289999921340495,
+          "peak_rss_mib": 47.34375,
+          "setup_ms": 30.868792004184797,
+          "work": {
+            "edge_visits": 0,
+            "expansions": 4,
+            "model_calls": 4,
+            "type_visits": 0
+          }
+        },
+        "manual_targeted": {
+          "ms": 0.26087500737048686,
+          "peak_rss_mib": 49.5,
+          "setup_ms": 32.102916011353955,
+          "work": {
+            "edge_visits": 0,
+            "expansions": 4,
+            "model_calls": 4,
+            "type_visits": 0
+          }
+        }
+      },
+      "dataset": "communication",
+      "output_rows": 0,
+      "shape": "two_expansions"
+    }
+  ],
+  "parity_scope": "completed workers only",
+  "release_gates_closed": false,
+  "verified_workers": 69
+}

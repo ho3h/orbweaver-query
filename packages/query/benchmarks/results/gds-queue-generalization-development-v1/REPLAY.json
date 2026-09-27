@@ -1,0 +1,12 @@
+{
+  "archive_sha256": "ae682403499c2102c0f7f50af1ecc34d2738d204c027162d44c12037c1adfdaf",
+  "attempt_sha256": "c42080c07a6501197f70f68a757a141764e5f9d7588ee9db7a10ff573b1a7e53",
+  "completed_outputs_and_quality_recomputed": 4,
+  "failed_conditions": 2,
+  "full_score_domains_verified": 6,
+  "identical_replayed_attempt_bytes": true,
+  "new_database_or_model_execution": false,
+  "original_complete_suite_summary_rejected": true,
+  "suite_complete": false,
+  "verified_files": 224
+}

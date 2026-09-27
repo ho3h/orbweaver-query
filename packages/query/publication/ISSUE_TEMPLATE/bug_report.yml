@@ -1,0 +1,28 @@
+name: Bug report
+description: Report an installation, correctness, or integration failure.
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: "Use public or synthetic data. Remove credentials and private graph contents."
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Package version, macOS/chip, native Python, NumPy and optional Neo4j versions.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Minimal reproduction
+      description: Include the smallest graph, model, candidate rows and command that show the problem.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected and actual behavior
+      description: Include complete error text with sensitive values removed.
+    validations:
+      required: true

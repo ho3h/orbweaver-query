@@ -1,0 +1,3927 @@
+{
+  "analysis_status": "Descriptive analysis after collection, on the protocol-defined arms and workloads; not a confirmatory significance test.",
+  "bootstrap_samples": 10000,
+  "comparisons": {
+    "local_cold": {
+      "controls": [
+        "gds_native",
+        "cypher_fused",
+        "cypher_selective"
+      ],
+      "regimes": {
+        "1000_requests": {
+          "conditional_database_bootstrap_95_interval": [
+            0.8815843261327673,
+            0.9756700107369666
+          ],
+          "conditions": [
+            {
+              "candidate_ms": 14.263223529153038,
+              "control_ms": 11.882084014359862,
+              "dataset": "collaboration",
+              "filtered": false,
+              "speedup": 0.8330574073997864,
+              "strongest_control": "cypher_fused",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 10.919446525804233,
+              "control_ms": 8.648334012832493,
+              "dataset": "collaboration",
+              "filtered": true,
+              "speedup": 0.7920121218960345,
+              "strongest_control": "cypher_fused",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 16.6215715216822,
+              "control_ms": 17.32312500826083,
+              "dataset": "collaboration",
+              "filtered": false,
+              "speedup": 1.04220741015153,
+              "strongest_control": "cypher_fused",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 13.554639553942252,
+              "control_ms": 11.801374988863245,
+              "dataset": "collaboration",
+              "filtered": true,
+              "speedup": 0.870652070230146,
+              "strongest_control": "cypher_fused",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 16.58130555722164,
+              "control_ms": 15.648250002413988,
+              "dataset": "collaboration",
+              "filtered": false,
+              "speedup": 0.9437284626600901,
+              "strongest_control": "cypher_fused",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 13.065014550986234,
+              "control_ms": 14.371458004461601,
+              "dataset": "collaboration",
+              "filtered": true,
+              "speedup": 1.099995560538947,
+              "strongest_control": "cypher_selective",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 10.760827739723027,
+              "control_ms": 13.017582998145372,
+              "dataset": "collaboration",
+              "filtered": false,
+              "speedup": 1.209719485620205,
+              "strongest_control": "cypher_fused",
+              "workload": "hubs128"
+            },
+            {
+              "candidate_ms": 10.535946516029071,
+              "control_ms": 11.326833016937599,
+              "dataset": "collaboration",
+              "filtered": true,
+              "speedup": 1.0750655386970023,
+              "strongest_control": "cypher_fused",
+              "workload": "hubs128"
+            },
+            {
+              "candidate_ms": 15.754776281071827,
+              "control_ms": 14.51250002719462,
+              "dataset": "friendship",
+              "filtered": false,
+              "speedup": 0.9211492291788549,
+              "strongest_control": "cypher_selective",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 12.656311665225076,
+              "control_ms": 10.23120799800381,
+              "dataset": "friendship",
+              "filtered": true,
+              "speedup": 0.8083878043328717,
+              "strongest_control": "cypher_selective",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 20.32786028762348,
+              "control_ms": 17.558583000209183,
+              "dataset": "friendship",
+              "filtered": false,
+              "speedup": 0.8637693663656101,
+              "strongest_control": "cypher_fused",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 17.363108592951907,
+              "control_ms": 14.96929200948216,
+              "dataset": "friendship",
+              "filtered": true,
+              "speedup": 0.862132027185417,
+              "strongest_control": "cypher_fused",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 17.62601967554656,
+              "control_ms": 16.65733300615102,
+              "dataset": "friendship",
+              "filtered": false,
+              "speedup": 0.9450422337415494,
+              "strongest_control": "cypher_fused",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 15.821651295525953,
+              "control_ms": 14.843333017779514,
+              "dataset": "friendship",
+              "filtered": true,
+              "speedup": 0.9381658551643666,
+              "strongest_control": "cypher_selective",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 13.544316593004623,
+              "control_ms": 14.791416993830353,
+              "dataset": "friendship",
+              "filtered": false,
+              "speedup": 1.0920755500849584,
+              "strongest_control": "cypher_selective",
+              "workload": "hubs128"
+            },
+            {
+              "candidate_ms": 11.777061664062785,
+              "control_ms": 13.74491601018235,
+              "dataset": "friendship",
+              "filtered": true,
+              "speedup": 1.1670921323375925,
+              "strongest_control": "cypher_fused",
+              "workload": "hubs128"
+            },
+            {
+              "candidate_ms": 13.064126139768632,
+              "control_ms": 11.847125017084181,
+              "dataset": "communication",
+              "filtered": false,
+              "speedup": 0.9068440468452178,
+              "strongest_control": "cypher_fused",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 10.39066713329521,
+              "control_ms": 9.287957975175232,
+              "dataset": "communication",
+              "filtered": true,
+              "speedup": 0.8938750376685125,
+              "strongest_control": "cypher_selective",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 18.057293118006783,
+              "control_ms": 20.153207995463163,
+              "dataset": "communication",
+              "filtered": false,
+              "speedup": 1.1160702694340343,
+              "strongest_control": "cypher_fused",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 18.754429021209944,
+              "control_ms": 12.652749981498346,
+              "dataset": "communication",
+              "filtered": true,
+              "speedup": 0.6746539693204722,
+              "strongest_control": "cypher_fused",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 14.885126123233931,
+              "control_ms": 17.147541977465153,
+              "dataset": "communication",
+              "filtered": false,
+              "speedup": 1.1519917154547892,
+              "strongest_control": "cypher_selective",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 12.51370911396225,
+              "control_ms": 10.678958002245054,
+              "dataset": "communication",
+              "filtered": true,
+              "speedup": 0.8533807127041125,
+              "strongest_control": "cypher_selective",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 11.061470036220271,
+              "control_ms": 14.39804199617356,
+              "dataset": "communication",
+              "filtered": false,
+              "speedup": 1.3016391084573604,
+              "strongest_control": "cypher_fused",
+              "workload": "hubs128"
+            },
+            {
+              "candidate_ms": 10.303269185562385,
+              "control_ms": 12.453415984055027,
+              "dataset": "communication",
+              "filtered": true,
+              "speedup": 1.2086858801578793,
+              "strongest_control": "cypher_selective",
+              "workload": "hubs128"
+            }
+          ],
+          "geometric_mean_speedup": 0.9697236216475351,
+          "regressions_over_ten_percent": [
+            {
+              "candidate_ms": 14.263223529153038,
+              "control_ms": 11.882084014359862,
+              "dataset": "collaboration",
+              "filtered": false,
+              "speedup": 0.8330574073997864,
+              "strongest_control": "cypher_fused",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 10.919446525804233,
+              "control_ms": 8.648334012832493,
+              "dataset": "collaboration",
+              "filtered": true,
+              "speedup": 0.7920121218960345,
+              "strongest_control": "cypher_fused",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 13.554639553942252,
+              "control_ms": 11.801374988863245,
+              "dataset": "collaboration",
+              "filtered": true,
+              "speedup": 0.870652070230146,
+              "strongest_control": "cypher_fused",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 12.656311665225076,
+              "control_ms": 10.23120799800381,
+              "dataset": "friendship",
+              "filtered": true,
+              "speedup": 0.8083878043328717,
+              "strongest_control": "cypher_selective",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 20.32786028762348,
+              "control_ms": 17.558583000209183,
+              "dataset": "friendship",
+              "filtered": false,
+              "speedup": 0.8637693663656101,
+              "strongest_control": "cypher_fused",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 17.363108592951907,
+              "control_ms": 14.96929200948216,
+              "dataset": "friendship",
+              "filtered": true,
+              "speedup": 0.862132027185417,
+              "strongest_control": "cypher_fused",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 13.064126139768632,
+              "control_ms": 11.847125017084181,
+              "dataset": "communication",
+              "filtered": false,
+              "speedup": 0.9068440468452178,
+              "strongest_control": "cypher_fused",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 10.39066713329521,
+              "control_ms": 9.287957975175232,
+              "dataset": "communication",
+              "filtered": true,
+              "speedup": 0.8938750376685125,
+              "strongest_control": "cypher_selective",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 18.754429021209944,
+              "control_ms": 12.652749981498346,
+              "dataset": "communication",
+              "filtered": true,
+              "speedup": 0.6746539693204722,
+              "strongest_control": "cypher_fused",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 12.51370911396225,
+              "control_ms": 10.678958002245054,
+              "dataset": "communication",
+              "filtered": true,
+              "speedup": 0.8533807127041125,
+              "strongest_control": "cypher_selective",
+              "workload": "many_targets256"
+            }
+          ]
+        },
+        "100_requests": {
+          "conditional_database_bootstrap_95_interval": [
+            0.5252435084998762,
+            0.5790266504800172
+          ],
+          "conditions": [
+            {
+              "candidate_ms": 20.25863241578918,
+              "control_ms": 11.882084014359862,
+              "dataset": "collaboration",
+              "filtered": false,
+              "speedup": 0.5865195522822755,
+              "strongest_control": "cypher_fused",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 16.437090394902043,
+              "control_ms": 8.648334012832493,
+              "dataset": "collaboration",
+              "filtered": true,
+              "speedup": 0.5261474996520534,
+              "strongest_control": "cypher_fused",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 22.13921539078001,
+              "control_ms": 17.32312500826083,
+              "dataset": "collaboration",
+              "filtered": false,
+              "speedup": 0.7824633665868365,
+              "strongest_control": "cypher_fused",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 19.846895431983285,
+              "control_ms": 11.801374988863245,
+              "dataset": "collaboration",
+              "filtered": true,
+              "speedup": 0.5946207067653171,
+              "strongest_control": "cypher_fused",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 22.873561435262673,
+              "control_ms": 15.648250002413988,
+              "dataset": "collaboration",
+              "filtered": false,
+              "speedup": 0.6841195257984664,
+              "strongest_control": "cypher_fused",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 19.357270429027267,
+              "control_ms": 14.371458004461601,
+              "dataset": "collaboration",
+              "filtered": true,
+              "speedup": 0.7424320519338733,
+              "strongest_control": "cypher_selective",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 16.70265248976648,
+              "control_ms": 13.017582998145372,
+              "dataset": "collaboration",
+              "filtered": false,
+              "speedup": 0.7793721988840451,
+              "strongest_control": "cypher_fused",
+              "workload": "hubs128"
+            },
+            {
+              "candidate_ms": 16.05359038512688,
+              "control_ms": 11.326833016937599,
+              "dataset": "collaboration",
+              "filtered": true,
+              "speedup": 0.7055638486597698,
+              "strongest_control": "cypher_fused",
+              "workload": "hubs128"
+            },
+            {
+              "candidate_ms": 36.98938790010288,
+              "control_ms": 14.51250002719462,
+              "dataset": "friendship",
+              "filtered": false,
+              "speedup": 0.3923422595255829,
+              "strongest_control": "cypher_selective",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 33.68116982426728,
+              "control_ms": 10.23120799800381,
+              "dataset": "friendship",
+              "filtered": true,
+              "speedup": 0.30376640869024174,
+              "strongest_control": "cypher_selective",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 40.981627857836436,
+              "control_ms": 17.558583000209183,
+              "dataset": "friendship",
+              "filtered": false,
+              "speedup": 0.42845011089162144,
+              "strongest_control": "cypher_fused",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 38.74021084891866,
+              "control_ms": 14.96929200948216,
+              "dataset": "friendship",
+              "filtered": true,
+              "speedup": 0.3864019240334102,
+              "strongest_control": "cypher_fused",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 38.27926288475282,
+              "control_ms": 16.65733300615102,
+              "dataset": "friendship",
+              "filtered": false,
+              "speedup": 0.4351529196448,
+              "strongest_control": "cypher_fused",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 37.056262914557,
+              "control_ms": 14.843333017779514,
+              "dataset": "friendship",
+              "filtered": true,
+              "speedup": 0.4005620602380962,
+              "strongest_control": "cypher_selective",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 33.65140766865807,
+              "control_ms": 14.791416993830353,
+              "dataset": "friendship",
+              "filtered": false,
+              "speedup": 0.43954823939227494,
+              "strongest_control": "cypher_selective",
+              "workload": "hubs128"
+            },
+            {
+              "candidate_ms": 31.844241667131428,
+              "control_ms": 13.74491601018235,
+              "dataset": "friendship",
+              "filtered": true,
+              "speedup": 0.43162955971312694,
+              "strongest_control": "cypher_fused",
+              "workload": "hubs128"
+            },
+            {
+              "candidate_ms": 18.408633264771197,
+              "control_ms": 11.847125017084181,
+              "dataset": "communication",
+              "filtered": false,
+              "speedup": 0.6435635305830202,
+              "strongest_control": "cypher_fused",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 15.735174258297777,
+              "control_ms": 9.287957975175232,
+              "dataset": "communication",
+              "filtered": true,
+              "speedup": 0.5902672460254024,
+              "strongest_control": "cypher_selective",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 23.401800243009347,
+              "control_ms": 20.153207995463163,
+              "dataset": "communication",
+              "filtered": false,
+              "speedup": 0.8611819512254569,
+              "strongest_control": "cypher_fused",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 24.309040399384685,
+              "control_ms": 12.652749981498346,
+              "dataset": "communication",
+              "filtered": true,
+              "speedup": 0.5204956581428288,
+              "strongest_control": "cypher_fused",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 20.229633248236496,
+              "control_ms": 17.147541977465153,
+              "dataset": "communication",
+              "filtered": false,
+              "speedup": 0.8476447282582336,
+              "strongest_control": "cypher_selective",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 17.858216238964815,
+              "control_ms": 10.678958002245054,
+              "dataset": "communication",
+              "filtered": true,
+              "speedup": 0.5979857035746186,
+              "strongest_control": "cypher_selective",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 16.616081414395012,
+              "control_ms": 14.39804199617356,
+              "dataset": "communication",
+              "filtered": false,
+              "speedup": 0.8665124849292145,
+              "strongest_control": "cypher_fused",
+              "workload": "hubs128"
+            },
+            {
+              "candidate_ms": 15.700813688745257,
+              "control_ms": 12.453415984055027,
+              "dataset": "communication",
+              "filtered": true,
+              "speedup": 0.7931701013038549,
+              "strongest_control": "cypher_selective",
+              "workload": "hubs128"
+            }
+          ],
+          "geometric_mean_speedup": 0.5727375488907221,
+          "regressions_over_ten_percent": [
+            {
+              "candidate_ms": 20.25863241578918,
+              "control_ms": 11.882084014359862,
+              "dataset": "collaboration",
+              "filtered": false,
+              "speedup": 0.5865195522822755,
+              "strongest_control": "cypher_fused",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 16.437090394902043,
+              "control_ms": 8.648334012832493,
+              "dataset": "collaboration",
+              "filtered": true,
+              "speedup": 0.5261474996520534,
+              "strongest_control": "cypher_fused",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 22.13921539078001,
+              "control_ms": 17.32312500826083,
+              "dataset": "collaboration",
+              "filtered": false,
+              "speedup": 0.7824633665868365,
+              "strongest_control": "cypher_fused",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 19.846895431983285,
+              "control_ms": 11.801374988863245,
+              "dataset": "collaboration",
+              "filtered": true,
+              "speedup": 0.5946207067653171,
+              "strongest_control": "cypher_fused",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 22.873561435262673,
+              "control_ms": 15.648250002413988,
+              "dataset": "collaboration",
+              "filtered": false,
+              "speedup": 0.6841195257984664,
+              "strongest_control": "cypher_fused",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 19.357270429027267,
+              "control_ms": 14.371458004461601,
+              "dataset": "collaboration",
+              "filtered": true,
+              "speedup": 0.7424320519338733,
+              "strongest_control": "cypher_selective",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 16.70265248976648,
+              "control_ms": 13.017582998145372,
+              "dataset": "collaboration",
+              "filtered": false,
+              "speedup": 0.7793721988840451,
+              "strongest_control": "cypher_fused",
+              "workload": "hubs128"
+            },
+            {
+              "candidate_ms": 16.05359038512688,
+              "control_ms": 11.326833016937599,
+              "dataset": "collaboration",
+              "filtered": true,
+              "speedup": 0.7055638486597698,
+              "strongest_control": "cypher_fused",
+              "workload": "hubs128"
+            },
+            {
+              "candidate_ms": 36.98938790010288,
+              "control_ms": 14.51250002719462,
+              "dataset": "friendship",
+              "filtered": false,
+              "speedup": 0.3923422595255829,
+              "strongest_control": "cypher_selective",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 33.68116982426728,
+              "control_ms": 10.23120799800381,
+              "dataset": "friendship",
+              "filtered": true,
+              "speedup": 0.30376640869024174,
+              "strongest_control": "cypher_selective",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 40.981627857836436,
+              "control_ms": 17.558583000209183,
+              "dataset": "friendship",
+              "filtered": false,
+              "speedup": 0.42845011089162144,
+              "strongest_control": "cypher_fused",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 38.74021084891866,
+              "control_ms": 14.96929200948216,
+              "dataset": "friendship",
+              "filtered": true,
+              "speedup": 0.3864019240334102,
+              "strongest_control": "cypher_fused",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 38.27926288475282,
+              "control_ms": 16.65733300615102,
+              "dataset": "friendship",
+              "filtered": false,
+              "speedup": 0.4351529196448,
+              "strongest_control": "cypher_fused",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 37.056262914557,
+              "control_ms": 14.843333017779514,
+              "dataset": "friendship",
+              "filtered": true,
+              "speedup": 0.4005620602380962,
+              "strongest_control": "cypher_selective",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 33.65140766865807,
+              "control_ms": 14.791416993830353,
+              "dataset": "friendship",
+              "filtered": false,
+              "speedup": 0.43954823939227494,
+              "strongest_control": "cypher_selective",
+              "workload": "hubs128"
+            },
+            {
+              "candidate_ms": 31.844241667131428,
+              "control_ms": 13.74491601018235,
+              "dataset": "friendship",
+              "filtered": true,
+              "speedup": 0.43162955971312694,
+              "strongest_control": "cypher_fused",
+              "workload": "hubs128"
+            },
+            {
+              "candidate_ms": 18.408633264771197,
+              "control_ms": 11.847125017084181,
+              "dataset": "communication",
+              "filtered": false,
+              "speedup": 0.6435635305830202,
+              "strongest_control": "cypher_fused",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 15.735174258297777,
+              "control_ms": 9.287957975175232,
+              "dataset": "communication",
+              "filtered": true,
+              "speedup": 0.5902672460254024,
+              "strongest_control": "cypher_selective",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 23.401800243009347,
+              "control_ms": 20.153207995463163,
+              "dataset": "communication",
+              "filtered": false,
+              "speedup": 0.8611819512254569,
+              "strongest_control": "cypher_fused",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 24.309040399384685,
+              "control_ms": 12.652749981498346,
+              "dataset": "communication",
+              "filtered": true,
+              "speedup": 0.5204956581428288,
+              "strongest_control": "cypher_fused",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 20.229633248236496,
+              "control_ms": 17.147541977465153,
+              "dataset": "communication",
+              "filtered": false,
+              "speedup": 0.8476447282582336,
+              "strongest_control": "cypher_selective",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 17.858216238964815,
+              "control_ms": 10.678958002245054,
+              "dataset": "communication",
+              "filtered": true,
+              "speedup": 0.5979857035746186,
+              "strongest_control": "cypher_selective",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 16.616081414395012,
+              "control_ms": 14.39804199617356,
+              "dataset": "communication",
+              "filtered": false,
+              "speedup": 0.8665124849292145,
+              "strongest_control": "cypher_fused",
+              "workload": "hubs128"
+            },
+            {
+              "candidate_ms": 15.700813688745257,
+              "control_ms": 12.453415984055027,
+              "dataset": "communication",
+              "filtered": true,
+              "speedup": 0.7931701013038549,
+              "strongest_control": "cypher_selective",
+              "workload": "hubs128"
+            }
+          ]
+        },
+        "10_requests": {
+          "conditional_database_bootstrap_95_interval": [
+            0.11203077142001577,
+            0.12430711073267717
+          ],
+          "conditions": [
+            {
+              "candidate_ms": 76.29910801188089,
+              "control_ms": 11.882084014359862,
+              "dataset": "collaboration",
+              "filtered": false,
+              "speedup": 0.1557303135511053,
+              "strongest_control": "cypher_fused",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 75.23844199022278,
+              "control_ms": 8.648334012832493,
+              "dataset": "collaboration",
+              "filtered": true,
+              "speedup": 0.11494568180925838,
+              "strongest_control": "cypher_fused",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 81.24598301947117,
+              "control_ms": 17.32312500826083,
+              "dataset": "collaboration",
+              "filtered": false,
+              "speedup": 0.2132182338677498,
+              "strongest_control": "cypher_fused",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 78.41952500166371,
+              "control_ms": 11.801374988863245,
+              "dataset": "collaboration",
+              "filtered": true,
+              "speedup": 0.150490263599695,
+              "strongest_control": "cypher_fused",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 85.796120215673,
+              "control_ms": 15.648250002413988,
+              "dataset": "collaboration",
+              "filtered": false,
+              "speedup": 0.18238878358459162,
+              "strongest_control": "cypher_fused",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 78.32319100270979,
+              "control_ms": 14.371458004461601,
+              "dataset": "collaboration",
+              "filtered": true,
+              "speedup": 0.18348917888144245,
+              "strongest_control": "cypher_selective",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 76.120899990201,
+              "control_ms": 13.017582998145372,
+              "dataset": "collaboration",
+              "filtered": false,
+              "speedup": 0.1710119428412055,
+              "strongest_control": "cypher_fused",
+              "workload": "hubs128"
+            },
+            {
+              "candidate_ms": 74.4216910097748,
+              "control_ms": 11.326833016937599,
+              "dataset": "collaboration",
+              "filtered": true,
+              "speedup": 0.15219800656571877,
+              "strongest_control": "cypher_fused",
+              "workload": "hubs128"
+            },
+            {
+              "candidate_ms": 249.33550409041345,
+              "control_ms": 14.51250002719462,
+              "dataset": "friendship",
+              "filtered": false,
+              "speedup": 0.05820470726837254,
+              "strongest_control": "cypher_selective",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 247.45219238393474,
+              "control_ms": 10.23120799800381,
+              "dataset": "friendship",
+              "filtered": true,
+              "speedup": 0.04134620065167807,
+              "strongest_control": "cypher_selective",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 253.9085880969651,
+              "control_ms": 17.558583000209183,
+              "dataset": "friendship",
+              "filtered": false,
+              "speedup": 0.06915316701892628,
+              "strongest_control": "cypher_fused",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 252.51123340858612,
+              "control_ms": 14.96929200948216,
+              "dataset": "friendship",
+              "filtered": true,
+              "speedup": 0.059281687422042276,
+              "strongest_control": "cypher_fused",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 250.6253790750634,
+              "control_ms": 16.65733300615102,
+              "dataset": "friendship",
+              "filtered": false,
+              "speedup": 0.06646307356272198,
+              "strongest_control": "cypher_fused",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 249.40237910486758,
+              "control_ms": 14.843333017779514,
+              "dataset": "friendship",
+              "filtered": true,
+              "speedup": 0.059515603143217244,
+              "strongest_control": "cypher_selective",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 245.27212908724323,
+              "control_ms": 14.791416993830353,
+              "dataset": "friendship",
+              "filtered": false,
+              "speedup": 0.06030614668236133,
+              "strongest_control": "cypher_selective",
+              "workload": "hubs128"
+            },
+            {
+              "candidate_ms": 243.9057121053338,
+              "control_ms": 13.74491601018235,
+              "dataset": "friendship",
+              "filtered": true,
+              "speedup": 0.056353399399873154,
+              "strongest_control": "cypher_fused",
+              "workload": "hubs128"
+            },
+            {
+              "candidate_ms": 71.91038268792909,
+              "control_ms": 11.847125017084181,
+              "dataset": "communication",
+              "filtered": false,
+              "speedup": 0.16474846293750633,
+              "strongest_control": "cypher_fused",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 69.52292469504755,
+              "control_ms": 9.287957975175232,
+              "dataset": "communication",
+              "filtered": true,
+              "speedup": 0.13359561635123296,
+              "strongest_control": "cypher_selective",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 76.846871493035,
+              "control_ms": 20.153207995463163,
+              "dataset": "communication",
+              "filtered": false,
+              "speedup": 0.2622515087981135,
+              "strongest_control": "cypher_fused",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 78.13653748307843,
+              "control_ms": 12.652749981498346,
+              "dataset": "communication",
+              "filtered": true,
+              "speedup": 0.16193128578596763,
+              "strongest_control": "cypher_fused",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 73.72171667811926,
+              "control_ms": 17.147541977465153,
+              "dataset": "communication",
+              "filtered": false,
+              "speedup": 0.2325982458104448,
+              "strongest_control": "cypher_selective",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 71.99550871446263,
+              "control_ms": 10.678958002245054,
+              "dataset": "communication",
+              "filtered": true,
+              "speedup": 0.1483281136966234,
+              "strongest_control": "cypher_selective",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 71.91432951076422,
+              "control_ms": 14.39804199617356,
+              "dataset": "communication",
+              "filtered": false,
+              "speedup": 0.20021103018166142,
+              "strongest_control": "cypher_fused",
+              "workload": "hubs128"
+            },
+            {
+              "candidate_ms": 70.4882454854669,
+              "control_ms": 12.453415984055027,
+              "dataset": "communication",
+              "filtered": true,
+              "speedup": 0.17667365527806536,
+              "strongest_control": "cypher_selective",
+              "workload": "hubs128"
+            }
+          ],
+          "geometric_mean_speedup": 0.11975461144125253,
+          "regressions_over_ten_percent": [
+            {
+              "candidate_ms": 76.29910801188089,
+              "control_ms": 11.882084014359862,
+              "dataset": "collaboration",
+              "filtered": false,
+              "speedup": 0.1557303135511053,
+              "strongest_control": "cypher_fused",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 75.23844199022278,
+              "control_ms": 8.648334012832493,
+              "dataset": "collaboration",
+              "filtered": true,
+              "speedup": 0.11494568180925838,
+              "strongest_control": "cypher_fused",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 81.24598301947117,
+              "control_ms": 17.32312500826083,
+              "dataset": "collaboration",
+              "filtered": false,
+              "speedup": 0.2132182338677498,
+              "strongest_control": "cypher_fused",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 78.41952500166371,
+              "control_ms": 11.801374988863245,
+              "dataset": "collaboration",
+              "filtered": true,
+              "speedup": 0.150490263599695,
+              "strongest_control": "cypher_fused",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 85.796120215673,
+              "control_ms": 15.648250002413988,
+              "dataset": "collaboration",
+              "filtered": false,
+              "speedup": 0.18238878358459162,
+              "strongest_control": "cypher_fused",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 78.32319100270979,
+              "control_ms": 14.371458004461601,
+              "dataset": "collaboration",
+              "filtered": true,
+              "speedup": 0.18348917888144245,
+              "strongest_control": "cypher_selective",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 76.120899990201,
+              "control_ms": 13.017582998145372,
+              "dataset": "collaboration",
+              "filtered": false,
+              "speedup": 0.1710119428412055,
+              "strongest_control": "cypher_fused",
+              "workload": "hubs128"
+            },
+            {
+              "candidate_ms": 74.4216910097748,
+              "control_ms": 11.326833016937599,
+              "dataset": "collaboration",
+              "filtered": true,
+              "speedup": 0.15219800656571877,
+              "strongest_control": "cypher_fused",
+              "workload": "hubs128"
+            },
+            {
+              "candidate_ms": 249.33550409041345,
+              "control_ms": 14.51250002719462,
+              "dataset": "friendship",
+              "filtered": false,
+              "speedup": 0.05820470726837254,
+              "strongest_control": "cypher_selective",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 247.45219238393474,
+              "control_ms": 10.23120799800381,
+              "dataset": "friendship",
+              "filtered": true,
+              "speedup": 0.04134620065167807,
+              "strongest_control": "cypher_selective",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 253.9085880969651,
+              "control_ms": 17.558583000209183,
+              "dataset": "friendship",
+              "filtered": false,
+              "speedup": 0.06915316701892628,
+              "strongest_control": "cypher_fused",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 252.51123340858612,
+              "control_ms": 14.96929200948216,
+              "dataset": "friendship",
+              "filtered": true,
+              "speedup": 0.059281687422042276,
+              "strongest_control": "cypher_fused",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 250.6253790750634,
+              "control_ms": 16.65733300615102,
+              "dataset": "friendship",
+              "filtered": false,
+              "speedup": 0.06646307356272198,
+              "strongest_control": "cypher_fused",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 249.40237910486758,
+              "control_ms": 14.843333017779514,
+              "dataset": "friendship",
+              "filtered": true,
+              "speedup": 0.059515603143217244,
+              "strongest_control": "cypher_selective",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 245.27212908724323,
+              "control_ms": 14.791416993830353,
+              "dataset": "friendship",
+              "filtered": false,
+              "speedup": 0.06030614668236133,
+              "strongest_control": "cypher_selective",
+              "workload": "hubs128"
+            },
+            {
+              "candidate_ms": 243.9057121053338,
+              "control_ms": 13.74491601018235,
+              "dataset": "friendship",
+              "filtered": true,
+              "speedup": 0.056353399399873154,
+              "strongest_control": "cypher_fused",
+              "workload": "hubs128"
+            },
+            {
+              "candidate_ms": 71.91038268792909,
+              "control_ms": 11.847125017084181,
+              "dataset": "communication",
+              "filtered": false,
+              "speedup": 0.16474846293750633,
+              "strongest_control": "cypher_fused",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 69.52292469504755,
+              "control_ms": 9.287957975175232,
+              "dataset": "communication",
+              "filtered": true,
+              "speedup": 0.13359561635123296,
+              "strongest_control": "cypher_selective",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 76.846871493035,
+              "control_ms": 20.153207995463163,
+              "dataset": "communication",
+              "filtered": false,
+              "speedup": 0.2622515087981135,
+              "strongest_control": "cypher_fused",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 78.13653748307843,
+              "control_ms": 12.652749981498346,
+              "dataset": "communication",
+              "filtered": true,
+              "speedup": 0.16193128578596763,
+              "strongest_control": "cypher_fused",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 73.72171667811926,
+              "control_ms": 17.147541977465153,
+              "dataset": "communication",
+              "filtered": false,
+              "speedup": 0.2325982458104448,
+              "strongest_control": "cypher_selective",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 71.99550871446263,
+              "control_ms": 10.678958002245054,
+              "dataset": "communication",
+              "filtered": true,
+              "speedup": 0.1483281136966234,
+              "strongest_control": "cypher_selective",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 71.91432951076422,
+              "control_ms": 14.39804199617356,
+              "dataset": "communication",
+              "filtered": false,
+              "speedup": 0.20021103018166142,
+              "strongest_control": "cypher_fused",
+              "workload": "hubs128"
+            },
+            {
+              "candidate_ms": 70.4882454854669,
+              "control_ms": 12.453415984055027,
+              "dataset": "communication",
+              "filtered": true,
+              "speedup": 0.17667365527806536,
+              "strongest_control": "cypher_selective",
+              "workload": "hubs128"
+            }
+          ]
+        },
+        "1_requests": {
+          "conditional_database_bootstrap_95_interval": [
+            0.012727244101342787,
+            0.014209436166419816
+          ],
+          "conditions": [
+            {
+              "candidate_ms": 670.4815830162261,
+              "control_ms": 11.882084014359862,
+              "dataset": "collaboration",
+              "filtered": false,
+              "speedup": 0.017721715726936392,
+              "strongest_control": "cypher_fused",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 669.420916994568,
+              "control_ms": 8.648334012832493,
+              "dataset": "collaboration",
+              "filtered": true,
+              "speedup": 0.012919127253537359,
+              "strongest_control": "cypher_fused",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 675.4284580238163,
+              "control_ms": 17.32312500826083,
+              "dataset": "collaboration",
+              "filtered": false,
+              "speedup": 0.025647609013906843,
+              "strongest_control": "cypher_fused",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 672.6020000060089,
+              "control_ms": 11.801374988863245,
+              "dataset": "collaboration",
+              "filtered": true,
+              "speedup": 0.017545851764874047,
+              "strongest_control": "cypher_fused",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 680.6111669866368,
+              "control_ms": 15.648250002413988,
+              "dataset": "collaboration",
+              "filtered": false,
+              "speedup": 0.022991468200111425,
+              "strongest_control": "cypher_fused",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 672.505666007055,
+              "control_ms": 14.371458004461601,
+              "dataset": "collaboration",
+              "filtered": true,
+              "speedup": 0.021370017727569357,
+              "strongest_control": "cypher_selective",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 670.3033749945462,
+              "control_ms": 13.017582998145372,
+              "dataset": "collaboration",
+              "filtered": false,
+              "speedup": 0.01942043481170192,
+              "strongest_control": "cypher_fused",
+              "workload": "hubs128"
+            },
+            {
+              "candidate_ms": 668.60416601412,
+              "control_ms": 11.326833016937599,
+              "dataset": "collaboration",
+              "filtered": true,
+              "speedup": 0.01694101471796452,
+              "strongest_control": "cypher_fused",
+              "workload": "hubs128"
+            },
+            {
+              "candidate_ms": 2372.796665993519,
+              "control_ms": 14.51250002719462,
+              "dataset": "friendship",
+              "filtered": false,
+              "speedup": 0.006116200446159198,
+              "strongest_control": "cypher_selective",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 2371.2815410108306,
+              "control_ms": 10.23120799800381,
+              "dataset": "friendship",
+              "filtered": true,
+              "speedup": 0.004314632328998963,
+              "strongest_control": "cypher_selective",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 2377.369750000071,
+              "control_ms": 17.558583000209183,
+              "dataset": "friendship",
+              "filtered": false,
+              "speedup": 0.007385718187172466,
+              "strongest_control": "cypher_fused",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 2377.687082014745,
+              "control_ms": 14.96929200948216,
+              "dataset": "friendship",
+              "filtered": true,
+              "speedup": 0.006295736778280284,
+              "strongest_control": "cypher_fused",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 2374.086540978169,
+              "control_ms": 16.65733300615102,
+              "dataset": "friendship",
+              "filtered": false,
+              "speedup": 0.007016312471611873,
+              "strongest_control": "cypher_fused",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 2372.8635410079733,
+              "control_ms": 14.843333017779514,
+              "dataset": "friendship",
+              "filtered": true,
+              "speedup": 0.0062554515930883185,
+              "strongest_control": "cypher_selective",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 2368.733290990349,
+              "control_ms": 14.791416993830353,
+              "dataset": "friendship",
+              "filtered": false,
+              "speedup": 0.006244441723384644,
+              "strongest_control": "cypher_selective",
+              "workload": "hubs128"
+            },
+            {
+              "candidate_ms": 2367.3668740084395,
+              "control_ms": 13.74491601018235,
+              "dataset": "friendship",
+              "filtered": true,
+              "speedup": 0.005805993215960388,
+              "strongest_control": "cypher_fused",
+              "workload": "hubs128"
+            },
+            {
+              "candidate_ms": 611.6648330062162,
+              "control_ms": 11.847125017084181,
+              "dataset": "communication",
+              "filtered": false,
+              "speedup": 0.019368654821722897,
+              "strongest_control": "cypher_fused",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 609.2773750133347,
+              "control_ms": 9.287957975175232,
+              "dataset": "communication",
+              "filtered": true,
+              "speedup": 0.01524421939181962,
+              "strongest_control": "cypher_selective",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 616.502875025617,
+              "control_ms": 20.153207995463163,
+              "dataset": "communication",
+              "filtered": false,
+              "speedup": 0.03268956044142658,
+              "strongest_control": "cypher_fused",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 617.0108330261428,
+              "control_ms": 12.652749981498346,
+              "dataset": "communication",
+              "filtered": true,
+              "speedup": 0.020506528093587374,
+              "strongest_control": "cypher_fused",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 613.4761669964064,
+              "control_ms": 17.147541977465153,
+              "dataset": "communication",
+              "filtered": false,
+              "speedup": 0.027951439517886926,
+              "strongest_control": "cypher_selective",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 611.7499590327498,
+              "control_ms": 10.678958002245054,
+              "dataset": "communication",
+              "filtered": true,
+              "speedup": 0.017456409836348448,
+              "strongest_control": "cypher_selective",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 610.0050010136329,
+              "control_ms": 14.39804199617356,
+              "dataset": "communication",
+              "filtered": false,
+              "speedup": 0.023603154027013924,
+              "strongest_control": "cypher_fused",
+              "workload": "hubs128"
+            },
+            {
+              "candidate_ms": 609.4307090388611,
+              "control_ms": 12.453415984055027,
+              "dataset": "communication",
+              "filtered": true,
+              "speedup": 0.020434506826371494,
+              "strongest_control": "cypher_selective",
+              "workload": "hubs128"
+            }
+          ],
+          "geometric_mean_speedup": 0.013567937397683933,
+          "regressions_over_ten_percent": [
+            {
+              "candidate_ms": 670.4815830162261,
+              "control_ms": 11.882084014359862,
+              "dataset": "collaboration",
+              "filtered": false,
+              "speedup": 0.017721715726936392,
+              "strongest_control": "cypher_fused",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 669.420916994568,
+              "control_ms": 8.648334012832493,
+              "dataset": "collaboration",
+              "filtered": true,
+              "speedup": 0.012919127253537359,
+              "strongest_control": "cypher_fused",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 675.4284580238163,
+              "control_ms": 17.32312500826083,
+              "dataset": "collaboration",
+              "filtered": false,
+              "speedup": 0.025647609013906843,
+              "strongest_control": "cypher_fused",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 672.6020000060089,
+              "control_ms": 11.801374988863245,
+              "dataset": "collaboration",
+              "filtered": true,
+              "speedup": 0.017545851764874047,
+              "strongest_control": "cypher_fused",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 680.6111669866368,
+              "control_ms": 15.648250002413988,
+              "dataset": "collaboration",
+              "filtered": false,
+              "speedup": 0.022991468200111425,
+              "strongest_control": "cypher_fused",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 672.505666007055,
+              "control_ms": 14.371458004461601,
+              "dataset": "collaboration",
+              "filtered": true,
+              "speedup": 0.021370017727569357,
+              "strongest_control": "cypher_selective",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 670.3033749945462,
+              "control_ms": 13.017582998145372,
+              "dataset": "collaboration",
+              "filtered": false,
+              "speedup": 0.01942043481170192,
+              "strongest_control": "cypher_fused",
+              "workload": "hubs128"
+            },
+            {
+              "candidate_ms": 668.60416601412,
+              "control_ms": 11.326833016937599,
+              "dataset": "collaboration",
+              "filtered": true,
+              "speedup": 0.01694101471796452,
+              "strongest_control": "cypher_fused",
+              "workload": "hubs128"
+            },
+            {
+              "candidate_ms": 2372.796665993519,
+              "control_ms": 14.51250002719462,
+              "dataset": "friendship",
+              "filtered": false,
+              "speedup": 0.006116200446159198,
+              "strongest_control": "cypher_selective",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 2371.2815410108306,
+              "control_ms": 10.23120799800381,
+              "dataset": "friendship",
+              "filtered": true,
+              "speedup": 0.004314632328998963,
+              "strongest_control": "cypher_selective",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 2377.369750000071,
+              "control_ms": 17.558583000209183,
+              "dataset": "friendship",
+              "filtered": false,
+              "speedup": 0.007385718187172466,
+              "strongest_control": "cypher_fused",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 2377.687082014745,
+              "control_ms": 14.96929200948216,
+              "dataset": "friendship",
+              "filtered": true,
+              "speedup": 0.006295736778280284,
+              "strongest_control": "cypher_fused",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 2374.086540978169,
+              "control_ms": 16.65733300615102,
+              "dataset": "friendship",
+              "filtered": false,
+              "speedup": 0.007016312471611873,
+              "strongest_control": "cypher_fused",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 2372.8635410079733,
+              "control_ms": 14.843333017779514,
+              "dataset": "friendship",
+              "filtered": true,
+              "speedup": 0.0062554515930883185,
+              "strongest_control": "cypher_selective",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 2368.733290990349,
+              "control_ms": 14.791416993830353,
+              "dataset": "friendship",
+              "filtered": false,
+              "speedup": 0.006244441723384644,
+              "strongest_control": "cypher_selective",
+              "workload": "hubs128"
+            },
+            {
+              "candidate_ms": 2367.3668740084395,
+              "control_ms": 13.74491601018235,
+              "dataset": "friendship",
+              "filtered": true,
+              "speedup": 0.005805993215960388,
+              "strongest_control": "cypher_fused",
+              "workload": "hubs128"
+            },
+            {
+              "candidate_ms": 611.6648330062162,
+              "control_ms": 11.847125017084181,
+              "dataset": "communication",
+              "filtered": false,
+              "speedup": 0.019368654821722897,
+              "strongest_control": "cypher_fused",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 609.2773750133347,
+              "control_ms": 9.287957975175232,
+              "dataset": "communication",
+              "filtered": true,
+              "speedup": 0.01524421939181962,
+              "strongest_control": "cypher_selective",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 616.502875025617,
+              "control_ms": 20.153207995463163,
+              "dataset": "communication",
+              "filtered": false,
+              "speedup": 0.03268956044142658,
+              "strongest_control": "cypher_fused",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 617.0108330261428,
+              "control_ms": 12.652749981498346,
+              "dataset": "communication",
+              "filtered": true,
+              "speedup": 0.020506528093587374,
+              "strongest_control": "cypher_fused",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 613.4761669964064,
+              "control_ms": 17.147541977465153,
+              "dataset": "communication",
+              "filtered": false,
+              "speedup": 0.027951439517886926,
+              "strongest_control": "cypher_selective",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 611.7499590327498,
+              "control_ms": 10.678958002245054,
+              "dataset": "communication",
+              "filtered": true,
+              "speedup": 0.017456409836348448,
+              "strongest_control": "cypher_selective",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 610.0050010136329,
+              "control_ms": 14.39804199617356,
+              "dataset": "communication",
+              "filtered": false,
+              "speedup": 0.023603154027013924,
+              "strongest_control": "cypher_fused",
+              "workload": "hubs128"
+            },
+            {
+              "candidate_ms": 609.4307090388611,
+              "control_ms": 12.453415984055027,
+              "dataset": "communication",
+              "filtered": true,
+              "speedup": 0.020434506826371494,
+              "strongest_control": "cypher_selective",
+              "workload": "hubs128"
+            }
+          ]
+        },
+        "steady_state": {
+          "conditional_database_bootstrap_95_interval": [
+            0.961664396909419,
+            1.0657977329022401
+          ],
+          "conditions": [
+            {
+              "candidate_ms": 13.564083987148479,
+              "control_ms": 11.882084014359862,
+              "dataset": "collaboration",
+              "filtered": false,
+              "speedup": 0.8759960514560174,
+              "strongest_control": "cypher_fused",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 10.306374984793365,
+              "control_ms": 8.648334012832493,
+              "dataset": "collaboration",
+              "filtered": true,
+              "speedup": 0.8391247189814804,
+              "strongest_control": "cypher_fused",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 16.00849998067133,
+              "control_ms": 17.32312500826083,
+              "dataset": "collaboration",
+              "filtered": false,
+              "speedup": 1.0821204378409457,
+              "strongest_control": "cypher_fused",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 12.855500011937693,
+              "control_ms": 11.801374988863245,
+              "dataset": "collaboration",
+              "filtered": true,
+              "speedup": 0.9180020207618854,
+              "strongest_control": "cypher_fused",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 15.88216601521708,
+              "control_ms": 15.648250002413988,
+              "dataset": "collaboration",
+              "filtered": false,
+              "speedup": 0.9852717814069585,
+              "strongest_control": "cypher_fused",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 12.365875008981675,
+              "control_ms": 14.371458004461601,
+              "dataset": "collaboration",
+              "filtered": true,
+              "speedup": 1.162186905012643,
+              "strongest_control": "cypher_selective",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 10.13870901078917,
+              "control_ms": 13.017582998145372,
+              "dataset": "collaboration",
+              "filtered": false,
+              "speedup": 1.2839487733884687,
+              "strongest_control": "cypher_fused",
+              "workload": "hubs128"
+            },
+            {
+              "candidate_ms": 9.922874975018203,
+              "control_ms": 11.326833016937599,
+              "dataset": "collaboration",
+              "filtered": true,
+              "speedup": 1.1414870232119214,
+              "strongest_control": "cypher_fused",
+              "workload": "hubs128"
+            },
+            {
+              "candidate_ms": 13.395374990068376,
+              "control_ms": 14.51250002719462,
+              "dataset": "friendship",
+              "filtered": false,
+              "speedup": 1.0833963243249631,
+              "strongest_control": "cypher_selective",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 10.426624998217449,
+              "control_ms": 10.23120799800381,
+              "dataset": "friendship",
+              "filtered": true,
+              "speedup": 0.981257885437805,
+              "strongest_control": "cypher_selective",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 17.96845899662003,
+              "control_ms": 17.558583000209183,
+              "dataset": "friendship",
+              "filtered": false,
+              "speedup": 0.9771891403437576,
+              "strongest_control": "cypher_fused",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 14.987875008955598,
+              "control_ms": 14.96929200948216,
+              "dataset": "friendship",
+              "filtered": true,
+              "speedup": 0.9987601311418507,
+              "strongest_control": "cypher_fused",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 15.396333008538932,
+              "control_ms": 16.65733300615102,
+              "dataset": "friendship",
+              "filtered": false,
+              "speedup": 1.0819026190790189,
+              "strongest_control": "cypher_fused",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 13.462250004522502,
+              "control_ms": 14.843333017779514,
+              "dataset": "friendship",
+              "filtered": true,
+              "speedup": 1.1025893155150923,
+              "strongest_control": "cypher_selective",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 11.169083009008318,
+              "control_ms": 14.791416993830353,
+              "dataset": "friendship",
+              "filtered": false,
+              "speedup": 1.3243179392525308,
+              "strongest_control": "cypher_selective",
+              "workload": "hubs128"
+            },
+            {
+              "candidate_ms": 9.547374997055158,
+              "control_ms": 13.74491601018235,
+              "dataset": "friendship",
+              "filtered": true,
+              "speedup": 1.4396539378019513,
+              "strongest_control": "cypher_fused",
+              "workload": "hubs128"
+            },
+            {
+              "candidate_ms": 12.470292014768347,
+              "control_ms": 11.847125017084181,
+              "dataset": "communication",
+              "filtered": false,
+              "speedup": 0.9500278744919397,
+              "strongest_control": "cypher_fused",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 9.796833008294925,
+              "control_ms": 9.287957975175232,
+              "dataset": "communication",
+              "filtered": true,
+              "speedup": 0.9480571902482331,
+              "strongest_control": "cypher_selective",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 17.463458993006498,
+              "control_ms": 20.153207995463163,
+              "dataset": "communication",
+              "filtered": false,
+              "speedup": 1.1540215488543144,
+              "strongest_control": "cypher_fused",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 18.13724997919053,
+              "control_ms": 12.652749981498346,
+              "dataset": "communication",
+              "filtered": true,
+              "speedup": 0.6976112694049686,
+              "strongest_control": "cypher_fused",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 14.291291998233646,
+              "control_ms": 17.147541977465153,
+              "dataset": "communication",
+              "filtered": false,
+              "speedup": 1.1998594654412302,
+              "strongest_control": "cypher_selective",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 11.919874988961965,
+              "control_ms": 10.678958002245054,
+              "dataset": "communication",
+              "filtered": true,
+              "speedup": 0.895895134146455,
+              "strongest_control": "cypher_selective",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 10.444290994200855,
+              "control_ms": 14.39804199617356,
+              "dataset": "communication",
+              "filtered": false,
+              "speedup": 1.3785561896128715,
+              "strongest_control": "cypher_fused",
+              "workload": "hubs128"
+            },
+            {
+              "candidate_ms": 9.703542018542066,
+              "control_ms": 12.453415984055027,
+              "dataset": "communication",
+              "filtered": true,
+              "speedup": 1.283388680160126,
+              "strongest_control": "cypher_selective",
+              "workload": "hubs128"
+            }
+          ],
+          "geometric_mean_speedup": 1.0593278939034327,
+          "regressions_over_ten_percent": [
+            {
+              "candidate_ms": 13.564083987148479,
+              "control_ms": 11.882084014359862,
+              "dataset": "collaboration",
+              "filtered": false,
+              "speedup": 0.8759960514560174,
+              "strongest_control": "cypher_fused",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 10.306374984793365,
+              "control_ms": 8.648334012832493,
+              "dataset": "collaboration",
+              "filtered": true,
+              "speedup": 0.8391247189814804,
+              "strongest_control": "cypher_fused",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 18.13724997919053,
+              "control_ms": 12.652749981498346,
+              "dataset": "communication",
+              "filtered": true,
+              "speedup": 0.6976112694049686,
+              "strongest_control": "cypher_fused",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 11.919874988961965,
+              "control_ms": 10.678958002245054,
+              "dataset": "communication",
+              "filtered": true,
+              "speedup": 0.895895134146455,
+              "strongest_control": "cypher_selective",
+              "workload": "many_targets256"
+            }
+          ]
+        }
+      }
+    },
+    "local_warm": {
+      "controls": [
+        "gds_native",
+        "cypher_fused",
+        "cypher_selective",
+        "precomputed"
+      ],
+      "regimes": {
+        "1000_requests": {
+          "conditional_database_bootstrap_95_interval": [
+            0.8415445346379198,
+            0.9338113931368922
+          ],
+          "conditions": [
+            {
+              "candidate_ms": 9.406469999579713,
+              "control_ms": 10.318337206961587,
+              "dataset": "collaboration",
+              "filtered": false,
+              "speedup": 1.096940425836963,
+              "strongest_control": "precomputed",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 9.520858407660853,
+              "control_ms": 8.330957982892869,
+              "dataset": "collaboration",
+              "filtered": true,
+              "speedup": 0.8750217287329319,
+              "strongest_control": "precomputed",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 14.238346192112658,
+              "control_ms": 14.143999920081114,
+              "dataset": "collaboration",
+              "filtered": false,
+              "speedup": 0.9933737899922811,
+              "strongest_control": "precomputed",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 14.490520327701233,
+              "control_ms": 11.801374988863245,
+              "dataset": "collaboration",
+              "filtered": true,
+              "speedup": 0.8144203742844759,
+              "strongest_control": "cypher_fused",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 18.400932665826986,
+              "control_ms": 12.861390973732341,
+              "dataset": "collaboration",
+              "filtered": false,
+              "speedup": 0.6989532110846577,
+              "strongest_control": "precomputed",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 12.232471447554417,
+              "control_ms": 11.849943164066644,
+              "dataset": "collaboration",
+              "filtered": true,
+              "speedup": 0.9687284548238818,
+              "strongest_control": "precomputed",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 10.083741582348011,
+              "control_ms": 9.449730446503963,
+              "dataset": "collaboration",
+              "filtered": false,
+              "speedup": 0.9371254081963079,
+              "strongest_control": "precomputed",
+              "workload": "hubs128"
+            },
+            {
+              "candidate_ms": 10.325308796018362,
+              "control_ms": 8.145073997467989,
+              "dataset": "collaboration",
+              "filtered": true,
+              "speedup": 0.7888455598159821,
+              "strongest_control": "precomputed",
+              "workload": "hubs128"
+            },
+            {
+              "candidate_ms": 12.663333208474794,
+              "control_ms": 11.880478538019815,
+              "dataset": "friendship",
+              "filtered": false,
+              "speedup": 0.9381794147269961,
+              "strongest_control": "precomputed",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 10.642649548273766,
+              "control_ms": 9.469882337580202,
+              "dataset": "friendship",
+              "filtered": true,
+              "speedup": 0.8898049583072303,
+              "strongest_control": "precomputed",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 17.9079155701329,
+              "control_ms": 14.551387618063018,
+              "dataset": "friendship",
+              "filtered": false,
+              "speedup": 0.8125673566571896,
+              "strongest_control": "precomputed",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 14.980116807972081,
+              "control_ms": 13.147518837271493,
+              "dataset": "friendship",
+              "filtered": true,
+              "speedup": 0.8776646407906965,
+              "strongest_control": "precomputed",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 17.060780156200053,
+              "control_ms": 15.563956661324482,
+              "dataset": "friendship",
+              "filtered": false,
+              "speedup": 0.9122652375113331,
+              "strongest_control": "precomputed",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 15.014252813882194,
+              "control_ms": 13.337149566272274,
+              "dataset": "friendship",
+              "filtered": true,
+              "speedup": 0.8882992534893731,
+              "strongest_control": "precomputed",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 12.848081558331614,
+              "control_ms": 12.017352476657834,
+              "dataset": "friendship",
+              "filtered": false,
+              "speedup": 0.9353421693423889,
+              "strongest_control": "precomputed",
+              "workload": "hubs128"
+            },
+            {
+              "candidate_ms": 9.841181705705822,
+              "control_ms": 9.608138070820134,
+              "dataset": "friendship",
+              "filtered": true,
+              "speedup": 0.9763195476056934,
+              "strongest_control": "precomputed",
+              "workload": "hubs128"
+            },
+            {
+              "candidate_ms": 10.076810706901597,
+              "control_ms": 8.625637506047497,
+              "dataset": "communication",
+              "filtered": false,
+              "speedup": 0.855988839816134,
+              "strongest_control": "precomputed",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 12.283030468650395,
+              "control_ms": 9.202949804224772,
+              "dataset": "communication",
+              "filtered": true,
+              "speedup": 0.7492409815080392,
+              "strongest_control": "precomputed",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 14.095352959673619,
+              "control_ms": 12.795985248871148,
+              "dataset": "communication",
+              "filtered": false,
+              "speedup": 0.9078158798492011,
+              "strongest_control": "precomputed",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 13.22892364449217,
+              "control_ms": 12.15819794536219,
+              "dataset": "communication",
+              "filtered": true,
+              "speedup": 0.9190617673890821,
+              "strongest_control": "precomputed",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 14.183352782041766,
+              "control_ms": 14.988781036488945,
+              "dataset": "communication",
+              "filtered": false,
+              "speedup": 1.0567868730915988,
+              "strongest_control": "precomputed",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 12.886625053972239,
+              "control_ms": 10.678958002245054,
+              "dataset": "communication",
+              "filtered": true,
+              "speedup": 0.8286853972641438,
+              "strongest_control": "cypher_selective",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 9.008295578416437,
+              "control_ms": 8.74145333233173,
+              "dataset": "communication",
+              "filtered": false,
+              "speedup": 0.9703781649079042,
+              "strongest_control": "precomputed",
+              "workload": "hubs128"
+            },
+            {
+              "candidate_ms": 8.866667931491975,
+              "control_ms": 8.486378534435062,
+              "dataset": "communication",
+              "filtered": true,
+              "speedup": 0.9571102244952435,
+              "strongest_control": "precomputed",
+              "workload": "hubs128"
+            }
+          ],
+          "geometric_mean_speedup": 0.8974569369903311,
+          "regressions_over_ten_percent": [
+            {
+              "candidate_ms": 9.520858407660853,
+              "control_ms": 8.330957982892869,
+              "dataset": "collaboration",
+              "filtered": true,
+              "speedup": 0.8750217287329319,
+              "strongest_control": "precomputed",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 14.490520327701233,
+              "control_ms": 11.801374988863245,
+              "dataset": "collaboration",
+              "filtered": true,
+              "speedup": 0.8144203742844759,
+              "strongest_control": "cypher_fused",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 18.400932665826986,
+              "control_ms": 12.861390973732341,
+              "dataset": "collaboration",
+              "filtered": false,
+              "speedup": 0.6989532110846577,
+              "strongest_control": "precomputed",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 10.325308796018362,
+              "control_ms": 8.145073997467989,
+              "dataset": "collaboration",
+              "filtered": true,
+              "speedup": 0.7888455598159821,
+              "strongest_control": "precomputed",
+              "workload": "hubs128"
+            },
+            {
+              "candidate_ms": 10.642649548273766,
+              "control_ms": 9.469882337580202,
+              "dataset": "friendship",
+              "filtered": true,
+              "speedup": 0.8898049583072303,
+              "strongest_control": "precomputed",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 17.9079155701329,
+              "control_ms": 14.551387618063018,
+              "dataset": "friendship",
+              "filtered": false,
+              "speedup": 0.8125673566571896,
+              "strongest_control": "precomputed",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 14.980116807972081,
+              "control_ms": 13.147518837271493,
+              "dataset": "friendship",
+              "filtered": true,
+              "speedup": 0.8776646407906965,
+              "strongest_control": "precomputed",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 15.014252813882194,
+              "control_ms": 13.337149566272274,
+              "dataset": "friendship",
+              "filtered": true,
+              "speedup": 0.8882992534893731,
+              "strongest_control": "precomputed",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 10.076810706901597,
+              "control_ms": 8.625637506047497,
+              "dataset": "communication",
+              "filtered": false,
+              "speedup": 0.855988839816134,
+              "strongest_control": "precomputed",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 12.283030468650395,
+              "control_ms": 9.202949804224772,
+              "dataset": "communication",
+              "filtered": true,
+              "speedup": 0.7492409815080392,
+              "strongest_control": "precomputed",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 14.095352959673619,
+              "control_ms": 12.795985248871148,
+              "dataset": "communication",
+              "filtered": false,
+              "speedup": 0.9078158798492011,
+              "strongest_control": "precomputed",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 12.886625053972239,
+              "control_ms": 10.678958002245054,
+              "dataset": "communication",
+              "filtered": true,
+              "speedup": 0.8286853972641438,
+              "strongest_control": "cypher_selective",
+              "workload": "many_targets256"
+            }
+          ]
+        },
+        "100_requests": {
+          "conditional_database_bootstrap_95_interval": [
+            0.56063894562622,
+            0.6271724619195236
+          ],
+          "conditions": [
+            {
+              "candidate_ms": 15.713374523911625,
+              "control_ms": 11.882084014359862,
+              "dataset": "collaboration",
+              "filtered": false,
+              "speedup": 0.7561764658685156,
+              "strongest_control": "cypher_fused",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 15.059453151770867,
+              "control_ms": 8.648334012832493,
+              "dataset": "collaboration",
+              "filtered": true,
+              "speedup": 0.5742794194233752,
+              "strongest_control": "cypher_fused",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 19.790662400773726,
+              "control_ms": 17.32312500826083,
+              "dataset": "collaboration",
+              "filtered": false,
+              "speedup": 0.8753180998925824,
+              "strongest_control": "cypher_fused",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 20.80233132466674,
+              "control_ms": 11.801374988863245,
+              "dataset": "collaboration",
+              "filtered": true,
+              "speedup": 0.5673102117583115,
+              "strongest_control": "cypher_fused",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 24.3628266689484,
+              "control_ms": 15.648250002413988,
+              "dataset": "collaboration",
+              "filtered": false,
+              "speedup": 0.6423002640477034,
+              "strongest_control": "cypher_fused",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 18.263017983699683,
+              "control_ms": 14.371458004461601,
+              "dataset": "collaboration",
+              "filtered": true,
+              "speedup": 0.7869158327111422,
+              "strongest_control": "cypher_selective",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 16.39477842254564,
+              "control_ms": 13.017582998145372,
+              "dataset": "collaboration",
+              "filtered": false,
+              "speedup": 0.7940078641284931,
+              "strongest_control": "cypher_fused",
+              "workload": "hubs128"
+            },
+            {
+              "candidate_ms": 16.281209915177897,
+              "control_ms": 11.326833016937599,
+              "dataset": "collaboration",
+              "filtered": true,
+              "speedup": 0.6956997100306618,
+              "strongest_control": "cypher_fused",
+              "workload": "hubs128"
+            },
+            {
+              "candidate_ms": 33.619663240097,
+              "control_ms": 14.51250002719462,
+              "dataset": "friendship",
+              "filtered": false,
+              "speedup": 0.43166702544141095,
+              "strongest_control": "cypher_selective",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 32.04449243523413,
+              "control_ms": 10.23120799800381,
+              "dataset": "friendship",
+              "filtered": true,
+              "speedup": 0.31928132482305166,
+              "strongest_control": "cypher_selective",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 38.86685541277984,
+              "control_ms": 17.558583000209183,
+              "dataset": "friendship",
+              "filtered": false,
+              "speedup": 0.451762377319461,
+              "strongest_control": "cypher_fused",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 36.078324602858636,
+              "control_ms": 14.96929200948216,
+              "dataset": "friendship",
+              "filtered": true,
+              "speedup": 0.4149109520539122,
+              "strongest_control": "cypher_fused",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 38.18508699856466,
+              "control_ms": 16.65733300615102,
+              "dataset": "friendship",
+              "filtered": false,
+              "speedup": 0.4362261373603039,
+              "strongest_control": "cypher_fused",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 36.40727831982076,
+              "control_ms": 14.843333017779514,
+              "dataset": "friendship",
+              "filtered": true,
+              "speedup": 0.4077023524633684,
+              "strongest_control": "cypher_selective",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 33.203423355007544,
+              "control_ms": 14.791416993830353,
+              "dataset": "friendship",
+              "filtered": false,
+              "speedup": 0.4454786735597129,
+              "strongest_control": "cypher_selective",
+              "workload": "hubs128"
+            },
+            {
+              "candidate_ms": 30.888842336426023,
+              "control_ms": 13.74491601018235,
+              "dataset": "friendship",
+              "filtered": true,
+              "speedup": 0.4449799659203641,
+              "strongest_control": "cypher_fused",
+              "workload": "hubs128"
+            },
+            {
+              "candidate_ms": 15.666357088193763,
+              "control_ms": 11.847125017084181,
+              "dataset": "communication",
+              "filtered": false,
+              "speedup": 0.7562144122204534,
+              "strongest_control": "cypher_fused",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 17.658554590598214,
+              "control_ms": 9.287957975175232,
+              "dataset": "communication",
+              "filtered": true,
+              "speedup": 0.5259749843920031,
+              "strongest_control": "cypher_selective",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 19.69052659085719,
+              "control_ms": 18.23223050800152,
+              "dataset": "communication",
+              "filtered": false,
+              "speedup": 0.9259392034983568,
+              "strongest_control": "precomputed",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 18.809730278735515,
+              "control_ms": 12.652749981498346,
+              "dataset": "communication",
+              "filtered": true,
+              "speedup": 0.6726704633187822,
+              "strongest_control": "cypher_fused",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 19.753396910382435,
+              "control_ms": 17.147541977465153,
+              "dataset": "communication",
+              "filtered": false,
+              "speedup": 0.8680806676067123,
+              "strongest_control": "cypher_selective",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 18.292250432132278,
+              "control_ms": 10.678958002245054,
+              "dataset": "communication",
+              "filtered": true,
+              "speedup": 0.583796840190113,
+              "strongest_control": "cypher_selective",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 14.585708825616164,
+              "control_ms": 14.317658338404726,
+              "dataset": "communication",
+              "filtered": false,
+              "speedup": 0.9816223887082762,
+              "strongest_control": "precomputed",
+              "workload": "hubs128"
+            },
+            {
+              "candidate_ms": 14.282057184609585,
+              "control_ms": 12.453415984055027,
+              "dataset": "communication",
+              "filtered": true,
+              "speedup": 0.8719623386940986,
+              "strongest_control": "cypher_selective",
+              "workload": "hubs128"
+            }
+          ],
+          "geometric_mean_speedup": 0.6054753051748859,
+          "regressions_over_ten_percent": [
+            {
+              "candidate_ms": 15.713374523911625,
+              "control_ms": 11.882084014359862,
+              "dataset": "collaboration",
+              "filtered": false,
+              "speedup": 0.7561764658685156,
+              "strongest_control": "cypher_fused",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 15.059453151770867,
+              "control_ms": 8.648334012832493,
+              "dataset": "collaboration",
+              "filtered": true,
+              "speedup": 0.5742794194233752,
+              "strongest_control": "cypher_fused",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 19.790662400773726,
+              "control_ms": 17.32312500826083,
+              "dataset": "collaboration",
+              "filtered": false,
+              "speedup": 0.8753180998925824,
+              "strongest_control": "cypher_fused",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 20.80233132466674,
+              "control_ms": 11.801374988863245,
+              "dataset": "collaboration",
+              "filtered": true,
+              "speedup": 0.5673102117583115,
+              "strongest_control": "cypher_fused",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 24.3628266689484,
+              "control_ms": 15.648250002413988,
+              "dataset": "collaboration",
+              "filtered": false,
+              "speedup": 0.6423002640477034,
+              "strongest_control": "cypher_fused",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 18.263017983699683,
+              "control_ms": 14.371458004461601,
+              "dataset": "collaboration",
+              "filtered": true,
+              "speedup": 0.7869158327111422,
+              "strongest_control": "cypher_selective",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 16.39477842254564,
+              "control_ms": 13.017582998145372,
+              "dataset": "collaboration",
+              "filtered": false,
+              "speedup": 0.7940078641284931,
+              "strongest_control": "cypher_fused",
+              "workload": "hubs128"
+            },
+            {
+              "candidate_ms": 16.281209915177897,
+              "control_ms": 11.326833016937599,
+              "dataset": "collaboration",
+              "filtered": true,
+              "speedup": 0.6956997100306618,
+              "strongest_control": "cypher_fused",
+              "workload": "hubs128"
+            },
+            {
+              "candidate_ms": 33.619663240097,
+              "control_ms": 14.51250002719462,
+              "dataset": "friendship",
+              "filtered": false,
+              "speedup": 0.43166702544141095,
+              "strongest_control": "cypher_selective",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 32.04449243523413,
+              "control_ms": 10.23120799800381,
+              "dataset": "friendship",
+              "filtered": true,
+              "speedup": 0.31928132482305166,
+              "strongest_control": "cypher_selective",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 38.86685541277984,
+              "control_ms": 17.558583000209183,
+              "dataset": "friendship",
+              "filtered": false,
+              "speedup": 0.451762377319461,
+              "strongest_control": "cypher_fused",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 36.078324602858636,
+              "control_ms": 14.96929200948216,
+              "dataset": "friendship",
+              "filtered": true,
+              "speedup": 0.4149109520539122,
+              "strongest_control": "cypher_fused",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 38.18508699856466,
+              "control_ms": 16.65733300615102,
+              "dataset": "friendship",
+              "filtered": false,
+              "speedup": 0.4362261373603039,
+              "strongest_control": "cypher_fused",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 36.40727831982076,
+              "control_ms": 14.843333017779514,
+              "dataset": "friendship",
+              "filtered": true,
+              "speedup": 0.4077023524633684,
+              "strongest_control": "cypher_selective",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 33.203423355007544,
+              "control_ms": 14.791416993830353,
+              "dataset": "friendship",
+              "filtered": false,
+              "speedup": 0.4454786735597129,
+              "strongest_control": "cypher_selective",
+              "workload": "hubs128"
+            },
+            {
+              "candidate_ms": 30.888842336426023,
+              "control_ms": 13.74491601018235,
+              "dataset": "friendship",
+              "filtered": true,
+              "speedup": 0.4449799659203641,
+              "strongest_control": "cypher_fused",
+              "workload": "hubs128"
+            },
+            {
+              "candidate_ms": 15.666357088193763,
+              "control_ms": 11.847125017084181,
+              "dataset": "communication",
+              "filtered": false,
+              "speedup": 0.7562144122204534,
+              "strongest_control": "cypher_fused",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 17.658554590598214,
+              "control_ms": 9.287957975175232,
+              "dataset": "communication",
+              "filtered": true,
+              "speedup": 0.5259749843920031,
+              "strongest_control": "cypher_selective",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 18.809730278735515,
+              "control_ms": 12.652749981498346,
+              "dataset": "communication",
+              "filtered": true,
+              "speedup": 0.6726704633187822,
+              "strongest_control": "cypher_fused",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 19.753396910382435,
+              "control_ms": 17.147541977465153,
+              "dataset": "communication",
+              "filtered": false,
+              "speedup": 0.8680806676067123,
+              "strongest_control": "cypher_selective",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 18.292250432132278,
+              "control_ms": 10.678958002245054,
+              "dataset": "communication",
+              "filtered": true,
+              "speedup": 0.583796840190113,
+              "strongest_control": "cypher_selective",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 14.282057184609585,
+              "control_ms": 12.453415984055027,
+              "dataset": "communication",
+              "filtered": true,
+              "speedup": 0.8719623386940986,
+              "strongest_control": "cypher_selective",
+              "workload": "hubs128"
+            }
+          ]
+        },
+        "10_requests": {
+          "conditional_database_bootstrap_95_interval": [
+            0.11289310971059603,
+            0.12643904465543737
+          ],
+          "conditions": [
+            {
+              "candidate_ms": 75.44657950347755,
+              "control_ms": 11.882084014359862,
+              "dataset": "collaboration",
+              "filtered": false,
+              "speedup": 0.1574900292704745,
+              "strongest_control": "cypher_fused",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 74.17874200909864,
+              "control_ms": 8.648334012832493,
+              "dataset": "collaboration",
+              "filtered": true,
+              "speedup": 0.1165877686598096,
+              "strongest_control": "cypher_fused",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 79.4414960895665,
+              "control_ms": 17.32312500826083,
+              "dataset": "collaboration",
+              "filtered": false,
+              "speedup": 0.21806141451225736,
+              "strongest_control": "cypher_fused",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 83.4422662795987,
+              "control_ms": 11.801374988863245,
+              "dataset": "collaboration",
+              "filtered": true,
+              "speedup": 0.14143162110817015,
+              "strongest_control": "cypher_fused",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 83.98176670016255,
+              "control_ms": 15.648250002413988,
+              "dataset": "collaboration",
+              "filtered": false,
+              "speedup": 0.18632913568349235,
+              "strongest_control": "cypher_fused",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 81.31305798597168,
+              "control_ms": 14.371458004461601,
+              "dataset": "collaboration",
+              "filtered": true,
+              "speedup": 0.17674231372458035,
+              "strongest_control": "cypher_selective",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 76.06043329287786,
+              "control_ms": 13.017582998145372,
+              "dataset": "collaboration",
+              "filtered": false,
+              "speedup": 0.17114789430688546,
+              "strongest_control": "cypher_fused",
+              "workload": "hubs128"
+            },
+            {
+              "candidate_ms": 75.84022110677324,
+              "control_ms": 11.326833016937599,
+              "dataset": "collaboration",
+              "filtered": true,
+              "speedup": 0.14935126574843288,
+              "strongest_control": "cypher_fused",
+              "workload": "hubs128"
+            },
+            {
+              "candidate_ms": 246.60035379929468,
+              "control_ms": 14.51250002719462,
+              "dataset": "friendship",
+              "filtered": false,
+              "speedup": 0.05885028064074143,
+              "strongest_control": "cypher_selective",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 243.55863328964915,
+              "control_ms": 10.23120799800381,
+              "dataset": "friendship",
+              "filtered": true,
+              "speedup": 0.04200716624089638,
+              "strongest_control": "cypher_selective",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 250.7365084107732,
+              "control_ms": 17.558583000209183,
+              "dataset": "friendship",
+              "filtered": false,
+              "speedup": 0.07002802707710815,
+              "strongest_control": "cypher_fused",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 248.86680817580782,
+              "control_ms": 14.96929200948216,
+              "dataset": "friendship",
+              "filtered": true,
+              "speedup": 0.060149813143853856,
+              "strongest_control": "cypher_fused",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 250.01168300805148,
+              "control_ms": 16.65733300615102,
+              "dataset": "friendship",
+              "filtered": false,
+              "speedup": 0.0666262184460179,
+              "strongest_control": "cypher_fused",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 250.20549189648588,
+              "control_ms": 14.843333017779514,
+              "dataset": "friendship",
+              "filtered": true,
+              "speedup": 0.05932456919818708,
+              "strongest_control": "cypher_selective",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 245.79960832488723,
+              "control_ms": 14.791416993830353,
+              "dataset": "friendship",
+              "filtered": false,
+              "speedup": 0.06017673134075829,
+              "strongest_control": "cypher_selective",
+              "workload": "hubs128"
+            },
+            {
+              "candidate_ms": 244.0116041165311,
+              "control_ms": 13.74491601018235,
+              "dataset": "friendship",
+              "filtered": true,
+              "speedup": 0.056328944108814914,
+              "strongest_control": "cypher_fused",
+              "workload": "hubs128"
+            },
+            {
+              "candidate_ms": 71.37054199702106,
+              "control_ms": 11.847125017084181,
+              "dataset": "communication",
+              "filtered": false,
+              "speedup": 0.16599460625615914,
+              "strongest_control": "cypher_fused",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 72.60662149346899,
+              "control_ms": 9.287957975175232,
+              "dataset": "communication",
+              "filtered": true,
+              "speedup": 0.12792163833171452,
+              "strongest_control": "cypher_selective",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 75.23233268293552,
+              "control_ms": 20.153207995463163,
+              "dataset": "communication",
+              "filtered": false,
+              "speedup": 0.2678796107572295,
+              "strongest_control": "cypher_fused",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 74.61779662116896,
+              "control_ms": 12.652749981498346,
+              "dataset": "communication",
+              "filtered": true,
+              "speedup": 0.16956745648408464,
+              "strongest_control": "cypher_fused",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 75.00043301552068,
+              "control_ms": 17.147541977465153,
+              "dataset": "communication",
+              "filtered": false,
+              "speedup": 0.22863257301350004,
+              "strongest_control": "cypher_selective",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 72.34850421373267,
+              "control_ms": 10.678958002245054,
+              "dataset": "communication",
+              "filtered": true,
+              "speedup": 0.1476044061767631,
+              "strongest_control": "cypher_selective",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 69.20755481987726,
+              "control_ms": 14.39804199617356,
+              "dataset": "communication",
+              "filtered": false,
+              "speedup": 0.20804147803872805,
+              "strongest_control": "cypher_fused",
+              "workload": "hubs128"
+            },
+            {
+              "candidate_ms": 68.43594971578568,
+              "control_ms": 12.453415984055027,
+              "dataset": "communication",
+              "filtered": true,
+              "speedup": 0.1819718442686049,
+              "strongest_control": "cypher_selective",
+              "workload": "hubs128"
+            }
+          ],
+          "geometric_mean_speedup": 0.1201522171300992,
+          "regressions_over_ten_percent": [
+            {
+              "candidate_ms": 75.44657950347755,
+              "control_ms": 11.882084014359862,
+              "dataset": "collaboration",
+              "filtered": false,
+              "speedup": 0.1574900292704745,
+              "strongest_control": "cypher_fused",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 74.17874200909864,
+              "control_ms": 8.648334012832493,
+              "dataset": "collaboration",
+              "filtered": true,
+              "speedup": 0.1165877686598096,
+              "strongest_control": "cypher_fused",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 79.4414960895665,
+              "control_ms": 17.32312500826083,
+              "dataset": "collaboration",
+              "filtered": false,
+              "speedup": 0.21806141451225736,
+              "strongest_control": "cypher_fused",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 83.4422662795987,
+              "control_ms": 11.801374988863245,
+              "dataset": "collaboration",
+              "filtered": true,
+              "speedup": 0.14143162110817015,
+              "strongest_control": "cypher_fused",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 83.98176670016255,
+              "control_ms": 15.648250002413988,
+              "dataset": "collaboration",
+              "filtered": false,
+              "speedup": 0.18632913568349235,
+              "strongest_control": "cypher_fused",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 81.31305798597168,
+              "control_ms": 14.371458004461601,
+              "dataset": "collaboration",
+              "filtered": true,
+              "speedup": 0.17674231372458035,
+              "strongest_control": "cypher_selective",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 76.06043329287786,
+              "control_ms": 13.017582998145372,
+              "dataset": "collaboration",
+              "filtered": false,
+              "speedup": 0.17114789430688546,
+              "strongest_control": "cypher_fused",
+              "workload": "hubs128"
+            },
+            {
+              "candidate_ms": 75.84022110677324,
+              "control_ms": 11.326833016937599,
+              "dataset": "collaboration",
+              "filtered": true,
+              "speedup": 0.14935126574843288,
+              "strongest_control": "cypher_fused",
+              "workload": "hubs128"
+            },
+            {
+              "candidate_ms": 246.60035379929468,
+              "control_ms": 14.51250002719462,
+              "dataset": "friendship",
+              "filtered": false,
+              "speedup": 0.05885028064074143,
+              "strongest_control": "cypher_selective",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 243.55863328964915,
+              "control_ms": 10.23120799800381,
+              "dataset": "friendship",
+              "filtered": true,
+              "speedup": 0.04200716624089638,
+              "strongest_control": "cypher_selective",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 250.7365084107732,
+              "control_ms": 17.558583000209183,
+              "dataset": "friendship",
+              "filtered": false,
+              "speedup": 0.07002802707710815,
+              "strongest_control": "cypher_fused",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 248.86680817580782,
+              "control_ms": 14.96929200948216,
+              "dataset": "friendship",
+              "filtered": true,
+              "speedup": 0.060149813143853856,
+              "strongest_control": "cypher_fused",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 250.01168300805148,
+              "control_ms": 16.65733300615102,
+              "dataset": "friendship",
+              "filtered": false,
+              "speedup": 0.0666262184460179,
+              "strongest_control": "cypher_fused",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 250.20549189648588,
+              "control_ms": 14.843333017779514,
+              "dataset": "friendship",
+              "filtered": true,
+              "speedup": 0.05932456919818708,
+              "strongest_control": "cypher_selective",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 245.79960832488723,
+              "control_ms": 14.791416993830353,
+              "dataset": "friendship",
+              "filtered": false,
+              "speedup": 0.06017673134075829,
+              "strongest_control": "cypher_selective",
+              "workload": "hubs128"
+            },
+            {
+              "candidate_ms": 244.0116041165311,
+              "control_ms": 13.74491601018235,
+              "dataset": "friendship",
+              "filtered": true,
+              "speedup": 0.056328944108814914,
+              "strongest_control": "cypher_fused",
+              "workload": "hubs128"
+            },
+            {
+              "candidate_ms": 71.37054199702106,
+              "control_ms": 11.847125017084181,
+              "dataset": "communication",
+              "filtered": false,
+              "speedup": 0.16599460625615914,
+              "strongest_control": "cypher_fused",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 72.60662149346899,
+              "control_ms": 9.287957975175232,
+              "dataset": "communication",
+              "filtered": true,
+              "speedup": 0.12792163833171452,
+              "strongest_control": "cypher_selective",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 75.23233268293552,
+              "control_ms": 20.153207995463163,
+              "dataset": "communication",
+              "filtered": false,
+              "speedup": 0.2678796107572295,
+              "strongest_control": "cypher_fused",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 74.61779662116896,
+              "control_ms": 12.652749981498346,
+              "dataset": "communication",
+              "filtered": true,
+              "speedup": 0.16956745648408464,
+              "strongest_control": "cypher_fused",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 75.00043301552068,
+              "control_ms": 17.147541977465153,
+              "dataset": "communication",
+              "filtered": false,
+              "speedup": 0.22863257301350004,
+              "strongest_control": "cypher_selective",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 72.34850421373267,
+              "control_ms": 10.678958002245054,
+              "dataset": "communication",
+              "filtered": true,
+              "speedup": 0.1476044061767631,
+              "strongest_control": "cypher_selective",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 69.20755481987726,
+              "control_ms": 14.39804199617356,
+              "dataset": "communication",
+              "filtered": false,
+              "speedup": 0.20804147803872805,
+              "strongest_control": "cypher_fused",
+              "workload": "hubs128"
+            },
+            {
+              "candidate_ms": 68.43594971578568,
+              "control_ms": 12.453415984055027,
+              "dataset": "communication",
+              "filtered": true,
+              "speedup": 0.1819718442686049,
+              "strongest_control": "cypher_selective",
+              "workload": "hubs128"
+            }
+          ]
+        },
+        "1_requests": {
+          "conditional_database_bootstrap_95_interval": [
+            0.012702878049676196,
+            0.014186959692633299
+          ],
+          "conditions": [
+            {
+              "candidate_ms": 672.2762919962406,
+              "control_ms": 11.882084014359862,
+              "dataset": "collaboration",
+              "filtered": false,
+              "speedup": 0.017674405829599456,
+              "strongest_control": "cypher_fused",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 670.2224170148838,
+              "control_ms": 8.648334012832493,
+              "dataset": "collaboration",
+              "filtered": true,
+              "speedup": 0.01290367763488346,
+              "strongest_control": "cypher_fused",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 675.9498329774942,
+              "control_ms": 17.32312500826083,
+              "dataset": "collaboration",
+              "filtered": false,
+              "speedup": 0.025627826449714657,
+              "strongest_control": "cypher_fused",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 679.8592909763101,
+              "control_ms": 11.801374988863245,
+              "dataset": "collaboration",
+              "filtered": true,
+              "speedup": 0.017358555138543317,
+              "strongest_control": "cypher_fused",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 680.1711670123041,
+              "control_ms": 15.648250002413988,
+              "dataset": "collaboration",
+              "filtered": false,
+              "speedup": 0.023006341287811333,
+              "strongest_control": "cypher_fused",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 677.68329201499,
+              "control_ms": 14.371458004461601,
+              "dataset": "collaboration",
+              "filtered": true,
+              "speedup": 0.021206746829673516,
+              "strongest_control": "cypher_selective",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 672.4830830062274,
+              "control_ms": 13.017582998145372,
+              "dataset": "collaboration",
+              "filtered": false,
+              "speedup": 0.01935748768571599,
+              "strongest_control": "cypher_fused",
+              "workload": "hubs128"
+            },
+            {
+              "candidate_ms": 671.4303330227267,
+              "control_ms": 11.326833016937599,
+              "dataset": "collaboration",
+              "filtered": true,
+              "speedup": 0.016869707041600405,
+              "strongest_control": "cypher_fused",
+              "workload": "hubs128"
+            },
+            {
+              "candidate_ms": 2373.3005409885664,
+              "control_ms": 14.51250002719462,
+              "dataset": "friendship",
+              "filtered": false,
+              "speedup": 0.006114901916783634,
+              "strongest_control": "cypher_selective",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 2369.241707987385,
+              "control_ms": 10.23120799800381,
+              "dataset": "friendship",
+              "filtered": true,
+              "speedup": 0.004318347074302935,
+              "strongest_control": "cypher_selective",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 2379.5005420106463,
+              "control_ms": 17.558583000209183,
+              "dataset": "friendship",
+              "filtered": false,
+              "speedup": 0.007379104433980256,
+              "strongest_control": "cypher_fused",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 2375.1094569743145,
+              "control_ms": 14.96929200948216,
+              "dataset": "friendship",
+              "filtered": true,
+              "speedup": 0.006302569326026663,
+              "strongest_control": "cypher_fused",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 2376.728915987769,
+              "control_ms": 16.65733300615102,
+              "dataset": "friendship",
+              "filtered": false,
+              "speedup": 0.0070085119485443,
+              "strongest_control": "cypher_fused",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 2375.2254160062876,
+              "control_ms": 14.843333017779514,
+              "dataset": "friendship",
+              "filtered": true,
+              "speedup": 0.006249231301480912,
+              "strongest_control": "cypher_selective",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 2371.761458023684,
+              "control_ms": 14.791416993830353,
+              "dataset": "friendship",
+              "filtered": false,
+              "speedup": 0.00623646907819962,
+              "strongest_control": "cypher_selective",
+              "workload": "hubs128"
+            },
+            {
+              "candidate_ms": 2369.2005410266574,
+              "control_ms": 13.74491601018235,
+              "dataset": "friendship",
+              "filtered": true,
+              "speedup": 0.005801499608060277,
+              "strongest_control": "cypher_fused",
+              "workload": "hubs128"
+            },
+            {
+              "candidate_ms": 615.0155420182273,
+              "control_ms": 11.847125017084181,
+              "dataset": "communication",
+              "filtered": false,
+              "speedup": 0.019263131104308037,
+              "strongest_control": "cypher_fused",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 615.3733340324834,
+              "control_ms": 9.287957975175232,
+              "dataset": "communication",
+              "filtered": true,
+              "speedup": 0.015093208401332764,
+              "strongest_control": "cypher_selective",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 619.0903329988942,
+              "control_ms": 20.153207995463163,
+              "dataset": "communication",
+              "filtered": false,
+              "speedup": 0.032552936011519276,
+              "strongest_control": "cypher_fused",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 619.0610420017038,
+              "control_ms": 12.652749981498346,
+              "dataset": "communication",
+              "filtered": true,
+              "speedup": 0.020438614487169625,
+              "strongest_control": "cypher_fused",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 614.411333022872,
+              "control_ms": 17.147541977465153,
+              "dataset": "communication",
+              "filtered": false,
+              "speedup": 0.02790889597218224,
+              "strongest_control": "cypher_selective",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 612.9110420297366,
+              "control_ms": 10.678958002245054,
+              "dataset": "communication",
+              "filtered": true,
+              "speedup": 0.017423340860168324,
+              "strongest_control": "cypher_selective",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 611.1749170522671,
+              "control_ms": 14.39804199617356,
+              "dataset": "communication",
+              "filtered": false,
+              "speedup": 0.023557972675999485,
+              "strongest_control": "cypher_fused",
+              "workload": "hubs128"
+            },
+            {
+              "candidate_ms": 609.9748750275467,
+              "control_ms": 12.453415984055027,
+              "dataset": "communication",
+              "filtered": true,
+              "speedup": 0.020416276954837897,
+              "strongest_control": "cypher_selective",
+              "workload": "hubs128"
+            }
+          ],
+          "geometric_mean_speedup": 0.013532743259745685,
+          "regressions_over_ten_percent": [
+            {
+              "candidate_ms": 672.2762919962406,
+              "control_ms": 11.882084014359862,
+              "dataset": "collaboration",
+              "filtered": false,
+              "speedup": 0.017674405829599456,
+              "strongest_control": "cypher_fused",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 670.2224170148838,
+              "control_ms": 8.648334012832493,
+              "dataset": "collaboration",
+              "filtered": true,
+              "speedup": 0.01290367763488346,
+              "strongest_control": "cypher_fused",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 675.9498329774942,
+              "control_ms": 17.32312500826083,
+              "dataset": "collaboration",
+              "filtered": false,
+              "speedup": 0.025627826449714657,
+              "strongest_control": "cypher_fused",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 679.8592909763101,
+              "control_ms": 11.801374988863245,
+              "dataset": "collaboration",
+              "filtered": true,
+              "speedup": 0.017358555138543317,
+              "strongest_control": "cypher_fused",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 680.1711670123041,
+              "control_ms": 15.648250002413988,
+              "dataset": "collaboration",
+              "filtered": false,
+              "speedup": 0.023006341287811333,
+              "strongest_control": "cypher_fused",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 677.68329201499,
+              "control_ms": 14.371458004461601,
+              "dataset": "collaboration",
+              "filtered": true,
+              "speedup": 0.021206746829673516,
+              "strongest_control": "cypher_selective",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 672.4830830062274,
+              "control_ms": 13.017582998145372,
+              "dataset": "collaboration",
+              "filtered": false,
+              "speedup": 0.01935748768571599,
+              "strongest_control": "cypher_fused",
+              "workload": "hubs128"
+            },
+            {
+              "candidate_ms": 671.4303330227267,
+              "control_ms": 11.326833016937599,
+              "dataset": "collaboration",
+              "filtered": true,
+              "speedup": 0.016869707041600405,
+              "strongest_control": "cypher_fused",
+              "workload": "hubs128"
+            },
+            {
+              "candidate_ms": 2373.3005409885664,
+              "control_ms": 14.51250002719462,
+              "dataset": "friendship",
+              "filtered": false,
+              "speedup": 0.006114901916783634,
+              "strongest_control": "cypher_selective",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 2369.241707987385,
+              "control_ms": 10.23120799800381,
+              "dataset": "friendship",
+              "filtered": true,
+              "speedup": 0.004318347074302935,
+              "strongest_control": "cypher_selective",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 2379.5005420106463,
+              "control_ms": 17.558583000209183,
+              "dataset": "friendship",
+              "filtered": false,
+              "speedup": 0.007379104433980256,
+              "strongest_control": "cypher_fused",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 2375.1094569743145,
+              "control_ms": 14.96929200948216,
+              "dataset": "friendship",
+              "filtered": true,
+              "speedup": 0.006302569326026663,
+              "strongest_control": "cypher_fused",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 2376.728915987769,
+              "control_ms": 16.65733300615102,
+              "dataset": "friendship",
+              "filtered": false,
+              "speedup": 0.0070085119485443,
+              "strongest_control": "cypher_fused",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 2375.2254160062876,
+              "control_ms": 14.843333017779514,
+              "dataset": "friendship",
+              "filtered": true,
+              "speedup": 0.006249231301480912,
+              "strongest_control": "cypher_selective",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 2371.761458023684,
+              "control_ms": 14.791416993830353,
+              "dataset": "friendship",
+              "filtered": false,
+              "speedup": 0.00623646907819962,
+              "strongest_control": "cypher_selective",
+              "workload": "hubs128"
+            },
+            {
+              "candidate_ms": 2369.2005410266574,
+              "control_ms": 13.74491601018235,
+              "dataset": "friendship",
+              "filtered": true,
+              "speedup": 0.005801499608060277,
+              "strongest_control": "cypher_fused",
+              "workload": "hubs128"
+            },
+            {
+              "candidate_ms": 615.0155420182273,
+              "control_ms": 11.847125017084181,
+              "dataset": "communication",
+              "filtered": false,
+              "speedup": 0.019263131104308037,
+              "strongest_control": "cypher_fused",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 615.3733340324834,
+              "control_ms": 9.287957975175232,
+              "dataset": "communication",
+              "filtered": true,
+              "speedup": 0.015093208401332764,
+              "strongest_control": "cypher_selective",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 619.0903329988942,
+              "control_ms": 20.153207995463163,
+              "dataset": "communication",
+              "filtered": false,
+              "speedup": 0.032552936011519276,
+              "strongest_control": "cypher_fused",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 619.0610420017038,
+              "control_ms": 12.652749981498346,
+              "dataset": "communication",
+              "filtered": true,
+              "speedup": 0.020438614487169625,
+              "strongest_control": "cypher_fused",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 614.411333022872,
+              "control_ms": 17.147541977465153,
+              "dataset": "communication",
+              "filtered": false,
+              "speedup": 0.02790889597218224,
+              "strongest_control": "cypher_selective",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 612.9110420297366,
+              "control_ms": 10.678958002245054,
+              "dataset": "communication",
+              "filtered": true,
+              "speedup": 0.017423340860168324,
+              "strongest_control": "cypher_selective",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 611.1749170522671,
+              "control_ms": 14.39804199617356,
+              "dataset": "communication",
+              "filtered": false,
+              "speedup": 0.023557972675999485,
+              "strongest_control": "cypher_fused",
+              "workload": "hubs128"
+            },
+            {
+              "candidate_ms": 609.9748750275467,
+              "control_ms": 12.453415984055027,
+              "dataset": "communication",
+              "filtered": true,
+              "speedup": 0.020416276954837897,
+              "strongest_control": "cypher_selective",
+              "workload": "hubs128"
+            }
+          ]
+        },
+        "steady_state": {
+          "conditional_database_bootstrap_95_interval": [
+            0.8363291313092018,
+            0.9353758152113586
+          ],
+          "conditions": [
+            {
+              "candidate_ms": 8.79045799956657,
+              "control_ms": 9.615832997951657,
+              "dataset": "collaboration",
+              "filtered": false,
+              "speedup": 1.0938944248895546,
+              "strongest_control": "precomputed",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 8.90545899164863,
+              "control_ms": 7.667915982892737,
+              "dataset": "collaboration",
+              "filtered": true,
+              "speedup": 0.8610354603938509,
+              "strongest_control": "precomputed",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 13.622709026094526,
+              "control_ms": 13.528084004065022,
+              "dataset": "collaboration",
+              "filtered": false,
+              "speedup": 0.9930538762996223,
+              "strongest_control": "precomputed",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 13.789207994705066,
+              "control_ms": 11.185417009983212,
+              "dataset": "collaboration",
+              "filtered": true,
+              "speedup": 0.8111718246819044,
+              "strongest_control": "precomputed",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 17.738499998813495,
+              "control_ms": 12.199042015708983,
+              "dataset": "collaboration",
+              "filtered": false,
+              "speedup": 0.6877155349395361,
+              "strongest_control": "precomputed",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 11.617999989539385,
+              "control_ms": 11.18754199706018,
+              "dataset": "collaboration",
+              "filtered": true,
+              "speedup": 0.9629490451999673,
+              "strongest_control": "precomputed",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 9.46845900034532,
+              "control_ms": 8.748333988478407,
+              "dataset": "collaboration",
+              "filtered": false,
+              "speedup": 0.9239448560910863,
+              "strongest_control": "precomputed",
+              "workload": "hubs128"
+            },
+            {
+              "candidate_ms": 9.663542005000636,
+              "control_ms": 7.529916998464614,
+              "dataset": "collaboration",
+              "filtered": true,
+              "speedup": 0.7792088030008122,
+              "strongest_control": "precomputed",
+              "workload": "hubs128"
+            },
+            {
+              "candidate_ms": 10.300333000486717,
+              "control_ms": 9.501374996034428,
+              "dataset": "friendship",
+              "filtered": false,
+              "speedup": 0.9224337694310917,
+              "strongest_control": "precomputed",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 8.26466700527817,
+              "control_ms": 7.091042003594339,
+              "dataset": "friendship",
+              "filtered": true,
+              "speedup": 0.8579948834073649,
+              "strongest_control": "precomputed",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 15.543958987109363,
+              "control_ms": 12.221750017488375,
+              "dataset": "friendship",
+              "filtered": false,
+              "speedup": 0.7862700890824466,
+              "strongest_control": "precomputed",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 12.61762497597374,
+              "control_ms": 10.76791700324975,
+              "dataset": "friendship",
+              "filtered": true,
+              "speedup": 0.8534028411649441,
+              "strongest_control": "precomputed",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 14.698749990202487,
+              "control_ms": 13.186041993321851,
+              "dataset": "friendship",
+              "filtered": false,
+              "speedup": 0.8970859428258228,
+              "strongest_control": "precomputed",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 12.63724997988902,
+              "control_ms": 11.104874982265756,
+              "dataset": "friendship",
+              "filtered": true,
+              "speedup": 0.8787414192120997,
+              "strongest_control": "precomputed",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 10.615833016345277,
+              "control_ms": 9.655207977630198,
+              "dataset": "friendship",
+              "filtered": false,
+              "speedup": 0.9095101592841562,
+              "strongest_control": "precomputed",
+              "workload": "hubs128"
+            },
+            {
+              "candidate_ms": 7.609624997712672,
+              "control_ms": 7.3759589868132025,
+              "dataset": "friendship",
+              "filtered": true,
+              "speedup": 0.9692933605835103,
+              "strongest_control": "precomputed",
+              "workload": "hubs128"
+            },
+            {
+              "candidate_ms": 9.455749997869134,
+              "control_ms": 8.027792006032541,
+              "dataset": "communication",
+              "filtered": false,
+              "speedup": 0.8489852214622442,
+              "strongest_control": "precomputed",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 11.685750010656193,
+              "control_ms": 8.60483301221393,
+              "dataset": "communication",
+              "filtered": true,
+              "speedup": 0.7363526521076709,
+              "strongest_control": "precomputed",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 13.473667000653222,
+              "control_ms": 12.191957997856662,
+              "dataset": "communication",
+              "filtered": false,
+              "speedup": 0.9048730384434749,
+              "strongest_control": "precomputed",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 12.608834018465132,
+              "control_ms": 11.56024998635985,
+              "dataset": "communication",
+              "filtered": true,
+              "speedup": 0.916837351449811,
+              "strongest_control": "precomputed",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 13.564458990003914,
+              "control_ms": 14.393082994502038,
+              "dataset": "communication",
+              "filtered": false,
+              "speedup": 1.0610878771581502,
+              "strongest_control": "precomputed",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 12.286000011954457,
+              "control_ms": 10.678958002245054,
+              "dataset": "communication",
+              "filtered": true,
+              "speedup": 0.869197297074253,
+              "strongest_control": "cypher_selective",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 8.388582995394245,
+              "control_ms": 8.12187499832362,
+              "dataset": "communication",
+              "filtered": false,
+              "speedup": 0.968205834380245,
+              "strongest_control": "precomputed",
+              "workload": "hubs128"
+            },
+            {
+              "candidate_ms": 8.264958014478907,
+              "control_ms": 7.884124992415309,
+              "dataset": "communication",
+              "filtered": true,
+              "speedup": 0.9539219653147132,
+              "strongest_control": "precomputed",
+              "workload": "hubs128"
+            }
+          ],
+          "geometric_mean_speedup": 0.8887502811477102,
+          "regressions_over_ten_percent": [
+            {
+              "candidate_ms": 8.90545899164863,
+              "control_ms": 7.667915982892737,
+              "dataset": "collaboration",
+              "filtered": true,
+              "speedup": 0.8610354603938509,
+              "strongest_control": "precomputed",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 13.789207994705066,
+              "control_ms": 11.185417009983212,
+              "dataset": "collaboration",
+              "filtered": true,
+              "speedup": 0.8111718246819044,
+              "strongest_control": "precomputed",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 17.738499998813495,
+              "control_ms": 12.199042015708983,
+              "dataset": "collaboration",
+              "filtered": false,
+              "speedup": 0.6877155349395361,
+              "strongest_control": "precomputed",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 9.663542005000636,
+              "control_ms": 7.529916998464614,
+              "dataset": "collaboration",
+              "filtered": true,
+              "speedup": 0.7792088030008122,
+              "strongest_control": "precomputed",
+              "workload": "hubs128"
+            },
+            {
+              "candidate_ms": 8.26466700527817,
+              "control_ms": 7.091042003594339,
+              "dataset": "friendship",
+              "filtered": true,
+              "speedup": 0.8579948834073649,
+              "strongest_control": "precomputed",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 15.543958987109363,
+              "control_ms": 12.221750017488375,
+              "dataset": "friendship",
+              "filtered": false,
+              "speedup": 0.7862700890824466,
+              "strongest_control": "precomputed",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 12.61762497597374,
+              "control_ms": 10.76791700324975,
+              "dataset": "friendship",
+              "filtered": true,
+              "speedup": 0.8534028411649441,
+              "strongest_control": "precomputed",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 14.698749990202487,
+              "control_ms": 13.186041993321851,
+              "dataset": "friendship",
+              "filtered": false,
+              "speedup": 0.8970859428258228,
+              "strongest_control": "precomputed",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 12.63724997988902,
+              "control_ms": 11.104874982265756,
+              "dataset": "friendship",
+              "filtered": true,
+              "speedup": 0.8787414192120997,
+              "strongest_control": "precomputed",
+              "workload": "many_targets256"
+            },
+            {
+              "candidate_ms": 9.455749997869134,
+              "control_ms": 8.027792006032541,
+              "dataset": "communication",
+              "filtered": false,
+              "speedup": 0.8489852214622442,
+              "strongest_control": "precomputed",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 11.685750010656193,
+              "control_ms": 8.60483301221393,
+              "dataset": "communication",
+              "filtered": true,
+              "speedup": 0.7363526521076709,
+              "strongest_control": "precomputed",
+              "workload": "distinct128"
+            },
+            {
+              "candidate_ms": 13.473667000653222,
+              "control_ms": 12.191957997856662,
+              "dataset": "communication",
+              "filtered": false,
+              "speedup": 0.9048730384434749,
+              "strongest_control": "precomputed",
+              "workload": "interleaved256"
+            },
+            {
+              "candidate_ms": 12.286000011954457,
+              "control_ms": 10.678958002245054,
+              "dataset": "communication",
+              "filtered": true,
+              "speedup": 0.869197297074253,
+              "strongest_control": "cypher_selective",
+              "workload": "many_targets256"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "limitations": "Only three independent database repetitions per graph; fixed development graphs/queries. Export and preparation charged; shared import/startup excluded. No per-arm peak-memory claim.",
+  "method": "Paired whole-database resampling within each graph; retain the same sampled repetitions across arms and conditions; recompute strongest control each draw.",
+  "seed": 8310
+}

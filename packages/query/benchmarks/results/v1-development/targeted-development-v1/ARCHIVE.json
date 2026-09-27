@@ -1,0 +1,5 @@
+{
+  "workers_sha256": "99aa699859d132ab8d986a390b65cdc10e2a13a521410fcfaddcc41c4f07f67c",
+  "workers": 315,
+  "graphs_and_queries": "Input identities in manifest; inputs retained in local run directory. Recreate with frozen freeze command from verified parent reproductions."
+}

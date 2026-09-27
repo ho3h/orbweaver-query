@@ -1,0 +1,10 @@
+{
+  "byte_identical_result": true,
+  "byte_identical_worker_records": 18,
+  "evaluator_committed_before_label_access": "1f1cf06e2cb19ca898c840c2740f5aeb29386d5e",
+  "manifest_sha256": "e284f7ad4fd1bc7035dcd86b7bcaab4a23d5ad41ed1e13fa3101c6421e9eb1d9",
+  "release_gate_closed": false,
+  "restored_archive_replay": true,
+  "results_sha256": "d4e8ff3bac515e37fd8e69e84df5e8f2601db5e2208f96da3d76b340b9a2dbdc",
+  "verified_archive_files": 387
+}

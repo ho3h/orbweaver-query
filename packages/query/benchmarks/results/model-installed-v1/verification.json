@@ -1,0 +1,7 @@
+{
+  "checks": "Rebuilt evidence, sampling/features, model parity, all outcomes/digests/metrics/gates",
+  "gate_passed": true,
+  "manifest_sha256": "5f9240e013afac291432ce3f3102fa664ac0da9406130ccd6f1eab5c511ca25f",
+  "results_sha256": "6f2da60eea841ff55805a37014af4a2eeb8a70ebd719826f95a02cdbf8025640",
+  "verified": true
+}

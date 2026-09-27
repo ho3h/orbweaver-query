@@ -1,0 +1,200 @@
+{
+  "campaign": {
+    "database_heap_mib": 256,
+    "database_startup_seconds": 4.714122375007719,
+    "fixture_import_seconds": 5.868176624993794,
+    "host_use": "quiet-window",
+    "page_cache_mib": 64,
+    "preflight": false
+  },
+  "checked_workers": 63,
+  "conditions": [
+    {
+      "arms": {
+        "full_source_shared": {
+          "export_ms": 14.78104101261124,
+          "first_use_ms": 27.101167012006044,
+          "peak_client_rss_mib": 72.90625,
+          "preparation_ms": 0.09050004882737994,
+          "request_ms": 6.5734999952837825
+        },
+        "manual_intersection": {
+          "export_ms": 10.633707977831364,
+          "first_use_ms": 21.546415984630585,
+          "peak_client_rss_mib": 73.703125,
+          "preparation_ms": 0.18375000217929482,
+          "request_ms": 5.060416995547712
+        },
+        "native_cypher": {
+          "export_ms": 0.0,
+          "first_use_ms": 16.05354098137468,
+          "peak_client_rss_mib": 72.578125,
+          "preparation_ms": 0.0,
+          "request_ms": 8.242250012699515
+        },
+        "plan": {
+          "export_ms": 13.108459010254592,
+          "first_use_ms": 26.018375006970018,
+          "peak_client_rss_mib": 74.28125,
+          "preparation_ms": 0.09470898658037186,
+          "request_ms": 7.153541955631226
+        },
+        "plan_unfused": {
+          "export_ms": 13.646750012412667,
+          "first_use_ms": 25.8509170380421,
+          "peak_client_rss_mib": 72.984375,
+          "preparation_ms": 0.09308295557275414,
+          "request_ms": 5.568291002418846
+        },
+        "precomputed_scores": {
+          "export_ms": 16.91637496696785,
+          "first_use_ms": 32.04320801887661,
+          "peak_client_rss_mib": 72.953125,
+          "preparation_ms": 0.29266701312735677,
+          "request_ms": 6.140125042293221
+        },
+        "warm_pair_cache": {
+          "export_ms": 10.27720799902454,
+          "first_use_ms": 26.57474996522069,
+          "peak_client_rss_mib": 72.796875,
+          "preparation_ms": 6.204458011779934,
+          "request_ms": 5.599332973361015
+        }
+      },
+      "output_rows": 36,
+      "plan_speedup": 0.7074001979626584,
+      "strongest_ondemand": "manual_intersection",
+      "workload": "basket_with_repeat"
+    },
+    {
+      "arms": {
+        "full_source_shared": {
+          "export_ms": 20.510583999566734,
+          "first_use_ms": 36.31100000347942,
+          "peak_client_rss_mib": 72.734375,
+          "preparation_ms": 0.09225000394508243,
+          "request_ms": 7.833250041585416
+        },
+        "manual_intersection": {
+          "export_ms": 16.89974998589605,
+          "first_use_ms": 31.406750029418617,
+          "peak_client_rss_mib": 72.59375,
+          "preparation_ms": 0.23845804389566183,
+          "request_ms": 7.1377919521182775
+        },
+        "native_cypher": {
+          "export_ms": 0.0,
+          "first_use_ms": 12.84699997631833,
+          "peak_client_rss_mib": 72.453125,
+          "preparation_ms": 0.0,
+          "request_ms": 5.9466250240802765
+        },
+        "plan": {
+          "export_ms": 11.370291991624981,
+          "first_use_ms": 20.919749978929758,
+          "peak_client_rss_mib": 72.75,
+          "preparation_ms": 0.08541700663045049,
+          "request_ms": 4.84029104700312
+        },
+        "plan_unfused": {
+          "export_ms": 10.663125023711473,
+          "first_use_ms": 20.412207988556474,
+          "peak_client_rss_mib": 72.78125,
+          "preparation_ms": 0.0772910425439477,
+          "request_ms": 5.1170000224374235
+        },
+        "precomputed_scores": {
+          "export_ms": 14.189041976351291,
+          "first_use_ms": 26.264249987434596,
+          "peak_client_rss_mib": 72.6875,
+          "preparation_ms": 0.2977499971166253,
+          "request_ms": 5.712750018574297
+        },
+        "warm_pair_cache": {
+          "export_ms": 11.530250019859523,
+          "first_use_ms": 27.332458004821092,
+          "peak_client_rss_mib": 72.546875,
+          "preparation_ms": 6.330624979455024,
+          "request_ms": 4.679500008933246
+        }
+      },
+      "output_rows": 4,
+      "plan_speedup": 1.2285676556086738,
+      "strongest_ondemand": "native_cypher",
+      "workload": "filtered_basket"
+    },
+    {
+      "arms": {
+        "full_source_shared": {
+          "export_ms": 12.272667023353279,
+          "first_use_ms": 21.19016699725762,
+          "peak_client_rss_mib": 72.703125,
+          "preparation_ms": 0.08066603913903236,
+          "request_ms": 4.236290988046676
+        },
+        "manual_intersection": {
+          "export_ms": 12.623916962184012,
+          "first_use_ms": 22.98475004499778,
+          "peak_client_rss_mib": 72.828125,
+          "preparation_ms": 0.1860000193119049,
+          "request_ms": 4.583125002682209
+        },
+        "native_cypher": {
+          "export_ms": 0.0,
+          "first_use_ms": 13.946041988674551,
+          "peak_client_rss_mib": 73.75,
+          "preparation_ms": 0.0,
+          "request_ms": 4.865916969720274
+        },
+        "plan": {
+          "export_ms": 12.050332967191935,
+          "first_use_ms": 23.719082993920892,
+          "peak_client_rss_mib": 72.796875,
+          "preparation_ms": 0.08975004311650991,
+          "request_ms": 4.925417015329003
+        },
+        "plan_unfused": {
+          "export_ms": 12.079040985554457,
+          "first_use_ms": 22.504125023260713,
+          "peak_client_rss_mib": 72.625,
+          "preparation_ms": 0.08933298522606492,
+          "request_ms": 4.934625001624227
+        },
+        "precomputed_scores": {
+          "export_ms": 11.023125029169023,
+          "first_use_ms": 20.486374967731535,
+          "peak_client_rss_mib": 72.578125,
+          "preparation_ms": 0.22995797917246819,
+          "request_ms": 4.776000045239925
+        },
+        "warm_pair_cache": {
+          "export_ms": 10.064583970233798,
+          "first_use_ms": 22.734041966032237,
+          "peak_client_rss_mib": 72.875,
+          "preparation_ms": 5.294332979246974,
+          "request_ms": 3.7679580273106694
+        }
+      },
+      "output_rows": 8,
+      "plan_speedup": 0.86008778035695,
+      "strongest_ondemand": "full_source_shared",
+      "workload": "single"
+    }
+  ],
+  "environment": {
+    "architecture": "arm64",
+    "chip": "Apple M5 Max",
+    "logical_cpus": 18,
+    "macos": "26.6.2",
+    "memory_bytes": 137438953472,
+    "model": "Mac17,7",
+    "numpy": "2.4.6",
+    "python": "3.11.15",
+    "system": "Darwin"
+  },
+  "format": "mac-movie-workflow-v1",
+  "manifest_sha256": "14e36defbafcd71e549aae278daa2913c90ee8684520cdf17de3e9039fc244ee",
+  "numerical_parity": true,
+  "release_gate_complete": false,
+  "scope": "One small public movie graph; startup/import separate; no general speedup claim."
+}

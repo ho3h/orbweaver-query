@@ -1,0 +1,12 @@
+{
+  "max_absolute_score_error": 0.0,
+  "primary_gate_passed": true,
+  "primary_speedups": {
+    "legacy_consecutive": 3.7499815286622353,
+    "packed_consecutive": 4.672399534978365
+  },
+  "results_sha256": "660474310b09ee82264ce6f17a4c474436e615b26734e4c41dc0b43f439e9872",
+  "scope": "fixed-model execution only; database and quality release gates remain open",
+  "top16_order_exact": true,
+  "verified_workers": 60
+}

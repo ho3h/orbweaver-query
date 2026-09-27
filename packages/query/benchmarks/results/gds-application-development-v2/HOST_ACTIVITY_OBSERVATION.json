@@ -1,0 +1,7 @@
+{
+  "observed_at_utc": "2026-09-27T05:23:18.616723+00:00",
+  "run": "packages/query/runs/gds-application-development-v2",
+  "kind": "concurrent_host_activity_observation",
+  "process_snapshot": "  PID ELAPSED  %CPU COMM\n76188   13:12 116.3 /Users/tedsandtads/Documents/GitHub/graph-neuralese/.venv/bin/python3\n76585   07:53   7.6 /Users/tedsandtads/Documents/GitHub/orbweaver/.venv/bin/python\n76592   07:52 728.5 /Users/tedsandtads/.cache/neo4j-local/jre/21.0.10-arm64/jdk-21.0.10+7-jre/Contents/Home/bin/java\n",
+  "interpretation": "An unrelated graph-neuralese Python process was observed consuming CPU while the frozen application campaign was live. This is a potential timing confound, not a quantified effect. Preserve and disclose the observation with results; do not infer clean host isolation, stop unrelated work, alter frozen workers, or silently restart the campaign."
+}

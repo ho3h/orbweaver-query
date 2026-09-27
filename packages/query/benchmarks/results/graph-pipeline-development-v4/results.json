@@ -1,0 +1,1849 @@
+{
+  "automatic_vs_strongest_manual": {
+    "one_request": {
+      "conditional_process_bootstrap_95_interval": [
+        0.6198207946992692,
+        0.7227919985558995
+      ],
+      "geometric_mean_speedup": 0.678114535460488
+    },
+    "steady": {
+      "conditional_process_bootstrap_95_interval": [
+        0.7130591131149934,
+        0.8361596465420968
+      ],
+      "geometric_mean_speedup": 0.7887150715355702
+    }
+  },
+  "coalescing_ablation": {
+    "prefix_over_coalesced_geometric_latency_ratio": 0.9898966956701509,
+    "scope": "descriptive, all declared conditions"
+  },
+  "complete_primary_comparison": true,
+  "failed_workers": 0,
+  "failures": [],
+  "manifest_sha256": "a3ace769d5e65d20d23b8274f9d1b4758a0471f1e9c91446d59f783444fe5ef0",
+  "max_absolute_error": 2.6645352591003757e-15,
+  "numerical_parity": true,
+  "outcomes": [
+    {
+      "arms": {
+        "automatic": {
+          "completed_workers": 3,
+          "ms": 7.706875010626391,
+          "peak_rss_mib": 44.40625,
+          "setup_ms": 0.18245799583382905,
+          "work": {
+            "edge_visits": 154,
+            "expansions": 14,
+            "model_calls": 14,
+            "peak_preparation_bytes": 0,
+            "preparation_builds": 0,
+            "preparation_hits": 0,
+            "target_preparation_builds": 0,
+            "target_preparation_hits": 0,
+            "type_visits": 16652
+          }
+        },
+        "automatic_fresh_prepared": {
+          "completed_workers": 3,
+          "ms": 5.974625004455447,
+          "peak_rss_mib": 42.75,
+          "setup_ms": 0.17854198813438416,
+          "work": {
+            "edge_visits": 154,
+            "expansions": 14,
+            "model_calls": 14,
+            "peak_preparation_bytes": 0,
+            "preparation_builds": 0,
+            "preparation_hits": 0,
+            "target_preparation_builds": 0,
+            "target_preparation_hits": 0,
+            "type_visits": 16652
+          }
+        },
+        "automatic_prefix": {
+          "completed_workers": 3,
+          "ms": 7.384916010778397,
+          "peak_rss_mib": 45.125,
+          "setup_ms": 0.22070799604989588,
+          "work": {
+            "edge_visits": 154,
+            "expansions": 14,
+            "model_calls": 14,
+            "peak_preparation_bytes": 0,
+            "preparation_builds": 0,
+            "preparation_hits": 0,
+            "target_preparation_builds": 0,
+            "target_preparation_hits": 0,
+            "type_visits": 16652
+          }
+        },
+        "automatic_unprepared": {
+          "completed_workers": 3,
+          "ms": 6.216542009497061,
+          "peak_rss_mib": 45.421875,
+          "setup_ms": 0.23312499979510903,
+          "work": {
+            "edge_visits": 154,
+            "expansions": 14,
+            "model_calls": 14,
+            "peak_preparation_bytes": 0,
+            "preparation_builds": 0,
+            "preparation_hits": 0,
+            "target_preparation_builds": 0,
+            "target_preparation_hits": 0,
+            "type_visits": 16652
+          }
+        },
+        "eager": {
+          "completed_workers": 3,
+          "ms": 7.201000000350177,
+          "peak_rss_mib": 45.296875,
+          "setup_ms": 0.17783298972062767,
+          "work": {
+            "edge_visits": 154,
+            "expansions": 14,
+            "model_calls": 14,
+            "peak_preparation_bytes": 0,
+            "preparation_builds": 0,
+            "preparation_hits": 0,
+            "target_preparation_builds": 0,
+            "target_preparation_hits": 0,
+            "type_visits": 16652
+          }
+        },
+        "manual_coalesced": {
+          "completed_workers": 3,
+          "ms": 6.7667920084204525,
+          "peak_rss_mib": 43.59375,
+          "setup_ms": 0.04412498674355447,
+          "work": {
+            "edge_visits": 154,
+            "expansions": 14,
+            "model_calls": 14,
+            "peak_preparation_bytes": 0,
+            "preparation_builds": 0,
+            "preparation_hits": 0,
+            "target_preparation_builds": 0,
+            "target_preparation_hits": 0,
+            "type_visits": 16652
+          }
+        },
+        "manual_full_lru": {
+          "completed_workers": 3,
+          "ms": 36.03941699839197,
+          "peak_rss_mib": 45.75,
+          "setup_ms": 0.029125018045306206,
+          "work": {
+            "edge_visits": 154,
+            "expansions": 14,
+            "model_calls": 14,
+            "type_visits": 35892
+          }
+        },
+        "manual_prepared": {
+          "completed_workers": 3,
+          "ms": 9.45183401927352,
+          "peak_rss_mib": 43.8125,
+          "setup_ms": 0.018749997252598405,
+          "work": {
+            "edge_visits": 154,
+            "expansions": 14,
+            "model_calls": 14,
+            "peak_preparation_bytes": 22944,
+            "preparation_builds": 6,
+            "preparation_hits": 0,
+            "target_preparation_builds": 0,
+            "target_preparation_hits": 0,
+            "type_visits": 16572
+          }
+        },
+        "manual_targeted": {
+          "completed_workers": 3,
+          "ms": 7.1262090059462935,
+          "peak_rss_mib": 44.53125,
+          "setup_ms": 0.005832989700138569,
+          "work": {
+            "edge_visits": 154,
+            "expansions": 14,
+            "model_calls": 14,
+            "type_visits": 16652
+          }
+        }
+      },
+      "dataset": "collaboration",
+      "output_rows": 154,
+      "shape": "one_expansion",
+      "threshold": 0.0
+    },
+    {
+      "arms": {
+        "automatic": {
+          "completed_workers": 3,
+          "ms": 2.2120420180726796,
+          "peak_rss_mib": 43.34375,
+          "setup_ms": 0.22791698575019836,
+          "work": {
+            "edge_visits": 64,
+            "expansions": 10,
+            "model_calls": 10,
+            "peak_preparation_bytes": 0,
+            "preparation_builds": 0,
+            "preparation_hits": 0,
+            "target_preparation_builds": 0,
+            "target_preparation_hits": 0,
+            "type_visits": 260
+          }
+        },
+        "automatic_fresh_prepared": {
+          "completed_workers": 3,
+          "ms": 1.9743749871850014,
+          "peak_rss_mib": 42.9375,
+          "setup_ms": 0.18920801812782884,
+          "work": {
+            "edge_visits": 64,
+            "expansions": 10,
+            "model_calls": 10,
+            "peak_preparation_bytes": 0,
+            "preparation_builds": 0,
+            "preparation_hits": 0,
+            "target_preparation_builds": 0,
+            "target_preparation_hits": 0,
+            "type_visits": 260
+          }
+        },
+        "automatic_prefix": {
+          "completed_workers": 3,
+          "ms": 1.859000010881573,
+          "peak_rss_mib": 42.421875,
+          "setup_ms": 0.19500000053085387,
+          "work": {
+            "edge_visits": 64,
+            "expansions": 10,
+            "model_calls": 10,
+            "peak_preparation_bytes": 0,
+            "preparation_builds": 0,
+            "preparation_hits": 0,
+            "target_preparation_builds": 0,
+            "target_preparation_hits": 0,
+            "type_visits": 260
+          }
+        },
+        "automatic_unprepared": {
+          "completed_workers": 3,
+          "ms": 2.363542007515207,
+          "peak_rss_mib": 43.984375,
+          "setup_ms": 0.19412502297200263,
+          "work": {
+            "edge_visits": 64,
+            "expansions": 10,
+            "model_calls": 10,
+            "peak_preparation_bytes": 0,
+            "preparation_builds": 0,
+            "preparation_hits": 0,
+            "target_preparation_builds": 0,
+            "target_preparation_hits": 0,
+            "type_visits": 260
+          }
+        },
+        "eager": {
+          "completed_workers": 3,
+          "ms": 2.5313750084023923,
+          "peak_rss_mib": 44.125,
+          "setup_ms": 0.21050000214017928,
+          "work": {
+            "edge_visits": 154,
+            "expansions": 10,
+            "model_calls": 10,
+            "peak_preparation_bytes": 0,
+            "preparation_builds": 0,
+            "preparation_hits": 0,
+            "target_preparation_builds": 0,
+            "target_preparation_hits": 0,
+            "type_visits": 260
+          }
+        },
+        "manual_coalesced": {
+          "completed_workers": 3,
+          "ms": 1.6547910054214299,
+          "peak_rss_mib": 44.078125,
+          "setup_ms": 0.03416699473746121,
+          "work": {
+            "edge_visits": 64,
+            "expansions": 10,
+            "model_calls": 10,
+            "peak_preparation_bytes": 0,
+            "preparation_builds": 0,
+            "preparation_hits": 0,
+            "target_preparation_builds": 0,
+            "target_preparation_hits": 0,
+            "type_visits": 260
+          }
+        },
+        "manual_full_lru": {
+          "completed_workers": 3,
+          "ms": 6.338999985018745,
+          "peak_rss_mib": 45.96875,
+          "setup_ms": 0.01845901715569198,
+          "work": {
+            "edge_visits": 64,
+            "expansions": 10,
+            "model_calls": 10,
+            "type_visits": 452
+          }
+        },
+        "manual_prepared": {
+          "completed_workers": 3,
+          "ms": 1.8664579838514328,
+          "peak_rss_mib": 42.484375,
+          "setup_ms": 0.024500011932104826,
+          "work": {
+            "edge_visits": 64,
+            "expansions": 10,
+            "model_calls": 10,
+            "peak_preparation_bytes": 864,
+            "preparation_builds": 2,
+            "preparation_hits": 0,
+            "target_preparation_builds": 0,
+            "target_preparation_hits": 0,
+            "type_visits": 260
+          }
+        },
+        "manual_targeted": {
+          "completed_workers": 3,
+          "ms": 2.02041698503308,
+          "peak_rss_mib": 44.0,
+          "setup_ms": 0.008875009370967746,
+          "work": {
+            "edge_visits": 64,
+            "expansions": 10,
+            "model_calls": 10,
+            "type_visits": 260
+          }
+        }
+      },
+      "dataset": "collaboration",
+      "output_rows": 64,
+      "shape": "one_expansion",
+      "threshold": 0.2
+    },
+    {
+      "arms": {
+        "automatic": {
+          "completed_workers": 3,
+          "ms": 27.004375006072223,
+          "peak_rss_mib": 49.109375,
+          "setup_ms": 0.3542079939506948,
+          "work": {
+            "edge_visits": 912,
+            "expansions": 8,
+            "model_calls": 8,
+            "peak_preparation_bytes": 18128,
+            "preparation_builds": 2,
+            "preparation_hits": 2,
+            "target_preparation_builds": 2,
+            "target_preparation_hits": 2,
+            "type_visits": 28070
+          }
+        },
+        "automatic_fresh_prepared": {
+          "completed_workers": 3,
+          "ms": 30.487957992590964,
+          "peak_rss_mib": 48.71875,
+          "setup_ms": 0.31116598984226584,
+          "work": {
+            "edge_visits": 912,
+            "expansions": 8,
+            "model_calls": 8,
+            "peak_preparation_bytes": 17280,
+            "preparation_builds": 4,
+            "preparation_hits": 0,
+            "target_preparation_builds": 0,
+            "target_preparation_hits": 0,
+            "type_visits": 61174
+          }
+        },
+        "automatic_prefix": {
+          "completed_workers": 3,
+          "ms": 20.302916993387043,
+          "peak_rss_mib": 47.859375,
+          "setup_ms": 0.2597499988041818,
+          "work": {
+            "edge_visits": 912,
+            "expansions": 8,
+            "model_calls": 8,
+            "peak_preparation_bytes": 17952,
+            "preparation_builds": 2,
+            "preparation_hits": 2,
+            "target_preparation_builds": 0,
+            "target_preparation_hits": 0,
+            "type_visits": 49678
+          }
+        },
+        "automatic_unprepared": {
+          "completed_workers": 3,
+          "ms": 23.01116698072292,
+          "peak_rss_mib": 48.9375,
+          "setup_ms": 0.2058749960269779,
+          "work": {
+            "edge_visits": 912,
+            "expansions": 8,
+            "model_calls": 8,
+            "peak_preparation_bytes": 0,
+            "preparation_builds": 0,
+            "preparation_hits": 0,
+            "target_preparation_builds": 0,
+            "target_preparation_hits": 0,
+            "type_visits": 61830
+          }
+        },
+        "eager": {
+          "completed_workers": 3,
+          "ms": 31.069167016539723,
+          "peak_rss_mib": 47.859375,
+          "setup_ms": 0.25970800197683275,
+          "work": {
+            "edge_visits": 1176,
+            "expansions": 12,
+            "model_calls": 12,
+            "peak_preparation_bytes": 24016,
+            "preparation_builds": 2,
+            "preparation_hits": 3,
+            "target_preparation_builds": 2,
+            "target_preparation_hits": 3,
+            "type_visits": 30206
+          }
+        },
+        "manual_coalesced": {
+          "completed_workers": 3,
+          "ms": 25.569749996066093,
+          "peak_rss_mib": 47.46875,
+          "setup_ms": 0.03429199568927288,
+          "work": {
+            "edge_visits": 912,
+            "expansions": 8,
+            "model_calls": 8,
+            "peak_preparation_bytes": 18128,
+            "preparation_builds": 2,
+            "preparation_hits": 2,
+            "target_preparation_builds": 2,
+            "target_preparation_hits": 2,
+            "type_visits": 28070
+          }
+        },
+        "manual_full_lru": {
+          "completed_workers": 3,
+          "ms": 40.67462499369867,
+          "peak_rss_mib": 47.609375,
+          "setup_ms": 0.023125001462176442,
+          "work": {
+            "edge_visits": 912,
+            "expansions": 8,
+            "model_calls": 8,
+            "type_visits": 32406
+          }
+        },
+        "manual_prepared": {
+          "completed_workers": 3,
+          "ms": 21.399500023107976,
+          "peak_rss_mib": 46.40625,
+          "setup_ms": 0.034500000765547156,
+          "work": {
+            "edge_visits": 912,
+            "expansions": 8,
+            "model_calls": 8,
+            "peak_preparation_bytes": 17952,
+            "preparation_builds": 2,
+            "preparation_hits": 2,
+            "target_preparation_builds": 0,
+            "target_preparation_hits": 0,
+            "type_visits": 49678
+          }
+        },
+        "manual_targeted": {
+          "completed_workers": 3,
+          "ms": 23.125417006667703,
+          "peak_rss_mib": 48.5625,
+          "setup_ms": 0.007458002073690295,
+          "work": {
+            "edge_visits": 912,
+            "expansions": 8,
+            "model_calls": 8,
+            "type_visits": 61830
+          }
+        }
+      },
+      "dataset": "collaboration",
+      "output_rows": 864,
+      "shape": "two_expansions",
+      "threshold": 0.0
+    },
+    {
+      "arms": {
+        "automatic": {
+          "completed_workers": 3,
+          "ms": 0.6512919790111482,
+          "peak_rss_mib": 44.0625,
+          "setup_ms": 0.2917079837061465,
+          "work": {
+            "edge_visits": 32,
+            "expansions": 3,
+            "model_calls": 3,
+            "peak_preparation_bytes": 0,
+            "preparation_builds": 0,
+            "preparation_hits": 0,
+            "target_preparation_builds": 0,
+            "target_preparation_hits": 0,
+            "type_visits": 0
+          }
+        },
+        "automatic_fresh_prepared": {
+          "completed_workers": 3,
+          "ms": 0.6554580177180469,
+          "peak_rss_mib": 43.234375,
+          "setup_ms": 0.3747920272871852,
+          "work": {
+            "edge_visits": 32,
+            "expansions": 3,
+            "model_calls": 3,
+            "peak_preparation_bytes": 0,
+            "preparation_builds": 0,
+            "preparation_hits": 0,
+            "target_preparation_builds": 0,
+            "target_preparation_hits": 0,
+            "type_visits": 0
+          }
+        },
+        "automatic_prefix": {
+          "completed_workers": 3,
+          "ms": 0.5872499896213412,
+          "peak_rss_mib": 43.859375,
+          "setup_ms": 0.30449999030679464,
+          "work": {
+            "edge_visits": 32,
+            "expansions": 3,
+            "model_calls": 3,
+            "peak_preparation_bytes": 0,
+            "preparation_builds": 0,
+            "preparation_hits": 0,
+            "target_preparation_builds": 0,
+            "target_preparation_hits": 0,
+            "type_visits": 0
+          }
+        },
+        "automatic_unprepared": {
+          "completed_workers": 3,
+          "ms": 0.6256249907892197,
+          "peak_rss_mib": 43.109375,
+          "setup_ms": 0.30545800109393895,
+          "work": {
+            "edge_visits": 32,
+            "expansions": 3,
+            "model_calls": 3,
+            "peak_preparation_bytes": 0,
+            "preparation_builds": 0,
+            "preparation_hits": 0,
+            "target_preparation_builds": 0,
+            "target_preparation_hits": 0,
+            "type_visits": 0
+          }
+        },
+        "eager": {
+          "completed_workers": 3,
+          "ms": 9.626500017475337,
+          "peak_rss_mib": 44.25,
+          "setup_ms": 0.22445901413448155,
+          "work": {
+            "edge_visits": 1176,
+            "expansions": 3,
+            "model_calls": 3,
+            "peak_preparation_bytes": 0,
+            "preparation_builds": 0,
+            "preparation_hits": 0,
+            "target_preparation_builds": 0,
+            "target_preparation_hits": 0,
+            "type_visits": 0
+          }
+        },
+        "manual_coalesced": {
+          "completed_workers": 3,
+          "ms": 0.3781669947784394,
+          "peak_rss_mib": 43.90625,
+          "setup_ms": 0.022290972992777824,
+          "work": {
+            "edge_visits": 32,
+            "expansions": 3,
+            "model_calls": 3,
+            "peak_preparation_bytes": 0,
+            "preparation_builds": 0,
+            "preparation_hits": 0,
+            "target_preparation_builds": 0,
+            "target_preparation_hits": 0,
+            "type_visits": 0
+          }
+        },
+        "manual_full_lru": {
+          "completed_workers": 3,
+          "ms": 1.1977910180576146,
+          "peak_rss_mib": 43.0625,
+          "setup_ms": 0.03374999505467713,
+          "work": {
+            "edge_visits": 32,
+            "expansions": 3,
+            "model_calls": 3,
+            "type_visits": 0
+          }
+        },
+        "manual_prepared": {
+          "completed_workers": 3,
+          "ms": 0.40137500036507845,
+          "peak_rss_mib": 44.59375,
+          "setup_ms": 0.04112499300390482,
+          "work": {
+            "edge_visits": 32,
+            "expansions": 3,
+            "model_calls": 3,
+            "peak_preparation_bytes": 0,
+            "preparation_builds": 0,
+            "preparation_hits": 0,
+            "target_preparation_builds": 0,
+            "target_preparation_hits": 0,
+            "type_visits": 0
+          }
+        },
+        "manual_targeted": {
+          "completed_workers": 3,
+          "ms": 0.33637500018812716,
+          "peak_rss_mib": 43.78125,
+          "setup_ms": 0.00604201341047883,
+          "work": {
+            "edge_visits": 32,
+            "expansions": 3,
+            "model_calls": 3,
+            "type_visits": 0
+          }
+        }
+      },
+      "dataset": "collaboration",
+      "output_rows": 0,
+      "shape": "two_expansions",
+      "threshold": 0.2
+    },
+    {
+      "arms": {
+        "automatic": {
+          "completed_workers": 3,
+          "ms": 341.1645409942139,
+          "peak_rss_mib": 90.78125,
+          "setup_ms": 0.2441669930703938,
+          "work": {
+            "edge_visits": 1310,
+            "expansions": 21,
+            "model_calls": 21,
+            "peak_preparation_bytes": 91944,
+            "preparation_builds": 5,
+            "preparation_hits": 5,
+            "target_preparation_builds": 5,
+            "target_preparation_hits": 5,
+            "type_visits": 1656246
+          }
+        },
+        "automatic_fresh_prepared": {
+          "completed_workers": 3,
+          "ms": 622.0273340004496,
+          "peak_rss_mib": 89.546875,
+          "setup_ms": 0.19500000053085387,
+          "work": {
+            "edge_visits": 1310,
+            "expansions": 21,
+            "model_calls": 21,
+            "peak_preparation_bytes": 88320,
+            "preparation_builds": 10,
+            "preparation_hits": 0,
+            "target_preparation_builds": 0,
+            "target_preparation_hits": 0,
+            "type_visits": 2866740
+          }
+        },
+        "automatic_prefix": {
+          "completed_workers": 3,
+          "ms": 326.796707988251,
+          "peak_rss_mib": 89.890625,
+          "setup_ms": 0.1830830005928874,
+          "work": {
+            "edge_visits": 1310,
+            "expansions": 21,
+            "model_calls": 21,
+            "peak_preparation_bytes": 323232,
+            "preparation_builds": 5,
+            "preparation_hits": 5,
+            "target_preparation_builds": 0,
+            "target_preparation_hits": 0,
+            "type_visits": 2588262
+          }
+        },
+        "automatic_unprepared": {
+          "completed_workers": 3,
+          "ms": 656.2374169880059,
+          "peak_rss_mib": 86.984375,
+          "setup_ms": 0.2271659905090928,
+          "work": {
+            "edge_visits": 1310,
+            "expansions": 21,
+            "model_calls": 21,
+            "peak_preparation_bytes": 0,
+            "preparation_builds": 0,
+            "preparation_hits": 0,
+            "target_preparation_builds": 0,
+            "target_preparation_hits": 0,
+            "type_visits": 2870492
+          }
+        },
+        "eager": {
+          "completed_workers": 3,
+          "ms": 358.577459002845,
+          "peak_rss_mib": 88.75,
+          "setup_ms": 0.18000000272877514,
+          "work": {
+            "edge_visits": 1310,
+            "expansions": 23,
+            "model_calls": 23,
+            "peak_preparation_bytes": 91944,
+            "preparation_builds": 5,
+            "preparation_hits": 5,
+            "target_preparation_builds": 5,
+            "target_preparation_hits": 5,
+            "type_visits": 1656246
+          }
+        },
+        "manual_coalesced": {
+          "completed_workers": 3,
+          "ms": 301.62974999984726,
+          "peak_rss_mib": 87.90625,
+          "setup_ms": 0.03166601527482271,
+          "work": {
+            "edge_visits": 1310,
+            "expansions": 21,
+            "model_calls": 21,
+            "peak_preparation_bytes": 91944,
+            "preparation_builds": 5,
+            "preparation_hits": 5,
+            "target_preparation_builds": 5,
+            "target_preparation_hits": 5,
+            "type_visits": 1656246
+          }
+        },
+        "manual_full_lru": {
+          "completed_workers": 3,
+          "ms": 1052.6402909890749,
+          "peak_rss_mib": 102.328125,
+          "setup_ms": 0.023457978386431932,
+          "work": {
+            "edge_visits": 1310,
+            "expansions": 21,
+            "model_calls": 21,
+            "type_visits": 2199998
+          }
+        },
+        "manual_prepared": {
+          "completed_workers": 3,
+          "ms": 305.0673330144491,
+          "peak_rss_mib": 88.40625,
+          "setup_ms": 0.02458301605656743,
+          "work": {
+            "edge_visits": 1310,
+            "expansions": 21,
+            "model_calls": 21,
+            "peak_preparation_bytes": 494976,
+            "preparation_builds": 8,
+            "preparation_hits": 5,
+            "target_preparation_builds": 0,
+            "target_preparation_hits": 0,
+            "type_visits": 2587686
+          }
+        },
+        "manual_targeted": {
+          "completed_workers": 3,
+          "ms": 517.037125013303,
+          "peak_rss_mib": 86.875,
+          "setup_ms": 0.010042014764621854,
+          "work": {
+            "edge_visits": 1310,
+            "expansions": 21,
+            "model_calls": 21,
+            "type_visits": 2870492
+          }
+        }
+      },
+      "dataset": "friendship",
+      "output_rows": 1310,
+      "shape": "one_expansion",
+      "threshold": 0.0
+    },
+    {
+      "arms": {
+        "automatic": {
+          "completed_workers": 3,
+          "ms": 193.7760410073679,
+          "peak_rss_mib": 86.0625,
+          "setup_ms": 0.22162499953992665,
+          "work": {
+            "edge_visits": 674,
+            "expansions": 13,
+            "model_calls": 13,
+            "peak_preparation_bytes": 29416,
+            "preparation_builds": 2,
+            "preparation_hits": 2,
+            "target_preparation_builds": 2,
+            "target_preparation_hits": 2,
+            "type_visits": 925142
+          }
+        },
+        "automatic_fresh_prepared": {
+          "completed_workers": 3,
+          "ms": 366.98687498574145,
+          "peak_rss_mib": 85.625,
+          "setup_ms": 0.24991700774990022,
+          "work": {
+            "edge_visits": 674,
+            "expansions": 13,
+            "model_calls": 13,
+            "peak_preparation_bytes": 64800,
+            "preparation_builds": 4,
+            "preparation_hits": 0,
+            "target_preparation_builds": 0,
+            "target_preparation_hits": 0,
+            "type_visits": 1499262
+          }
+        },
+        "automatic_prefix": {
+          "completed_workers": 3,
+          "ms": 204.38662500237115,
+          "peak_rss_mib": 86.3125,
+          "setup_ms": 0.22091701976023614,
+          "work": {
+            "edge_visits": 674,
+            "expansions": 13,
+            "model_calls": 13,
+            "peak_preparation_bytes": 105696,
+            "preparation_builds": 2,
+            "preparation_hits": 2,
+            "target_preparation_builds": 0,
+            "target_preparation_hits": 0,
+            "type_visits": 1369998
+          }
+        },
+        "automatic_unprepared": {
+          "completed_workers": 3,
+          "ms": 243.39454201981425,
+          "peak_rss_mib": 85.15625,
+          "setup_ms": 0.18216701573692262,
+          "work": {
+            "edge_visits": 674,
+            "expansions": 13,
+            "model_calls": 13,
+            "peak_preparation_bytes": 0,
+            "preparation_builds": 0,
+            "preparation_hits": 0,
+            "target_preparation_builds": 0,
+            "target_preparation_hits": 0,
+            "type_visits": 1499470
+          }
+        },
+        "eager": {
+          "completed_workers": 3,
+          "ms": 254.77991698426194,
+          "peak_rss_mib": 87.40625,
+          "setup_ms": 0.23883298854343593,
+          "work": {
+            "edge_visits": 1310,
+            "expansions": 17,
+            "model_calls": 17,
+            "peak_preparation_bytes": 55336,
+            "preparation_builds": 3,
+            "preparation_hits": 4,
+            "target_preparation_builds": 3,
+            "target_preparation_hits": 4,
+            "type_visits": 1042334
+          }
+        },
+        "manual_coalesced": {
+          "completed_workers": 3,
+          "ms": 192.2258340055123,
+          "peak_rss_mib": 85.6875,
+          "setup_ms": 0.025500019546598196,
+          "work": {
+            "edge_visits": 674,
+            "expansions": 13,
+            "model_calls": 13,
+            "peak_preparation_bytes": 29416,
+            "preparation_builds": 2,
+            "preparation_hits": 2,
+            "target_preparation_builds": 2,
+            "target_preparation_hits": 2,
+            "type_visits": 925142
+          }
+        },
+        "manual_full_lru": {
+          "completed_workers": 3,
+          "ms": 670.9765830019023,
+          "peak_rss_mib": 97.21875,
+          "setup_ms": 0.02379098441451788,
+          "work": {
+            "edge_visits": 674,
+            "expansions": 13,
+            "model_calls": 13,
+            "type_visits": 1259158
+          }
+        },
+        "manual_prepared": {
+          "completed_workers": 3,
+          "ms": 229.25433400087059,
+          "peak_rss_mib": 87.40625,
+          "setup_ms": 0.0433750101365149,
+          "work": {
+            "edge_visits": 674,
+            "expansions": 13,
+            "model_calls": 13,
+            "peak_preparation_bytes": 194016,
+            "preparation_builds": 3,
+            "preparation_hits": 2,
+            "target_preparation_builds": 0,
+            "target_preparation_hits": 0,
+            "type_visits": 1369998
+          }
+        },
+        "manual_targeted": {
+          "completed_workers": 3,
+          "ms": 318.36095900507644,
+          "peak_rss_mib": 86.390625,
+          "setup_ms": 0.006415997631847858,
+          "work": {
+            "edge_visits": 674,
+            "expansions": 13,
+            "model_calls": 13,
+            "type_visits": 1499470
+          }
+        }
+      },
+      "dataset": "friendship",
+      "output_rows": 674,
+      "shape": "one_expansion",
+      "threshold": 0.2
+    },
+    {
+      "arms": {
+        "automatic": {
+          "completed_workers": 3,
+          "ms": 102.14500001166016,
+          "peak_rss_mib": 92.078125,
+          "setup_ms": 0.2827920252457261,
+          "work": {
+            "edge_visits": 3280,
+            "expansions": 12,
+            "model_calls": 12,
+            "peak_preparation_bytes": 97896,
+            "preparation_builds": 2,
+            "preparation_hits": 6,
+            "target_preparation_builds": 2,
+            "target_preparation_hits": 6,
+            "type_visits": 213954
+          }
+        },
+        "automatic_fresh_prepared": {
+          "completed_workers": 3,
+          "ms": 162.19587498926558,
+          "peak_rss_mib": 90.28125,
+          "setup_ms": 0.2908750029746443,
+          "work": {
+            "edge_visits": 3280,
+            "expansions": 12,
+            "model_calls": 12,
+            "peak_preparation_bytes": 63360,
+            "preparation_builds": 8,
+            "preparation_hits": 0,
+            "target_preparation_builds": 0,
+            "target_preparation_hits": 0,
+            "type_visits": 522000
+          }
+        },
+        "automatic_prefix": {
+          "completed_workers": 3,
+          "ms": 129.94795801932923,
+          "peak_rss_mib": 91.46875,
+          "setup_ms": 0.2816669875755906,
+          "work": {
+            "edge_visits": 3280,
+            "expansions": 12,
+            "model_calls": 12,
+            "peak_preparation_bytes": 107616,
+            "preparation_builds": 2,
+            "preparation_hits": 6,
+            "target_preparation_builds": 0,
+            "target_preparation_hits": 0,
+            "type_visits": 503250
+          }
+        },
+        "automatic_unprepared": {
+          "completed_workers": 3,
+          "ms": 110.82783300662413,
+          "peak_rss_mib": 91.765625,
+          "setup_ms": 0.286291993688792,
+          "work": {
+            "edge_visits": 3280,
+            "expansions": 12,
+            "model_calls": 12,
+            "peak_preparation_bytes": 0,
+            "preparation_builds": 0,
+            "preparation_hits": 0,
+            "target_preparation_builds": 0,
+            "target_preparation_hits": 0,
+            "type_visits": 523976
+          }
+        },
+        "eager": {
+          "completed_workers": 3,
+          "ms": 273.317874991335,
+          "peak_rss_mib": 97.15625,
+          "setup_ms": 0.296083017019555,
+          "work": {
+            "edge_visits": 10120,
+            "expansions": 21,
+            "model_calls": 21,
+            "peak_preparation_bytes": 369512,
+            "preparation_builds": 2,
+            "preparation_hits": 8,
+            "target_preparation_builds": 2,
+            "target_preparation_hits": 8,
+            "type_visits": 236522
+          }
+        },
+        "manual_coalesced": {
+          "completed_workers": 3,
+          "ms": 100.84641599678434,
+          "peak_rss_mib": 91.0625,
+          "setup_ms": 0.026124995201826096,
+          "work": {
+            "edge_visits": 3280,
+            "expansions": 12,
+            "model_calls": 12,
+            "peak_preparation_bytes": 97896,
+            "preparation_builds": 2,
+            "preparation_hits": 6,
+            "target_preparation_builds": 2,
+            "target_preparation_hits": 6,
+            "type_visits": 213954
+          }
+        },
+        "manual_full_lru": {
+          "completed_workers": 3,
+          "ms": 191.78366599953733,
+          "peak_rss_mib": 97.984375,
+          "setup_ms": 0.04258300759829581,
+          "work": {
+            "edge_visits": 3280,
+            "expansions": 12,
+            "model_calls": 12,
+            "type_visits": 236722
+          }
+        },
+        "manual_prepared": {
+          "completed_workers": 3,
+          "ms": 101.5795829880517,
+          "peak_rss_mib": 90.78125,
+          "setup_ms": 0.04325000918470323,
+          "work": {
+            "edge_visits": 3280,
+            "expansions": 12,
+            "model_calls": 12,
+            "peak_preparation_bytes": 107616,
+            "preparation_builds": 2,
+            "preparation_hits": 6,
+            "target_preparation_builds": 0,
+            "target_preparation_hits": 0,
+            "type_visits": 503250
+          }
+        },
+        "manual_targeted": {
+          "completed_workers": 3,
+          "ms": 99.41162500763312,
+          "peak_rss_mib": 88.6875,
+          "setup_ms": 0.010042014764621854,
+          "work": {
+            "edge_visits": 3280,
+            "expansions": 12,
+            "model_calls": 12,
+            "type_visits": 523976
+          }
+        }
+      },
+      "dataset": "friendship",
+      "output_rows": 3212,
+      "shape": "two_expansions",
+      "threshold": 0.0
+    },
+    {
+      "arms": {
+        "automatic": {
+          "completed_workers": 3,
+          "ms": 0.2565409813541919,
+          "peak_rss_mib": 82.609375,
+          "setup_ms": 0.28141599614173174,
+          "work": {
+            "edge_visits": 0,
+            "expansions": 2,
+            "model_calls": 2,
+            "peak_preparation_bytes": 0,
+            "preparation_builds": 0,
+            "preparation_hits": 0,
+            "target_preparation_builds": 0,
+            "target_preparation_hits": 0,
+            "type_visits": 0
+          }
+        },
+        "automatic_fresh_prepared": {
+          "completed_workers": 3,
+          "ms": 0.36604198976419866,
+          "peak_rss_mib": 81.0625,
+          "setup_ms": 0.43316601659171283,
+          "work": {
+            "edge_visits": 0,
+            "expansions": 2,
+            "model_calls": 2,
+            "peak_preparation_bytes": 0,
+            "preparation_builds": 0,
+            "preparation_hits": 0,
+            "target_preparation_builds": 0,
+            "target_preparation_hits": 0,
+            "type_visits": 0
+          }
+        },
+        "automatic_prefix": {
+          "completed_workers": 3,
+          "ms": 0.2948750043287873,
+          "peak_rss_mib": 81.71875,
+          "setup_ms": 0.2505409938748926,
+          "work": {
+            "edge_visits": 0,
+            "expansions": 2,
+            "model_calls": 2,
+            "peak_preparation_bytes": 0,
+            "preparation_builds": 0,
+            "preparation_hits": 0,
+            "target_preparation_builds": 0,
+            "target_preparation_hits": 0,
+            "type_visits": 0
+          }
+        },
+        "automatic_unprepared": {
+          "completed_workers": 3,
+          "ms": 0.28212499455548823,
+          "peak_rss_mib": 82.09375,
+          "setup_ms": 0.34754202351905406,
+          "work": {
+            "edge_visits": 0,
+            "expansions": 2,
+            "model_calls": 2,
+            "peak_preparation_bytes": 0,
+            "preparation_builds": 0,
+            "preparation_hits": 0,
+            "target_preparation_builds": 0,
+            "target_preparation_hits": 0,
+            "type_visits": 0
+          }
+        },
+        "eager": {
+          "completed_workers": 3,
+          "ms": 76.50129200192168,
+          "peak_rss_mib": 84.296875,
+          "setup_ms": 0.26458300999365747,
+          "work": {
+            "edge_visits": 10120,
+            "expansions": 2,
+            "model_calls": 2,
+            "peak_preparation_bytes": 0,
+            "preparation_builds": 0,
+            "preparation_hits": 0,
+            "target_preparation_builds": 0,
+            "target_preparation_hits": 0,
+            "type_visits": 0
+          }
+        },
+        "manual_coalesced": {
+          "completed_workers": 3,
+          "ms": 0.1808340020943433,
+          "peak_rss_mib": 80.484375,
+          "setup_ms": 0.0315000070258975,
+          "work": {
+            "edge_visits": 0,
+            "expansions": 2,
+            "model_calls": 2,
+            "peak_preparation_bytes": 0,
+            "preparation_builds": 0,
+            "preparation_hits": 0,
+            "target_preparation_builds": 0,
+            "target_preparation_hits": 0,
+            "type_visits": 0
+          }
+        },
+        "manual_full_lru": {
+          "completed_workers": 3,
+          "ms": 0.9840830171015114,
+          "peak_rss_mib": 81.96875,
+          "setup_ms": 0.03712502075359225,
+          "work": {
+            "edge_visits": 0,
+            "expansions": 2,
+            "model_calls": 2,
+            "type_visits": 0
+          }
+        },
+        "manual_prepared": {
+          "completed_workers": 3,
+          "ms": 0.18358402303420007,
+          "peak_rss_mib": 81.5,
+          "setup_ms": 0.019917002646252513,
+          "work": {
+            "edge_visits": 0,
+            "expansions": 2,
+            "model_calls": 2,
+            "peak_preparation_bytes": 0,
+            "preparation_builds": 0,
+            "preparation_hits": 0,
+            "target_preparation_builds": 0,
+            "target_preparation_hits": 0,
+            "type_visits": 0
+          }
+        },
+        "manual_targeted": {
+          "completed_workers": 3,
+          "ms": 0.20120799308642745,
+          "peak_rss_mib": 81.140625,
+          "setup_ms": 0.006791000487282872,
+          "work": {
+            "edge_visits": 0,
+            "expansions": 2,
+            "model_calls": 2,
+            "type_visits": 0
+          }
+        }
+      },
+      "dataset": "friendship",
+      "output_rows": 0,
+      "shape": "two_expansions",
+      "threshold": 0.2
+    },
+    {
+      "arms": {
+        "automatic": {
+          "completed_workers": 3,
+          "ms": 146.3017909845803,
+          "peak_rss_mib": 49.0625,
+          "setup_ms": 0.21112500689923763,
+          "work": {
+            "edge_visits": 1146,
+            "expansions": 20,
+            "model_calls": 20,
+            "peak_preparation_bytes": 85040,
+            "preparation_builds": 4,
+            "preparation_hits": 4,
+            "target_preparation_builds": 4,
+            "target_preparation_hits": 4,
+            "type_visits": 990478
+          }
+        },
+        "automatic_fresh_prepared": {
+          "completed_workers": 3,
+          "ms": 178.77954099094495,
+          "peak_rss_mib": 51.171875,
+          "setup_ms": 0.20504201529547572,
+          "work": {
+            "edge_visits": 1146,
+            "expansions": 20,
+            "model_calls": 20,
+            "peak_preparation_bytes": 59136,
+            "preparation_builds": 8,
+            "preparation_hits": 0,
+            "target_preparation_builds": 0,
+            "target_preparation_hits": 0,
+            "type_visits": 1253954
+          }
+        },
+        "automatic_prefix": {
+          "completed_workers": 3,
+          "ms": 178.08591600623913,
+          "peak_rss_mib": 50.1875,
+          "setup_ms": 0.24699998903088272,
+          "work": {
+            "edge_visits": 1146,
+            "expansions": 20,
+            "model_calls": 20,
+            "peak_preparation_bytes": 163104,
+            "preparation_builds": 4,
+            "preparation_hits": 4,
+            "target_preparation_builds": 0,
+            "target_preparation_hits": 0,
+            "type_visits": 1234446
+          }
+        },
+        "automatic_unprepared": {
+          "completed_workers": 3,
+          "ms": 202.0792909897864,
+          "peak_rss_mib": 48.6875,
+          "setup_ms": 0.253707985393703,
+          "work": {
+            "edge_visits": 1146,
+            "expansions": 20,
+            "model_calls": 20,
+            "peak_preparation_bytes": 0,
+            "preparation_builds": 0,
+            "preparation_hits": 0,
+            "target_preparation_builds": 0,
+            "target_preparation_hits": 0,
+            "type_visits": 1254978
+          }
+        },
+        "eager": {
+          "completed_workers": 3,
+          "ms": 142.7981250162702,
+          "peak_rss_mib": 48.765625,
+          "setup_ms": 0.21758401999250054,
+          "work": {
+            "edge_visits": 1146,
+            "expansions": 23,
+            "model_calls": 23,
+            "peak_preparation_bytes": 85040,
+            "preparation_builds": 4,
+            "preparation_hits": 4,
+            "target_preparation_builds": 4,
+            "target_preparation_hits": 4,
+            "type_visits": 990478
+          }
+        },
+        "manual_coalesced": {
+          "completed_workers": 3,
+          "ms": 120.50470800022595,
+          "peak_rss_mib": 49.375,
+          "setup_ms": 0.03024999750778079,
+          "work": {
+            "edge_visits": 1146,
+            "expansions": 20,
+            "model_calls": 20,
+            "peak_preparation_bytes": 85040,
+            "preparation_builds": 4,
+            "preparation_hits": 4,
+            "target_preparation_builds": 4,
+            "target_preparation_hits": 4,
+            "type_visits": 990478
+          }
+        },
+        "manual_full_lru": {
+          "completed_workers": 3,
+          "ms": 710.5354999948759,
+          "peak_rss_mib": 58.3125,
+          "setup_ms": 0.024124979972839355,
+          "work": {
+            "edge_visits": 1146,
+            "expansions": 20,
+            "model_calls": 20,
+            "type_visits": 1106494
+          }
+        },
+        "manual_prepared": {
+          "completed_workers": 3,
+          "ms": 191.8476659920998,
+          "peak_rss_mib": 47.5625,
+          "setup_ms": 0.049083027988672256,
+          "work": {
+            "edge_visits": 1146,
+            "expansions": 20,
+            "model_calls": 20,
+            "peak_preparation_bytes": 297696,
+            "preparation_builds": 8,
+            "preparation_hits": 4,
+            "target_preparation_builds": 0,
+            "target_preparation_hits": 0,
+            "type_visits": 1234446
+          }
+        },
+        "manual_targeted": {
+          "completed_workers": 3,
+          "ms": 167.53524998784997,
+          "peak_rss_mib": 47.515625,
+          "setup_ms": 0.010791001841425896,
+          "work": {
+            "edge_visits": 1146,
+            "expansions": 20,
+            "model_calls": 20,
+            "type_visits": 1254978
+          }
+        }
+      },
+      "dataset": "communication",
+      "output_rows": 1146,
+      "shape": "one_expansion",
+      "threshold": 0.0
+    },
+    {
+      "arms": {
+        "automatic": {
+          "completed_workers": 3,
+          "ms": 21.042332984507084,
+          "peak_rss_mib": 44.203125,
+          "setup_ms": 0.242499983869493,
+          "work": {
+            "edge_visits": 54,
+            "expansions": 9,
+            "model_calls": 9,
+            "peak_preparation_bytes": 0,
+            "preparation_builds": 0,
+            "preparation_hits": 0,
+            "target_preparation_builds": 0,
+            "target_preparation_hits": 0,
+            "type_visits": 166390
+          }
+        },
+        "automatic_fresh_prepared": {
+          "completed_workers": 3,
+          "ms": 18.450209026923403,
+          "peak_rss_mib": 42.984375,
+          "setup_ms": 0.16404202324338257,
+          "work": {
+            "edge_visits": 54,
+            "expansions": 9,
+            "model_calls": 9,
+            "peak_preparation_bytes": 0,
+            "preparation_builds": 0,
+            "preparation_hits": 0,
+            "target_preparation_builds": 0,
+            "target_preparation_hits": 0,
+            "type_visits": 166390
+          }
+        },
+        "automatic_prefix": {
+          "completed_workers": 3,
+          "ms": 16.089584009023383,
+          "peak_rss_mib": 45.0,
+          "setup_ms": 0.2077080134768039,
+          "work": {
+            "edge_visits": 54,
+            "expansions": 9,
+            "model_calls": 9,
+            "peak_preparation_bytes": 0,
+            "preparation_builds": 0,
+            "preparation_hits": 0,
+            "target_preparation_builds": 0,
+            "target_preparation_hits": 0,
+            "type_visits": 166390
+          }
+        },
+        "automatic_unprepared": {
+          "completed_workers": 3,
+          "ms": 18.86424998519942,
+          "peak_rss_mib": 44.484375,
+          "setup_ms": 0.18341699615120888,
+          "work": {
+            "edge_visits": 54,
+            "expansions": 9,
+            "model_calls": 9,
+            "peak_preparation_bytes": 0,
+            "preparation_builds": 0,
+            "preparation_hits": 0,
+            "target_preparation_builds": 0,
+            "target_preparation_hits": 0,
+            "type_visits": 166390
+          }
+        },
+        "eager": {
+          "completed_workers": 3,
+          "ms": 26.688208017731085,
+          "peak_rss_mib": 43.34375,
+          "setup_ms": 0.17633300740271807,
+          "work": {
+            "edge_visits": 1146,
+            "expansions": 13,
+            "model_calls": 13,
+            "peak_preparation_bytes": 10872,
+            "preparation_builds": 1,
+            "preparation_hits": 1,
+            "target_preparation_builds": 1,
+            "target_preparation_hits": 1,
+            "type_visits": 173686
+          }
+        },
+        "manual_coalesced": {
+          "completed_workers": 3,
+          "ms": 16.197999997530133,
+          "peak_rss_mib": 44.125,
+          "setup_ms": 0.03024999750778079,
+          "work": {
+            "edge_visits": 54,
+            "expansions": 9,
+            "model_calls": 9,
+            "peak_preparation_bytes": 0,
+            "preparation_builds": 0,
+            "preparation_hits": 0,
+            "target_preparation_builds": 0,
+            "target_preparation_hits": 0,
+            "type_visits": 166390
+          }
+        },
+        "manual_full_lru": {
+          "completed_workers": 3,
+          "ms": 122.94066700269468,
+          "peak_rss_mib": 51.125,
+          "setup_ms": 0.020875013433396816,
+          "work": {
+            "edge_visits": 54,
+            "expansions": 9,
+            "model_calls": 9,
+            "type_visits": 188974
+          }
+        },
+        "manual_prepared": {
+          "completed_workers": 3,
+          "ms": 18.83833299507387,
+          "peak_rss_mib": 44.765625,
+          "setup_ms": 0.026374997105449438,
+          "work": {
+            "edge_visits": 54,
+            "expansions": 9,
+            "model_calls": 9,
+            "peak_preparation_bytes": 59136,
+            "preparation_builds": 1,
+            "preparation_hits": 0,
+            "target_preparation_builds": 0,
+            "target_preparation_hits": 0,
+            "type_visits": 166286
+          }
+        },
+        "manual_targeted": {
+          "completed_workers": 3,
+          "ms": 17.213665996678174,
+          "peak_rss_mib": 42.984375,
+          "setup_ms": 0.009542010957375169,
+          "work": {
+            "edge_visits": 54,
+            "expansions": 9,
+            "model_calls": 9,
+            "type_visits": 166390
+          }
+        }
+      },
+      "dataset": "communication",
+      "output_rows": 54,
+      "shape": "one_expansion",
+      "threshold": 0.2
+    },
+    {
+      "arms": {
+        "automatic": {
+          "completed_workers": 3,
+          "ms": 444.58229100564495,
+          "peak_rss_mib": 130.703125,
+          "setup_ms": 0.27150000096298754,
+          "work": {
+            "edge_visits": 15354,
+            "expansions": 54,
+            "model_calls": 54,
+            "peak_preparation_bytes": 257536,
+            "preparation_builds": 2,
+            "preparation_hits": 48,
+            "target_preparation_builds": 2,
+            "target_preparation_hits": 48,
+            "type_visits": 246910
+          }
+        },
+        "automatic_fresh_prepared": {
+          "completed_workers": 3,
+          "ms": 508.8240419863723,
+          "peak_rss_mib": 137.296875,
+          "setup_ms": 0.22583300597034395,
+          "work": {
+            "edge_visits": 15354,
+            "expansions": 54,
+            "model_calls": 54,
+            "peak_preparation_bytes": 30432,
+            "preparation_builds": 50,
+            "preparation_hits": 0,
+            "target_preparation_builds": 0,
+            "target_preparation_hits": 0,
+            "type_visits": 2575128
+          }
+        },
+        "automatic_prefix": {
+          "completed_workers": 3,
+          "ms": 515.818500018213,
+          "peak_rss_mib": 132.5625,
+          "setup_ms": 0.2572910161688924,
+          "work": {
+            "edge_visits": 15354,
+            "expansions": 54,
+            "model_calls": 54,
+            "peak_preparation_bytes": 57888,
+            "preparation_builds": 2,
+            "preparation_hits": 48,
+            "target_preparation_builds": 0,
+            "target_preparation_hits": 0,
+            "type_visits": 2466606
+          }
+        },
+        "automatic_unprepared": {
+          "completed_workers": 3,
+          "ms": 469.6786249987781,
+          "peak_rss_mib": 134.015625,
+          "setup_ms": 0.24841600679792464,
+          "work": {
+            "edge_visits": 15354,
+            "expansions": 54,
+            "model_calls": 54,
+            "peak_preparation_bytes": 0,
+            "preparation_builds": 0,
+            "preparation_hits": 0,
+            "target_preparation_builds": 0,
+            "target_preparation_hits": 0,
+            "type_visits": 2588704
+          }
+        },
+        "eager": {
+          "completed_workers": 3,
+          "ms": 560.4141250078101,
+          "peak_rss_mib": 131.890625,
+          "setup_ms": 0.2622499887365848,
+          "work": {
+            "edge_visits": 18278,
+            "expansions": 92,
+            "model_calls": 92,
+            "peak_preparation_bytes": 275368,
+            "preparation_builds": 2,
+            "preparation_hits": 49,
+            "target_preparation_builds": 2,
+            "target_preparation_hits": 49,
+            "type_visits": 246942
+          }
+        },
+        "manual_coalesced": {
+          "completed_workers": 3,
+          "ms": 378.17358400207013,
+          "peak_rss_mib": 122.265625,
+          "setup_ms": 0.025874993298202753,
+          "work": {
+            "edge_visits": 15354,
+            "expansions": 54,
+            "model_calls": 54,
+            "peak_preparation_bytes": 257536,
+            "preparation_builds": 2,
+            "preparation_hits": 48,
+            "target_preparation_builds": 2,
+            "target_preparation_hits": 48,
+            "type_visits": 246910
+          }
+        },
+        "manual_full_lru": {
+          "completed_workers": 3,
+          "ms": 384.1342499945313,
+          "peak_rss_mib": 133.046875,
+          "setup_ms": 0.019208004232496023,
+          "work": {
+            "edge_visits": 15354,
+            "expansions": 54,
+            "model_calls": 54,
+            "type_visits": 247158
+          }
+        },
+        "manual_prepared": {
+          "completed_workers": 3,
+          "ms": 416.15412500686944,
+          "peak_rss_mib": 121.484375,
+          "setup_ms": 0.0367090106010437,
+          "work": {
+            "edge_visits": 15354,
+            "expansions": 54,
+            "model_calls": 54,
+            "peak_preparation_bytes": 57888,
+            "preparation_builds": 2,
+            "preparation_hits": 48,
+            "target_preparation_builds": 0,
+            "target_preparation_hits": 0,
+            "type_visits": 2466606
+          }
+        },
+        "manual_targeted": {
+          "completed_workers": 3,
+          "ms": 461.74225001595914,
+          "peak_rss_mib": 125.078125,
+          "setup_ms": 0.005874986527487636,
+          "work": {
+            "edge_visits": 15354,
+            "expansions": 54,
+            "model_calls": 54,
+            "type_visits": 2588704
+          }
+        }
+      },
+      "dataset": "communication",
+      "output_rows": 15248,
+      "shape": "two_expansions",
+      "threshold": 0.0
+    },
+    {
+      "arms": {
+        "automatic": {
+          "completed_workers": 3,
+          "ms": 0.28395900153554976,
+          "peak_rss_mib": 44.578125,
+          "setup_ms": 0.28325000312179327,
+          "work": {
+            "edge_visits": 0,
+            "expansions": 2,
+            "model_calls": 2,
+            "peak_preparation_bytes": 0,
+            "preparation_builds": 0,
+            "preparation_hits": 0,
+            "target_preparation_builds": 0,
+            "target_preparation_hits": 0,
+            "type_visits": 0
+          }
+        },
+        "automatic_fresh_prepared": {
+          "completed_workers": 3,
+          "ms": 0.25954199372790754,
+          "peak_rss_mib": 44.53125,
+          "setup_ms": 0.3009999927598983,
+          "work": {
+            "edge_visits": 0,
+            "expansions": 2,
+            "model_calls": 2,
+            "peak_preparation_bytes": 0,
+            "preparation_builds": 0,
+            "preparation_hits": 0,
+            "target_preparation_builds": 0,
+            "target_preparation_hits": 0,
+            "type_visits": 0
+          }
+        },
+        "automatic_prefix": {
+          "completed_workers": 3,
+          "ms": 0.2886249858420342,
+          "peak_rss_mib": 42.75,
+          "setup_ms": 0.25070799165405333,
+          "work": {
+            "edge_visits": 0,
+            "expansions": 2,
+            "model_calls": 2,
+            "peak_preparation_bytes": 0,
+            "preparation_builds": 0,
+            "preparation_hits": 0,
+            "target_preparation_builds": 0,
+            "target_preparation_hits": 0,
+            "type_visits": 0
+          }
+        },
+        "automatic_unprepared": {
+          "completed_workers": 3,
+          "ms": 0.30045901075936854,
+          "peak_rss_mib": 44.421875,
+          "setup_ms": 0.3437080013100058,
+          "work": {
+            "edge_visits": 0,
+            "expansions": 2,
+            "model_calls": 2,
+            "peak_preparation_bytes": 0,
+            "preparation_builds": 0,
+            "preparation_hits": 0,
+            "target_preparation_builds": 0,
+            "target_preparation_hits": 0,
+            "type_visits": 0
+          }
+        },
+        "eager": {
+          "completed_workers": 3,
+          "ms": 152.2893329965882,
+          "peak_rss_mib": 49.96875,
+          "setup_ms": 0.3011670196428895,
+          "work": {
+            "edge_visits": 18278,
+            "expansions": 2,
+            "model_calls": 2,
+            "peak_preparation_bytes": 0,
+            "preparation_builds": 0,
+            "preparation_hits": 0,
+            "target_preparation_builds": 0,
+            "target_preparation_hits": 0,
+            "type_visits": 0
+          }
+        },
+        "manual_coalesced": {
+          "completed_workers": 3,
+          "ms": 0.20062501425854862,
+          "peak_rss_mib": 44.796875,
+          "setup_ms": 0.02662499900907278,
+          "work": {
+            "edge_visits": 0,
+            "expansions": 2,
+            "model_calls": 2,
+            "peak_preparation_bytes": 0,
+            "preparation_builds": 0,
+            "preparation_hits": 0,
+            "target_preparation_builds": 0,
+            "target_preparation_hits": 0,
+            "type_visits": 0
+          }
+        },
+        "manual_full_lru": {
+          "completed_workers": 3,
+          "ms": 0.31104200752452016,
+          "peak_rss_mib": 44.953125,
+          "setup_ms": 0.017041980754584074,
+          "work": {
+            "edge_visits": 0,
+            "expansions": 2,
+            "model_calls": 2,
+            "type_visits": 0
+          }
+        },
+        "manual_prepared": {
+          "completed_workers": 3,
+          "ms": 0.21587501396425068,
+          "peak_rss_mib": 44.828125,
+          "setup_ms": 0.03362499410286546,
+          "work": {
+            "edge_visits": 0,
+            "expansions": 2,
+            "model_calls": 2,
+            "peak_preparation_bytes": 0,
+            "preparation_builds": 0,
+            "preparation_hits": 0,
+            "target_preparation_builds": 0,
+            "target_preparation_hits": 0,
+            "type_visits": 0
+          }
+        },
+        "manual_targeted": {
+          "completed_workers": 3,
+          "ms": 0.18862501019611955,
+          "peak_rss_mib": 44.546875,
+          "setup_ms": 0.008167000487446785,
+          "work": {
+            "edge_visits": 0,
+            "expansions": 2,
+            "model_calls": 2,
+            "type_visits": 0
+          }
+        }
+      },
+      "dataset": "communication",
+      "output_rows": 0,
+      "shape": "two_expansions",
+      "threshold": 0.2
+    }
+  ],
+  "parity_scope": "completed workers only",
+  "preparation_ablation": {
+    "fresh_prefix_over_reused_geometric_latency_ratio": 1.1865401792733352,
+    "scope": "descriptive, all declared conditions; same completion kernel"
+  },
+  "release_gates_closed": false,
+  "verified_workers": 324
+}

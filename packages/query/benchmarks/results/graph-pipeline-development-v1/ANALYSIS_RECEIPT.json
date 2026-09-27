@@ -1,0 +1,7 @@
+{
+  "runtime_manifest_sha256": "fdcd803d6d6a34ee46a0fc8a264cae40882e5344260972790245e9af5c910230",
+  "reason": "Post-collection handling of three eager-arm row-budget failures; primary comparisons unchanged. Frozen original analysis cannot summarize missing success records.",
+  "files": {
+    "graph_pipeline_analysis.py": "b039b247b61fc86d320fd19c0accbd834b16125e30c74b5e2e3ededa92d6d343"
+  }
+}

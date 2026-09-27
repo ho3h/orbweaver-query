@@ -1,0 +1,3 @@
+Installed module: /private/tmp/orbweaver-query-dependent-installed-20260926/orbweaver_query/quail.py
+........................x..................                              [100%]
+42 passed, 1 xfailed in 0.92s

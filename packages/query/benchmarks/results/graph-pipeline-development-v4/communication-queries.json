@@ -1,0 +1,138 @@
+{
+  "one_expansion": [
+    {
+      "head": "764",
+      "ordinal": 0,
+      "relation": "LINK",
+      "seed": "67"
+    },
+    {
+      "head": "764",
+      "ordinal": 1,
+      "relation": "LINK",
+      "seed": "518"
+    },
+    {
+      "head": "693",
+      "ordinal": 2,
+      "relation": "LINK",
+      "seed": "153"
+    },
+    {
+      "head": "693",
+      "ordinal": 3,
+      "relation": "LINK",
+      "seed": "739"
+    },
+    {
+      "head": "842",
+      "ordinal": 4,
+      "relation": "LINK",
+      "seed": "165"
+    },
+    {
+      "head": "842",
+      "ordinal": 5,
+      "relation": "LINK",
+      "seed": "212"
+    },
+    {
+      "head": "718",
+      "ordinal": 6,
+      "relation": "LINK",
+      "seed": "59"
+    },
+    {
+      "head": "718",
+      "ordinal": 7,
+      "relation": "LINK",
+      "seed": "681"
+    },
+    {
+      "head": "284",
+      "ordinal": 8,
+      "relation": "LINK",
+      "seed": "453"
+    },
+    {
+      "head": "284",
+      "ordinal": 9,
+      "relation": "LINK",
+      "seed": "523"
+    },
+    {
+      "head": "970",
+      "ordinal": 10,
+      "relation": "LINK",
+      "seed": "201"
+    },
+    {
+      "head": "970",
+      "ordinal": 11,
+      "relation": "LINK",
+      "seed": "141"
+    },
+    {
+      "head": "971",
+      "ordinal": 12,
+      "relation": "LINK",
+      "seed": "111"
+    },
+    {
+      "head": "971",
+      "ordinal": 13,
+      "relation": "LINK",
+      "seed": "250"
+    },
+    {
+      "head": "809",
+      "ordinal": 14,
+      "relation": "LINK",
+      "seed": "599"
+    },
+    {
+      "head": "809",
+      "ordinal": 15,
+      "relation": "LINK",
+      "seed": "708"
+    },
+    {
+      "head": "764",
+      "ordinal": 1000,
+      "relation": "LINK",
+      "seed": "67"
+    },
+    {
+      "head": null,
+      "ordinal": -1,
+      "relation": "LINK",
+      "seed": null
+    }
+  ],
+  "two_expansions": [
+    {
+      "head": "764",
+      "ordinal": 0,
+      "relation": "LINK",
+      "seed": "67"
+    },
+    {
+      "head": "693",
+      "ordinal": 1,
+      "relation": "LINK",
+      "seed": "153"
+    },
+    {
+      "head": "764",
+      "ordinal": 1000,
+      "relation": "LINK",
+      "seed": "67"
+    },
+    {
+      "head": null,
+      "ordinal": -1,
+      "relation": "LINK",
+      "seed": null
+    }
+  ]
+}

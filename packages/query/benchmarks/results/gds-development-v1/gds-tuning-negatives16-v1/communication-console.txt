@@ -1,0 +1,5 @@
+database_start 11.812
+gds_import_projection 3.842
+gds_fit 169.444
+gds_predict_stream_all_scores 3.836
+{"adamic_adar": {"recall16": 0.4567307692307692, "recall64": 0.7115384615384616, "reciprocal_rank": 0.17152494255616385, "supported": 1.0}, "common_neighbors": {"recall16": 0.4350833269990879, "recall64": 0.6952551065832316, "reciprocal_rank": 0.15722369138421138, "supported": 1.0}, "path": {"recall16": 0.46634615384615385, "recall64": 0.7548076923076923, "reciprocal_rank": 0.1798242623636313, "supported": 1.0}, "resource_allocation": {"recall16": 0.4423076923076923, "recall64": 0.7259615384615384, "reciprocal_rank": 0.16746603891661438, "supported": 1.0}, "gds": {"recall16": 0.3703525641025641, "recall64": 0.6717266777042915, "reciprocal_rank": 0.09676342846879209, "supported": 1.0}}

@@ -1,0 +1,7 @@
+{
+  "runtime_manifest_sha256": "832c7181d96964f126563c835ca64705958b2144dffb8da9ad68a6533eec8ac5",
+  "script": "plan_comparison.py",
+  "script_sha256": "513aa7d3323510781dca74298906620ce7d06c6c99d371863e08962c834cd1c8",
+  "timing_workers_started": false,
+  "method": "Fixed candidate/control comparisons, setup amortization, independent process bootstrap; see copied script."
+}

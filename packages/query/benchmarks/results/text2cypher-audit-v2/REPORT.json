@@ -1,0 +1,284 @@
+{
+  "combined_unique_layout_normalized_queries": 37321,
+  "combined_unique_queries": 71171,
+  "exact_query_overlap": 3,
+  "format": "orbweaver-query-text2cypher-audit-v2",
+  "layout_normalized_query_overlap": 33839,
+  "queries_executed": 0,
+  "schema_query_pair_overlap": 4,
+  "scope": "training corpus coverage/provenance; no parser, execution or graph-model accuracy claim",
+  "shared_instance_ids": 35927,
+  "source_sha256": "134be30367b3d02e48178a15d0458e83193a79f170b67e8f172853172efcf086",
+  "sources": [
+    {
+      "columns": [
+        "question",
+        "schema",
+        "cypher",
+        "data_source",
+        "instance_id",
+        "database_reference_alias"
+      ],
+      "database_alias_counts": {
+        "neo4jlabs_demo_db_bluesky": 388,
+        "neo4jlabs_demo_db_buzzoverflow": 1106,
+        "neo4jlabs_demo_db_companies": 2422,
+        "neo4jlabs_demo_db_eoflix": 2512,
+        "neo4jlabs_demo_db_fincen": 1347,
+        "neo4jlabs_demo_db_gameofthrones": 1296,
+        "neo4jlabs_demo_db_grandstack": 1492,
+        "neo4jlabs_demo_db_movies": 1949,
+        "neo4jlabs_demo_db_network": 1094,
+        "neo4jlabs_demo_db_northwind": 1669,
+        "neo4jlabs_demo_db_offshoreleaks": 921,
+        "neo4jlabs_demo_db_openstreetmap": 10,
+        "neo4jlabs_demo_db_recommendations": 2130,
+        "neo4jlabs_demo_db_stackoverflow": 2,
+        "neo4jlabs_demo_db_stackoverflow2": 867,
+        "neo4jlabs_demo_db_twitch": 1604,
+        "neo4jlabs_demo_db_twitter": 1284
+      },
+      "dataset": "neo4j/text2cypher-2024v1",
+      "declared_license": "Apache-2.0",
+      "empty_or_nonstring_cypher": 0,
+      "file": "data/train-00000-of-00001.parquet",
+      "lexical_feature_counts": {
+        "AGGREGATE_CALL": 11876,
+        "CALL": 11,
+        "DISTINCT": 5268,
+        "LIMIT": 13630,
+        "MATCH": 39550,
+        "OPTIONAL_MATCH": 59,
+        "ORDER_BY": 11308,
+        "SHORTEST_PATH_CALL": 461,
+        "SKIP": 137,
+        "STAR_IN_RELATION_PATTERN": 3103,
+        "UNION": 874,
+        "UNWIND": 98,
+        "WHERE": 20997,
+        "WITH": 8945,
+        "WRITE_KEYWORD": 1
+      },
+      "revision": "d9f15541ab2f99a0f54797a0109b50663554f512",
+      "rows": 39554,
+      "rows_with_database_alias": 22093,
+      "rows_with_encoded_layout": 0,
+      "sha256": "12218000576ed793e468417333b4499517c3d7869c94504941c6741acc229bce",
+      "training_example_ids_by_feature": {
+        "AGGREGATE_CALL": [
+          "instance_id_41185",
+          "instance_id_3914",
+          "instance_id_3825"
+        ],
+        "CALL": [
+          "instance_id_27545",
+          "instance_id_33366",
+          "instance_id_28727"
+        ],
+        "DISTINCT": [
+          "instance_id_34035",
+          "instance_id_3914",
+          "instance_id_39945"
+        ],
+        "LIMIT": [
+          "instance_id_41185",
+          "instance_id_26598",
+          "instance_id_3914"
+        ],
+        "MATCH": [
+          "instance_id_41185",
+          "instance_id_26598",
+          "instance_id_34035"
+        ],
+        "OPTIONAL_MATCH": [
+          "instance_id_28763",
+          "instance_id_2736",
+          "instance_id_34362"
+        ],
+        "ORDER_BY": [
+          "instance_id_41185",
+          "instance_id_3914",
+          "instance_id_29305"
+        ],
+        "SHORTEST_PATH_CALL": [
+          "instance_id_6440",
+          "instance_id_5853",
+          "instance_id_5830"
+        ],
+        "SKIP": [
+          "instance_id_15138",
+          "instance_id_15491",
+          "instance_id_15489"
+        ],
+        "STAR_IN_RELATION_PATTERN": [
+          "instance_id_17972",
+          "instance_id_6440",
+          "instance_id_18364"
+        ],
+        "UNION": [
+          "instance_id_15877",
+          "instance_id_16160",
+          "instance_id_16387"
+        ],
+        "UNWIND": [
+          "instance_id_26159",
+          "instance_id_33648",
+          "instance_id_33431"
+        ],
+        "WHERE": [
+          "instance_id_26598",
+          "instance_id_34035",
+          "instance_id_14645"
+        ],
+        "WITH": [
+          "instance_id_41185",
+          "instance_id_3914",
+          "instance_id_14645"
+        ],
+        "WRITE_KEYWORD": [
+          "instance_id_27885"
+        ]
+      },
+      "unique_exact_queries": 37306,
+      "unique_exact_schemas": 966,
+      "unique_layout_normalized_queries": 37297,
+      "unique_schema_query_pairs": 37442
+    },
+    {
+      "columns": [
+        "question",
+        "schema",
+        "cypher",
+        "data_source",
+        "instance_id",
+        "database_reference_alias"
+      ],
+      "database_alias_counts": {
+        "neo4jlabs_demo_db_bluesky": 388,
+        "neo4jlabs_demo_db_buzzoverflow": 1106,
+        "neo4jlabs_demo_db_eoflix": 2500,
+        "neo4jlabs_demo_db_fincen": 1346,
+        "neo4jlabs_demo_db_gameofthrones": 1296,
+        "neo4jlabs_demo_db_grandstack": 1492,
+        "neo4jlabs_demo_db_movies": 1942,
+        "neo4jlabs_demo_db_network": 1093,
+        "neo4jlabs_demo_db_northwind": 1668,
+        "neo4jlabs_demo_db_offshoreleaks": 921,
+        "neo4jlabs_demo_db_openstreetmap": 10,
+        "neo4jlabs_demo_db_recommendations": 2146,
+        "neo4jlabs_demo_db_stackoverflow": 2,
+        "neo4jlabs_demo_db_stackoverflow2": 180,
+        "neo4jlabs_demo_db_twitch": 1604,
+        "neo4jlabs_demo_db_twitter": 1282
+      },
+      "dataset": "neo4j/text2cypher-2025v1",
+      "declared_license": "Apache-2.0",
+      "empty_or_nonstring_cypher": 0,
+      "file": "data/train.parquet",
+      "lexical_feature_counts": {
+        "AGGREGATE_CALL": 10812,
+        "CALL": 22,
+        "DISTINCT": 4722,
+        "LIMIT": 11945,
+        "MATCH": 35938,
+        "OPTIONAL_MATCH": 47,
+        "ORDER_BY": 10045,
+        "SHORTEST_PATH_CALL": 461,
+        "SKIP": 137,
+        "STAR_IN_RELATION_PATTERN": 3091,
+        "UNION": 846,
+        "UNWIND": 90,
+        "WHERE": 18960,
+        "WITH": 7908,
+        "WRITE_KEYWORD": 13
+      },
+      "revision": "d88b8a7d477c8c1809218f6c566bd31f1ad1e504",
+      "rows": 35946,
+      "rows_with_database_alias": 18976,
+      "rows_with_encoded_layout": 35922,
+      "sha256": "03cef89e121a577faac6ab8a3f010114e71c364a78a6d7ee39ccbdddd5922791",
+      "training_example_ids_by_feature": {
+        "AGGREGATE_CALL": [
+          "instance_id_41185",
+          "instance_id_3914",
+          "instance_id_3825"
+        ],
+        "CALL": [
+          "instance_id_27545",
+          "instance_id_33366",
+          "instance_id_28727"
+        ],
+        "DISTINCT": [
+          "instance_id_34035",
+          "instance_id_3914",
+          "instance_id_39945"
+        ],
+        "LIMIT": [
+          "instance_id_41185",
+          "instance_id_3914",
+          "instance_id_3825"
+        ],
+        "MATCH": [
+          "instance_id_41185",
+          "instance_id_34035",
+          "instance_id_3914"
+        ],
+        "OPTIONAL_MATCH": [
+          "instance_id_28763",
+          "instance_id_2736",
+          "instance_id_34362"
+        ],
+        "ORDER_BY": [
+          "instance_id_41185",
+          "instance_id_3914",
+          "instance_id_29305"
+        ],
+        "SHORTEST_PATH_CALL": [
+          "instance_id_6440",
+          "instance_id_5853",
+          "instance_id_5830"
+        ],
+        "SKIP": [
+          "instance_id_15138",
+          "instance_id_15491",
+          "instance_id_15489"
+        ],
+        "STAR_IN_RELATION_PATTERN": [
+          "instance_id_17972",
+          "instance_id_6440",
+          "instance_id_18364"
+        ],
+        "UNION": [
+          "instance_id_15877",
+          "instance_id_16160",
+          "instance_id_16387"
+        ],
+        "UNWIND": [
+          "instance_id_26159",
+          "instance_id_33648",
+          "instance_id_33431"
+        ],
+        "WHERE": [
+          "instance_id_34035",
+          "instance_id_14645",
+          "instance_id_39945"
+        ],
+        "WITH": [
+          "instance_id_41185",
+          "instance_id_3914",
+          "instance_id_14645"
+        ],
+        "WRITE_KEYWORD": [
+          "instance_id_45637",
+          "instance_id_45638",
+          "instance_id_45639"
+        ]
+      },
+      "unique_exact_queries": 33868,
+      "unique_exact_schemas": 965,
+      "unique_layout_normalized_queries": 33863,
+      "unique_schema_query_pairs": 33999
+    }
+  ],
+  "test_splits_downloaded_or_read": false
+}

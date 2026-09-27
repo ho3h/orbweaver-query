@@ -1,0 +1,4727 @@
+{
+  "manifest_sha256": "8cce28a959039d4f3d1d544f5e86c1e0bab9a242deab0dd3448ae2b15564233c",
+  "rows": [
+    {
+      "arm": "packed_grouped",
+      "candidate_scores": 698,
+      "environment": {
+        "numpy": "2.4.4",
+        "platform": "macOS-26.6.2-arm64-arm-64bit",
+        "python": "3.11.15",
+        "threads": {
+          "BLIS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        }
+      },
+      "graph_numeric_bytes": 3597888,
+      "parameter_bytes": 979968,
+      "peak_rss_bytes": {
+        "baseline": 22937600,
+        "final": 70746112,
+        "imports": 35553280,
+        "prepared": 66863104
+      },
+      "predictions_sha256": "9bdbf69db384b9aa045fdf693f48936f7fd229569e80b4d043c46a02df97cc55",
+      "profile": {
+        "candidate_scores": 698,
+        "elapsed_seconds": 0.001403667003614828,
+        "expansions": 1,
+        "model_calls": 1,
+        "peak_feature_bytes": 51848,
+        "queries": 1,
+        "reused_expansions": 0,
+        "reused_scores": 0,
+        "strategy": "grouped",
+        "type_visits": 1281,
+        "windows": 1
+      },
+      "queries": 1,
+      "replicate": 0,
+      "stages_seconds": {
+        "first_batch": 0.0026326249935664237,
+        "imports": 0.027377916005207226,
+        "load_verify": 0.0033778749930206686,
+        "prepare": 0.03554745900328271,
+        "worker_to_first": 0.06893587499507703
+      },
+      "timings": [
+        {
+          "execute_seconds": 0.0016184580163098872,
+          "serialize_seconds": 0.0001689589989837259,
+          "total_seconds": 0.001787417015293613
+        },
+        {
+          "execute_seconds": 0.001458958984585479,
+          "serialize_seconds": 0.00016083300579339266,
+          "total_seconds": 0.0016197919903788716
+        },
+        {
+          "execute_seconds": 0.0014564580051228404,
+          "serialize_seconds": 0.00015779200475662947,
+          "total_seconds": 0.0016142500098794699
+        },
+        {
+          "execute_seconds": 0.0014310419792309403,
+          "serialize_seconds": 0.0001604999997653067,
+          "total_seconds": 0.001591541978996247
+        },
+        {
+          "execute_seconds": 0.001413125020917505,
+          "serialize_seconds": 0.00015633300063200295,
+          "total_seconds": 0.001569458021549508
+        }
+      ],
+      "wire_bytes": 19197,
+      "wire_sha256": "cf120e4ec21fce6d4797174276194bd5bcf7bbf8917cc47634e3960a44b44e00",
+      "workload": "single"
+    },
+    {
+      "arm": "packed_consecutive",
+      "candidate_scores": 23209,
+      "environment": {
+        "numpy": "2.4.4",
+        "platform": "macOS-26.6.2-arm64-arm-64bit",
+        "python": "3.11.15",
+        "threads": {
+          "BLIS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        }
+      },
+      "graph_numeric_bytes": 3597888,
+      "parameter_bytes": 979968,
+      "peak_rss_bytes": {
+        "baseline": 22953984,
+        "final": 76431360,
+        "imports": 34684928,
+        "prepared": 66224128
+      },
+      "predictions_sha256": "6d912c1b7927626810d34a063d91a8e07645e8867b94ccdc84a1db0256e3b125",
+      "profile": {
+        "candidate_scores": 23209,
+        "elapsed_seconds": 0.08061962501960807,
+        "expansions": 16,
+        "model_calls": 16,
+        "peak_feature_bytes": 262032,
+        "queries": 16,
+        "reused_expansions": 0,
+        "reused_scores": 0,
+        "strategy": "consecutive",
+        "type_visits": 73984,
+        "windows": 1
+      },
+      "queries": 16,
+      "replicate": 0,
+      "stages_seconds": {
+        "first_batch": 0.0871875419979915,
+        "imports": 0.023723999998765066,
+        "load_verify": 0.0032052920141723007,
+        "prepare": 0.03516645799390972,
+        "worker_to_first": 0.14928329200483859
+      },
+      "timings": [
+        {
+          "execute_seconds": 0.0807075829943642,
+          "serialize_seconds": 0.0034864589979406446,
+          "total_seconds": 0.08419404199230485
+        },
+        {
+          "execute_seconds": 0.08000287500908598,
+          "serialize_seconds": 0.003533584007527679,
+          "total_seconds": 0.08353645901661366
+        },
+        {
+          "execute_seconds": 0.08001145900925621,
+          "serialize_seconds": 0.003542040998581797,
+          "total_seconds": 0.08355350000783801
+        },
+        {
+          "execute_seconds": 0.08123062501545064,
+          "serialize_seconds": 0.0035146249865647405,
+          "total_seconds": 0.08474525000201538
+        },
+        {
+          "execute_seconds": 0.08068300000741147,
+          "serialize_seconds": 0.003512708004564047,
+          "total_seconds": 0.08419570801197551
+        }
+      ],
+      "wire_bytes": 481602,
+      "wire_sha256": "81beb34faf538d80df7ab9be206f8766dc3d77070c3f85a22a3896a754defaf7",
+      "workload": "hubs16"
+    },
+    {
+      "arm": "packed_grouped",
+      "candidate_scores": 23209,
+      "environment": {
+        "numpy": "2.4.4",
+        "platform": "macOS-26.6.2-arm64-arm-64bit",
+        "python": "3.11.15",
+        "threads": {
+          "BLIS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        }
+      },
+      "graph_numeric_bytes": 3597888,
+      "parameter_bytes": 979968,
+      "peak_rss_bytes": {
+        "baseline": 23003136,
+        "final": 76759040,
+        "imports": 34717696,
+        "prepared": 66355200
+      },
+      "predictions_sha256": "6d912c1b7927626810d34a063d91a8e07645e8867b94ccdc84a1db0256e3b125",
+      "profile": {
+        "candidate_scores": 23209,
+        "elapsed_seconds": 0.08436199999414384,
+        "expansions": 16,
+        "model_calls": 16,
+        "peak_feature_bytes": 262032,
+        "queries": 16,
+        "reused_expansions": 0,
+        "reused_scores": 0,
+        "strategy": "grouped",
+        "type_visits": 73984,
+        "windows": 1
+      },
+      "queries": 16,
+      "replicate": 2,
+      "stages_seconds": {
+        "first_batch": 0.08659191700280644,
+        "imports": 0.023256667016539723,
+        "load_verify": 0.003168415976688266,
+        "prepare": 0.03500887501286343,
+        "worker_to_first": 0.14802587500889786
+      },
+      "timings": [
+        {
+          "execute_seconds": 0.08179820899385959,
+          "serialize_seconds": 0.0035437500046100467,
+          "total_seconds": 0.08534195899846964
+        },
+        {
+          "execute_seconds": 0.08065829199040309,
+          "serialize_seconds": 0.0034823750029318035,
+          "total_seconds": 0.08414066699333489
+        },
+        {
+          "execute_seconds": 0.08197775000007823,
+          "serialize_seconds": 0.0034597500052768737,
+          "total_seconds": 0.0854375000053551
+        },
+        {
+          "execute_seconds": 0.08149441701243632,
+          "serialize_seconds": 0.0035214999807067215,
+          "total_seconds": 0.08501591699314304
+        },
+        {
+          "execute_seconds": 0.08442537501105107,
+          "serialize_seconds": 0.00357183298910968,
+          "total_seconds": 0.08799720800016075
+        }
+      ],
+      "wire_bytes": 481602,
+      "wire_sha256": "81beb34faf538d80df7ab9be206f8766dc3d77070c3f85a22a3896a754defaf7",
+      "workload": "hubs16"
+    },
+    {
+      "arm": "packed_independent",
+      "candidate_scores": 23209,
+      "environment": {
+        "numpy": "2.4.4",
+        "platform": "macOS-26.6.2-arm64-arm-64bit",
+        "python": "3.11.15",
+        "threads": {
+          "BLIS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        }
+      },
+      "graph_numeric_bytes": 3597888,
+      "parameter_bytes": 979968,
+      "peak_rss_bytes": {
+        "baseline": 22757376,
+        "final": 76546048,
+        "imports": 34521088,
+        "prepared": 65929216
+      },
+      "predictions_sha256": "6d912c1b7927626810d34a063d91a8e07645e8867b94ccdc84a1db0256e3b125",
+      "profile": {
+        "candidate_scores": 23209,
+        "elapsed_seconds": 0.08095516700996086,
+        "expansions": 16,
+        "model_calls": 16,
+        "peak_feature_bytes": 262032,
+        "queries": 16,
+        "reused_expansions": 0,
+        "reused_scores": 0,
+        "strategy": "independent",
+        "type_visits": 73984,
+        "windows": 1
+      },
+      "queries": 16,
+      "replicate": 2,
+      "stages_seconds": {
+        "first_batch": 0.08724600001005456,
+        "imports": 0.023119833000237122,
+        "load_verify": 0.003401750000193715,
+        "prepare": 0.03554945799987763,
+        "worker_to_first": 0.14931704101036303
+      },
+      "timings": [
+        {
+          "execute_seconds": 0.08179050000035204,
+          "serialize_seconds": 0.003537290991516784,
+          "total_seconds": 0.08532779099186882
+        },
+        {
+          "execute_seconds": 0.08128508401568979,
+          "serialize_seconds": 0.0036121250013820827,
+          "total_seconds": 0.08489720901707187
+        },
+        {
+          "execute_seconds": 0.08117470899014734,
+          "serialize_seconds": 0.003491874987957999,
+          "total_seconds": 0.08466658397810534
+        },
+        {
+          "execute_seconds": 0.08069199998863041,
+          "serialize_seconds": 0.0035606670135166496,
+          "total_seconds": 0.08425266700214706
+        },
+        {
+          "execute_seconds": 0.08101812499808148,
+          "serialize_seconds": 0.0035560410178732127,
+          "total_seconds": 0.08457416601595469
+        }
+      ],
+      "wire_bytes": 481602,
+      "wire_sha256": "81beb34faf538d80df7ab9be206f8766dc3d77070c3f85a22a3896a754defaf7",
+      "workload": "hubs16"
+    },
+    {
+      "arm": "packed_grouped",
+      "candidate_scores": 698,
+      "environment": {
+        "numpy": "2.4.4",
+        "platform": "macOS-26.6.2-arm64-arm-64bit",
+        "python": "3.11.15",
+        "threads": {
+          "BLIS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        }
+      },
+      "graph_numeric_bytes": 3597888,
+      "parameter_bytes": 979968,
+      "peak_rss_bytes": {
+        "baseline": 22872064,
+        "final": 70041600,
+        "imports": 34717696,
+        "prepared": 66125824
+      },
+      "predictions_sha256": "9bdbf69db384b9aa045fdf693f48936f7fd229569e80b4d043c46a02df97cc55",
+      "profile": {
+        "candidate_scores": 698,
+        "elapsed_seconds": 0.0014062499976716936,
+        "expansions": 1,
+        "model_calls": 1,
+        "peak_feature_bytes": 51848,
+        "queries": 1,
+        "reused_expansions": 0,
+        "reused_scores": 0,
+        "strategy": "grouped",
+        "type_visits": 1281,
+        "windows": 1
+      },
+      "queries": 1,
+      "replicate": 2,
+      "stages_seconds": {
+        "first_batch": 0.0023335409932769835,
+        "imports": 0.02364812500309199,
+        "load_verify": 0.003209540998796001,
+        "prepare": 0.03514120899490081,
+        "worker_to_first": 0.06433241599006578
+      },
+      "timings": [
+        {
+          "execute_seconds": 0.0015824159781914204,
+          "serialize_seconds": 0.00016850000247359276,
+          "total_seconds": 0.0017509159806650132
+        },
+        {
+          "execute_seconds": 0.001468041999032721,
+          "serialize_seconds": 0.00016733299707993865,
+          "total_seconds": 0.0016353749961126596
+        },
+        {
+          "execute_seconds": 0.0014335000014398247,
+          "serialize_seconds": 0.00016191700706258416,
+          "total_seconds": 0.0015954170085024089
+        },
+        {
+          "execute_seconds": 0.001430833013728261,
+          "serialize_seconds": 0.00015816700761206448,
+          "total_seconds": 0.0015890000213403255
+        },
+        {
+          "execute_seconds": 0.001415292004821822,
+          "serialize_seconds": 0.00015404197620227933,
+          "total_seconds": 0.0015693339810241014
+        }
+      ],
+      "wire_bytes": 19197,
+      "wire_sha256": "cf120e4ec21fce6d4797174276194bd5bcf7bbf8917cc47634e3960a44b44e00",
+      "workload": "single"
+    },
+    {
+      "arm": "packed_consecutive",
+      "candidate_scores": 48616,
+      "environment": {
+        "numpy": "2.4.4",
+        "platform": "macOS-26.6.2-arm64-arm-64bit",
+        "python": "3.11.15",
+        "threads": {
+          "BLIS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        }
+      },
+      "graph_numeric_bytes": 3597888,
+      "parameter_bytes": 979968,
+      "peak_rss_bytes": {
+        "baseline": 22855680,
+        "final": 80494592,
+        "imports": 34701312,
+        "prepared": 66387968
+      },
+      "predictions_sha256": "428069d0953f94a2e47eddeecad8b0bd48a78b4b75eb8b03d1ad88a7080d25e8",
+      "profile": {
+        "candidate_scores": 48616,
+        "elapsed_seconds": 0.11200954200467095,
+        "expansions": 256,
+        "model_calls": 256,
+        "peak_feature_bytes": 51848,
+        "queries": 256,
+        "reused_expansions": 0,
+        "reused_scores": 0,
+        "strategy": "consecutive",
+        "type_visits": 99640,
+        "windows": 1
+      },
+      "queries": 256,
+      "replicate": 2,
+      "stages_seconds": {
+        "first_batch": 0.12071429198840633,
+        "imports": 0.02422462499816902,
+        "load_verify": 0.00332212500507012,
+        "prepare": 0.035665208008140326,
+        "worker_to_first": 0.1839262499997858
+      },
+      "timings": [
+        {
+          "execute_seconds": 0.11046754199196585,
+          "serialize_seconds": 0.010647290997439995,
+          "total_seconds": 0.12111483298940584
+        },
+        {
+          "execute_seconds": 0.11052829198888503,
+          "serialize_seconds": 0.010006542026530951,
+          "total_seconds": 0.12053483401541598
+        },
+        {
+          "execute_seconds": 0.10949504200834781,
+          "serialize_seconds": 0.00999199997750111,
+          "total_seconds": 0.11948704198584892
+        },
+        {
+          "execute_seconds": 0.11050504198647104,
+          "serialize_seconds": 0.009878832992399111,
+          "total_seconds": 0.12038387497887015
+        },
+        {
+          "execute_seconds": 0.11212758399778977,
+          "serialize_seconds": 0.010295790998497978,
+          "total_seconds": 0.12242337499628775
+        }
+      ],
+      "wire_bytes": 1287368,
+      "wire_sha256": "97035cf2046715f8f3b4214f3581836058d7670848e299b374deac6b5b436769",
+      "workload": "interleaved256"
+    },
+    {
+      "arm": "packed_independent",
+      "candidate_scores": 698,
+      "environment": {
+        "numpy": "2.4.4",
+        "platform": "macOS-26.6.2-arm64-arm-64bit",
+        "python": "3.11.15",
+        "threads": {
+          "BLIS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        }
+      },
+      "graph_numeric_bytes": 3597888,
+      "parameter_bytes": 979968,
+      "peak_rss_bytes": {
+        "baseline": 22937600,
+        "final": 70172672,
+        "imports": 34816000,
+        "prepared": 66240512
+      },
+      "predictions_sha256": "9bdbf69db384b9aa045fdf693f48936f7fd229569e80b4d043c46a02df97cc55",
+      "profile": {
+        "candidate_scores": 698,
+        "elapsed_seconds": 0.0014277079899329692,
+        "expansions": 1,
+        "model_calls": 1,
+        "peak_feature_bytes": 51848,
+        "queries": 1,
+        "reused_expansions": 0,
+        "reused_scores": 0,
+        "strategy": "independent",
+        "type_visits": 1281,
+        "windows": 1
+      },
+      "queries": 1,
+      "replicate": 1,
+      "stages_seconds": {
+        "first_batch": 0.002381458005402237,
+        "imports": 0.023790875013219193,
+        "load_verify": 0.003203250002115965,
+        "prepare": 0.03554420897853561,
+        "worker_to_first": 0.064919791999273
+      },
+      "timings": [
+        {
+          "execute_seconds": 0.0016776249976828694,
+          "serialize_seconds": 0.00017458299407735467,
+          "total_seconds": 0.001852207991760224
+        },
+        {
+          "execute_seconds": 0.001480417005950585,
+          "serialize_seconds": 0.0001618750102352351,
+          "total_seconds": 0.00164229201618582
+        },
+        {
+          "execute_seconds": 0.0014390000142157078,
+          "serialize_seconds": 0.00015858298866078258,
+          "total_seconds": 0.0015975830028764904
+        },
+        {
+          "execute_seconds": 0.0014418750070035458,
+          "serialize_seconds": 0.00015712500317022204,
+          "total_seconds": 0.0015990000101737678
+        },
+        {
+          "execute_seconds": 0.0014374589954968542,
+          "serialize_seconds": 0.00015629100380465388,
+          "total_seconds": 0.001593749999301508
+        }
+      ],
+      "wire_bytes": 19197,
+      "wire_sha256": "cf120e4ec21fce6d4797174276194bd5bcf7bbf8917cc47634e3960a44b44e00",
+      "workload": "single"
+    },
+    {
+      "arm": "packed_independent",
+      "candidate_scores": 43124,
+      "environment": {
+        "numpy": "2.4.4",
+        "platform": "macOS-26.6.2-arm64-arm-64bit",
+        "python": "3.11.15",
+        "threads": {
+          "BLIS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        }
+      },
+      "graph_numeric_bytes": 3597888,
+      "parameter_bytes": 979968,
+      "peak_rss_bytes": {
+        "baseline": 22921216,
+        "final": 79593472,
+        "imports": 34766848,
+        "prepared": 66371584
+      },
+      "predictions_sha256": "89fa95a7a82a326da77e94782ecb3ac8db522681fc08a485af97192bc604dd7e",
+      "profile": {
+        "candidate_scores": 43124,
+        "elapsed_seconds": 0.1054937920125667,
+        "expansions": 256,
+        "model_calls": 256,
+        "peak_feature_bytes": 62856,
+        "queries": 256,
+        "reused_expansions": 0,
+        "reused_scores": 0,
+        "strategy": "independent",
+        "type_visits": 93083,
+        "windows": 1
+      },
+      "queries": 256,
+      "replicate": 0,
+      "stages_seconds": {
+        "first_batch": 0.11498162499628961,
+        "imports": 0.023194625013275072,
+        "load_verify": 0.003212624986190349,
+        "prepare": 0.03564270801143721,
+        "worker_to_first": 0.17703158300719224
+      },
+      "timings": [
+        {
+          "execute_seconds": 0.10605720899184234,
+          "serialize_seconds": 0.010013166000135243,
+          "total_seconds": 0.11607037499197759
+        },
+        {
+          "execute_seconds": 0.10794549999991432,
+          "serialize_seconds": 0.009808125003473833,
+          "total_seconds": 0.11775362500338815
+        },
+        {
+          "execute_seconds": 0.10641529198619537,
+          "serialize_seconds": 0.009471875004237518,
+          "total_seconds": 0.11588716699043289
+        },
+        {
+          "execute_seconds": 0.10441829200135544,
+          "serialize_seconds": 0.009530707990052179,
+          "total_seconds": 0.11394899999140762
+        },
+        {
+          "execute_seconds": 0.1056571250082925,
+          "serialize_seconds": 0.009338333999039605,
+          "total_seconds": 0.1149954590073321
+        }
+      ],
+      "wire_bytes": 1170628,
+      "wire_sha256": "581a3de6246b5d109d44bf983bd188798c77a1f2d3ecc3ae7fde914dfba3749b",
+      "workload": "distinct256"
+    },
+    {
+      "arm": "legacy_consecutive",
+      "candidate_scores": 48616,
+      "environment": {
+        "numpy": "2.4.4",
+        "platform": "macOS-26.6.2-arm64-arm-64bit",
+        "python": "3.11.15",
+        "threads": {
+          "BLIS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        }
+      },
+      "graph_numeric_bytes": 4708592,
+      "parameter_bytes": 979968,
+      "peak_rss_bytes": {
+        "baseline": 22937600,
+        "final": 110526464,
+        "imports": 34701312,
+        "prepared": 110526464
+      },
+      "predictions_sha256": "428069d0953f94a2e47eddeecad8b0bd48a78b4b75eb8b03d1ad88a7080d25e8",
+      "profile": null,
+      "queries": 256,
+      "replicate": 0,
+      "stages_seconds": {
+        "first_batch": 0.0984167919959873,
+        "imports": 0.023430500004906207,
+        "load_verify": 0.0031594589818269014,
+        "prepare": 0.18438191601308063,
+        "worker_to_first": 0.30938866699580103
+      },
+      "timings": [
+        {
+          "execute_seconds": 0.08558054099557921,
+          "serialize_seconds": 0.01040133400238119,
+          "total_seconds": 0.0959818749979604
+        },
+        {
+          "execute_seconds": 0.08540762501070276,
+          "serialize_seconds": 0.009761416004039347,
+          "total_seconds": 0.0951690410147421
+        },
+        {
+          "execute_seconds": 0.0849140840000473,
+          "serialize_seconds": 0.009812208008952439,
+          "total_seconds": 0.09472629200899974
+        },
+        {
+          "execute_seconds": 0.08443645801162347,
+          "serialize_seconds": 0.009934708999935538,
+          "total_seconds": 0.09437116701155901
+        },
+        {
+          "execute_seconds": 0.08428987499792129,
+          "serialize_seconds": 0.009740665991557762,
+          "total_seconds": 0.09403054098947905
+        }
+      ],
+      "wire_bytes": 1287368,
+      "wire_sha256": "97035cf2046715f8f3b4214f3581836058d7670848e299b374deac6b5b436769",
+      "workload": "interleaved256"
+    },
+    {
+      "arm": "packed_independent",
+      "candidate_scores": 48616,
+      "environment": {
+        "numpy": "2.4.4",
+        "platform": "macOS-26.6.2-arm64-arm-64bit",
+        "python": "3.11.15",
+        "threads": {
+          "BLIS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        }
+      },
+      "graph_numeric_bytes": 3597888,
+      "parameter_bytes": 979968,
+      "peak_rss_bytes": {
+        "baseline": 22953984,
+        "final": 80363520,
+        "imports": 34619392,
+        "prepared": 66093056
+      },
+      "predictions_sha256": "428069d0953f94a2e47eddeecad8b0bd48a78b4b75eb8b03d1ad88a7080d25e8",
+      "profile": {
+        "candidate_scores": 48616,
+        "elapsed_seconds": 0.11234041597344913,
+        "expansions": 256,
+        "model_calls": 256,
+        "peak_feature_bytes": 51848,
+        "queries": 256,
+        "reused_expansions": 0,
+        "reused_scores": 0,
+        "strategy": "independent",
+        "type_visits": 99640,
+        "windows": 1
+      },
+      "queries": 256,
+      "replicate": 1,
+      "stages_seconds": {
+        "first_batch": 0.12099412499810569,
+        "imports": 0.023186291015008464,
+        "load_verify": 0.0031939589825924486,
+        "prepare": 0.03537266599596478,
+        "worker_to_first": 0.18274704099167138
+      },
+      "timings": [
+        {
+          "execute_seconds": 0.11270870800944977,
+          "serialize_seconds": 0.010403624997707084,
+          "total_seconds": 0.12311233300715685
+        },
+        {
+          "execute_seconds": 0.10984762498992495,
+          "serialize_seconds": 0.010177832999033853,
+          "total_seconds": 0.1200254579889588
+        },
+        {
+          "execute_seconds": 0.1108869580202736,
+          "serialize_seconds": 0.010022707981988788,
+          "total_seconds": 0.12090966600226238
+        },
+        {
+          "execute_seconds": 0.11100437500863336,
+          "serialize_seconds": 0.00994449999416247,
+          "total_seconds": 0.12094887500279583
+        },
+        {
+          "execute_seconds": 0.11245908300043084,
+          "serialize_seconds": 0.010208291991148144,
+          "total_seconds": 0.12266737499157898
+        }
+      ],
+      "wire_bytes": 1287368,
+      "wire_sha256": "97035cf2046715f8f3b4214f3581836058d7670848e299b374deac6b5b436769",
+      "workload": "interleaved256"
+    },
+    {
+      "arm": "legacy_consecutive",
+      "candidate_scores": 48616,
+      "environment": {
+        "numpy": "2.4.4",
+        "platform": "macOS-26.6.2-arm64-arm-64bit",
+        "python": "3.11.15",
+        "threads": {
+          "BLIS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        }
+      },
+      "graph_numeric_bytes": 4708592,
+      "parameter_bytes": 979968,
+      "peak_rss_bytes": {
+        "baseline": 22904832,
+        "final": 109690880,
+        "imports": 34865152,
+        "prepared": 109690880
+      },
+      "predictions_sha256": "a4350aa55ec1ebdf43b13995361a9433d7720e216fe0cf58dde88edd5c66fe49",
+      "profile": null,
+      "queries": 256,
+      "replicate": 0,
+      "stages_seconds": {
+        "first_batch": 0.024495374993421137,
+        "imports": 0.023122458020225167,
+        "load_verify": 0.003224333981052041,
+        "prepare": 0.1825023750134278,
+        "worker_to_first": 0.23334454200812615
+      },
+      "timings": [
+        {
+          "execute_seconds": 0.013681542011909187,
+          "serialize_seconds": 0.010682499996619299,
+          "total_seconds": 0.024364042008528486
+        },
+        {
+          "execute_seconds": 0.01372229098342359,
+          "serialize_seconds": 0.009623084013583139,
+          "total_seconds": 0.02334537499700673
+        },
+        {
+          "execute_seconds": 0.013589250011136755,
+          "serialize_seconds": 0.009664791985414922,
+          "total_seconds": 0.023254041996551678
+        },
+        {
+          "execute_seconds": 0.013970625004731119,
+          "serialize_seconds": 0.00961849998566322,
+          "total_seconds": 0.02358912499039434
+        },
+        {
+          "execute_seconds": 0.013554750010371208,
+          "serialize_seconds": 0.009652207983890548,
+          "total_seconds": 0.023206957994261757
+        }
+      ],
+      "wire_bytes": 1287368,
+      "wire_sha256": "81732bbfa1a80be72088e356667eb00761f6bf3b3f3fca6ad34434bbd1ebabb3",
+      "workload": "shared256"
+    },
+    {
+      "arm": "packed_independent",
+      "candidate_scores": 48616,
+      "environment": {
+        "numpy": "2.4.4",
+        "platform": "macOS-26.6.2-arm64-arm-64bit",
+        "python": "3.11.15",
+        "threads": {
+          "BLIS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        }
+      },
+      "graph_numeric_bytes": 3597888,
+      "parameter_bytes": 979968,
+      "peak_rss_bytes": {
+        "baseline": 22904832,
+        "final": 79527936,
+        "imports": 34734080,
+        "prepared": 66404352
+      },
+      "predictions_sha256": "a4350aa55ec1ebdf43b13995361a9433d7720e216fe0cf58dde88edd5c66fe49",
+      "profile": {
+        "candidate_scores": 48616,
+        "elapsed_seconds": 0.10986429097829387,
+        "expansions": 256,
+        "model_calls": 256,
+        "peak_feature_bytes": 51848,
+        "queries": 256,
+        "reused_expansions": 0,
+        "reused_scores": 0,
+        "strategy": "independent",
+        "type_visits": 99640,
+        "windows": 1
+      },
+      "queries": 256,
+      "replicate": 0,
+      "stages_seconds": {
+        "first_batch": 0.11878837499534711,
+        "imports": 0.022965417010709643,
+        "load_verify": 0.0032090409949887544,
+        "prepare": 0.0352071670058649,
+        "worker_to_first": 0.1801700000069104
+      },
+      "timings": [
+        {
+          "execute_seconds": 0.10773041698848829,
+          "serialize_seconds": 0.01039950002450496,
+          "total_seconds": 0.11812991701299325
+        },
+        {
+          "execute_seconds": 0.10694370901910588,
+          "serialize_seconds": 0.009930000000167638,
+          "total_seconds": 0.11687370901927352
+        },
+        {
+          "execute_seconds": 0.10881700000027195,
+          "serialize_seconds": 0.009828290989389643,
+          "total_seconds": 0.11864529098966159
+        },
+        {
+          "execute_seconds": 0.10805137499119155,
+          "serialize_seconds": 0.010024415998486802,
+          "total_seconds": 0.11807579098967835
+        },
+        {
+          "execute_seconds": 0.1099807920109015,
+          "serialize_seconds": 0.010449416993651539,
+          "total_seconds": 0.12043020900455303
+        }
+      ],
+      "wire_bytes": 1287368,
+      "wire_sha256": "81732bbfa1a80be72088e356667eb00761f6bf3b3f3fca6ad34434bbd1ebabb3",
+      "workload": "shared256"
+    },
+    {
+      "arm": "packed_grouped",
+      "candidate_scores": 43124,
+      "environment": {
+        "numpy": "2.4.4",
+        "platform": "macOS-26.6.2-arm64-arm-64bit",
+        "python": "3.11.15",
+        "threads": {
+          "BLIS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        }
+      },
+      "graph_numeric_bytes": 3597888,
+      "parameter_bytes": 979968,
+      "peak_rss_bytes": {
+        "baseline": 22953984,
+        "final": 79527936,
+        "imports": 34701312,
+        "prepared": 66224128
+      },
+      "predictions_sha256": "89fa95a7a82a326da77e94782ecb3ac8db522681fc08a485af97192bc604dd7e",
+      "profile": {
+        "candidate_scores": 43124,
+        "elapsed_seconds": 0.10522237501572818,
+        "expansions": 256,
+        "model_calls": 256,
+        "peak_feature_bytes": 62856,
+        "queries": 256,
+        "reused_expansions": 0,
+        "reused_scores": 0,
+        "strategy": "grouped",
+        "type_visits": 93083,
+        "windows": 1
+      },
+      "queries": 256,
+      "replicate": 0,
+      "stages_seconds": {
+        "first_batch": 0.11468833399703726,
+        "imports": 0.02312758401967585,
+        "load_verify": 0.003232165996450931,
+        "prepare": 0.035491749993525445,
+        "worker_to_first": 0.1765398340066895
+      },
+      "timings": [
+        {
+          "execute_seconds": 0.10610483298660256,
+          "serialize_seconds": 0.009816750010941178,
+          "total_seconds": 0.11592158299754374
+        },
+        {
+          "execute_seconds": 0.10694566598976962,
+          "serialize_seconds": 0.00940487498883158,
+          "total_seconds": 0.1163505409786012
+        },
+        {
+          "execute_seconds": 0.10433324999758042,
+          "serialize_seconds": 0.009300083998823538,
+          "total_seconds": 0.11363333399640396
+        },
+        {
+          "execute_seconds": 0.10775508297956549,
+          "serialize_seconds": 0.009697375004179776,
+          "total_seconds": 0.11745245798374526
+        },
+        {
+          "execute_seconds": 0.10536141699412838,
+          "serialize_seconds": 0.009374666988151148,
+          "total_seconds": 0.11473608398227952
+        }
+      ],
+      "wire_bytes": 1170628,
+      "wire_sha256": "581a3de6246b5d109d44bf983bd188798c77a1f2d3ecc3ae7fde914dfba3749b",
+      "workload": "distinct256"
+    },
+    {
+      "arm": "packed_grouped",
+      "candidate_scores": 23209,
+      "environment": {
+        "numpy": "2.4.4",
+        "platform": "macOS-26.6.2-arm64-arm-64bit",
+        "python": "3.11.15",
+        "threads": {
+          "BLIS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        }
+      },
+      "graph_numeric_bytes": 3597888,
+      "parameter_bytes": 979968,
+      "peak_rss_bytes": {
+        "baseline": 22872064,
+        "final": 76431360,
+        "imports": 34603008,
+        "prepared": 66093056
+      },
+      "predictions_sha256": "6d912c1b7927626810d34a063d91a8e07645e8867b94ccdc84a1db0256e3b125",
+      "profile": {
+        "candidate_scores": 23209,
+        "elapsed_seconds": 0.08373766700970009,
+        "expansions": 16,
+        "model_calls": 16,
+        "peak_feature_bytes": 262032,
+        "queries": 16,
+        "reused_expansions": 0,
+        "reused_scores": 0,
+        "strategy": "grouped",
+        "type_visits": 73984,
+        "windows": 1
+      },
+      "queries": 16,
+      "replicate": 0,
+      "stages_seconds": {
+        "first_batch": 0.08666754100704566,
+        "imports": 0.02405579198966734,
+        "load_verify": 0.003303208010038361,
+        "prepare": 0.03519633400719613,
+        "worker_to_first": 0.1492228750139475
+      },
+      "timings": [
+        {
+          "execute_seconds": 0.08236854200367816,
+          "serialize_seconds": 0.0038202499854378402,
+          "total_seconds": 0.086188791989116
+        },
+        {
+          "execute_seconds": 0.0809320839762222,
+          "serialize_seconds": 0.0034842080203816295,
+          "total_seconds": 0.08441629199660383
+        },
+        {
+          "execute_seconds": 0.08046416600700468,
+          "serialize_seconds": 0.003614084009313956,
+          "total_seconds": 0.08407825001631863
+        },
+        {
+          "execute_seconds": 0.08296495900140144,
+          "serialize_seconds": 0.003604082972742617,
+          "total_seconds": 0.08656904197414406
+        },
+        {
+          "execute_seconds": 0.08379933299147524,
+          "serialize_seconds": 0.003614250017562881,
+          "total_seconds": 0.08741358300903812
+        }
+      ],
+      "wire_bytes": 481602,
+      "wire_sha256": "81beb34faf538d80df7ab9be206f8766dc3d77070c3f85a22a3896a754defaf7",
+      "workload": "hubs16"
+    },
+    {
+      "arm": "packed_consecutive",
+      "candidate_scores": 48616,
+      "environment": {
+        "numpy": "2.4.4",
+        "platform": "macOS-26.6.2-arm64-arm-64bit",
+        "python": "3.11.15",
+        "threads": {
+          "BLIS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        }
+      },
+      "graph_numeric_bytes": 3597888,
+      "parameter_bytes": 979968,
+      "peak_rss_bytes": {
+        "baseline": 22970368,
+        "final": 78036992,
+        "imports": 34865152,
+        "prepared": 66207744
+      },
+      "predictions_sha256": "a4350aa55ec1ebdf43b13995361a9433d7720e216fe0cf58dde88edd5c66fe49",
+      "profile": {
+        "candidate_scores": 48616,
+        "elapsed_seconds": 0.015257374994689599,
+        "expansions": 32,
+        "model_calls": 256,
+        "peak_feature_bytes": 51848,
+        "queries": 256,
+        "reused_expansions": 224,
+        "reused_scores": 0,
+        "strategy": "consecutive",
+        "type_visits": 12455,
+        "windows": 1
+      },
+      "queries": 256,
+      "replicate": 0,
+      "stages_seconds": {
+        "first_batch": 0.02627995898365043,
+        "imports": 0.023576625011628494,
+        "load_verify": 0.003226208995329216,
+        "prepare": 0.035810791014228016,
+        "worker_to_first": 0.08889358400483616
+      },
+      "timings": [
+        {
+          "execute_seconds": 0.015427834005095065,
+          "serialize_seconds": 0.01021387500804849,
+          "total_seconds": 0.025641709013143554
+        },
+        {
+          "execute_seconds": 0.01500683298218064,
+          "serialize_seconds": 0.009791042015422136,
+          "total_seconds": 0.024797874997602776
+        },
+        {
+          "execute_seconds": 0.015083167003467679,
+          "serialize_seconds": 0.0099187079758849,
+          "total_seconds": 0.02500187497935258
+        },
+        {
+          "execute_seconds": 0.014904624986229464,
+          "serialize_seconds": 0.009873417002381757,
+          "total_seconds": 0.02477804198861122
+        },
+        {
+          "execute_seconds": 0.015312875009840354,
+          "serialize_seconds": 0.00977533299010247,
+          "total_seconds": 0.025088207999942824
+        }
+      ],
+      "wire_bytes": 1287368,
+      "wire_sha256": "81732bbfa1a80be72088e356667eb00761f6bf3b3f3fca6ad34434bbd1ebabb3",
+      "workload": "shared256"
+    },
+    {
+      "arm": "packed_consecutive",
+      "candidate_scores": 23209,
+      "environment": {
+        "numpy": "2.4.4",
+        "platform": "macOS-26.6.2-arm64-arm-64bit",
+        "python": "3.11.15",
+        "threads": {
+          "BLIS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        }
+      },
+      "graph_numeric_bytes": 3597888,
+      "parameter_bytes": 979968,
+      "peak_rss_bytes": {
+        "baseline": 22888448,
+        "final": 76611584,
+        "imports": 34701312,
+        "prepared": 66371584
+      },
+      "predictions_sha256": "6d912c1b7927626810d34a063d91a8e07645e8867b94ccdc84a1db0256e3b125",
+      "profile": {
+        "candidate_scores": 23209,
+        "elapsed_seconds": 0.08157333298004232,
+        "expansions": 16,
+        "model_calls": 16,
+        "peak_feature_bytes": 262032,
+        "queries": 16,
+        "reused_expansions": 0,
+        "reused_scores": 0,
+        "strategy": "consecutive",
+        "type_visits": 73984,
+        "windows": 1
+      },
+      "queries": 16,
+      "replicate": 1,
+      "stages_seconds": {
+        "first_batch": 0.08598908298881724,
+        "imports": 0.023344041022937745,
+        "load_verify": 0.0031927090021781623,
+        "prepare": 0.03583483299007639,
+        "worker_to_first": 0.14836066600400954
+      },
+      "timings": [
+        {
+          "execute_seconds": 0.08121412497712299,
+          "serialize_seconds": 0.0036989579966757447,
+          "total_seconds": 0.08491308297379874
+        },
+        {
+          "execute_seconds": 0.0798035420011729,
+          "serialize_seconds": 0.0035521249810699373,
+          "total_seconds": 0.08335566698224284
+        },
+        {
+          "execute_seconds": 0.07942745901527815,
+          "serialize_seconds": 0.0035659999994095415,
+          "total_seconds": 0.08299345901468769
+        },
+        {
+          "execute_seconds": 0.0812412080122158,
+          "serialize_seconds": 0.0036722499935422093,
+          "total_seconds": 0.084913458005758
+        },
+        {
+          "execute_seconds": 0.08163762500043958,
+          "serialize_seconds": 0.0034984590020030737,
+          "total_seconds": 0.08513608400244266
+        }
+      ],
+      "wire_bytes": 481602,
+      "wire_sha256": "81beb34faf538d80df7ab9be206f8766dc3d77070c3f85a22a3896a754defaf7",
+      "workload": "hubs16"
+    },
+    {
+      "arm": "packed_grouped",
+      "candidate_scores": 48616,
+      "environment": {
+        "numpy": "2.4.4",
+        "platform": "macOS-26.6.2-arm64-arm-64bit",
+        "python": "3.11.15",
+        "threads": {
+          "BLIS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        }
+      },
+      "graph_numeric_bytes": 3597888,
+      "parameter_bytes": 979968,
+      "peak_rss_bytes": {
+        "baseline": 22937600,
+        "final": 77824000,
+        "imports": 34816000,
+        "prepared": 66256896
+      },
+      "predictions_sha256": "a4350aa55ec1ebdf43b13995361a9433d7720e216fe0cf58dde88edd5c66fe49",
+      "profile": {
+        "candidate_scores": 48616,
+        "elapsed_seconds": 0.015332415990997106,
+        "expansions": 32,
+        "model_calls": 256,
+        "peak_feature_bytes": 51848,
+        "queries": 256,
+        "reused_expansions": 224,
+        "reused_scores": 0,
+        "strategy": "grouped",
+        "type_visits": 12455,
+        "windows": 1
+      },
+      "queries": 256,
+      "replicate": 2,
+      "stages_seconds": {
+        "first_batch": 0.026049832988064736,
+        "imports": 0.023676417011301965,
+        "load_verify": 0.0032033330062404275,
+        "prepare": 0.03530216700164601,
+        "worker_to_first": 0.08823175000725314
+      },
+      "timings": [
+        {
+          "execute_seconds": 0.01560462499037385,
+          "serialize_seconds": 0.010183334001339972,
+          "total_seconds": 0.025787958991713822
+        },
+        {
+          "execute_seconds": 0.015312125004129484,
+          "serialize_seconds": 0.009914042020682245,
+          "total_seconds": 0.02522616702481173
+        },
+        {
+          "execute_seconds": 0.015055958006996661,
+          "serialize_seconds": 0.009818582999287173,
+          "total_seconds": 0.024874541006283835
+        },
+        {
+          "execute_seconds": 0.01512966601876542,
+          "serialize_seconds": 0.00976412498857826,
+          "total_seconds": 0.02489379100734368
+        },
+        {
+          "execute_seconds": 0.015385625010821968,
+          "serialize_seconds": 0.009858916979283094,
+          "total_seconds": 0.025244541990105063
+        }
+      ],
+      "wire_bytes": 1287368,
+      "wire_sha256": "81732bbfa1a80be72088e356667eb00761f6bf3b3f3fca6ad34434bbd1ebabb3",
+      "workload": "shared256"
+    },
+    {
+      "arm": "packed_grouped",
+      "candidate_scores": 698,
+      "environment": {
+        "numpy": "2.4.4",
+        "platform": "macOS-26.6.2-arm64-arm-64bit",
+        "python": "3.11.15",
+        "threads": {
+          "BLIS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        }
+      },
+      "graph_numeric_bytes": 3597888,
+      "parameter_bytes": 979968,
+      "peak_rss_bytes": {
+        "baseline": 22904832,
+        "final": 70139904,
+        "imports": 34865152,
+        "prepared": 66224128
+      },
+      "predictions_sha256": "9bdbf69db384b9aa045fdf693f48936f7fd229569e80b4d043c46a02df97cc55",
+      "profile": {
+        "candidate_scores": 698,
+        "elapsed_seconds": 0.0013961670047137886,
+        "expansions": 1,
+        "model_calls": 1,
+        "peak_feature_bytes": 51848,
+        "queries": 1,
+        "reused_expansions": 0,
+        "reused_scores": 0,
+        "strategy": "grouped",
+        "type_visits": 1281,
+        "windows": 1
+      },
+      "queries": 1,
+      "replicate": 1,
+      "stages_seconds": {
+        "first_batch": 0.002341874991543591,
+        "imports": 0.023853457998484373,
+        "load_verify": 0.0032358330208808184,
+        "prepare": 0.0351826669939328,
+        "worker_to_first": 0.06461383300484158
+      },
+      "timings": [
+        {
+          "execute_seconds": 0.0015863750013522804,
+          "serialize_seconds": 0.00017475002096034586,
+          "total_seconds": 0.0017611250223126262
+        },
+        {
+          "execute_seconds": 0.00146191701060161,
+          "serialize_seconds": 0.0001569580053910613,
+          "total_seconds": 0.0016188750159926713
+        },
+        {
+          "execute_seconds": 0.0014367920230142772,
+          "serialize_seconds": 0.00015554198762401938,
+          "total_seconds": 0.0015923340106382966
+        },
+        {
+          "execute_seconds": 0.001422542001819238,
+          "serialize_seconds": 0.00015733300824649632,
+          "total_seconds": 0.0015798750100657344
+        },
+        {
+          "execute_seconds": 0.0014054159983061254,
+          "serialize_seconds": 0.00015333399642258883,
+          "total_seconds": 0.0015587499947287142
+        }
+      ],
+      "wire_bytes": 19197,
+      "wire_sha256": "cf120e4ec21fce6d4797174276194bd5bcf7bbf8917cc47634e3960a44b44e00",
+      "workload": "single"
+    },
+    {
+      "arm": "packed_grouped",
+      "candidate_scores": 48616,
+      "environment": {
+        "numpy": "2.4.4",
+        "platform": "macOS-26.6.2-arm64-arm-64bit",
+        "python": "3.11.15",
+        "threads": {
+          "BLIS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        }
+      },
+      "graph_numeric_bytes": 3597888,
+      "parameter_bytes": 979968,
+      "peak_rss_bytes": {
+        "baseline": 22953984,
+        "final": 77905920,
+        "imports": 34635776,
+        "prepared": 66158592
+      },
+      "predictions_sha256": "a4350aa55ec1ebdf43b13995361a9433d7720e216fe0cf58dde88edd5c66fe49",
+      "profile": {
+        "candidate_scores": 48616,
+        "elapsed_seconds": 0.015319792000809684,
+        "expansions": 32,
+        "model_calls": 256,
+        "peak_feature_bytes": 51848,
+        "queries": 256,
+        "reused_expansions": 224,
+        "reused_scores": 0,
+        "strategy": "grouped",
+        "type_visits": 12455,
+        "windows": 1
+      },
+      "queries": 256,
+      "replicate": 0,
+      "stages_seconds": {
+        "first_batch": 0.02626670800964348,
+        "imports": 0.023404042003676295,
+        "load_verify": 0.0031964160152710974,
+        "prepare": 0.03558595897629857,
+        "worker_to_first": 0.08845312500488944
+      },
+      "timings": [
+        {
+          "execute_seconds": 0.015593083982821554,
+          "serialize_seconds": 0.010089250019518659,
+          "total_seconds": 0.025682334002340212
+        },
+        {
+          "execute_seconds": 0.015146209014346823,
+          "serialize_seconds": 0.009887457999866456,
+          "total_seconds": 0.02503366701421328
+        },
+        {
+          "execute_seconds": 0.015136417001485825,
+          "serialize_seconds": 0.009778708015801385,
+          "total_seconds": 0.02491512501728721
+        },
+        {
+          "execute_seconds": 0.015180625021457672,
+          "serialize_seconds": 0.009787958988454193,
+          "total_seconds": 0.024968584009911865
+        },
+        {
+          "execute_seconds": 0.015375874994788319,
+          "serialize_seconds": 0.009784916008356959,
+          "total_seconds": 0.025160791003145278
+        }
+      ],
+      "wire_bytes": 1287368,
+      "wire_sha256": "81732bbfa1a80be72088e356667eb00761f6bf3b3f3fca6ad34434bbd1ebabb3",
+      "workload": "shared256"
+    },
+    {
+      "arm": "packed_independent",
+      "candidate_scores": 48616,
+      "environment": {
+        "numpy": "2.4.4",
+        "platform": "macOS-26.6.2-arm64-arm-64bit",
+        "python": "3.11.15",
+        "threads": {
+          "BLIS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        }
+      },
+      "graph_numeric_bytes": 3597888,
+      "parameter_bytes": 979968,
+      "peak_rss_bytes": {
+        "baseline": 22937600,
+        "final": 80281600,
+        "imports": 34668544,
+        "prepared": 66191360
+      },
+      "predictions_sha256": "428069d0953f94a2e47eddeecad8b0bd48a78b4b75eb8b03d1ad88a7080d25e8",
+      "profile": {
+        "candidate_scores": 48616,
+        "elapsed_seconds": 0.11253954199492,
+        "expansions": 256,
+        "model_calls": 256,
+        "peak_feature_bytes": 51848,
+        "queries": 256,
+        "reused_expansions": 0,
+        "reused_scores": 0,
+        "strategy": "independent",
+        "type_visits": 99640,
+        "windows": 1
+      },
+      "queries": 256,
+      "replicate": 0,
+      "stages_seconds": {
+        "first_batch": 0.12096891601686366,
+        "imports": 0.02335658299853094,
+        "load_verify": 0.0032721669995225966,
+        "prepare": 0.035701999993762,
+        "worker_to_first": 0.1832996660086792
+      },
+      "timings": [
+        {
+          "execute_seconds": 0.1104679580021184,
+          "serialize_seconds": 0.010293708008248359,
+          "total_seconds": 0.12076166601036675
+        },
+        {
+          "execute_seconds": 0.10998700000345707,
+          "serialize_seconds": 0.01004341701627709,
+          "total_seconds": 0.12003041701973416
+        },
+        {
+          "execute_seconds": 0.10964316700119525,
+          "serialize_seconds": 0.009963832999346778,
+          "total_seconds": 0.11960700000054203
+        },
+        {
+          "execute_seconds": 0.1094190829899162,
+          "serialize_seconds": 0.010020833986345679,
+          "total_seconds": 0.11943991697626188
+        },
+        {
+          "execute_seconds": 0.11266679200343788,
+          "serialize_seconds": 0.010281249997206032,
+          "total_seconds": 0.12294804200064391
+        }
+      ],
+      "wire_bytes": 1287368,
+      "wire_sha256": "97035cf2046715f8f3b4214f3581836058d7670848e299b374deac6b5b436769",
+      "workload": "interleaved256"
+    },
+    {
+      "arm": "legacy_consecutive",
+      "candidate_scores": 43124,
+      "environment": {
+        "numpy": "2.4.4",
+        "platform": "macOS-26.6.2-arm64-arm-64bit",
+        "python": "3.11.15",
+        "threads": {
+          "BLIS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        }
+      },
+      "graph_numeric_bytes": 4708592,
+      "parameter_bytes": 979968,
+      "peak_rss_bytes": {
+        "baseline": 22888448,
+        "final": 109871104,
+        "imports": 34766848,
+        "prepared": 109871104
+      },
+      "predictions_sha256": "89fa95a7a82a326da77e94782ecb3ac8db522681fc08a485af97192bc604dd7e",
+      "profile": null,
+      "queries": 256,
+      "replicate": 2,
+      "stages_seconds": {
+        "first_batch": 0.09376870800042525,
+        "imports": 0.02400425000814721,
+        "load_verify": 0.003386541997315362,
+        "prepare": 0.1817106250091456,
+        "worker_to_first": 0.3028701250150334
+      },
+      "timings": [
+        {
+          "execute_seconds": 0.08310016599716619,
+          "serialize_seconds": 0.009790374984731898,
+          "total_seconds": 0.09289054098189808
+        },
+        {
+          "execute_seconds": 0.08357004198478535,
+          "serialize_seconds": 0.009607208019588143,
+          "total_seconds": 0.09317725000437349
+        },
+        {
+          "execute_seconds": 0.08257833300740458,
+          "serialize_seconds": 0.009326875006081536,
+          "total_seconds": 0.09190520801348612
+        },
+        {
+          "execute_seconds": 0.08158091697259806,
+          "serialize_seconds": 0.009134958003414795,
+          "total_seconds": 0.09071587497601286
+        },
+        {
+          "execute_seconds": 0.08133616598206572,
+          "serialize_seconds": 0.009167375013930723,
+          "total_seconds": 0.09050354099599645
+        }
+      ],
+      "wire_bytes": 1170628,
+      "wire_sha256": "581a3de6246b5d109d44bf983bd188798c77a1f2d3ecc3ae7fde914dfba3749b",
+      "workload": "distinct256"
+    },
+    {
+      "arm": "packed_grouped",
+      "candidate_scores": 43124,
+      "environment": {
+        "numpy": "2.4.4",
+        "platform": "macOS-26.6.2-arm64-arm-64bit",
+        "python": "3.11.15",
+        "threads": {
+          "BLIS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        }
+      },
+      "graph_numeric_bytes": 3597888,
+      "parameter_bytes": 979968,
+      "peak_rss_bytes": {
+        "baseline": 22937600,
+        "final": 79101952,
+        "imports": 34832384,
+        "prepared": 66174976
+      },
+      "predictions_sha256": "89fa95a7a82a326da77e94782ecb3ac8db522681fc08a485af97192bc604dd7e",
+      "profile": {
+        "candidate_scores": 43124,
+        "elapsed_seconds": 0.1051967500243336,
+        "expansions": 256,
+        "model_calls": 256,
+        "peak_feature_bytes": 62856,
+        "queries": 256,
+        "reused_expansions": 0,
+        "reused_scores": 0,
+        "strategy": "grouped",
+        "type_visits": 93083,
+        "windows": 1
+      },
+      "queries": 256,
+      "replicate": 2,
+      "stages_seconds": {
+        "first_batch": 0.11574741700314917,
+        "imports": 0.023554166982648894,
+        "load_verify": 0.0032070000015664846,
+        "prepare": 0.03569362498819828,
+        "worker_to_first": 0.17820220897556283
+      },
+      "timings": [
+        {
+          "execute_seconds": 0.10568470798898488,
+          "serialize_seconds": 0.009563833009451628,
+          "total_seconds": 0.11524854099843651
+        },
+        {
+          "execute_seconds": 0.10739458299940452,
+          "serialize_seconds": 0.009481957997195423,
+          "total_seconds": 0.11687654099659994
+        },
+        {
+          "execute_seconds": 0.1050744170206599,
+          "serialize_seconds": 0.009292792004998773,
+          "total_seconds": 0.11436720902565867
+        },
+        {
+          "execute_seconds": 0.10510270899976604,
+          "serialize_seconds": 0.009401957999216393,
+          "total_seconds": 0.11450466699898243
+        },
+        {
+          "execute_seconds": 0.10534129198640585,
+          "serialize_seconds": 0.00942075002240017,
+          "total_seconds": 0.11476204200880602
+        }
+      ],
+      "wire_bytes": 1170628,
+      "wire_sha256": "581a3de6246b5d109d44bf983bd188798c77a1f2d3ecc3ae7fde914dfba3749b",
+      "workload": "distinct256"
+    },
+    {
+      "arm": "packed_independent",
+      "candidate_scores": 23209,
+      "environment": {
+        "numpy": "2.4.4",
+        "platform": "macOS-26.6.2-arm64-arm-64bit",
+        "python": "3.11.15",
+        "threads": {
+          "BLIS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        }
+      },
+      "graph_numeric_bytes": 3597888,
+      "parameter_bytes": 979968,
+      "peak_rss_bytes": {
+        "baseline": 22904832,
+        "final": 76595200,
+        "imports": 34766848,
+        "prepared": 66437120
+      },
+      "predictions_sha256": "6d912c1b7927626810d34a063d91a8e07645e8867b94ccdc84a1db0256e3b125",
+      "profile": {
+        "candidate_scores": 23209,
+        "elapsed_seconds": 0.07974987500347197,
+        "expansions": 16,
+        "model_calls": 16,
+        "peak_feature_bytes": 262032,
+        "queries": 16,
+        "reused_expansions": 0,
+        "reused_scores": 0,
+        "strategy": "independent",
+        "type_visits": 73984,
+        "windows": 1
+      },
+      "queries": 16,
+      "replicate": 0,
+      "stages_seconds": {
+        "first_batch": 0.08669724999344908,
+        "imports": 0.023519832990132272,
+        "load_verify": 0.0032075420022010803,
+        "prepare": 0.034794333012541756,
+        "worker_to_first": 0.14821895799832419
+      },
+      "timings": [
+        {
+          "execute_seconds": 0.07977070799097419,
+          "serialize_seconds": 0.0035278340219520032,
+          "total_seconds": 0.08329854201292619
+        },
+        {
+          "execute_seconds": 0.08015095899463631,
+          "serialize_seconds": 0.0036295409954618663,
+          "total_seconds": 0.08378049999009818
+        },
+        {
+          "execute_seconds": 0.08053966701845638,
+          "serialize_seconds": 0.0035562909906730056,
+          "total_seconds": 0.08409595800912939
+        },
+        {
+          "execute_seconds": 0.08125558399478905,
+          "serialize_seconds": 0.0036869159957859665,
+          "total_seconds": 0.08494249999057502
+        },
+        {
+          "execute_seconds": 0.07980720899649896,
+          "serialize_seconds": 0.0035937080101575702,
+          "total_seconds": 0.08340091700665653
+        }
+      ],
+      "wire_bytes": 481602,
+      "wire_sha256": "81beb34faf538d80df7ab9be206f8766dc3d77070c3f85a22a3896a754defaf7",
+      "workload": "hubs16"
+    },
+    {
+      "arm": "packed_consecutive",
+      "candidate_scores": 698,
+      "environment": {
+        "numpy": "2.4.4",
+        "platform": "macOS-26.6.2-arm64-arm-64bit",
+        "python": "3.11.15",
+        "threads": {
+          "BLIS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        }
+      },
+      "graph_numeric_bytes": 3597888,
+      "parameter_bytes": 979968,
+      "peak_rss_bytes": {
+        "baseline": 22888448,
+        "final": 70123520,
+        "imports": 34766848,
+        "prepared": 66142208
+      },
+      "predictions_sha256": "9bdbf69db384b9aa045fdf693f48936f7fd229569e80b4d043c46a02df97cc55",
+      "profile": {
+        "candidate_scores": 698,
+        "elapsed_seconds": 0.0014011249877512455,
+        "expansions": 1,
+        "model_calls": 1,
+        "peak_feature_bytes": 51848,
+        "queries": 1,
+        "reused_expansions": 0,
+        "reused_scores": 0,
+        "strategy": "consecutive",
+        "type_visits": 1281,
+        "windows": 1
+      },
+      "queries": 1,
+      "replicate": 0,
+      "stages_seconds": {
+        "first_batch": 0.0023117089876905084,
+        "imports": 0.02286666599684395,
+        "load_verify": 0.003193999989889562,
+        "prepare": 0.03544812501058914,
+        "worker_to_first": 0.06382049998501316
+      },
+      "timings": [
+        {
+          "execute_seconds": 0.0016384170157834888,
+          "serialize_seconds": 0.00016804199549369514,
+          "total_seconds": 0.0018064590112771839
+        },
+        {
+          "execute_seconds": 0.0014591250219382346,
+          "serialize_seconds": 0.00015745798009447753,
+          "total_seconds": 0.001616583002032712
+        },
+        {
+          "execute_seconds": 0.001441750006051734,
+          "serialize_seconds": 0.00015820801490917802,
+          "total_seconds": 0.0015999580209609121
+        },
+        {
+          "execute_seconds": 0.0014227079809643328,
+          "serialize_seconds": 0.0001604999997653067,
+          "total_seconds": 0.0015832079807296395
+        },
+        {
+          "execute_seconds": 0.0014105830050539225,
+          "serialize_seconds": 0.00015337500371970236,
+          "total_seconds": 0.001563958008773625
+        }
+      ],
+      "wire_bytes": 19197,
+      "wire_sha256": "cf120e4ec21fce6d4797174276194bd5bcf7bbf8917cc47634e3960a44b44e00",
+      "workload": "single"
+    },
+    {
+      "arm": "packed_independent",
+      "candidate_scores": 698,
+      "environment": {
+        "numpy": "2.4.4",
+        "platform": "macOS-26.6.2-arm64-arm-64bit",
+        "python": "3.11.15",
+        "threads": {
+          "BLIS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        }
+      },
+      "graph_numeric_bytes": 3597888,
+      "parameter_bytes": 979968,
+      "peak_rss_bytes": {
+        "baseline": 22921216,
+        "final": 70123520,
+        "imports": 34832384,
+        "prepared": 66158592
+      },
+      "predictions_sha256": "9bdbf69db384b9aa045fdf693f48936f7fd229569e80b4d043c46a02df97cc55",
+      "profile": {
+        "candidate_scores": 698,
+        "elapsed_seconds": 0.0013853750133421272,
+        "expansions": 1,
+        "model_calls": 1,
+        "peak_feature_bytes": 51848,
+        "queries": 1,
+        "reused_expansions": 0,
+        "reused_scores": 0,
+        "strategy": "independent",
+        "type_visits": 1281,
+        "windows": 1
+      },
+      "queries": 1,
+      "replicate": 2,
+      "stages_seconds": {
+        "first_batch": 0.0025139170174952596,
+        "imports": 0.023418374999891967,
+        "load_verify": 0.003196083998773247,
+        "prepare": 0.03507316598552279,
+        "worker_to_first": 0.06420154200168326
+      },
+      "timings": [
+        {
+          "execute_seconds": 0.0016480839985888451,
+          "serialize_seconds": 0.0002003330155275762,
+          "total_seconds": 0.0018484170141164213
+        },
+        {
+          "execute_seconds": 0.0015307909925468266,
+          "serialize_seconds": 0.0001617920061107725,
+          "total_seconds": 0.001692582998657599
+        },
+        {
+          "execute_seconds": 0.0014681250031571835,
+          "serialize_seconds": 0.00015708300634287298,
+          "total_seconds": 0.0016252080095000565
+        },
+        {
+          "execute_seconds": 0.0014312079874798656,
+          "serialize_seconds": 0.00015841700951568782,
+          "total_seconds": 0.0015896249969955534
+        },
+        {
+          "execute_seconds": 0.0013950419961474836,
+          "serialize_seconds": 0.00015420798445120454,
+          "total_seconds": 0.0015492499805986881
+        }
+      ],
+      "wire_bytes": 19197,
+      "wire_sha256": "cf120e4ec21fce6d4797174276194bd5bcf7bbf8917cc47634e3960a44b44e00",
+      "workload": "single"
+    },
+    {
+      "arm": "packed_grouped",
+      "candidate_scores": 48616,
+      "environment": {
+        "numpy": "2.4.4",
+        "platform": "macOS-26.6.2-arm64-arm-64bit",
+        "python": "3.11.15",
+        "threads": {
+          "BLIS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        }
+      },
+      "graph_numeric_bytes": 3597888,
+      "parameter_bytes": 979968,
+      "peak_rss_bytes": {
+        "baseline": 22888448,
+        "final": 77709312,
+        "imports": 34750464,
+        "prepared": 66158592
+      },
+      "predictions_sha256": "a4350aa55ec1ebdf43b13995361a9433d7720e216fe0cf58dde88edd5c66fe49",
+      "profile": {
+        "candidate_scores": 48616,
+        "elapsed_seconds": 0.016111832985188812,
+        "expansions": 32,
+        "model_calls": 256,
+        "peak_feature_bytes": 51848,
+        "queries": 256,
+        "reused_expansions": 224,
+        "reused_scores": 0,
+        "strategy": "grouped",
+        "type_visits": 12455,
+        "windows": 1
+      },
+      "queries": 256,
+      "replicate": 1,
+      "stages_seconds": {
+        "first_batch": 0.026367375015979633,
+        "imports": 0.02319583299686201,
+        "load_verify": 0.003168708994053304,
+        "prepare": 0.03567837498849258,
+        "worker_to_first": 0.08841029199538752
+      },
+      "timings": [
+        {
+          "execute_seconds": 0.015307583002140746,
+          "serialize_seconds": 0.010297375003574416,
+          "total_seconds": 0.02560495800571516
+        },
+        {
+          "execute_seconds": 0.015160791983362287,
+          "serialize_seconds": 0.00987575002363883,
+          "total_seconds": 0.025036542007001117
+        },
+        {
+          "execute_seconds": 0.015131249994738027,
+          "serialize_seconds": 0.00982075001229532,
+          "total_seconds": 0.024952000007033348
+        },
+        {
+          "execute_seconds": 0.015225791983539239,
+          "serialize_seconds": 0.009857666009338573,
+          "total_seconds": 0.02508345799287781
+        },
+        {
+          "execute_seconds": 0.016166957997484133,
+          "serialize_seconds": 0.010217999981250614,
+          "total_seconds": 0.026384957978734747
+        }
+      ],
+      "wire_bytes": 1287368,
+      "wire_sha256": "81732bbfa1a80be72088e356667eb00761f6bf3b3f3fca6ad34434bbd1ebabb3",
+      "workload": "shared256"
+    },
+    {
+      "arm": "legacy_consecutive",
+      "candidate_scores": 23209,
+      "environment": {
+        "numpy": "2.4.4",
+        "platform": "macOS-26.6.2-arm64-arm-64bit",
+        "python": "3.11.15",
+        "threads": {
+          "BLIS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        }
+      },
+      "graph_numeric_bytes": 4708592,
+      "parameter_bytes": 979968,
+      "peak_rss_bytes": {
+        "baseline": 22888448,
+        "final": 109887488,
+        "imports": 34717696,
+        "prepared": 109887488
+      },
+      "predictions_sha256": "6d912c1b7927626810d34a063d91a8e07645e8867b94ccdc84a1db0256e3b125",
+      "profile": null,
+      "queries": 16,
+      "replicate": 1,
+      "stages_seconds": {
+        "first_batch": 0.06847150000976399,
+        "imports": 0.023395541997160763,
+        "load_verify": 0.0032313330157194287,
+        "prepare": 0.18151770799886435,
+        "worker_to_first": 0.27661608302150853
+      },
+      "timings": [
+        {
+          "execute_seconds": 0.06490912500885315,
+          "serialize_seconds": 0.0036269999982323498,
+          "total_seconds": 0.0685361250070855
+        },
+        {
+          "execute_seconds": 0.06357283299439587,
+          "serialize_seconds": 0.003558625001460314,
+          "total_seconds": 0.06713145799585618
+        },
+        {
+          "execute_seconds": 0.06496325001353398,
+          "serialize_seconds": 0.003565499995602295,
+          "total_seconds": 0.06852875000913627
+        },
+        {
+          "execute_seconds": 0.06339733299682848,
+          "serialize_seconds": 0.0034947080130223185,
+          "total_seconds": 0.0668920410098508
+        },
+        {
+          "execute_seconds": 0.06317979202140123,
+          "serialize_seconds": 0.003519207995850593,
+          "total_seconds": 0.06669900001725182
+        }
+      ],
+      "wire_bytes": 481602,
+      "wire_sha256": "81beb34faf538d80df7ab9be206f8766dc3d77070c3f85a22a3896a754defaf7",
+      "workload": "hubs16"
+    },
+    {
+      "arm": "legacy_consecutive",
+      "candidate_scores": 698,
+      "environment": {
+        "numpy": "2.4.4",
+        "platform": "macOS-26.6.2-arm64-arm-64bit",
+        "python": "3.11.15",
+        "threads": {
+          "BLIS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        }
+      },
+      "graph_numeric_bytes": 4708592,
+      "parameter_bytes": 979968,
+      "peak_rss_bytes": {
+        "baseline": 22921216,
+        "final": 109674496,
+        "imports": 34832384,
+        "prepared": 109674496
+      },
+      "predictions_sha256": "9bdbf69db384b9aa045fdf693f48936f7fd229569e80b4d043c46a02df97cc55",
+      "profile": null,
+      "queries": 1,
+      "replicate": 0,
+      "stages_seconds": {
+        "first_batch": 0.0019797920249402523,
+        "imports": 0.023754041001666337,
+        "load_verify": 0.003088249999564141,
+        "prepare": 0.18716512498212978,
+        "worker_to_first": 0.2159872080083005
+      },
+      "timings": [
+        {
+          "execute_seconds": 0.0013184580020606518,
+          "serialize_seconds": 0.00016891700215637684,
+          "total_seconds": 0.0014873750042170286
+        },
+        {
+          "execute_seconds": 0.0011819160135928541,
+          "serialize_seconds": 0.00016254198271781206,
+          "total_seconds": 0.0013444579963106662
+        },
+        {
+          "execute_seconds": 0.0011530420160852373,
+          "serialize_seconds": 0.00015662499936297536,
+          "total_seconds": 0.0013096670154482126
+        },
+        {
+          "execute_seconds": 0.001443457993445918,
+          "serialize_seconds": 0.00015541701577603817,
+          "total_seconds": 0.0015988750092219561
+        },
+        {
+          "execute_seconds": 0.0011639159929472953,
+          "serialize_seconds": 0.00015491698286496103,
+          "total_seconds": 0.0013188329758122563
+        }
+      ],
+      "wire_bytes": 19197,
+      "wire_sha256": "cf120e4ec21fce6d4797174276194bd5bcf7bbf8917cc47634e3960a44b44e00",
+      "workload": "single"
+    },
+    {
+      "arm": "packed_consecutive",
+      "candidate_scores": 43124,
+      "environment": {
+        "numpy": "2.4.4",
+        "platform": "macOS-26.6.2-arm64-arm-64bit",
+        "python": "3.11.15",
+        "threads": {
+          "BLIS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        }
+      },
+      "graph_numeric_bytes": 3597888,
+      "parameter_bytes": 979968,
+      "peak_rss_bytes": {
+        "baseline": 22904832,
+        "final": 79511552,
+        "imports": 34832384,
+        "prepared": 66207744
+      },
+      "predictions_sha256": "89fa95a7a82a326da77e94782ecb3ac8db522681fc08a485af97192bc604dd7e",
+      "profile": {
+        "candidate_scores": 43124,
+        "elapsed_seconds": 0.1064408749807626,
+        "expansions": 256,
+        "model_calls": 256,
+        "peak_feature_bytes": 62856,
+        "queries": 256,
+        "reused_expansions": 0,
+        "reused_scores": 0,
+        "strategy": "consecutive",
+        "type_visits": 93083,
+        "windows": 1
+      },
+      "queries": 256,
+      "replicate": 2,
+      "stages_seconds": {
+        "first_batch": 0.11666220799088478,
+        "imports": 0.024578665994340554,
+        "load_verify": 0.0036025000154040754,
+        "prepare": 0.03543895899201743,
+        "worker_to_first": 0.18028233299264684
+      },
+      "timings": [
+        {
+          "execute_seconds": 0.1063194579910487,
+          "serialize_seconds": 0.009641416982049122,
+          "total_seconds": 0.11596087497309782
+        },
+        {
+          "execute_seconds": 0.10943208300159313,
+          "serialize_seconds": 0.010069542011478916,
+          "total_seconds": 0.11950162501307204
+        },
+        {
+          "execute_seconds": 0.10778995900182053,
+          "serialize_seconds": 0.009385874989675358,
+          "total_seconds": 0.11717583399149589
+        },
+        {
+          "execute_seconds": 0.10585716599598527,
+          "serialize_seconds": 0.009638542018365115,
+          "total_seconds": 0.11549570801435038
+        },
+        {
+          "execute_seconds": 0.10660179101978429,
+          "serialize_seconds": 0.009360708994790912,
+          "total_seconds": 0.1159625000145752
+        }
+      ],
+      "wire_bytes": 1170628,
+      "wire_sha256": "581a3de6246b5d109d44bf983bd188798c77a1f2d3ecc3ae7fde914dfba3749b",
+      "workload": "distinct256"
+    },
+    {
+      "arm": "packed_consecutive",
+      "candidate_scores": 43124,
+      "environment": {
+        "numpy": "2.4.4",
+        "platform": "macOS-26.6.2-arm64-arm-64bit",
+        "python": "3.11.15",
+        "threads": {
+          "BLIS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        }
+      },
+      "graph_numeric_bytes": 3597888,
+      "parameter_bytes": 979968,
+      "peak_rss_bytes": {
+        "baseline": 23003136,
+        "final": 79364096,
+        "imports": 34750464,
+        "prepared": 66371584
+      },
+      "predictions_sha256": "89fa95a7a82a326da77e94782ecb3ac8db522681fc08a485af97192bc604dd7e",
+      "profile": {
+        "candidate_scores": 43124,
+        "elapsed_seconds": 0.10610170802101493,
+        "expansions": 256,
+        "model_calls": 256,
+        "peak_feature_bytes": 62856,
+        "queries": 256,
+        "reused_expansions": 0,
+        "reused_scores": 0,
+        "strategy": "consecutive",
+        "type_visits": 93083,
+        "windows": 1
+      },
+      "queries": 256,
+      "replicate": 0,
+      "stages_seconds": {
+        "first_batch": 0.11539987500873394,
+        "imports": 0.023393957992084324,
+        "load_verify": 0.0032186250027734786,
+        "prepare": 0.035534958995413035,
+        "worker_to_first": 0.17754741699900478
+      },
+      "timings": [
+        {
+          "execute_seconds": 0.10575408398290165,
+          "serialize_seconds": 0.010013416002038866,
+          "total_seconds": 0.11576749998494051
+        },
+        {
+          "execute_seconds": 0.10824812500504777,
+          "serialize_seconds": 0.010059333988465369,
+          "total_seconds": 0.11830745899351314
+        },
+        {
+          "execute_seconds": 0.10717666702112183,
+          "serialize_seconds": 0.009473541984334588,
+          "total_seconds": 0.11665020900545642
+        },
+        {
+          "execute_seconds": 0.10475962501368485,
+          "serialize_seconds": 0.009502000000793487,
+          "total_seconds": 0.11426162501447834
+        },
+        {
+          "execute_seconds": 0.10624120800639503,
+          "serialize_seconds": 0.009339917014585808,
+          "total_seconds": 0.11558112502098083
+        }
+      ],
+      "wire_bytes": 1170628,
+      "wire_sha256": "581a3de6246b5d109d44bf983bd188798c77a1f2d3ecc3ae7fde914dfba3749b",
+      "workload": "distinct256"
+    },
+    {
+      "arm": "packed_consecutive",
+      "candidate_scores": 23209,
+      "environment": {
+        "numpy": "2.4.4",
+        "platform": "macOS-26.6.2-arm64-arm-64bit",
+        "python": "3.11.15",
+        "threads": {
+          "BLIS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        }
+      },
+      "graph_numeric_bytes": 3597888,
+      "parameter_bytes": 979968,
+      "peak_rss_bytes": {
+        "baseline": 22904832,
+        "final": 76480512,
+        "imports": 34848768,
+        "prepared": 66207744
+      },
+      "predictions_sha256": "6d912c1b7927626810d34a063d91a8e07645e8867b94ccdc84a1db0256e3b125",
+      "profile": {
+        "candidate_scores": 23209,
+        "elapsed_seconds": 0.0830300000088755,
+        "expansions": 16,
+        "model_calls": 16,
+        "peak_feature_bytes": 262032,
+        "queries": 16,
+        "reused_expansions": 0,
+        "reused_scores": 0,
+        "strategy": "consecutive",
+        "type_visits": 73984,
+        "windows": 1
+      },
+      "queries": 16,
+      "replicate": 2,
+      "stages_seconds": {
+        "first_batch": 0.089714208006626,
+        "imports": 0.02368191597633995,
+        "load_verify": 0.0032041670056059957,
+        "prepare": 0.035088792006717995,
+        "worker_to_first": 0.15168908299528994
+      },
+      "timings": [
+        {
+          "execute_seconds": 0.08326591600780375,
+          "serialize_seconds": 0.003638624999439344,
+          "total_seconds": 0.0869045410072431
+        },
+        {
+          "execute_seconds": 0.0822367079963442,
+          "serialize_seconds": 0.003692917001899332,
+          "total_seconds": 0.08592962499824353
+        },
+        {
+          "execute_seconds": 0.08045212499564514,
+          "serialize_seconds": 0.0034909159876406193,
+          "total_seconds": 0.08394304098328575
+        },
+        {
+          "execute_seconds": 0.08362808299716562,
+          "serialize_seconds": 0.003604208992328495,
+          "total_seconds": 0.08723229198949412
+        },
+        {
+          "execute_seconds": 0.08309295799699612,
+          "serialize_seconds": 0.0036749170103576034,
+          "total_seconds": 0.08676787500735372
+        }
+      ],
+      "wire_bytes": 481602,
+      "wire_sha256": "81beb34faf538d80df7ab9be206f8766dc3d77070c3f85a22a3896a754defaf7",
+      "workload": "hubs16"
+    },
+    {
+      "arm": "packed_independent",
+      "candidate_scores": 48616,
+      "environment": {
+        "numpy": "2.4.4",
+        "platform": "macOS-26.6.2-arm64-arm-64bit",
+        "python": "3.11.15",
+        "threads": {
+          "BLIS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        }
+      },
+      "graph_numeric_bytes": 3597888,
+      "parameter_bytes": 979968,
+      "peak_rss_bytes": {
+        "baseline": 22888448,
+        "final": 79577088,
+        "imports": 34783232,
+        "prepared": 66158592
+      },
+      "predictions_sha256": "a4350aa55ec1ebdf43b13995361a9433d7720e216fe0cf58dde88edd5c66fe49",
+      "profile": {
+        "candidate_scores": 48616,
+        "elapsed_seconds": 0.1093736250186339,
+        "expansions": 256,
+        "model_calls": 256,
+        "peak_feature_bytes": 51848,
+        "queries": 256,
+        "reused_expansions": 0,
+        "reused_scores": 0,
+        "strategy": "independent",
+        "type_visits": 99640,
+        "windows": 1
+      },
+      "queries": 256,
+      "replicate": 1,
+      "stages_seconds": {
+        "first_batch": 0.11651041699224152,
+        "imports": 0.024656833993503824,
+        "load_verify": 0.00340887502534315,
+        "prepare": 0.03528008298599161,
+        "worker_to_first": 0.1798562089970801
+      },
+      "timings": [
+        {
+          "execute_seconds": 0.10711808400810696,
+          "serialize_seconds": 0.010298874985892326,
+          "total_seconds": 0.11741695899399929
+        },
+        {
+          "execute_seconds": 0.10779445798834786,
+          "serialize_seconds": 0.01012491699657403,
+          "total_seconds": 0.11791937498492189
+        },
+        {
+          "execute_seconds": 0.10942916601197794,
+          "serialize_seconds": 0.01022620897856541,
+          "total_seconds": 0.11965537499054335
+        },
+        {
+          "execute_seconds": 0.10815533300046809,
+          "serialize_seconds": 0.009842542000114918,
+          "total_seconds": 0.11799787500058301
+        },
+        {
+          "execute_seconds": 0.10947837500134483,
+          "serialize_seconds": 0.010703084000851959,
+          "total_seconds": 0.12018145900219679
+        }
+      ],
+      "wire_bytes": 1287368,
+      "wire_sha256": "81732bbfa1a80be72088e356667eb00761f6bf3b3f3fca6ad34434bbd1ebabb3",
+      "workload": "shared256"
+    },
+    {
+      "arm": "packed_independent",
+      "candidate_scores": 43124,
+      "environment": {
+        "numpy": "2.4.4",
+        "platform": "macOS-26.6.2-arm64-arm-64bit",
+        "python": "3.11.15",
+        "threads": {
+          "BLIS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        }
+      },
+      "graph_numeric_bytes": 3597888,
+      "parameter_bytes": 979968,
+      "peak_rss_bytes": {
+        "baseline": 22904832,
+        "final": 79560704,
+        "imports": 34635776,
+        "prepared": 66109440
+      },
+      "predictions_sha256": "89fa95a7a82a326da77e94782ecb3ac8db522681fc08a485af97192bc604dd7e",
+      "profile": {
+        "candidate_scores": 43124,
+        "elapsed_seconds": 0.1135062089888379,
+        "expansions": 256,
+        "model_calls": 256,
+        "peak_feature_bytes": 62856,
+        "queries": 256,
+        "reused_expansions": 0,
+        "reused_scores": 0,
+        "strategy": "independent",
+        "type_visits": 93083,
+        "windows": 1
+      },
+      "queries": 256,
+      "replicate": 2,
+      "stages_seconds": {
+        "first_batch": 0.11499579201336019,
+        "imports": 0.023687209002673626,
+        "load_verify": 0.003154833015287295,
+        "prepare": 0.03459162497892976,
+        "worker_to_first": 0.17642945901025087
+      },
+      "timings": [
+        {
+          "execute_seconds": 0.1067434579890687,
+          "serialize_seconds": 0.010724125022534281,
+          "total_seconds": 0.11746758301160298
+        },
+        {
+          "execute_seconds": 0.12404575000982732,
+          "serialize_seconds": 0.010556166991591454,
+          "total_seconds": 0.13460191700141877
+        },
+        {
+          "execute_seconds": 0.1098467500123661,
+          "serialize_seconds": 0.01017608298570849,
+          "total_seconds": 0.12002283299807459
+        },
+        {
+          "execute_seconds": 0.11192879200098105,
+          "serialize_seconds": 0.010731041023973376,
+          "total_seconds": 0.12265983302495442
+        },
+        {
+          "execute_seconds": 0.11367187500582077,
+          "serialize_seconds": 0.009443415998248383,
+          "total_seconds": 0.12311529100406915
+        }
+      ],
+      "wire_bytes": 1170628,
+      "wire_sha256": "581a3de6246b5d109d44bf983bd188798c77a1f2d3ecc3ae7fde914dfba3749b",
+      "workload": "distinct256"
+    },
+    {
+      "arm": "packed_grouped",
+      "candidate_scores": 43124,
+      "environment": {
+        "numpy": "2.4.4",
+        "platform": "macOS-26.6.2-arm64-arm-64bit",
+        "python": "3.11.15",
+        "threads": {
+          "BLIS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        }
+      },
+      "graph_numeric_bytes": 3597888,
+      "parameter_bytes": 979968,
+      "peak_rss_bytes": {
+        "baseline": 22970368,
+        "final": 79609856,
+        "imports": 34766848,
+        "prepared": 66371584
+      },
+      "predictions_sha256": "89fa95a7a82a326da77e94782ecb3ac8db522681fc08a485af97192bc604dd7e",
+      "profile": {
+        "candidate_scores": 43124,
+        "elapsed_seconds": 0.10705287498421967,
+        "expansions": 256,
+        "model_calls": 256,
+        "peak_feature_bytes": 62856,
+        "queries": 256,
+        "reused_expansions": 0,
+        "reused_scores": 0,
+        "strategy": "grouped",
+        "type_visits": 93083,
+        "windows": 1
+      },
+      "queries": 256,
+      "replicate": 1,
+      "stages_seconds": {
+        "first_batch": 0.11731733402120881,
+        "imports": 0.02390179201029241,
+        "load_verify": 0.0032717499998398125,
+        "prepare": 0.03542416598065756,
+        "worker_to_first": 0.1799150420119986
+      },
+      "timings": [
+        {
+          "execute_seconds": 0.10712791598052718,
+          "serialize_seconds": 0.009542417014017701,
+          "total_seconds": 0.11667033299454488
+        },
+        {
+          "execute_seconds": 0.1099836660141591,
+          "serialize_seconds": 0.009527624992188066,
+          "total_seconds": 0.11951129100634716
+        },
+        {
+          "execute_seconds": 0.10733366702334024,
+          "serialize_seconds": 0.010052582976641133,
+          "total_seconds": 0.11738624999998137
+        },
+        {
+          "execute_seconds": 0.12237199998344295,
+          "serialize_seconds": 0.009334625006886199,
+          "total_seconds": 0.13170662499032915
+        },
+        {
+          "execute_seconds": 0.1071899590024259,
+          "serialize_seconds": 0.00964262502384372,
+          "total_seconds": 0.11683258402626961
+        }
+      ],
+      "wire_bytes": 1170628,
+      "wire_sha256": "581a3de6246b5d109d44bf983bd188798c77a1f2d3ecc3ae7fde914dfba3749b",
+      "workload": "distinct256"
+    },
+    {
+      "arm": "packed_consecutive",
+      "candidate_scores": 48616,
+      "environment": {
+        "numpy": "2.4.4",
+        "platform": "macOS-26.6.2-arm64-arm-64bit",
+        "python": "3.11.15",
+        "threads": {
+          "BLIS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        }
+      },
+      "graph_numeric_bytes": 3597888,
+      "parameter_bytes": 979968,
+      "peak_rss_bytes": {
+        "baseline": 22953984,
+        "final": 78020608,
+        "imports": 34750464,
+        "prepared": 66322432
+      },
+      "predictions_sha256": "a4350aa55ec1ebdf43b13995361a9433d7720e216fe0cf58dde88edd5c66fe49",
+      "profile": {
+        "candidate_scores": 48616,
+        "elapsed_seconds": 0.015346917003626004,
+        "expansions": 32,
+        "model_calls": 256,
+        "peak_feature_bytes": 51848,
+        "queries": 256,
+        "reused_expansions": 224,
+        "reused_scores": 0,
+        "strategy": "consecutive",
+        "type_visits": 12455,
+        "windows": 1
+      },
+      "queries": 256,
+      "replicate": 2,
+      "stages_seconds": {
+        "first_batch": 0.027688665984896943,
+        "imports": 0.023009417025605217,
+        "load_verify": 0.0031715829973109066,
+        "prepare": 0.03493754199007526,
+        "worker_to_first": 0.08880720799788833
+      },
+      "timings": [
+        {
+          "execute_seconds": 0.015300875005777925,
+          "serialize_seconds": 0.010205583996139467,
+          "total_seconds": 0.025506459001917392
+        },
+        {
+          "execute_seconds": 0.015192124992609024,
+          "serialize_seconds": 0.010937457991531119,
+          "total_seconds": 0.026129582984140143
+        },
+        {
+          "execute_seconds": 0.01616166697931476,
+          "serialize_seconds": 0.010456457996042445,
+          "total_seconds": 0.026618124975357205
+        },
+        {
+          "execute_seconds": 0.01548533298773691,
+          "serialize_seconds": 0.009812042000703514,
+          "total_seconds": 0.025297374988440424
+        },
+        {
+          "execute_seconds": 0.015411666012369096,
+          "serialize_seconds": 0.009882374986773357,
+          "total_seconds": 0.025294040999142453
+        }
+      ],
+      "wire_bytes": 1287368,
+      "wire_sha256": "81732bbfa1a80be72088e356667eb00761f6bf3b3f3fca6ad34434bbd1ebabb3",
+      "workload": "shared256"
+    },
+    {
+      "arm": "legacy_consecutive",
+      "candidate_scores": 48616,
+      "environment": {
+        "numpy": "2.4.4",
+        "platform": "macOS-26.6.2-arm64-arm-64bit",
+        "python": "3.11.15",
+        "threads": {
+          "BLIS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        }
+      },
+      "graph_numeric_bytes": 4708592,
+      "parameter_bytes": 979968,
+      "peak_rss_bytes": {
+        "baseline": 22970368,
+        "final": 109690880,
+        "imports": 34848768,
+        "prepared": 109690880
+      },
+      "predictions_sha256": "428069d0953f94a2e47eddeecad8b0bd48a78b4b75eb8b03d1ad88a7080d25e8",
+      "profile": null,
+      "queries": 256,
+      "replicate": 1,
+      "stages_seconds": {
+        "first_batch": 0.09994454099796712,
+        "imports": 0.022993291000602767,
+        "load_verify": 0.003149833995848894,
+        "prepare": 0.18149162500048988,
+        "worker_to_first": 0.30757929099490866
+      },
+      "timings": [
+        {
+          "execute_seconds": 0.08638175000669435,
+          "serialize_seconds": 0.01043870800640434,
+          "total_seconds": 0.09682045801309869
+        },
+        {
+          "execute_seconds": 0.08611187498900108,
+          "serialize_seconds": 0.009708666999358684,
+          "total_seconds": 0.09582054198835976
+        },
+        {
+          "execute_seconds": 0.08964754198677838,
+          "serialize_seconds": 0.009952458000043407,
+          "total_seconds": 0.09959999998682179
+        },
+        {
+          "execute_seconds": 0.08814887501648627,
+          "serialize_seconds": 0.010468124994076788,
+          "total_seconds": 0.09861700001056306
+        },
+        {
+          "execute_seconds": 0.0860815409978386,
+          "serialize_seconds": 0.010405541979707778,
+          "total_seconds": 0.09648708297754638
+        }
+      ],
+      "wire_bytes": 1287368,
+      "wire_sha256": "97035cf2046715f8f3b4214f3581836058d7670848e299b374deac6b5b436769",
+      "workload": "interleaved256"
+    },
+    {
+      "arm": "packed_independent",
+      "candidate_scores": 23209,
+      "environment": {
+        "numpy": "2.4.4",
+        "platform": "macOS-26.6.2-arm64-arm-64bit",
+        "python": "3.11.15",
+        "threads": {
+          "BLIS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        }
+      },
+      "graph_numeric_bytes": 3597888,
+      "parameter_bytes": 979968,
+      "peak_rss_bytes": {
+        "baseline": 23003136,
+        "final": 77185024,
+        "imports": 34783232,
+        "prepared": 66338816
+      },
+      "predictions_sha256": "6d912c1b7927626810d34a063d91a8e07645e8867b94ccdc84a1db0256e3b125",
+      "profile": {
+        "candidate_scores": 23209,
+        "elapsed_seconds": 0.08215554102207534,
+        "expansions": 16,
+        "model_calls": 16,
+        "peak_feature_bytes": 262032,
+        "queries": 16,
+        "reused_expansions": 0,
+        "reused_scores": 0,
+        "strategy": "independent",
+        "type_visits": 73984,
+        "windows": 1
+      },
+      "queries": 16,
+      "replicate": 1,
+      "stages_seconds": {
+        "first_batch": 0.08969995900406502,
+        "imports": 0.02311537499190308,
+        "load_verify": 0.0031481670157518238,
+        "prepare": 0.035207790991989896,
+        "worker_to_first": 0.15117129200370982
+      },
+      "timings": [
+        {
+          "execute_seconds": 0.08465483397594653,
+          "serialize_seconds": 0.0037056660221423954,
+          "total_seconds": 0.08836049999808893
+        },
+        {
+          "execute_seconds": 0.08342891701613553,
+          "serialize_seconds": 0.003655624983366579,
+          "total_seconds": 0.08708454199950211
+        },
+        {
+          "execute_seconds": 0.08242016701842658,
+          "serialize_seconds": 0.0034900829778052866,
+          "total_seconds": 0.08591024999623187
+        },
+        {
+          "execute_seconds": 0.08399395900778472,
+          "serialize_seconds": 0.0035048749996349216,
+          "total_seconds": 0.08749883400741965
+        },
+        {
+          "execute_seconds": 0.08222479198593646,
+          "serialize_seconds": 0.0035568329913076013,
+          "total_seconds": 0.08578162497724406
+        }
+      ],
+      "wire_bytes": 481602,
+      "wire_sha256": "81beb34faf538d80df7ab9be206f8766dc3d77070c3f85a22a3896a754defaf7",
+      "workload": "hubs16"
+    },
+    {
+      "arm": "packed_grouped",
+      "candidate_scores": 48616,
+      "environment": {
+        "numpy": "2.4.4",
+        "platform": "macOS-26.6.2-arm64-arm-64bit",
+        "python": "3.11.15",
+        "threads": {
+          "BLIS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        }
+      },
+      "graph_numeric_bytes": 3597888,
+      "parameter_bytes": 979968,
+      "peak_rss_bytes": {
+        "baseline": 22970368,
+        "final": 78053376,
+        "imports": 34799616,
+        "prepared": 66207744
+      },
+      "predictions_sha256": "428069d0953f94a2e47eddeecad8b0bd48a78b4b75eb8b03d1ad88a7080d25e8",
+      "profile": {
+        "candidate_scores": 48616,
+        "elapsed_seconds": 0.0156900419970043,
+        "expansions": 32,
+        "model_calls": 256,
+        "peak_feature_bytes": 51848,
+        "queries": 256,
+        "reused_expansions": 224,
+        "reused_scores": 0,
+        "strategy": "grouped",
+        "type_visits": 12455,
+        "windows": 1
+      },
+      "queries": 256,
+      "replicate": 2,
+      "stages_seconds": {
+        "first_batch": 0.02604929101653397,
+        "imports": 0.023097208002582192,
+        "load_verify": 0.0031496669980697334,
+        "prepare": 0.03509337498690002,
+        "worker_to_first": 0.08738954100408591
+      },
+      "timings": [
+        {
+          "execute_seconds": 0.015905292006209493,
+          "serialize_seconds": 0.010279125010129064,
+          "total_seconds": 0.026184417016338557
+        },
+        {
+          "execute_seconds": 0.015557165985228494,
+          "serialize_seconds": 0.010261749994242564,
+          "total_seconds": 0.025818915979471058
+        },
+        {
+          "execute_seconds": 0.016234374983469024,
+          "serialize_seconds": 0.00993612501770258,
+          "total_seconds": 0.026170500001171604
+        },
+        {
+          "execute_seconds": 0.015285041008610278,
+          "serialize_seconds": 0.00994470898876898,
+          "total_seconds": 0.02522974999737926
+        },
+        {
+          "execute_seconds": 0.0157483339717146,
+          "serialize_seconds": 0.009958625014405698,
+          "total_seconds": 0.0257069589861203
+        }
+      ],
+      "wire_bytes": 1287368,
+      "wire_sha256": "97035cf2046715f8f3b4214f3581836058d7670848e299b374deac6b5b436769",
+      "workload": "interleaved256"
+    },
+    {
+      "arm": "legacy_consecutive",
+      "candidate_scores": 23209,
+      "environment": {
+        "numpy": "2.4.4",
+        "platform": "macOS-26.6.2-arm64-arm-64bit",
+        "python": "3.11.15",
+        "threads": {
+          "BLIS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        }
+      },
+      "graph_numeric_bytes": 4708592,
+      "parameter_bytes": 979968,
+      "peak_rss_bytes": {
+        "baseline": 22921216,
+        "final": 109707264,
+        "imports": 34881536,
+        "prepared": 109707264
+      },
+      "predictions_sha256": "6d912c1b7927626810d34a063d91a8e07645e8867b94ccdc84a1db0256e3b125",
+      "profile": null,
+      "queries": 16,
+      "replicate": 0,
+      "stages_seconds": {
+        "first_batch": 0.06744937499752268,
+        "imports": 0.022938917012652382,
+        "load_verify": 0.003125582996290177,
+        "prepare": 0.17622141700121574,
+        "worker_to_first": 0.269735292007681
+      },
+      "timings": [
+        {
+          "execute_seconds": 0.06530229200143367,
+          "serialize_seconds": 0.0037479159946087748,
+          "total_seconds": 0.06905020799604245
+        },
+        {
+          "execute_seconds": 0.06513933298992924,
+          "serialize_seconds": 0.003574583010049537,
+          "total_seconds": 0.06871391599997878
+        },
+        {
+          "execute_seconds": 0.06372691699652933,
+          "serialize_seconds": 0.0035457909980323166,
+          "total_seconds": 0.06727270799456164
+        },
+        {
+          "execute_seconds": 0.06253254198236391,
+          "serialize_seconds": 0.003535958006978035,
+          "total_seconds": 0.06606849998934194
+        },
+        {
+          "execute_seconds": 0.06325383301009424,
+          "serialize_seconds": 0.0037654170009773225,
+          "total_seconds": 0.06701925001107156
+        }
+      ],
+      "wire_bytes": 481602,
+      "wire_sha256": "81beb34faf538d80df7ab9be206f8766dc3d77070c3f85a22a3896a754defaf7",
+      "workload": "hubs16"
+    },
+    {
+      "arm": "packed_consecutive",
+      "candidate_scores": 48616,
+      "environment": {
+        "numpy": "2.4.4",
+        "platform": "macOS-26.6.2-arm64-arm-64bit",
+        "python": "3.11.15",
+        "threads": {
+          "BLIS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        }
+      },
+      "graph_numeric_bytes": 3597888,
+      "parameter_bytes": 979968,
+      "peak_rss_bytes": {
+        "baseline": 23003136,
+        "final": 79806464,
+        "imports": 34799616,
+        "prepared": 66371584
+      },
+      "predictions_sha256": "428069d0953f94a2e47eddeecad8b0bd48a78b4b75eb8b03d1ad88a7080d25e8",
+      "profile": {
+        "candidate_scores": 48616,
+        "elapsed_seconds": 0.11252104199957103,
+        "expansions": 256,
+        "model_calls": 256,
+        "peak_feature_bytes": 51848,
+        "queries": 256,
+        "reused_expansions": 0,
+        "reused_scores": 0,
+        "strategy": "consecutive",
+        "type_visits": 99640,
+        "windows": 1
+      },
+      "queries": 256,
+      "replicate": 0,
+      "stages_seconds": {
+        "first_batch": 0.1217535829928238,
+        "imports": 0.023129375011194497,
+        "load_verify": 0.003172790980897844,
+        "prepare": 0.03501458402024582,
+        "worker_to_first": 0.18307033300516196
+      },
+      "timings": [
+        {
+          "execute_seconds": 0.11046179101685993,
+          "serialize_seconds": 0.010174499999266118,
+          "total_seconds": 0.12063629101612605
+        },
+        {
+          "execute_seconds": 0.10991541700786911,
+          "serialize_seconds": 0.0099934579920955,
+          "total_seconds": 0.11990887499996461
+        },
+        {
+          "execute_seconds": 0.10926687502069399,
+          "serialize_seconds": 0.009984374977648258,
+          "total_seconds": 0.11925124999834225
+        },
+        {
+          "execute_seconds": 0.11424712499137968,
+          "serialize_seconds": 0.010079958010464907,
+          "total_seconds": 0.12432708300184458
+        },
+        {
+          "execute_seconds": 0.11264375000610016,
+          "serialize_seconds": 0.010433917021146044,
+          "total_seconds": 0.12307766702724621
+        }
+      ],
+      "wire_bytes": 1287368,
+      "wire_sha256": "97035cf2046715f8f3b4214f3581836058d7670848e299b374deac6b5b436769",
+      "workload": "interleaved256"
+    },
+    {
+      "arm": "packed_consecutive",
+      "candidate_scores": 43124,
+      "environment": {
+        "numpy": "2.4.4",
+        "platform": "macOS-26.6.2-arm64-arm-64bit",
+        "python": "3.11.15",
+        "threads": {
+          "BLIS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        }
+      },
+      "graph_numeric_bytes": 3597888,
+      "parameter_bytes": 979968,
+      "peak_rss_bytes": {
+        "baseline": 22904832,
+        "final": 79577088,
+        "imports": 34701312,
+        "prepared": 66371584
+      },
+      "predictions_sha256": "89fa95a7a82a326da77e94782ecb3ac8db522681fc08a485af97192bc604dd7e",
+      "profile": {
+        "candidate_scores": 43124,
+        "elapsed_seconds": 0.10842816700460389,
+        "expansions": 256,
+        "model_calls": 256,
+        "peak_feature_bytes": 62856,
+        "queries": 256,
+        "reused_expansions": 0,
+        "reused_scores": 0,
+        "strategy": "consecutive",
+        "type_visits": 93083,
+        "windows": 1
+      },
+      "queries": 256,
+      "replicate": 1,
+      "stages_seconds": {
+        "first_batch": 0.11930950000532903,
+        "imports": 0.023627499991562217,
+        "load_verify": 0.0032172080245800316,
+        "prepare": 0.0347622919944115,
+        "worker_to_first": 0.18091650001588278
+      },
+      "timings": [
+        {
+          "execute_seconds": 0.10654199999407865,
+          "serialize_seconds": 0.00961408400326036,
+          "total_seconds": 0.11615608399733901
+        },
+        {
+          "execute_seconds": 0.11070833299891092,
+          "serialize_seconds": 0.009715541993500665,
+          "total_seconds": 0.12042387499241158
+        },
+        {
+          "execute_seconds": 0.11081383298733272,
+          "serialize_seconds": 0.009786957991309464,
+          "total_seconds": 0.12060079097864218
+        },
+        {
+          "execute_seconds": 0.10593637501006015,
+          "serialize_seconds": 0.009204917005263269,
+          "total_seconds": 0.11514129201532342
+        },
+        {
+          "execute_seconds": 0.10857237500022165,
+          "serialize_seconds": 0.009222541004419327,
+          "total_seconds": 0.11779491600464098
+        }
+      ],
+      "wire_bytes": 1170628,
+      "wire_sha256": "581a3de6246b5d109d44bf983bd188798c77a1f2d3ecc3ae7fde914dfba3749b",
+      "workload": "distinct256"
+    },
+    {
+      "arm": "packed_independent",
+      "candidate_scores": 43124,
+      "environment": {
+        "numpy": "2.4.4",
+        "platform": "macOS-26.6.2-arm64-arm-64bit",
+        "python": "3.11.15",
+        "threads": {
+          "BLIS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        }
+      },
+      "graph_numeric_bytes": 3597888,
+      "parameter_bytes": 979968,
+      "peak_rss_bytes": {
+        "baseline": 22937600,
+        "final": 79560704,
+        "imports": 34668544,
+        "prepared": 66355200
+      },
+      "predictions_sha256": "89fa95a7a82a326da77e94782ecb3ac8db522681fc08a485af97192bc604dd7e",
+      "profile": {
+        "candidate_scores": 43124,
+        "elapsed_seconds": 0.10771887499140576,
+        "expansions": 256,
+        "model_calls": 256,
+        "peak_feature_bytes": 62856,
+        "queries": 256,
+        "reused_expansions": 0,
+        "reused_scores": 0,
+        "strategy": "independent",
+        "type_visits": 93083,
+        "windows": 1
+      },
+      "queries": 256,
+      "replicate": 1,
+      "stages_seconds": {
+        "first_batch": 0.11638341602520086,
+        "imports": 0.023425666004186496,
+        "load_verify": 0.003181125008268282,
+        "prepare": 0.03535720898071304,
+        "worker_to_first": 0.17834741601836868
+      },
+      "timings": [
+        {
+          "execute_seconds": 0.1077649159997236,
+          "serialize_seconds": 0.009633916983148083,
+          "total_seconds": 0.11739883298287168
+        },
+        {
+          "execute_seconds": 0.11008866698830388,
+          "serialize_seconds": 0.009672499989392236,
+          "total_seconds": 0.11976116697769612
+        },
+        {
+          "execute_seconds": 0.10845012500067241,
+          "serialize_seconds": 0.009571041009621695,
+          "total_seconds": 0.11802116601029411
+        },
+        {
+          "execute_seconds": 0.10739754201495089,
+          "serialize_seconds": 0.00936487497529015,
+          "total_seconds": 0.11676241699024104
+        },
+        {
+          "execute_seconds": 0.10787820801488124,
+          "serialize_seconds": 0.009934332978446037,
+          "total_seconds": 0.11781254099332727
+        }
+      ],
+      "wire_bytes": 1170628,
+      "wire_sha256": "581a3de6246b5d109d44bf983bd188798c77a1f2d3ecc3ae7fde914dfba3749b",
+      "workload": "distinct256"
+    },
+    {
+      "arm": "legacy_consecutive",
+      "candidate_scores": 43124,
+      "environment": {
+        "numpy": "2.4.4",
+        "platform": "macOS-26.6.2-arm64-arm-64bit",
+        "python": "3.11.15",
+        "threads": {
+          "BLIS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        }
+      },
+      "graph_numeric_bytes": 4708592,
+      "parameter_bytes": 979968,
+      "peak_rss_bytes": {
+        "baseline": 22937600,
+        "final": 109871104,
+        "imports": 34766848,
+        "prepared": 109871104
+      },
+      "predictions_sha256": "89fa95a7a82a326da77e94782ecb3ac8db522681fc08a485af97192bc604dd7e",
+      "profile": null,
+      "queries": 256,
+      "replicate": 0,
+      "stages_seconds": {
+        "first_batch": 0.09666666699922644,
+        "imports": 0.02312333299778402,
+        "load_verify": 0.0031597919878549874,
+        "prepare": 0.17951095799799077,
+        "worker_to_first": 0.3024607499828562
+      },
+      "timings": [
+        {
+          "execute_seconds": 0.08338458300568163,
+          "serialize_seconds": 0.009732708014780656,
+          "total_seconds": 0.09311729102046229
+        },
+        {
+          "execute_seconds": 0.08454237499972805,
+          "serialize_seconds": 0.009243417007382959,
+          "total_seconds": 0.09378579200711101
+        },
+        {
+          "execute_seconds": 0.08266608300618827,
+          "serialize_seconds": 0.009292791975894943,
+          "total_seconds": 0.09195887498208322
+        },
+        {
+          "execute_seconds": 0.08610699998098426,
+          "serialize_seconds": 0.00929904100485146,
+          "total_seconds": 0.09540604098583572
+        },
+        {
+          "execute_seconds": 0.08287512499373406,
+          "serialize_seconds": 0.009258875012164935,
+          "total_seconds": 0.092134000005899
+        }
+      ],
+      "wire_bytes": 1170628,
+      "wire_sha256": "581a3de6246b5d109d44bf983bd188798c77a1f2d3ecc3ae7fde914dfba3749b",
+      "workload": "distinct256"
+    },
+    {
+      "arm": "packed_independent",
+      "candidate_scores": 48616,
+      "environment": {
+        "numpy": "2.4.4",
+        "platform": "macOS-26.6.2-arm64-arm-64bit",
+        "python": "3.11.15",
+        "threads": {
+          "BLIS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        }
+      },
+      "graph_numeric_bytes": 3597888,
+      "parameter_bytes": 979968,
+      "peak_rss_bytes": {
+        "baseline": 22904832,
+        "final": 79200256,
+        "imports": 34635776,
+        "prepared": 66011136
+      },
+      "predictions_sha256": "428069d0953f94a2e47eddeecad8b0bd48a78b4b75eb8b03d1ad88a7080d25e8",
+      "profile": {
+        "candidate_scores": 48616,
+        "elapsed_seconds": 0.12506545800715685,
+        "expansions": 256,
+        "model_calls": 256,
+        "peak_feature_bytes": 51848,
+        "queries": 256,
+        "reused_expansions": 0,
+        "reused_scores": 0,
+        "strategy": "independent",
+        "type_visits": 99640,
+        "windows": 1
+      },
+      "queries": 256,
+      "replicate": 2,
+      "stages_seconds": {
+        "first_batch": 0.12478108299546875,
+        "imports": 0.023214457993162796,
+        "load_verify": 0.003210916998796165,
+        "prepare": 0.035115000006044284,
+        "worker_to_first": 0.186321457993472
+      },
+      "timings": [
+        {
+          "execute_seconds": 0.11460466601420194,
+          "serialize_seconds": 0.010243458993500099,
+          "total_seconds": 0.12484812500770204
+        },
+        {
+          "execute_seconds": 0.11043441601213999,
+          "serialize_seconds": 0.010099042003275827,
+          "total_seconds": 0.12053345801541582
+        },
+        {
+          "execute_seconds": 0.11177366701303981,
+          "serialize_seconds": 0.010122083011083305,
+          "total_seconds": 0.12189575002412312
+        },
+        {
+          "execute_seconds": 0.11205033399164677,
+          "serialize_seconds": 0.010185749997617677,
+          "total_seconds": 0.12223608398926444
+        },
+        {
+          "execute_seconds": 0.12520937499357387,
+          "serialize_seconds": 0.011370291991624981,
+          "total_seconds": 0.13657966698519886
+        }
+      ],
+      "wire_bytes": 1287368,
+      "wire_sha256": "97035cf2046715f8f3b4214f3581836058d7670848e299b374deac6b5b436769",
+      "workload": "interleaved256"
+    },
+    {
+      "arm": "legacy_consecutive",
+      "candidate_scores": 48616,
+      "environment": {
+        "numpy": "2.4.4",
+        "platform": "macOS-26.6.2-arm64-arm-64bit",
+        "python": "3.11.15",
+        "threads": {
+          "BLIS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        }
+      },
+      "graph_numeric_bytes": 4708592,
+      "parameter_bytes": 979968,
+      "peak_rss_bytes": {
+        "baseline": 23035904,
+        "final": 109772800,
+        "imports": 34734080,
+        "prepared": 109772800
+      },
+      "predictions_sha256": "a4350aa55ec1ebdf43b13995361a9433d7720e216fe0cf58dde88edd5c66fe49",
+      "profile": null,
+      "queries": 256,
+      "replicate": 2,
+      "stages_seconds": {
+        "first_batch": 0.027180417004274204,
+        "imports": 0.0237001670175232,
+        "load_verify": 0.003195041004801169,
+        "prepare": 0.1913026669935789,
+        "worker_to_first": 0.24537829202017747
+      },
+      "timings": [
+        {
+          "execute_seconds": 0.013902667007641867,
+          "serialize_seconds": 0.010912040976108983,
+          "total_seconds": 0.02481470798375085
+        },
+        {
+          "execute_seconds": 0.013976290996652097,
+          "serialize_seconds": 0.009662124997703359,
+          "total_seconds": 0.023638415994355455
+        },
+        {
+          "execute_seconds": 0.013681124983122572,
+          "serialize_seconds": 0.009949291008524597,
+          "total_seconds": 0.02363041599164717
+        },
+        {
+          "execute_seconds": 0.013727250014198944,
+          "serialize_seconds": 0.00960258298437111,
+          "total_seconds": 0.023329832998570055
+        },
+        {
+          "execute_seconds": 0.014127417001873255,
+          "serialize_seconds": 0.011186125018866733,
+          "total_seconds": 0.025313542020739987
+        }
+      ],
+      "wire_bytes": 1287368,
+      "wire_sha256": "81732bbfa1a80be72088e356667eb00761f6bf3b3f3fca6ad34434bbd1ebabb3",
+      "workload": "shared256"
+    },
+    {
+      "arm": "packed_grouped",
+      "candidate_scores": 48616,
+      "environment": {
+        "numpy": "2.4.4",
+        "platform": "macOS-26.6.2-arm64-arm-64bit",
+        "python": "3.11.15",
+        "threads": {
+          "BLIS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        }
+      },
+      "graph_numeric_bytes": 3597888,
+      "parameter_bytes": 979968,
+      "peak_rss_bytes": {
+        "baseline": 22970368,
+        "final": 77889536,
+        "imports": 34750464,
+        "prepared": 66191360
+      },
+      "predictions_sha256": "428069d0953f94a2e47eddeecad8b0bd48a78b4b75eb8b03d1ad88a7080d25e8",
+      "profile": {
+        "candidate_scores": 48616,
+        "elapsed_seconds": 0.015347708016633987,
+        "expansions": 32,
+        "model_calls": 256,
+        "peak_feature_bytes": 51848,
+        "queries": 256,
+        "reused_expansions": 224,
+        "reused_scores": 0,
+        "strategy": "grouped",
+        "type_visits": 12455,
+        "windows": 1
+      },
+      "queries": 256,
+      "replicate": 1,
+      "stages_seconds": {
+        "first_batch": 0.026140292000491172,
+        "imports": 0.02383654098957777,
+        "load_verify": 0.0032295840210281312,
+        "prepare": 0.034922416001791134,
+        "worker_to_first": 0.08812883301288821
+      },
+      "timings": [
+        {
+          "execute_seconds": 0.016004875011276454,
+          "serialize_seconds": 0.010418416990432888,
+          "total_seconds": 0.026423292001709342
+        },
+        {
+          "execute_seconds": 0.015193250001175329,
+          "serialize_seconds": 0.010091875010402873,
+          "total_seconds": 0.025285125011578202
+        },
+        {
+          "execute_seconds": 0.015848749986616895,
+          "serialize_seconds": 0.01022504101274535,
+          "total_seconds": 0.026073790999362245
+        },
+        {
+          "execute_seconds": 0.016085791983641684,
+          "serialize_seconds": 0.009962333017028868,
+          "total_seconds": 0.026048125000670552
+        },
+        {
+          "execute_seconds": 0.015405166981508955,
+          "serialize_seconds": 0.009877500007860363,
+          "total_seconds": 0.025282666989369318
+        }
+      ],
+      "wire_bytes": 1287368,
+      "wire_sha256": "97035cf2046715f8f3b4214f3581836058d7670848e299b374deac6b5b436769",
+      "workload": "interleaved256"
+    },
+    {
+      "arm": "packed_independent",
+      "candidate_scores": 698,
+      "environment": {
+        "numpy": "2.4.4",
+        "platform": "macOS-26.6.2-arm64-arm-64bit",
+        "python": "3.11.15",
+        "threads": {
+          "BLIS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        }
+      },
+      "graph_numeric_bytes": 3597888,
+      "parameter_bytes": 979968,
+      "peak_rss_bytes": {
+        "baseline": 22921216,
+        "final": 70139904,
+        "imports": 34783232,
+        "prepared": 66158592
+      },
+      "predictions_sha256": "9bdbf69db384b9aa045fdf693f48936f7fd229569e80b4d043c46a02df97cc55",
+      "profile": {
+        "candidate_scores": 698,
+        "elapsed_seconds": 0.001398958993377164,
+        "expansions": 1,
+        "model_calls": 1,
+        "peak_feature_bytes": 51848,
+        "queries": 1,
+        "reused_expansions": 0,
+        "reused_scores": 0,
+        "strategy": "independent",
+        "type_visits": 1281,
+        "windows": 1
+      },
+      "queries": 1,
+      "replicate": 0,
+      "stages_seconds": {
+        "first_batch": 0.0022476250014733523,
+        "imports": 0.02379770900006406,
+        "load_verify": 0.0031799160060472786,
+        "prepare": 0.03492995898704976,
+        "worker_to_first": 0.06415520899463445
+      },
+      "timings": [
+        {
+          "execute_seconds": 0.0015760830137878656,
+          "serialize_seconds": 0.00017204199684783816,
+          "total_seconds": 0.0017481250106357038
+        },
+        {
+          "execute_seconds": 0.0015329589950852096,
+          "serialize_seconds": 0.00016691599739715457,
+          "total_seconds": 0.0016998749924823642
+        },
+        {
+          "execute_seconds": 0.001464041997678578,
+          "serialize_seconds": 0.00015999999595806003,
+          "total_seconds": 0.001624041993636638
+        },
+        {
+          "execute_seconds": 0.0014408749993890524,
+          "serialize_seconds": 0.00016379199223592877,
+          "total_seconds": 0.0016046669916249812
+        },
+        {
+          "execute_seconds": 0.0014084999857004732,
+          "serialize_seconds": 0.0001583330158609897,
+          "total_seconds": 0.0015668330015614629
+        }
+      ],
+      "wire_bytes": 19197,
+      "wire_sha256": "cf120e4ec21fce6d4797174276194bd5bcf7bbf8917cc47634e3960a44b44e00",
+      "workload": "single"
+    },
+    {
+      "arm": "packed_consecutive",
+      "candidate_scores": 698,
+      "environment": {
+        "numpy": "2.4.4",
+        "platform": "macOS-26.6.2-arm64-arm-64bit",
+        "python": "3.11.15",
+        "threads": {
+          "BLIS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        }
+      },
+      "graph_numeric_bytes": 3597888,
+      "parameter_bytes": 979968,
+      "peak_rss_bytes": {
+        "baseline": 22904832,
+        "final": 70025216,
+        "imports": 34652160,
+        "prepared": 66060288
+      },
+      "predictions_sha256": "9bdbf69db384b9aa045fdf693f48936f7fd229569e80b4d043c46a02df97cc55",
+      "profile": {
+        "candidate_scores": 698,
+        "elapsed_seconds": 0.0014023330004420131,
+        "expansions": 1,
+        "model_calls": 1,
+        "peak_feature_bytes": 51848,
+        "queries": 1,
+        "reused_expansions": 0,
+        "reused_scores": 0,
+        "strategy": "consecutive",
+        "type_visits": 1281,
+        "windows": 1
+      },
+      "queries": 1,
+      "replicate": 1,
+      "stages_seconds": {
+        "first_batch": 0.0022663749987259507,
+        "imports": 0.02418108400888741,
+        "load_verify": 0.003314791014418006,
+        "prepare": 0.03652395898825489,
+        "worker_to_first": 0.06628620901028626
+      },
+      "timings": [
+        {
+          "execute_seconds": 0.0015754170017316937,
+          "serialize_seconds": 0.00016933298320509493,
+          "total_seconds": 0.0017447499849367887
+        },
+        {
+          "execute_seconds": 0.0014342500071506947,
+          "serialize_seconds": 0.00016108297859318554,
+          "total_seconds": 0.0015953329857438803
+        },
+        {
+          "execute_seconds": 0.0014263339980971068,
+          "serialize_seconds": 0.0001568750012665987,
+          "total_seconds": 0.0015832089993637055
+        },
+        {
+          "execute_seconds": 0.0014182500017341226,
+          "serialize_seconds": 0.00015708300634287298,
+          "total_seconds": 0.0015753330080769956
+        },
+        {
+          "execute_seconds": 0.0014116249803919345,
+          "serialize_seconds": 0.00015520802116952837,
+          "total_seconds": 0.0015668330015614629
+        }
+      ],
+      "wire_bytes": 19197,
+      "wire_sha256": "cf120e4ec21fce6d4797174276194bd5bcf7bbf8917cc47634e3960a44b44e00",
+      "workload": "single"
+    },
+    {
+      "arm": "packed_independent",
+      "candidate_scores": 48616,
+      "environment": {
+        "numpy": "2.4.4",
+        "platform": "macOS-26.6.2-arm64-arm-64bit",
+        "python": "3.11.15",
+        "threads": {
+          "BLIS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        }
+      },
+      "graph_numeric_bytes": 3597888,
+      "parameter_bytes": 979968,
+      "peak_rss_bytes": {
+        "baseline": 23052288,
+        "final": 79527936,
+        "imports": 34766848,
+        "prepared": 66387968
+      },
+      "predictions_sha256": "a4350aa55ec1ebdf43b13995361a9433d7720e216fe0cf58dde88edd5c66fe49",
+      "profile": {
+        "candidate_scores": 48616,
+        "elapsed_seconds": 0.10899137498927303,
+        "expansions": 256,
+        "model_calls": 256,
+        "peak_feature_bytes": 51848,
+        "queries": 256,
+        "reused_expansions": 0,
+        "reused_scores": 0,
+        "strategy": "independent",
+        "type_visits": 99640,
+        "windows": 1
+      },
+      "queries": 256,
+      "replicate": 2,
+      "stages_seconds": {
+        "first_batch": 0.11973745899740607,
+        "imports": 0.023309916985454038,
+        "load_verify": 0.00319295801455155,
+        "prepare": 0.034992125001735985,
+        "worker_to_first": 0.18123245899914764
+      },
+      "timings": [
+        {
+          "execute_seconds": 0.1135269169753883,
+          "serialize_seconds": 0.010747250023996457,
+          "total_seconds": 0.12427416699938476
+        },
+        {
+          "execute_seconds": 0.10597875001258217,
+          "serialize_seconds": 0.009925332997227088,
+          "total_seconds": 0.11590408300980926
+        },
+        {
+          "execute_seconds": 0.10812599997734651,
+          "serialize_seconds": 0.009870959009276703,
+          "total_seconds": 0.11799695898662321
+        },
+        {
+          "execute_seconds": 0.10636858298676088,
+          "serialize_seconds": 0.009865667001577094,
+          "total_seconds": 0.11623424998833798
+        },
+        {
+          "execute_seconds": 0.10910229099681601,
+          "serialize_seconds": 0.010263875010423362,
+          "total_seconds": 0.11936616600723937
+        }
+      ],
+      "wire_bytes": 1287368,
+      "wire_sha256": "81732bbfa1a80be72088e356667eb00761f6bf3b3f3fca6ad34434bbd1ebabb3",
+      "workload": "shared256"
+    },
+    {
+      "arm": "legacy_consecutive",
+      "candidate_scores": 48616,
+      "environment": {
+        "numpy": "2.4.4",
+        "platform": "macOS-26.6.2-arm64-arm-64bit",
+        "python": "3.11.15",
+        "threads": {
+          "BLIS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        }
+      },
+      "graph_numeric_bytes": 4708592,
+      "parameter_bytes": 979968,
+      "peak_rss_bytes": {
+        "baseline": 22904832,
+        "final": 109789184,
+        "imports": 34701312,
+        "prepared": 109789184
+      },
+      "predictions_sha256": "a4350aa55ec1ebdf43b13995361a9433d7720e216fe0cf58dde88edd5c66fe49",
+      "profile": null,
+      "queries": 256,
+      "replicate": 1,
+      "stages_seconds": {
+        "first_batch": 0.024780290987109765,
+        "imports": 0.02345091599272564,
+        "load_verify": 0.003191000025253743,
+        "prepare": 0.17638608400011435,
+        "worker_to_first": 0.2278082910052035
+      },
+      "timings": [
+        {
+          "execute_seconds": 0.013657625007908791,
+          "serialize_seconds": 0.01060337500530295,
+          "total_seconds": 0.024261000013211742
+        },
+        {
+          "execute_seconds": 0.013692875014385208,
+          "serialize_seconds": 0.009606040985090658,
+          "total_seconds": 0.023298915999475867
+        },
+        {
+          "execute_seconds": 0.014215458009857684,
+          "serialize_seconds": 0.010317249980289489,
+          "total_seconds": 0.024532707990147173
+        },
+        {
+          "execute_seconds": 0.014185417006956413,
+          "serialize_seconds": 0.009594332979759201,
+          "total_seconds": 0.023779749986715615
+        },
+        {
+          "execute_seconds": 0.014512583002215251,
+          "serialize_seconds": 0.010609457996906713,
+          "total_seconds": 0.025122040999121964
+        }
+      ],
+      "wire_bytes": 1287368,
+      "wire_sha256": "81732bbfa1a80be72088e356667eb00761f6bf3b3f3fca6ad34434bbd1ebabb3",
+      "workload": "shared256"
+    },
+    {
+      "arm": "packed_grouped",
+      "candidate_scores": 23209,
+      "environment": {
+        "numpy": "2.4.4",
+        "platform": "macOS-26.6.2-arm64-arm-64bit",
+        "python": "3.11.15",
+        "threads": {
+          "BLIS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        }
+      },
+      "graph_numeric_bytes": 3597888,
+      "parameter_bytes": 979968,
+      "peak_rss_bytes": {
+        "baseline": 22970368,
+        "final": 76808192,
+        "imports": 34881536,
+        "prepared": 66224128
+      },
+      "predictions_sha256": "6d912c1b7927626810d34a063d91a8e07645e8867b94ccdc84a1db0256e3b125",
+      "profile": {
+        "candidate_scores": 23209,
+        "elapsed_seconds": 0.08722212500288151,
+        "expansions": 16,
+        "model_calls": 16,
+        "peak_feature_bytes": 262032,
+        "queries": 16,
+        "reused_expansions": 0,
+        "reused_scores": 0,
+        "strategy": "grouped",
+        "type_visits": 73984,
+        "windows": 1
+      },
+      "queries": 16,
+      "replicate": 1,
+      "stages_seconds": {
+        "first_batch": 0.08610412501730025,
+        "imports": 0.02349849999882281,
+        "load_verify": 0.0032592909992672503,
+        "prepare": 0.03451862500514835,
+        "worker_to_first": 0.14738054102053866
+      },
+      "timings": [
+        {
+          "execute_seconds": 0.08435058299801312,
+          "serialize_seconds": 0.0037002919998485595,
+          "total_seconds": 0.08805087499786168
+        },
+        {
+          "execute_seconds": 0.08344070799648762,
+          "serialize_seconds": 0.003909208986442536,
+          "total_seconds": 0.08734991698293015
+        },
+        {
+          "execute_seconds": 0.08164200000464916,
+          "serialize_seconds": 0.0034546669921837747,
+          "total_seconds": 0.08509666699683294
+        },
+        {
+          "execute_seconds": 0.08303304100991227,
+          "serialize_seconds": 0.003519999998388812,
+          "total_seconds": 0.08655304100830108
+        },
+        {
+          "execute_seconds": 0.08728404098656029,
+          "serialize_seconds": 0.0035646250180434436,
+          "total_seconds": 0.09084866600460373
+        }
+      ],
+      "wire_bytes": 481602,
+      "wire_sha256": "81beb34faf538d80df7ab9be206f8766dc3d77070c3f85a22a3896a754defaf7",
+      "workload": "hubs16"
+    },
+    {
+      "arm": "packed_consecutive",
+      "candidate_scores": 48616,
+      "environment": {
+        "numpy": "2.4.4",
+        "platform": "macOS-26.6.2-arm64-arm-64bit",
+        "python": "3.11.15",
+        "threads": {
+          "BLIS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        }
+      },
+      "graph_numeric_bytes": 3597888,
+      "parameter_bytes": 979968,
+      "peak_rss_bytes": {
+        "baseline": 22921216,
+        "final": 79462400,
+        "imports": 34701312,
+        "prepared": 66207744
+      },
+      "predictions_sha256": "428069d0953f94a2e47eddeecad8b0bd48a78b4b75eb8b03d1ad88a7080d25e8",
+      "profile": {
+        "candidate_scores": 48616,
+        "elapsed_seconds": 0.11510745799751021,
+        "expansions": 256,
+        "model_calls": 256,
+        "peak_feature_bytes": 51848,
+        "queries": 256,
+        "reused_expansions": 0,
+        "reused_scores": 0,
+        "strategy": "consecutive",
+        "type_visits": 99640,
+        "windows": 1
+      },
+      "queries": 256,
+      "replicate": 1,
+      "stages_seconds": {
+        "first_batch": 0.12054649999481626,
+        "imports": 0.023704291990725324,
+        "load_verify": 0.003211916016880423,
+        "prepare": 0.034742374991765246,
+        "worker_to_first": 0.18220508299418725
+      },
+      "timings": [
+        {
+          "execute_seconds": 0.11249262501951307,
+          "serialize_seconds": 0.010344416979933158,
+          "total_seconds": 0.12283704199944623
+        },
+        {
+          "execute_seconds": 0.11446716700447723,
+          "serialize_seconds": 0.010015957988798618,
+          "total_seconds": 0.12448312499327585
+        },
+        {
+          "execute_seconds": 0.11317483300808817,
+          "serialize_seconds": 0.010497416980797425,
+          "total_seconds": 0.1236722499888856
+        },
+        {
+          "execute_seconds": 0.11299420899013057,
+          "serialize_seconds": 0.010604290990158916,
+          "total_seconds": 0.12359849998028949
+        },
+        {
+          "execute_seconds": 0.11522641600458883,
+          "serialize_seconds": 0.010304916999302804,
+          "total_seconds": 0.12553133300389163
+        }
+      ],
+      "wire_bytes": 1287368,
+      "wire_sha256": "97035cf2046715f8f3b4214f3581836058d7670848e299b374deac6b5b436769",
+      "workload": "interleaved256"
+    },
+    {
+      "arm": "legacy_consecutive",
+      "candidate_scores": 48616,
+      "environment": {
+        "numpy": "2.4.4",
+        "platform": "macOS-26.6.2-arm64-arm-64bit",
+        "python": "3.11.15",
+        "threads": {
+          "BLIS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        }
+      },
+      "graph_numeric_bytes": 4708592,
+      "parameter_bytes": 979968,
+      "peak_rss_bytes": {
+        "baseline": 22904832,
+        "final": 109903872,
+        "imports": 34750464,
+        "prepared": 109903872
+      },
+      "predictions_sha256": "428069d0953f94a2e47eddeecad8b0bd48a78b4b75eb8b03d1ad88a7080d25e8",
+      "profile": null,
+      "queries": 256,
+      "replicate": 2,
+      "stages_seconds": {
+        "first_batch": 0.10037920798640698,
+        "imports": 0.02284604200394824,
+        "load_verify": 0.0031231670000124723,
+        "prepare": 0.18171562501811422,
+        "worker_to_first": 0.3080640420084819
+      },
+      "timings": [
+        {
+          "execute_seconds": 0.09229125001002103,
+          "serialize_seconds": 0.010356374987168238,
+          "total_seconds": 0.10264762499718927
+        },
+        {
+          "execute_seconds": 0.0882665409881156,
+          "serialize_seconds": 0.009850000002188608,
+          "total_seconds": 0.0981165409903042
+        },
+        {
+          "execute_seconds": 0.08778012500260957,
+          "serialize_seconds": 0.009825041983276606,
+          "total_seconds": 0.09760516698588617
+        },
+        {
+          "execute_seconds": 0.08627279198844917,
+          "serialize_seconds": 0.01048566700774245,
+          "total_seconds": 0.09675845899619162
+        },
+        {
+          "execute_seconds": 0.08886608298053034,
+          "serialize_seconds": 0.010221875010756776,
+          "total_seconds": 0.09908795799128711
+        }
+      ],
+      "wire_bytes": 1287368,
+      "wire_sha256": "97035cf2046715f8f3b4214f3581836058d7670848e299b374deac6b5b436769",
+      "workload": "interleaved256"
+    },
+    {
+      "arm": "packed_consecutive",
+      "candidate_scores": 698,
+      "environment": {
+        "numpy": "2.4.4",
+        "platform": "macOS-26.6.2-arm64-arm-64bit",
+        "python": "3.11.15",
+        "threads": {
+          "BLIS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        }
+      },
+      "graph_numeric_bytes": 3597888,
+      "parameter_bytes": 979968,
+      "peak_rss_bytes": {
+        "baseline": 23019520,
+        "final": 70287360,
+        "imports": 34848768,
+        "prepared": 66371584
+      },
+      "predictions_sha256": "9bdbf69db384b9aa045fdf693f48936f7fd229569e80b4d043c46a02df97cc55",
+      "profile": {
+        "candidate_scores": 698,
+        "elapsed_seconds": 0.0015004159940872341,
+        "expansions": 1,
+        "model_calls": 1,
+        "peak_feature_bytes": 51848,
+        "queries": 1,
+        "reused_expansions": 0,
+        "reused_scores": 0,
+        "strategy": "consecutive",
+        "type_visits": 1281,
+        "windows": 1
+      },
+      "queries": 1,
+      "replicate": 2,
+      "stages_seconds": {
+        "first_batch": 0.002286832983372733,
+        "imports": 0.023388917004922405,
+        "load_verify": 0.003168208000715822,
+        "prepare": 0.03483874999801628,
+        "worker_to_first": 0.06368270798702724
+      },
+      "timings": [
+        {
+          "execute_seconds": 0.0015643340011592954,
+          "serialize_seconds": 0.00016533301095478237,
+          "total_seconds": 0.0017296670121140778
+        },
+        {
+          "execute_seconds": 0.0014677080034743994,
+          "serialize_seconds": 0.00015762497787363827,
+          "total_seconds": 0.0016253329813480377
+        },
+        {
+          "execute_seconds": 0.0014341670030262321,
+          "serialize_seconds": 0.00015716601046733558,
+          "total_seconds": 0.0015913330134935677
+        },
+        {
+          "execute_seconds": 0.0014447909779846668,
+          "serialize_seconds": 0.0001573750050738454,
+          "total_seconds": 0.0016021659830585122
+        },
+        {
+          "execute_seconds": 0.0015104579797480255,
+          "serialize_seconds": 0.00017520802794024348,
+          "total_seconds": 0.001685666007688269
+        }
+      ],
+      "wire_bytes": 19197,
+      "wire_sha256": "cf120e4ec21fce6d4797174276194bd5bcf7bbf8917cc47634e3960a44b44e00",
+      "workload": "single"
+    },
+    {
+      "arm": "packed_grouped",
+      "candidate_scores": 48616,
+      "environment": {
+        "numpy": "2.4.4",
+        "platform": "macOS-26.6.2-arm64-arm-64bit",
+        "python": "3.11.15",
+        "threads": {
+          "BLIS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        }
+      },
+      "graph_numeric_bytes": 3597888,
+      "parameter_bytes": 979968,
+      "peak_rss_bytes": {
+        "baseline": 22953984,
+        "final": 79134720,
+        "imports": 34930688,
+        "prepared": 66273280
+      },
+      "predictions_sha256": "428069d0953f94a2e47eddeecad8b0bd48a78b4b75eb8b03d1ad88a7080d25e8",
+      "profile": {
+        "candidate_scores": 48616,
+        "elapsed_seconds": 0.015620833000866696,
+        "expansions": 32,
+        "model_calls": 256,
+        "peak_feature_bytes": 51848,
+        "queries": 256,
+        "reused_expansions": 224,
+        "reused_scores": 0,
+        "strategy": "grouped",
+        "type_visits": 12455,
+        "windows": 1
+      },
+      "queries": 256,
+      "replicate": 0,
+      "stages_seconds": {
+        "first_batch": 0.026433124992763624,
+        "imports": 0.023372374998871237,
+        "load_verify": 0.003153833997203037,
+        "prepare": 0.0355842080025468,
+        "worker_to_first": 0.0885435419913847
+      },
+      "timings": [
+        {
+          "execute_seconds": 0.016517374984687194,
+          "serialize_seconds": 0.01057858401327394,
+          "total_seconds": 0.027095958997961134
+        },
+        {
+          "execute_seconds": 0.015178625006228685,
+          "serialize_seconds": 0.009912915993481874,
+          "total_seconds": 0.02509154099971056
+        },
+        {
+          "execute_seconds": 0.015172749990597367,
+          "serialize_seconds": 0.010604292008792982,
+          "total_seconds": 0.02577704199939035
+        },
+        {
+          "execute_seconds": 0.015819833002751693,
+          "serialize_seconds": 0.010215749993221834,
+          "total_seconds": 0.026035582995973527
+        },
+        {
+          "execute_seconds": 0.015681082993978634,
+          "serialize_seconds": 0.009804041997995228,
+          "total_seconds": 0.025485124991973862
+        }
+      ],
+      "wire_bytes": 1287368,
+      "wire_sha256": "97035cf2046715f8f3b4214f3581836058d7670848e299b374deac6b5b436769",
+      "workload": "interleaved256"
+    },
+    {
+      "arm": "legacy_consecutive",
+      "candidate_scores": 23209,
+      "environment": {
+        "numpy": "2.4.4",
+        "platform": "macOS-26.6.2-arm64-arm-64bit",
+        "python": "3.11.15",
+        "threads": {
+          "BLIS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        }
+      },
+      "graph_numeric_bytes": 4708592,
+      "parameter_bytes": 979968,
+      "peak_rss_bytes": {
+        "baseline": 22953984,
+        "final": 109658112,
+        "imports": 34668544,
+        "prepared": 109658112
+      },
+      "predictions_sha256": "6d912c1b7927626810d34a063d91a8e07645e8867b94ccdc84a1db0256e3b125",
+      "profile": null,
+      "queries": 16,
+      "replicate": 2,
+      "stages_seconds": {
+        "first_batch": 0.06747508398257196,
+        "imports": 0.02323599997907877,
+        "load_verify": 0.003156000020680949,
+        "prepare": 0.1781624580034986,
+        "worker_to_first": 0.2720295419858303
+      },
+      "timings": [
+        {
+          "execute_seconds": 0.06473208300303668,
+          "serialize_seconds": 0.0035930839949287474,
+          "total_seconds": 0.06832516699796543
+        },
+        {
+          "execute_seconds": 0.06254024998634122,
+          "serialize_seconds": 0.0036556670092977583,
+          "total_seconds": 0.06619591699563898
+        },
+        {
+          "execute_seconds": 0.06543754201265983,
+          "serialize_seconds": 0.0035126669972669333,
+          "total_seconds": 0.06895020900992677
+        },
+        {
+          "execute_seconds": 0.06310241599567235,
+          "serialize_seconds": 0.0034565420064609498,
+          "total_seconds": 0.0665589580021333
+        },
+        {
+          "execute_seconds": 0.06390941701829433,
+          "serialize_seconds": 0.003508958005113527,
+          "total_seconds": 0.06741837502340786
+        }
+      ],
+      "wire_bytes": 481602,
+      "wire_sha256": "81beb34faf538d80df7ab9be206f8766dc3d77070c3f85a22a3896a754defaf7",
+      "workload": "hubs16"
+    },
+    {
+      "arm": "packed_consecutive",
+      "candidate_scores": 48616,
+      "environment": {
+        "numpy": "2.4.4",
+        "platform": "macOS-26.6.2-arm64-arm-64bit",
+        "python": "3.11.15",
+        "threads": {
+          "BLIS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        }
+      },
+      "graph_numeric_bytes": 3597888,
+      "parameter_bytes": 979968,
+      "peak_rss_bytes": {
+        "baseline": 22970368,
+        "final": 78004224,
+        "imports": 34701312,
+        "prepared": 66093056
+      },
+      "predictions_sha256": "a4350aa55ec1ebdf43b13995361a9433d7720e216fe0cf58dde88edd5c66fe49",
+      "profile": {
+        "candidate_scores": 48616,
+        "elapsed_seconds": 0.015323416999308392,
+        "expansions": 32,
+        "model_calls": 256,
+        "peak_feature_bytes": 51848,
+        "queries": 256,
+        "reused_expansions": 224,
+        "reused_scores": 0,
+        "strategy": "consecutive",
+        "type_visits": 12455,
+        "windows": 1
+      },
+      "queries": 256,
+      "replicate": 1,
+      "stages_seconds": {
+        "first_batch": 0.02597754099406302,
+        "imports": 0.024500166007783264,
+        "load_verify": 0.0034611249866429716,
+        "prepare": 0.03525295900180936,
+        "worker_to_first": 0.08919179099029861
+      },
+      "timings": [
+        {
+          "execute_seconds": 0.015062084014061838,
+          "serialize_seconds": 0.010160999983781949,
+          "total_seconds": 0.025223083997843787
+        },
+        {
+          "execute_seconds": 0.015643457998521626,
+          "serialize_seconds": 0.010127041983650997,
+          "total_seconds": 0.025770499982172623
+        },
+        {
+          "execute_seconds": 0.016195291973417625,
+          "serialize_seconds": 0.010538958013057709,
+          "total_seconds": 0.026734249986475334
+        },
+        {
+          "execute_seconds": 0.015914415998850018,
+          "serialize_seconds": 0.009877625008812174,
+          "total_seconds": 0.025792041007662192
+        },
+        {
+          "execute_seconds": 0.015377792005892843,
+          "serialize_seconds": 0.009790417010663077,
+          "total_seconds": 0.02516820901655592
+        }
+      ],
+      "wire_bytes": 1287368,
+      "wire_sha256": "81732bbfa1a80be72088e356667eb00761f6bf3b3f3fca6ad34434bbd1ebabb3",
+      "workload": "shared256"
+    },
+    {
+      "arm": "legacy_consecutive",
+      "candidate_scores": 698,
+      "environment": {
+        "numpy": "2.4.4",
+        "platform": "macOS-26.6.2-arm64-arm-64bit",
+        "python": "3.11.15",
+        "threads": {
+          "BLIS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        }
+      },
+      "graph_numeric_bytes": 4708592,
+      "parameter_bytes": 979968,
+      "peak_rss_bytes": {
+        "baseline": 22986752,
+        "final": 109871104,
+        "imports": 34848768,
+        "prepared": 109871104
+      },
+      "predictions_sha256": "9bdbf69db384b9aa045fdf693f48936f7fd229569e80b4d043c46a02df97cc55",
+      "profile": null,
+      "queries": 1,
+      "replicate": 1,
+      "stages_seconds": {
+        "first_batch": 0.001644792006118223,
+        "imports": 0.02333416699548252,
+        "load_verify": 0.00316062499769032,
+        "prepare": 0.17657983300159685,
+        "worker_to_first": 0.20471941700088792
+      },
+      "timings": [
+        {
+          "execute_seconds": 0.001348249992588535,
+          "serialize_seconds": 0.0001769159862305969,
+          "total_seconds": 0.0015251659788191319
+        },
+        {
+          "execute_seconds": 0.0012271669984329492,
+          "serialize_seconds": 0.0001658329856581986,
+          "total_seconds": 0.0013929999840911478
+        },
+        {
+          "execute_seconds": 0.00118245801422745,
+          "serialize_seconds": 0.00015929198707453907,
+          "total_seconds": 0.001341750001301989
+        },
+        {
+          "execute_seconds": 0.0014356659958139062,
+          "serialize_seconds": 0.00015595898730680346,
+          "total_seconds": 0.0015916249831207097
+        },
+        {
+          "execute_seconds": 0.0011556250101421028,
+          "serialize_seconds": 0.00015854198136366904,
+          "total_seconds": 0.0013141669915057719
+        }
+      ],
+      "wire_bytes": 19197,
+      "wire_sha256": "cf120e4ec21fce6d4797174276194bd5bcf7bbf8917cc47634e3960a44b44e00",
+      "workload": "single"
+    },
+    {
+      "arm": "legacy_consecutive",
+      "candidate_scores": 698,
+      "environment": {
+        "numpy": "2.4.4",
+        "platform": "macOS-26.6.2-arm64-arm-64bit",
+        "python": "3.11.15",
+        "threads": {
+          "BLIS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        }
+      },
+      "graph_numeric_bytes": 4708592,
+      "parameter_bytes": 979968,
+      "peak_rss_bytes": {
+        "baseline": 23003136,
+        "final": 109871104,
+        "imports": 34914304,
+        "prepared": 109871104
+      },
+      "predictions_sha256": "9bdbf69db384b9aa045fdf693f48936f7fd229569e80b4d043c46a02df97cc55",
+      "profile": null,
+      "queries": 1,
+      "replicate": 2,
+      "stages_seconds": {
+        "first_batch": 0.0016208750021178275,
+        "imports": 0.02375612498144619,
+        "load_verify": 0.0032415830064564943,
+        "prepare": 0.17735750001156703,
+        "worker_to_first": 0.20597608300158754
+      },
+      "timings": [
+        {
+          "execute_seconds": 0.0013004170032218099,
+          "serialize_seconds": 0.00016841699834913015,
+          "total_seconds": 0.00146883400157094
+        },
+        {
+          "execute_seconds": 0.0011684169876389205,
+          "serialize_seconds": 0.00015937502030283213,
+          "total_seconds": 0.0013277920079417527
+        },
+        {
+          "execute_seconds": 0.0011863329855259508,
+          "serialize_seconds": 0.0001595000212546438,
+          "total_seconds": 0.0013458330067805946
+        },
+        {
+          "execute_seconds": 0.001444166002329439,
+          "serialize_seconds": 0.00015670902212150395,
+          "total_seconds": 0.0016008750244509429
+        },
+        {
+          "execute_seconds": 0.0012203340011183172,
+          "serialize_seconds": 0.0002706660015974194,
+          "total_seconds": 0.0014910000027157366
+        }
+      ],
+      "wire_bytes": 19197,
+      "wire_sha256": "cf120e4ec21fce6d4797174276194bd5bcf7bbf8917cc47634e3960a44b44e00",
+      "workload": "single"
+    },
+    {
+      "arm": "legacy_consecutive",
+      "candidate_scores": 43124,
+      "environment": {
+        "numpy": "2.4.4",
+        "platform": "macOS-26.6.2-arm64-arm-64bit",
+        "python": "3.11.15",
+        "threads": {
+          "BLIS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        }
+      },
+      "graph_numeric_bytes": 4708592,
+      "parameter_bytes": 979968,
+      "peak_rss_bytes": {
+        "baseline": 23003136,
+        "final": 109821952,
+        "imports": 34701312,
+        "prepared": 109821952
+      },
+      "predictions_sha256": "89fa95a7a82a326da77e94782ecb3ac8db522681fc08a485af97192bc604dd7e",
+      "profile": null,
+      "queries": 256,
+      "replicate": 1,
+      "stages_seconds": {
+        "first_batch": 0.09890133299631998,
+        "imports": 0.023402207996696234,
+        "load_verify": 0.003199708997271955,
+        "prepare": 0.1805516250024084,
+        "worker_to_first": 0.30605487499269657
+      },
+      "timings": [
+        {
+          "execute_seconds": 0.0858245829876978,
+          "serialize_seconds": 0.009776624996447936,
+          "total_seconds": 0.09560120798414573
+        },
+        {
+          "execute_seconds": 0.08423745800973848,
+          "serialize_seconds": 0.009316708979895338,
+          "total_seconds": 0.09355416698963381
+        },
+        {
+          "execute_seconds": 0.08514320902759209,
+          "serialize_seconds": 0.009244540997315198,
+          "total_seconds": 0.09438775002490729
+        },
+        {
+          "execute_seconds": 0.08354562500608154,
+          "serialize_seconds": 0.009190499986289069,
+          "total_seconds": 0.0927361249923706
+        },
+        {
+          "execute_seconds": 0.08618162499624304,
+          "serialize_seconds": 0.009504415997071192,
+          "total_seconds": 0.09568604099331424
+        }
+      ],
+      "wire_bytes": 1170628,
+      "wire_sha256": "581a3de6246b5d109d44bf983bd188798c77a1f2d3ecc3ae7fde914dfba3749b",
+      "workload": "distinct256"
+    }
+  ],
+  "summary": [
+    {
+      "arm": "legacy_consecutive",
+      "median_batch_seconds": 0.0013929999840911478,
+      "median_execute_seconds": 0.0012203340011183172,
+      "median_prepare_seconds": 0.17735750001156703,
+      "peak_rss_range": [
+        109674496,
+        109871104
+      ],
+      "workload": "single"
+    },
+    {
+      "arm": "packed_independent",
+      "median_batch_seconds": 0.001624041993636638,
+      "median_execute_seconds": 0.001464041997678578,
+      "median_prepare_seconds": 0.03507316598552279,
+      "peak_rss_range": [
+        70123520,
+        70172672
+      ],
+      "workload": "single"
+    },
+    {
+      "arm": "packed_consecutive",
+      "median_batch_seconds": 0.0015999580209609121,
+      "median_execute_seconds": 0.001441750006051734,
+      "median_prepare_seconds": 0.03544812501058914,
+      "peak_rss_range": [
+        70025216,
+        70287360
+      ],
+      "workload": "single"
+    },
+    {
+      "arm": "packed_grouped",
+      "median_batch_seconds": 0.0015954170085024089,
+      "median_execute_seconds": 0.0014367920230142772,
+      "median_prepare_seconds": 0.0351826669939328,
+      "peak_rss_range": [
+        70041600,
+        70746112
+      ],
+      "workload": "single"
+    },
+    {
+      "arm": "legacy_consecutive",
+      "median_batch_seconds": 0.09311729102046229,
+      "median_execute_seconds": 0.08338458300568163,
+      "median_prepare_seconds": 0.1805516250024084,
+      "peak_rss_range": [
+        109821952,
+        109871104
+      ],
+      "workload": "distinct256"
+    },
+    {
+      "arm": "packed_independent",
+      "median_batch_seconds": 0.11781254099332727,
+      "median_execute_seconds": 0.10787820801488124,
+      "median_prepare_seconds": 0.03535720898071304,
+      "peak_rss_range": [
+        79560704,
+        79593472
+      ],
+      "workload": "distinct256"
+    },
+    {
+      "arm": "packed_consecutive",
+      "median_batch_seconds": 0.1159625000145752,
+      "median_execute_seconds": 0.10660179101978429,
+      "median_prepare_seconds": 0.03543895899201743,
+      "peak_rss_range": [
+        79364096,
+        79577088
+      ],
+      "workload": "distinct256"
+    },
+    {
+      "arm": "packed_grouped",
+      "median_batch_seconds": 0.11592158299754374,
+      "median_execute_seconds": 0.10610483298660256,
+      "median_prepare_seconds": 0.035491749993525445,
+      "peak_rss_range": [
+        79101952,
+        79609856
+      ],
+      "workload": "distinct256"
+    },
+    {
+      "arm": "legacy_consecutive",
+      "median_batch_seconds": 0.023638415994355455,
+      "median_execute_seconds": 0.013902667007641867,
+      "median_prepare_seconds": 0.1825023750134278,
+      "peak_rss_range": [
+        109690880,
+        109789184
+      ],
+      "workload": "shared256"
+    },
+    {
+      "arm": "packed_independent",
+      "median_batch_seconds": 0.11799787500058301,
+      "median_execute_seconds": 0.10812599997734651,
+      "median_prepare_seconds": 0.0352071670058649,
+      "peak_rss_range": [
+        79527936,
+        79577088
+      ],
+      "workload": "shared256"
+    },
+    {
+      "arm": "packed_consecutive",
+      "median_batch_seconds": 0.025506459001917392,
+      "median_execute_seconds": 0.015411666012369096,
+      "median_prepare_seconds": 0.03525295900180936,
+      "peak_rss_range": [
+        78004224,
+        78036992
+      ],
+      "workload": "shared256"
+    },
+    {
+      "arm": "packed_grouped",
+      "median_batch_seconds": 0.02508345799287781,
+      "median_execute_seconds": 0.015225791983539239,
+      "median_prepare_seconds": 0.03558595897629857,
+      "peak_rss_range": [
+        77709312,
+        77905920
+      ],
+      "workload": "shared256"
+    },
+    {
+      "arm": "legacy_consecutive",
+      "median_batch_seconds": 0.09682045801309869,
+      "median_execute_seconds": 0.08638175000669435,
+      "median_prepare_seconds": 0.18171562501811422,
+      "peak_rss_range": [
+        109690880,
+        110526464
+      ],
+      "workload": "interleaved256"
+    },
+    {
+      "arm": "packed_independent",
+      "median_batch_seconds": 0.12094887500279583,
+      "median_execute_seconds": 0.11100437500863336,
+      "median_prepare_seconds": 0.03537266599596478,
+      "peak_rss_range": [
+        79200256,
+        80363520
+      ],
+      "workload": "interleaved256"
+    },
+    {
+      "arm": "packed_consecutive",
+      "median_batch_seconds": 0.12063629101612605,
+      "median_execute_seconds": 0.11050504198647104,
+      "median_prepare_seconds": 0.03501458402024582,
+      "peak_rss_range": [
+        79462400,
+        80494592
+      ],
+      "workload": "interleaved256"
+    },
+    {
+      "arm": "packed_grouped",
+      "median_batch_seconds": 0.025818915979471058,
+      "median_execute_seconds": 0.0157483339717146,
+      "median_prepare_seconds": 0.03509337498690002,
+      "peak_rss_range": [
+        77889536,
+        79134720
+      ],
+      "workload": "interleaved256"
+    },
+    {
+      "arm": "legacy_consecutive",
+      "median_batch_seconds": 0.06727270799456164,
+      "median_execute_seconds": 0.06372691699652933,
+      "median_prepare_seconds": 0.1781624580034986,
+      "peak_rss_range": [
+        109658112,
+        109887488
+      ],
+      "workload": "hubs16"
+    },
+    {
+      "arm": "packed_independent",
+      "median_batch_seconds": 0.08466658397810534,
+      "median_execute_seconds": 0.08117470899014734,
+      "median_prepare_seconds": 0.035207790991989896,
+      "peak_rss_range": [
+        76546048,
+        77185024
+      ],
+      "workload": "hubs16"
+    },
+    {
+      "arm": "packed_consecutive",
+      "median_batch_seconds": 0.08491308297379874,
+      "median_execute_seconds": 0.08121412497712299,
+      "median_prepare_seconds": 0.03516645799390972,
+      "peak_rss_range": [
+        76431360,
+        76611584
+      ],
+      "workload": "hubs16"
+    },
+    {
+      "arm": "packed_grouped",
+      "median_batch_seconds": 0.086188791989116,
+      "median_execute_seconds": 0.08236854200367816,
+      "median_prepare_seconds": 0.03500887501286343,
+      "peak_rss_range": [
+        76431360,
+        76808192
+      ],
+      "workload": "hubs16"
+    }
+  ]
+}

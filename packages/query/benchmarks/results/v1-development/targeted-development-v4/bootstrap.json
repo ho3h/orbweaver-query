@@ -1,0 +1,204 @@
+{
+  "results_sha256": "cee4e4b1a6b6f50c0dd3e297101b3d8f849b0c4bdacc91db0ed7ffa800bcd673",
+  "draws": 5000,
+  "seed": 20260926,
+  "conditions": [
+    {
+      "graph": "collaboration",
+      "workload": "single",
+      "ratio_interval_95": [
+        1.2716867608518088,
+        1.4012297771465478
+      ]
+    },
+    {
+      "graph": "collaboration",
+      "workload": "distinct128",
+      "ratio_interval_95": [
+        5.565226321784202,
+        5.74844600614906
+      ]
+    },
+    {
+      "graph": "collaboration",
+      "workload": "interleaved256",
+      "ratio_interval_95": [
+        2.1349086340965275,
+        2.2589708515650675
+      ]
+    },
+    {
+      "graph": "collaboration",
+      "workload": "clustered256",
+      "ratio_interval_95": [
+        2.195294229358537,
+        2.2844204237950807
+      ]
+    },
+    {
+      "graph": "collaboration",
+      "workload": "many_targets256",
+      "ratio_interval_95": [
+        0.8636229981953165,
+        0.8982911614398761
+      ]
+    },
+    {
+      "graph": "collaboration",
+      "workload": "hubs16",
+      "ratio_interval_95": [
+        4.116784042104001,
+        4.247878470248813
+      ]
+    },
+    {
+      "graph": "collaboration",
+      "workload": "duplicates256",
+      "ratio_interval_95": [
+        0.8847041089680103,
+        0.9116562739656539
+      ]
+    },
+    {
+      "graph": "collaboration",
+      "workload": "reachable_distinct",
+      "ratio_interval_95": [
+        4.045412804460873,
+        4.203009906703242
+      ]
+    },
+    {
+      "graph": "movies",
+      "workload": "single",
+      "ratio_interval_95": [
+        0.5756282378411814,
+        0.6153782095021142
+      ]
+    },
+    {
+      "graph": "movies",
+      "workload": "distinct128",
+      "ratio_interval_95": [
+        2.3510735110429772,
+        2.415850464795835
+      ]
+    },
+    {
+      "graph": "movies",
+      "workload": "interleaved256",
+      "ratio_interval_95": [
+        1.415649995100423,
+        1.4404228373553292
+      ]
+    },
+    {
+      "graph": "movies",
+      "workload": "clustered256",
+      "ratio_interval_95": [
+        1.3974772134928126,
+        1.4632741237957083
+      ]
+    },
+    {
+      "graph": "movies",
+      "workload": "many_targets256",
+      "ratio_interval_95": [
+        0.9119796830330502,
+        0.9251863839950829
+      ]
+    },
+    {
+      "graph": "movies",
+      "workload": "hubs16",
+      "ratio_interval_95": [
+        2.713542046092164,
+        2.842076672546676
+      ]
+    },
+    {
+      "graph": "movies",
+      "workload": "duplicates256",
+      "ratio_interval_95": [
+        0.833659387110487,
+        0.8837356447753518
+      ]
+    },
+    {
+      "graph": "movies",
+      "workload": "reachable_distinct",
+      "ratio_interval_95": [
+        2.4390503128988685,
+        2.488993248378946
+      ]
+    },
+    {
+      "graph": "wordnet",
+      "workload": "single",
+      "ratio_interval_95": [
+        0.6129028220072503,
+        0.7519243023320918
+      ]
+    },
+    {
+      "graph": "wordnet",
+      "workload": "distinct128",
+      "ratio_interval_95": [
+        6.840214727717554,
+        7.2320190520162715
+      ]
+    },
+    {
+      "graph": "wordnet",
+      "workload": "interleaved256",
+      "ratio_interval_95": [
+        3.842185437102313,
+        3.9991500696121327
+      ]
+    },
+    {
+      "graph": "wordnet",
+      "workload": "clustered256",
+      "ratio_interval_95": [
+        3.940181923623135,
+        4.053586578451722
+      ]
+    },
+    {
+      "graph": "wordnet",
+      "workload": "many_targets256",
+      "ratio_interval_95": [
+        0.965902512749425,
+        1.0215536942297607
+      ]
+    },
+    {
+      "graph": "wordnet",
+      "workload": "hubs16",
+      "ratio_interval_95": [
+        4.800275048358488,
+        4.997503563536518
+      ]
+    },
+    {
+      "graph": "wordnet",
+      "workload": "duplicates256",
+      "ratio_interval_95": [
+        0.8293268847618073,
+        0.9047075914004221
+      ]
+    },
+    {
+      "graph": "wordnet",
+      "workload": "reachable_distinct",
+      "ratio_interval_95": [
+        7.109281198170517,
+        7.221156915439941
+      ]
+    }
+  ],
+  "aggregate_ratio_interval_95": [
+    1.9889168958905687,
+    2.020383081586251
+  ],
+  "interpretation": "Exploratory resampling of three fresh-process medians per arm, conditional on this fixed workload mix. Not a confirmation test or uncertainty over new machines/graphs. Minimum baseline reselected within each draw."
+}

@@ -1,0 +1,87 @@
+{
+  "datasets": {
+    "collaboration": {
+      "composed_rows_per_strategy": 1042,
+      "full_candidate_checks": {
+        "adamic_adar": 335071,
+        "common_neighbors": 335071,
+        "resource_allocation": 335071
+      },
+      "fused_expansions": 132,
+      "graph": "896d782eba4b2a1c7a093194673a8972c66ca02ec9e18d9134b725ed66ebfcd0",
+      "maximum_absolute_errors": {
+        "adamic_adar": 0.0,
+        "common_neighbors": 0.0,
+        "resource_allocation": 0.0
+      },
+      "models": {
+        "adamic_adar": "c027779d2cc3496a1ebc3d1c22ca45b2786114090ab1dbff9236c8e758c06f09",
+        "common_neighbors": "3882848bdf19692b57e95710a7b94b3a1a158cc3689b7731c6edc93630cad51f",
+        "path": "56b23b83d85c706567ad93d05480fed6c72af92d24138f12511fce5074349d60",
+        "resource_allocation": "7fbe094eea916e196fabd0221d9e7a8ef3e0333279287ec2a7ce23a5791747ab"
+      },
+      "separate_expansions": 264
+    },
+    "communication": {
+      "composed_rows_per_strategy": 1042,
+      "full_candidate_checks": {
+        "adamic_adar": 62574,
+        "common_neighbors": 62574,
+        "resource_allocation": 62574
+      },
+      "fused_expansions": 132,
+      "graph": "d568f9afe6810eee27ababd2d98252f3d0059506f5fcae9bd24447bdae47587d",
+      "maximum_absolute_errors": {
+        "adamic_adar": 0.0,
+        "common_neighbors": 0.0,
+        "resource_allocation": 0.0
+      },
+      "models": {
+        "adamic_adar": "c027779d2cc3496a1ebc3d1c22ca45b2786114090ab1dbff9236c8e758c06f09",
+        "common_neighbors": "3882848bdf19692b57e95710a7b94b3a1a158cc3689b7731c6edc93630cad51f",
+        "path": "30eed2684af54d725367cf0983a47913390fe1c395e9a99d030cb275246d3a39",
+        "resource_allocation": "7fbe094eea916e196fabd0221d9e7a8ef3e0333279287ec2a7ce23a5791747ab"
+      },
+      "separate_expansions": 264
+    },
+    "friendship": {
+      "composed_rows_per_strategy": 1042,
+      "full_candidate_checks": {
+        "adamic_adar": 256664,
+        "common_neighbors": 256664,
+        "resource_allocation": 256664
+      },
+      "fused_expansions": 132,
+      "graph": "1f8fe8f80652b4da172b14d5d89dba21cc9b6c74fb346a2bfc42c68e688a4677",
+      "maximum_absolute_errors": {
+        "adamic_adar": 0.0,
+        "common_neighbors": 0.0,
+        "resource_allocation": 0.0
+      },
+      "models": {
+        "adamic_adar": "c027779d2cc3496a1ebc3d1c22ca45b2786114090ab1dbff9236c8e758c06f09",
+        "common_neighbors": "3882848bdf19692b57e95710a7b94b3a1a158cc3689b7731c6edc93630cad51f",
+        "path": "df87f9a6bb7b5fee1adb6bd1eb08f2fee82995f635bb39c9441736ad5bfecc72",
+        "resource_allocation": "7fbe094eea916e196fabd0221d9e7a8ef3e0333279287ec2a7ce23a5791747ab"
+      },
+      "separate_expansions": 264
+    }
+  },
+  "source_sha256": {
+    "benchmarks/v1/verify_backends.py": "eb93a051c0bd561a1de89206108c2a68d985ec49f8d9d773543e4f94228ff526",
+    "src/orbweaver_query/__init__.py": "4e254fb333e3febc7be26df7d9afdf53c1238abaa2c880ecc6faa8e8ca225405",
+    "src/orbweaver_query/_validation.py": "a90531db8085af5d553812eb459c37e0a27c8aa7964043aba6c7a16b090184d1",
+    "src/orbweaver_query/bindings.py": "815bc3d99fd2fe4aeb90e2454fbca289a71606a12c667e783c5b0b2c608fa531",
+    "src/orbweaver_query/cache.py": "714a29cc1d788f7e842f0d36a505d382fdc914649b9eedb897c38eb3495c9c71",
+    "src/orbweaver_query/datasets.py": "edf697c9b56f6504ab0bf0837d55d8db6d276592d912cc533670b86c96361b60",
+    "src/orbweaver_query/demo.py": "7073d42f67ab1cf4cb5b9d0ea75206616cdeeb7a26908432eca02c2563a4e926",
+    "src/orbweaver_query/graph.py": "a8a7a7ddf5431cfcc7b697ac3b28358080f147d5920eaec3b98ebfda5a44de42",
+    "src/orbweaver_query/model.py": "73db098e9af648537389d516268a066bb02b7f701fa1822eb893f05e19f51dac",
+    "src/orbweaver_query/neighborhood.py": "a73795e162a399c304da41ec6093c3008eb176fb28bd4767f49b49596db1ca49",
+    "src/orbweaver_query/neo4j.py": "a03dcccc943041cf4159c4669b92daa7edeec182c37f80b335bf849d0fc88ed4",
+    "src/orbweaver_query/plan.py": "59fd81567ed9ea59593b898ba03af75b04ead25ff394d3dcd280c46729c2614e",
+    "src/orbweaver_query/reproduce.py": "b03986383ac1dc1877c0b21915b8c4c3cf8698f62fcecaa8a04c5379bbd3d45d",
+    "src/orbweaver_query/session.py": "264a6d02af2d93b0753c6aff4ec580c2cc8c1a78d264d23c59980f6270746474",
+    "src/orbweaver_query/training.py": "3635ae5ca9d23ea5017fb15447a21cce17961cd2e4538d6588bb55b6e8db3af2"
+  }
+}

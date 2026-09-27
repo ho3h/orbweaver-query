@@ -1,0 +1,352 @@
+{
+  "artifacts": {
+    "orbweaver_query-1.0.0.dev1.tar.gz": {
+      "bytes": 1019865,
+      "sha256": "c2f380456d50f640fc21bef855a2ce40917bf56d2dc261fd46e5d06c3a03c756"
+    },
+    "orbweaver_query-1.0.0.dev1-py3-none-any.whl": {
+      "bytes": 100028,
+      "sha256": "c4293575816a657ca043706c402deab6139e251c11f4701f3d8e58a53825ed7e"
+    }
+  },
+  "sdist_members": 149,
+  "wheel_members": 25,
+  "commands": {},
+  "validation": [
+    {
+      "configuration": "3.11",
+      "python": "3.11.15",
+      "architecture": "arm64",
+      "numpy": "2.4.6",
+      "package": "1.0.0.dev1",
+      "tests": "301 passed, 12 skipped in 8.53s",
+      "trained_demo": "passed",
+      "commands": [
+        {
+          "command": [
+            "<HOME>/.local/bin/uv",
+            "venv",
+            "--python",
+            "$PYTHONS/cpython-3.11-macos-aarch64-none/bin/python3.11",
+            "$VALIDATION/env-3.11"
+          ],
+          "returncode": 0
+        },
+        {
+          "command": [
+            "<HOME>/.local/bin/uv",
+            "pip",
+            "install",
+            "--python",
+            "$VALIDATION/env-3.11/bin/python",
+            "$DIST/orbweaver_query-1.0.0.dev1-py3-none-any.whl",
+            "numpy==2.4.6",
+            "pytest==9.1.1"
+          ],
+          "returncode": 0
+        },
+        {
+          "command": [
+            "$VALIDATION/env-3.11/bin/python",
+            "-I",
+            "-c",
+            "import platform,json,numpy,orbweaver_query; print(json.dumps(dict(python=platform.python_version(),architecture=platform.machine(),numpy=numpy.__version__,package=orbweaver_query.__version__,origin=orbweaver_query.__file__)))"
+          ],
+          "returncode": 0
+        },
+        {
+          "command": [
+            "$VALIDATION/env-3.11/bin/python",
+            "-I",
+            "-m",
+            "pytest",
+            "-q",
+            "$VALIDATION/source/orbweaver_query-1.0.0.dev1/tests",
+            "-o",
+            "pythonpath="
+          ],
+          "returncode": 0
+        },
+        {
+          "command": [
+            "$VALIDATION/env-3.11/bin/python",
+            "-I",
+            "-m",
+            "orbweaver_query.demo",
+            "--data-dir",
+            "$VALIDATION/demo-3.11"
+          ],
+          "returncode": 0
+        }
+      ]
+    },
+    {
+      "configuration": "3.12",
+      "python": "3.12.13",
+      "architecture": "arm64",
+      "numpy": "2.4.6",
+      "package": "1.0.0.dev1",
+      "tests": "301 passed, 12 skipped in 8.76s",
+      "trained_demo": "passed",
+      "commands": [
+        {
+          "command": [
+            "<HOME>/.local/bin/uv",
+            "venv",
+            "--python",
+            "$PYTHONS/cpython-3.12-macos-aarch64-none/bin/python3.12",
+            "$VALIDATION/env-3.12"
+          ],
+          "returncode": 0
+        },
+        {
+          "command": [
+            "<HOME>/.local/bin/uv",
+            "pip",
+            "install",
+            "--python",
+            "$VALIDATION/env-3.12/bin/python",
+            "$DIST/orbweaver_query-1.0.0.dev1-py3-none-any.whl",
+            "numpy==2.4.6",
+            "pytest==9.1.1"
+          ],
+          "returncode": 0
+        },
+        {
+          "command": [
+            "$VALIDATION/env-3.12/bin/python",
+            "-I",
+            "-c",
+            "import platform,json,numpy,orbweaver_query; print(json.dumps(dict(python=platform.python_version(),architecture=platform.machine(),numpy=numpy.__version__,package=orbweaver_query.__version__,origin=orbweaver_query.__file__)))"
+          ],
+          "returncode": 0
+        },
+        {
+          "command": [
+            "$VALIDATION/env-3.12/bin/python",
+            "-I",
+            "-m",
+            "pytest",
+            "-q",
+            "$VALIDATION/source/orbweaver_query-1.0.0.dev1/tests",
+            "-o",
+            "pythonpath="
+          ],
+          "returncode": 0
+        },
+        {
+          "command": [
+            "$VALIDATION/env-3.12/bin/python",
+            "-I",
+            "-m",
+            "orbweaver_query.demo",
+            "--data-dir",
+            "$VALIDATION/demo-3.12"
+          ],
+          "returncode": 0
+        }
+      ]
+    },
+    {
+      "configuration": "3.13",
+      "python": "3.13.12",
+      "architecture": "arm64",
+      "numpy": "2.4.6",
+      "package": "1.0.0.dev1",
+      "tests": "301 passed, 12 skipped in 8.65s",
+      "trained_demo": "passed",
+      "commands": [
+        {
+          "command": [
+            "<HOME>/.local/bin/uv",
+            "venv",
+            "--python",
+            "$PYTHONS/cpython-3.13-macos-aarch64-none/bin/python3.13",
+            "$VALIDATION/env-3.13"
+          ],
+          "returncode": 0
+        },
+        {
+          "command": [
+            "<HOME>/.local/bin/uv",
+            "pip",
+            "install",
+            "--python",
+            "$VALIDATION/env-3.13/bin/python",
+            "$DIST/orbweaver_query-1.0.0.dev1-py3-none-any.whl",
+            "numpy==2.4.6",
+            "pytest==9.1.1"
+          ],
+          "returncode": 0
+        },
+        {
+          "command": [
+            "$VALIDATION/env-3.13/bin/python",
+            "-I",
+            "-c",
+            "import platform,json,numpy,orbweaver_query; print(json.dumps(dict(python=platform.python_version(),architecture=platform.machine(),numpy=numpy.__version__,package=orbweaver_query.__version__,origin=orbweaver_query.__file__)))"
+          ],
+          "returncode": 0
+        },
+        {
+          "command": [
+            "$VALIDATION/env-3.13/bin/python",
+            "-I",
+            "-m",
+            "pytest",
+            "-q",
+            "$VALIDATION/source/orbweaver_query-1.0.0.dev1/tests",
+            "-o",
+            "pythonpath="
+          ],
+          "returncode": 0
+        },
+        {
+          "command": [
+            "$VALIDATION/env-3.13/bin/python",
+            "-I",
+            "-m",
+            "orbweaver_query.demo",
+            "--data-dir",
+            "$VALIDATION/demo-3.13"
+          ],
+          "returncode": 0
+        }
+      ]
+    },
+    {
+      "configuration": "3.14",
+      "python": "3.14.3",
+      "architecture": "arm64",
+      "numpy": "2.4.6",
+      "package": "1.0.0.dev1",
+      "tests": "301 passed, 12 skipped in 6.82s",
+      "trained_demo": "passed",
+      "commands": [
+        {
+          "command": [
+            "<HOME>/.local/bin/uv",
+            "venv",
+            "--python",
+            "$PYTHONS/cpython-3.14.3-macos-aarch64-none/bin/python3.14",
+            "$VALIDATION/env-3.14"
+          ],
+          "returncode": 0
+        },
+        {
+          "command": [
+            "<HOME>/.local/bin/uv",
+            "pip",
+            "install",
+            "--python",
+            "$VALIDATION/env-3.14/bin/python",
+            "$DIST/orbweaver_query-1.0.0.dev1-py3-none-any.whl",
+            "numpy==2.4.6",
+            "pytest==9.1.1"
+          ],
+          "returncode": 0
+        },
+        {
+          "command": [
+            "$VALIDATION/env-3.14/bin/python",
+            "-I",
+            "-c",
+            "import platform,json,numpy,orbweaver_query; print(json.dumps(dict(python=platform.python_version(),architecture=platform.machine(),numpy=numpy.__version__,package=orbweaver_query.__version__,origin=orbweaver_query.__file__)))"
+          ],
+          "returncode": 0
+        },
+        {
+          "command": [
+            "$VALIDATION/env-3.14/bin/python",
+            "-I",
+            "-m",
+            "pytest",
+            "-q",
+            "$VALIDATION/source/orbweaver_query-1.0.0.dev1/tests",
+            "-o",
+            "pythonpath="
+          ],
+          "returncode": 0
+        },
+        {
+          "command": [
+            "$VALIDATION/env-3.14/bin/python",
+            "-I",
+            "-m",
+            "orbweaver_query.demo",
+            "--data-dir",
+            "$VALIDATION/demo-3.14"
+          ],
+          "returncode": 0
+        }
+      ]
+    },
+    {
+      "configuration": "3.11-min",
+      "python": "3.11.15",
+      "architecture": "arm64",
+      "numpy": "1.26.4",
+      "package": "1.0.0.dev1",
+      "tests": "301 passed, 12 skipped in 4.07s",
+      "trained_demo": "passed",
+      "commands": [
+        {
+          "command": [
+            "<HOME>/.local/bin/uv",
+            "venv",
+            "--python",
+            "$PYTHONS/cpython-3.11-macos-aarch64-none/bin/python3.11",
+            "$VALIDATION/env-3.11-min"
+          ],
+          "returncode": 0
+        },
+        {
+          "command": [
+            "<HOME>/.local/bin/uv",
+            "pip",
+            "install",
+            "--python",
+            "$VALIDATION/env-3.11-min/bin/python",
+            "$DIST/orbweaver_query-1.0.0.dev1-py3-none-any.whl",
+            "numpy==1.26.4",
+            "pytest==9.1.1"
+          ],
+          "returncode": 0
+        },
+        {
+          "command": [
+            "$VALIDATION/env-3.11-min/bin/python",
+            "-I",
+            "-c",
+            "import platform,json,numpy,orbweaver_query; print(json.dumps(dict(python=platform.python_version(),architecture=platform.machine(),numpy=numpy.__version__,package=orbweaver_query.__version__,origin=orbweaver_query.__file__)))"
+          ],
+          "returncode": 0
+        },
+        {
+          "command": [
+            "$VALIDATION/env-3.11-min/bin/python",
+            "-I",
+            "-m",
+            "pytest",
+            "-q",
+            "$VALIDATION/source/orbweaver_query-1.0.0.dev1/tests",
+            "-o",
+            "pythonpath="
+          ],
+          "returncode": 0
+        },
+        {
+          "command": [
+            "$VALIDATION/env-3.11-min/bin/python",
+            "-I",
+            "-m",
+            "orbweaver_query.demo",
+            "--data-dir",
+            "$VALIDATION/demo-3.11-min"
+          ],
+          "returncode": 0
+        }
+      ]
+    }
+  ]
+}

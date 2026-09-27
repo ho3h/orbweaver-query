@@ -1,0 +1,67 @@
+{
+  "artifact_preparation_seconds": 0.030233833997044712,
+  "cold_first": {
+    "first_inference_seconds": 0.06454033398767933,
+    "first_serialization_seconds": 0.0052111250115558505,
+    "worker_start_to_first_result_seconds": 0.1260407500085421
+  },
+  "environment": {
+    "numpy": "2.4.4",
+    "platform": "darwin",
+    "python": "3.11.15 (main, Mar 25 2026, 02:58:47) [Clang 22.1.1 ]"
+  },
+  "graph_id": "e280974d0ab115be4e721d0e1dc11452914e0c8f4b83e433919aa0f7156849b7",
+  "graph_numeric_bytes": 3597888,
+  "import_seconds": 0.02472270801081322,
+  "job": {
+    "replicate": 2,
+    "seed": 71,
+    "strategy": "consecutive",
+    "workload": "hubs16"
+  },
+  "model_id": "64d5c3f7652b84f3d24f22beeaf7f7cd49d5a2218af91b4ee89942584674506a",
+  "model_numeric_bytes": 979968,
+  "output_bytes": 694906,
+  "output_sha256": "d23551c4baf48628d58e5510221bc289607bb44b63e27bcb446cd7cddfa51beb",
+  "peak_process_rss_bytes": 71581696,
+  "profile": {
+    "candidate_scores": 23209,
+    "elapsed_seconds": 0.06464295799378306,
+    "expansions": 16,
+    "model_calls": 16,
+    "peak_feature_bytes": 262032,
+    "queries": 16,
+    "reused_expansions": 0,
+    "reused_scores": 0,
+    "strategy": "consecutive",
+    "type_visits": 73984,
+    "windows": 1
+  },
+  "samples": [
+    {
+      "batch_seconds": 0.06941433402244002,
+      "inference_seconds": 0.06433650001417845,
+      "serialization_seconds": 0.005077834008261561
+    },
+    {
+      "batch_seconds": 0.06917745800456032,
+      "inference_seconds": 0.06406299999798648,
+      "serialization_seconds": 0.005114458006573841
+    },
+    {
+      "batch_seconds": 0.06953199999406934,
+      "inference_seconds": 0.06441704099415801,
+      "serialization_seconds": 0.005114958999911323
+    },
+    {
+      "batch_seconds": 0.07185433400445618,
+      "inference_seconds": 0.06661733399960212,
+      "serialization_seconds": 0.005237000004854053
+    },
+    {
+      "batch_seconds": 0.06983666599262506,
+      "inference_seconds": 0.06469983299029991,
+      "serialization_seconds": 0.005136833002325147
+    }
+  ]
+}

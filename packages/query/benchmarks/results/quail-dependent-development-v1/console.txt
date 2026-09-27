@@ -1,0 +1,50 @@
+INFO 09-26 21:45:16 [quail] estimated orbweaver_left.text: 300 documents, about 27,113 tokens from a 300 document sample, 0.0 s
+INFO 09-26 21:45:16 [quail] estimated orbweaver_right.text: 283 documents, about 458,905 tokens from a 283 document sample, 0.0 s
+INFO 09-26 21:45:16 [quail] tokenizing orbweaver_left.text (tokenizer: configured tokenizer)
+INFO 09-26 21:45:16 [quail] tokenized orbweaver_left.text: 300 documents, 0.0 s, 175,601 documents/s, 27,113 tokens
+INFO 09-26 21:45:16 [quail] tokenizing orbweaver_right.text (tokenizer: configured tokenizer)
+INFO 09-26 21:45:16 [quail] tokenized orbweaver_right.text: 283 documents, 0.0 s, 37,318 documents/s, 458,905 tokens
+INFO 09-26 21:45:16 [quail] estimated orbweaver_left.text: 300 documents, about 27,113 tokens from a 300 document sample, 0.0 s
+INFO 09-26 21:45:16 [quail] estimated orbweaver_right.text: 283 documents, about 458,905 tokens from a 283 document sample, 0.0 s
+INFO 09-26 21:45:16 [quail] tokenizing orbweaver_left.text (tokenizer: configured tokenizer)
+INFO 09-26 21:45:16 [quail] tokenized orbweaver_left.text: 300 documents, 0.0 s, 240,682 documents/s, 27,113 tokens
+INFO 09-26 21:45:16 [quail] tokenizing orbweaver_right.text (tokenizer: configured tokenizer)
+INFO 09-26 21:45:16 [quail] tokenized orbweaver_right.text: 283 documents, 0.0 s, 38,896 documents/s, 458,905 tokens
+Received notification from DBMS server: <GqlStatusObject gql_status='01N50', status_description='warn: label does not exist. The label `ForbiddenBridgeWrite` does not exist in database `neo4j`. Verify that the spelling is correct.', position=<SummaryInputPosition line=1, column=10, offset=9>, raw_classification='UNRECOGNIZED', classification=<NotificationClassification.UNRECOGNIZED: 'UNRECOGNIZED'>, raw_severity='WARNING', severity=<NotificationSeverity.WARNING: 'WARNING'>, diagnostic_record={'_classification': 'UNRECOGNIZED', '_severity': 'WARNING', '_position': {'offset': 9, 'line': 1, 'column': 10}, 'OPERATION': '', 'OPERATION_CODE': '0', 'CURRENT_SCHEMA': '/'}> for query: 'MATCH (n:ForbiddenBridgeWrite) RETURN count(n) AS n'
+INFO 09-26 21:45:17 [quail] estimated orbweaver_left.text: 300 documents, about 27,113 tokens from a 300 document sample, 0.0 s
+INFO 09-26 21:45:17 [quail] estimated orbweaver_right.text: 283 documents, about 458,905 tokens from a 283 document sample, 0.0 s
+INFO 09-26 21:45:17 [quail] tokenizing orbweaver_left.text (tokenizer: configured tokenizer)
+INFO 09-26 21:45:17 [quail] tokenized orbweaver_left.text: 300 documents, 0.0 s, 234,987 documents/s, 27,113 tokens
+INFO 09-26 21:45:17 [quail] tokenizing orbweaver_right.text (tokenizer: configured tokenizer)
+INFO 09-26 21:45:17 [quail] tokenized orbweaver_right.text: 283 documents, 0.0 s, 38,192 documents/s, 458,905 tokens
+INFO 09-26 21:45:17 [quail] estimated orbweaver_left.text: 300 documents, about 27,113 tokens from a 300 document sample, 0.0 s
+INFO 09-26 21:45:17 [quail] estimated orbweaver_right.text: 283 documents, about 458,905 tokens from a 283 document sample, 0.0 s
+INFO 09-26 21:45:17 [quail] tokenizing orbweaver_left.text (tokenizer: configured tokenizer)
+INFO 09-26 21:45:17 [quail] tokenized orbweaver_left.text: 300 documents, 0.0 s, 224,845 documents/s, 27,113 tokens
+INFO 09-26 21:45:17 [quail] tokenizing orbweaver_right.text (tokenizer: configured tokenizer)
+INFO 09-26 21:45:17 [quail] tokenized orbweaver_right.text: 283 documents, 0.0 s, 37,913 documents/s, 458,905 tokens
+INFO 09-26 21:45:17 [quail] estimated orbweaver_left.text: 300 documents, about 27,113 tokens from a 300 document sample, 0.0 s
+INFO 09-26 21:45:17 [quail] estimated orbweaver_right.text: 283 documents, about 458,905 tokens from a 283 document sample, 0.0 s
+INFO 09-26 21:45:17 [quail] tokenizing orbweaver_left.text (tokenizer: configured tokenizer)
+INFO 09-26 21:45:17 [quail] tokenized orbweaver_left.text: 300 documents, 0.0 s, 258,779 documents/s, 27,113 tokens
+INFO 09-26 21:45:17 [quail] tokenizing orbweaver_right.text (tokenizer: configured tokenizer)
+INFO 09-26 21:45:17 [quail] tokenized orbweaver_right.text: 283 documents, 0.0 s, 39,352 documents/s, 458,905 tokens
+INFO 09-26 21:45:17 [quail] estimated orbweaver_left.text: 300 documents, about 27,113 tokens from a 300 document sample, 0.0 s
+INFO 09-26 21:45:17 [quail] estimated orbweaver_right.text: 283 documents, about 458,905 tokens from a 283 document sample, 0.0 s
+INFO 09-26 21:45:17 [quail] tokenizing orbweaver_left.text (tokenizer: configured tokenizer)
+INFO 09-26 21:45:17 [quail] tokenized orbweaver_left.text: 300 documents, 0.0 s, 215,105 documents/s, 27,113 tokens
+INFO 09-26 21:45:17 [quail] tokenizing orbweaver_right.text (tokenizer: configured tokenizer)
+INFO 09-26 21:45:17 [quail] tokenized orbweaver_right.text: 283 documents, 0.0 s, 39,620 documents/s, 458,905 tokens
+INFO 09-26 21:45:17 [quail] estimated orbweaver_left.text: 300 documents, about 27,113 tokens from a 300 document sample, 0.0 s
+INFO 09-26 21:45:17 [quail] estimated orbweaver_right.text: 283 documents, about 458,905 tokens from a 283 document sample, 0.0 s
+INFO 09-26 21:45:17 [quail] tokenizing orbweaver_left.text (tokenizer: configured tokenizer)
+INFO 09-26 21:45:17 [quail] tokenized orbweaver_left.text: 300 documents, 0.0 s, 254,085 documents/s, 27,113 tokens
+INFO 09-26 21:45:17 [quail] tokenizing orbweaver_right.text (tokenizer: configured tokenizer)
+INFO 09-26 21:45:17 [quail] tokenized orbweaver_right.text: 283 documents, 0.0 s, 40,572 documents/s, 458,905 tokens
+INFO 09-26 21:45:17 [quail] estimated orbweaver_left.text: 300 documents, about 27,113 tokens from a 300 document sample, 0.0 s
+INFO 09-26 21:45:17 [quail] estimated orbweaver_right.text: 283 documents, about 458,905 tokens from a 283 document sample, 0.0 s
+INFO 09-26 21:45:17 [quail] tokenizing orbweaver_left.text (tokenizer: configured tokenizer)
+INFO 09-26 21:45:17 [quail] tokenized orbweaver_left.text: 300 documents, 0.0 s, 208,165 documents/s, 27,113 tokens
+INFO 09-26 21:45:17 [quail] tokenizing orbweaver_right.text (tokenizer: configured tokenizer)
+INFO 09-26 21:45:17 [quail] tokenized orbweaver_right.text: 283 documents, 0.0 s, 38,306 documents/s, 458,905 tokens
+{"output": "benchmarks/results/quail-dependent-development-v1/native-check.json", "passed": true, "dependent_conditions": 6}

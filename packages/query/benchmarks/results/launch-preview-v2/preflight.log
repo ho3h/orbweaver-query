@@ -1,0 +1,8 @@
+Verified basket_with_repeat / plan / 1
+Verified basket_with_repeat / precomputed_scores / 2
+Verified basket_with_repeat / plan_unfused / 2
+Verified basket_with_repeat / native_cypher / 1
+Verified basket_with_repeat / manual_intersection / 2
+Verified basket_with_repeat / full_source_shared / 0
+Verified basket_with_repeat / warm_pair_cache / 2
+{"completed": true, "mode": "preflight"}

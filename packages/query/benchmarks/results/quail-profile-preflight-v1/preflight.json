@@ -1,0 +1,16 @@
+{
+  "cuda_profiler_validated": false,
+  "instrumented_calls": 1,
+  "original_function_restored": true,
+  "reference": {
+    "decisions_equal": true,
+    "kind": "CPU request-runtime preflight; no model inference or timing claim",
+    "output_bindings": 160,
+    "pairs": 339,
+    "prefix_cache_resets": 1,
+    "prompt_audit_sha256": "c03b9b55ef8cb711b9987074aa0d42625da92b8b5810104e38c398e6bdfe9b68",
+    "prompt_multiset_equal": true,
+    "requested_tokens": 150780
+  },
+  "wrapped_graph_calls": 2
+}

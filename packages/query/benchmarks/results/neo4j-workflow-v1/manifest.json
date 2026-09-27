@@ -1,0 +1,218 @@
+{
+  "cache_max_numeric_bytes": 16777216,
+  "cache_max_sources": 256,
+  "edge_query": "MATCH (a:Entity)-[r]->(b:Entity)\nRETURN a.id AS head, type(r) AS relation, b.id AS target",
+  "files": {
+    "71-graph.npz": "e56dc16cd1ecb11673609a5f76aa923d1673d32c565c9d62067836b5c90b5d0e",
+    "71-model.npz": "8ba275ef547e407cd5e28e5d7cb023e20fde6c5d90c7618a195c93eb685e0871",
+    "71-queries.npz": "d57ea059c9fa60fcf38b4646fc9984662a6ae3e110c989e355027eff96ca6924",
+    "NEO4J_WORKFLOW_PROTOCOL.md": "b881fab618504daecf163f1dbb4270980883b4a023098303e634583adc3f5e71",
+    "neo4j_workflow.py": "49fc84a62e42ecd363beafe2babdc0b031f5b6b10477516a89495e498da56635",
+    "source/cache_reference.py": "b03b2678c8db6c078af6895ec900e7f1fab33421e8757f6b9da1359a9948e9a7",
+    "source/disposable_neo4j.py": "a0816d9759922d2622bd4e84b1f2dbc54d0ac7df4acb5a1a1012ee6362e007e8",
+    "source/orbweaver_query/MODEL_REPRODUCTION_PROTOCOL.md": "a17696c17e952210d363fb8e185ba327f25b654f59323288519e4fc1269452b8",
+    "source/orbweaver_query/__init__.py": "595a4bc0310d34a084abe165bef7c148afd66784161a0b2335a2dcb0c9896d8f",
+    "source/orbweaver_query/_validation.py": "26408f5e251fedc57350c3201fb1d3532857fb81d6cc0979f652498e2a6635bf",
+    "source/orbweaver_query/assets/THIRD_PARTY_NOTICES.md": "822f0a321c216b0cd2497ecdc4add3a3bbedfe703c5140e1bcabbcfd77deb6d9",
+    "source/orbweaver_query/assets/wn18rr-path71.json": "b6a521a25472a90f8086a11893dc7ac515e56f947ce3cec2e2586ccf128dbdf0",
+    "source/orbweaver_query/assets/wn18rr-path71.npz": "8ba275ef547e407cd5e28e5d7cb023e20fde6c5d90c7618a195c93eb685e0871",
+    "source/orbweaver_query/bindings.py": "2e705ae2542eae2d54fdf2f53c0ee6a0ddfa52c0c28f712f9a0b435c6d0f4a87",
+    "source/orbweaver_query/datasets.py": "23e06f179ec16b40618fac9c1dc067d017f8f7e59ae677b42e7199229ef78b3c",
+    "source/orbweaver_query/demo.py": "4f9a6ba82def27ed3ae0558222bef73f119afa5526cd415660b7d2e102a74e5c",
+    "source/orbweaver_query/graph.py": "b95d436d132034976865eb2f7be90fd2b70b685a2f6d22f5b4605eb28a031f96",
+    "source/orbweaver_query/model.py": "ad34ff0a6a2379675b8214fdfe27ee5037e9ba181a72c903f8f2ab4a34f441d5",
+    "source/orbweaver_query/neo4j.py": "9e3e46baf1c356b2c2fdacb70cd421ef42351412b61d15c695c8d4c9f81d7999",
+    "source/orbweaver_query/reproduce.py": "b8605decc09044509c958e8ccf6ee4ad1487ff874a43bf2bd29bbefc3e15eaf8",
+    "source/orbweaver_query/session.py": "a9fdafb192a2d42a7b47fd2dbf2b7b600bcdf08751e56315fdf3a585e3c7c2db",
+    "source/orbweaver_query/training.py": "5f41b3ad2cb50b986a20f84e9ba186db32a1220a0ea52796b5515582d2f4fd72"
+  },
+  "format": "orbweaver-query-neo4j-workflow-v1",
+  "jobs": [
+    {
+      "replicate": 1,
+      "strategy": "lru",
+      "workload": "clustered256"
+    },
+    {
+      "replicate": 2,
+      "strategy": "grouped",
+      "workload": "distinct256"
+    },
+    {
+      "replicate": 0,
+      "strategy": "independent",
+      "workload": "interleaved256"
+    },
+    {
+      "replicate": 1,
+      "strategy": "independent",
+      "workload": "distinct256"
+    },
+    {
+      "replicate": 2,
+      "strategy": "grouped",
+      "workload": "clustered256"
+    },
+    {
+      "replicate": 0,
+      "strategy": "grouped",
+      "workload": "interleaved256"
+    },
+    {
+      "replicate": 1,
+      "strategy": "consecutive",
+      "workload": "interleaved256"
+    },
+    {
+      "replicate": 2,
+      "strategy": "lru",
+      "workload": "clustered256"
+    },
+    {
+      "replicate": 2,
+      "strategy": "consecutive",
+      "workload": "interleaved256"
+    },
+    {
+      "replicate": 1,
+      "strategy": "lru",
+      "workload": "interleaved256"
+    },
+    {
+      "replicate": 1,
+      "strategy": "lru",
+      "workload": "distinct256"
+    },
+    {
+      "replicate": 1,
+      "strategy": "consecutive",
+      "workload": "distinct256"
+    },
+    {
+      "replicate": 1,
+      "strategy": "grouped",
+      "workload": "distinct256"
+    },
+    {
+      "replicate": 0,
+      "strategy": "lru",
+      "workload": "distinct256"
+    },
+    {
+      "replicate": 1,
+      "strategy": "consecutive",
+      "workload": "clustered256"
+    },
+    {
+      "replicate": 0,
+      "strategy": "grouped",
+      "workload": "distinct256"
+    },
+    {
+      "replicate": 1,
+      "strategy": "grouped",
+      "workload": "interleaved256"
+    },
+    {
+      "replicate": 0,
+      "strategy": "independent",
+      "workload": "distinct256"
+    },
+    {
+      "replicate": 2,
+      "strategy": "independent",
+      "workload": "interleaved256"
+    },
+    {
+      "replicate": 0,
+      "strategy": "lru",
+      "workload": "interleaved256"
+    },
+    {
+      "replicate": 2,
+      "strategy": "consecutive",
+      "workload": "clustered256"
+    },
+    {
+      "replicate": 2,
+      "strategy": "lru",
+      "workload": "interleaved256"
+    },
+    {
+      "replicate": 2,
+      "strategy": "independent",
+      "workload": "clustered256"
+    },
+    {
+      "replicate": 0,
+      "strategy": "grouped",
+      "workload": "clustered256"
+    },
+    {
+      "replicate": 0,
+      "strategy": "consecutive",
+      "workload": "distinct256"
+    },
+    {
+      "replicate": 0,
+      "strategy": "independent",
+      "workload": "clustered256"
+    },
+    {
+      "replicate": 0,
+      "strategy": "lru",
+      "workload": "clustered256"
+    },
+    {
+      "replicate": 2,
+      "strategy": "consecutive",
+      "workload": "distinct256"
+    },
+    {
+      "replicate": 0,
+      "strategy": "consecutive",
+      "workload": "clustered256"
+    },
+    {
+      "replicate": 2,
+      "strategy": "grouped",
+      "workload": "interleaved256"
+    },
+    {
+      "replicate": 2,
+      "strategy": "independent",
+      "workload": "distinct256"
+    },
+    {
+      "replicate": 1,
+      "strategy": "independent",
+      "workload": "clustered256"
+    },
+    {
+      "replicate": 1,
+      "strategy": "independent",
+      "workload": "interleaved256"
+    },
+    {
+      "replicate": 2,
+      "strategy": "lru",
+      "workload": "distinct256"
+    },
+    {
+      "replicate": 1,
+      "strategy": "grouped",
+      "workload": "clustered256"
+    },
+    {
+      "replicate": 0,
+      "strategy": "consecutive",
+      "workload": "interleaved256"
+    }
+  ],
+  "minimum_primary_speedup": 1.25,
+  "node_query": "MATCH (n:Entity) RETURN n.id AS id ORDER BY id",
+  "parent_manifest_sha256": "60c62b3b87c785bee0a8c37df97f84510245274fbe40fc80ca2b8520e5eb8072",
+  "query": "UNWIND $queries AS q\nMATCH (a:Entity {id: q.head})\nOPTIONAL MATCH (a)--()--(b:Entity)\nWHERE b <> a AND NOT (a)--(b)\nWITH q, min(b.id) AS target\nRETURN q.ordinal AS request_id, q.head AS head, q.relation AS relation, target\nORDER BY request_id",
+  "timed_batches": 5,
+  "warmup_batches": 1
+}

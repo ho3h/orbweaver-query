@@ -1,0 +1,22 @@
+{
+  "conditional_process_bootstrap_95_interval": [
+    3.2778483077758294,
+    3.3024769278217394
+  ],
+  "conditions": 24,
+  "conditions_where_warm_pair_cache_is_fastest": 24,
+  "geometric_mean_cold_control_speedup": 3.2951936736202136,
+  "limitations": "Exploratory development only. This interval does not represent new graphs, query distributions, model choices or confirmation. Warm controls are separate regimes.",
+  "method": "10,000 independent resamples of three process medians per arm, seed 8106; fixed workloads and configurations; calibration excluded from this ratio",
+  "regressions_over_ten_percent": [
+    {
+      "baseline_ms": 2.7878329856321216,
+      "condition": [
+        "friendship",
+        "many_targets256",
+        "structural"
+      ],
+      "ordered_ms": 3.081458999076858
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+[build-system]
+requires = ["hatchling>=1.26"]
+build-backend = "hatchling.build"
+
+[project]
+name = "orbweaver-query"
+version = "1.0.0.dev1"
+description = "Query-aware execution for graph-native inference"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+dependencies = ["numpy>=1.26"]
+
+[project.urls]
+Repository = "https://github.com/ho3h/orbweaver-query"
+
+[project.optional-dependencies]
+neo4j = ["neo4j>=5.28,<7"]
+dev = ["pytest>=8.3", "ruff==0.16.9"]
+train = ["scipy>=1.12", "scikit-learn>=1.5", "threadpoolctl>=3.5"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/orbweaver_query"]
+
+[tool.hatch.build.targets.sdist]
+include = [
+  "/src", "/tests", "/tools", "/examples", "/publication", "/*.md", "/LICENSE", "/pyproject.toml",
+  "/benchmarks/*.py", "/benchmarks/*.md", "/benchmarks/v1/*.py", "/benchmarks/v1/*.md",
+  "/benchmarks/results/v1-development/inputs/*.npz",
+  "/benchmarks/results/v1-development/targeted-development-v4/*-queries.json.gz",
+]
+exclude = ["**/__pycache__", "**/*.pyc"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+# Keep the original correctness rules explicit across Ruff default changes.
+select = ["E4", "E7", "E9", "F"]

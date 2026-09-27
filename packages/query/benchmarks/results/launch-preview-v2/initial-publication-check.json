@@ -1,0 +1,20 @@
+{
+  "source_revision": "f3434947976ab1a07429aebd18afb87640c4d7d7",
+  "source_paths": [
+    "packages/query",
+    ".github/workflows/query.yml",
+    "LICENSE",
+    "docs/QUERY_ENGINE_RELEASE.md",
+    "docs/QUERY_ENGINE_RELEASE_VALIDATION.json"
+  ],
+  "proposed_public_repository": "https://github.com/ho3h/orbweaver-query",
+  "git_history_included": false,
+  "status": "Local review candidate only; no repository creation/upload/publication performed",
+  "file_count": 1526,
+  "exclusion_scan": {
+    "matching_payloads": 0,
+    "unique_payloads_checked": 3088,
+    "archive_members_checked": 3656,
+    "scope": "Names and readable nested contents; not secret detection or image OCR"
+  }
+}

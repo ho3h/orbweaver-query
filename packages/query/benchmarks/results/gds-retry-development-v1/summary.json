@@ -1,0 +1,196 @@
+{
+  "datasets": {
+    "collaboration": {
+      "best_completed_gds": "gds_negatives16",
+      "best_orbweaver": "resource_allocation",
+      "failed_attempts": {},
+      "metrics": {
+        "adamic_adar": {
+          "recall16": 0.7960514849762719,
+          "recall64": 0.8491816132901043,
+          "reciprocal_rank": 0.3620439168657895,
+          "supported": 1.0
+        },
+        "common_neighbors": {
+          "recall16": 0.793650206815613,
+          "recall64": 0.8378688988058591,
+          "reciprocal_rank": 0.33268609599104015,
+          "supported": 1.0
+        },
+        "gds_baseline": {
+          "recall16": 0.6486270022883296,
+          "recall64": 0.7572463768115942,
+          "reciprocal_rank": 0.24809708644633202,
+          "supported": 1.0
+        },
+        "gds_negatives16": {
+          "recall16": 0.7481884057971014,
+          "recall64": 0.8478260869565217,
+          "reciprocal_rank": 0.3089448699003921,
+          "supported": 1.0
+        },
+        "gds_rich": {
+          "recall16": 0.6529456051195182,
+          "recall64": 0.782608695652174,
+          "reciprocal_rank": 0.26182584634682027,
+          "supported": 1.0
+        },
+        "gds_wide": {
+          "recall16": 0.6815289680581106,
+          "recall64": 0.7391304347826086,
+          "reciprocal_rank": 0.2804361782579854,
+          "supported": 1.0
+        },
+        "path": {
+          "recall16": 0.782608695652174,
+          "recall64": 0.8695652173913043,
+          "reciprocal_rank": 0.37990009051221874,
+          "supported": 0.8913043478260869
+        },
+        "resource_allocation": {
+          "recall16": 0.8105442385994602,
+          "recall64": 0.8491816132901043,
+          "reciprocal_rank": 0.3722817076342708,
+          "supported": 1.0
+        }
+      },
+      "positive_queries": 46
+    },
+    "communication": {
+      "best_completed_gds": "gds_baseline",
+      "best_orbweaver": "path",
+      "failed_attempts": {},
+      "metrics": {
+        "adamic_adar": {
+          "recall16": 0.4567307692307692,
+          "recall64": 0.7115384615384616,
+          "reciprocal_rank": 0.17152494255616385,
+          "supported": 1.0
+        },
+        "common_neighbors": {
+          "recall16": 0.4350833269990879,
+          "recall64": 0.6952551065832316,
+          "reciprocal_rank": 0.15722369138421138,
+          "supported": 1.0
+        },
+        "gds_baseline": {
+          "recall16": 0.3798076923076923,
+          "recall64": 0.6394230769230769,
+          "reciprocal_rank": 0.1473102957089922,
+          "supported": 1.0
+        },
+        "gds_negatives16": {
+          "recall16": 0.3703525641025641,
+          "recall64": 0.6717266777042915,
+          "reciprocal_rank": 0.09676342846879209,
+          "supported": 1.0
+        },
+        "gds_rich": {
+          "recall16": 0.28820333415126625,
+          "recall64": 0.586539003865395,
+          "reciprocal_rank": 0.06422724585020505,
+          "supported": 1.0
+        },
+        "gds_wide": {
+          "recall16": 0.2660959526104992,
+          "recall64": 0.6351221349492329,
+          "reciprocal_rank": 0.07865419451589442,
+          "supported": 1.0
+        },
+        "path": {
+          "recall16": 0.46634615384615385,
+          "recall64": 0.7548076923076923,
+          "reciprocal_rank": 0.1798242623636313,
+          "supported": 1.0
+        },
+        "resource_allocation": {
+          "recall16": 0.4423076923076923,
+          "recall64": 0.7259615384615384,
+          "reciprocal_rank": 0.16746603891661438,
+          "supported": 1.0
+        }
+      },
+      "positive_queries": 208
+    },
+    "friendship": {
+      "best_completed_gds": "gds_baseline",
+      "best_orbweaver": "resource_allocation",
+      "failed_attempts": {
+        "gds_negatives16": {
+          "error_sha256": "40ad6c5c4c4e5538575cb27c49b2f9cf9f9837cd78b6c59f9ba3d479616862a5",
+          "run": "gds-tuning-negatives16-v1"
+        }
+      },
+      "metrics": {
+        "adamic_adar": {
+          "recall16": 0.5511111111111111,
+          "recall64": 0.8488888888888889,
+          "reciprocal_rank": 0.17325685881161013,
+          "supported": 1.0
+        },
+        "common_neighbors": {
+          "recall16": 0.5181802412633839,
+          "recall64": 0.8425020066506136,
+          "reciprocal_rank": 0.1641943738980853,
+          "supported": 1.0
+        },
+        "gds_baseline": {
+          "recall16": 0.48,
+          "recall64": 0.7866666666666666,
+          "reciprocal_rank": 0.16640243905391813,
+          "supported": 1.0
+        },
+        "gds_negatives16": {
+          "recall16": 0.32990010985552065,
+          "recall64": 0.7474442533348622,
+          "reciprocal_rank": 0.08646717039421273,
+          "supported": 1.0
+        },
+        "gds_rich": {
+          "recall16": 0.2510880598046897,
+          "recall64": 0.6352756241041584,
+          "reciprocal_rank": 0.05026784486502199,
+          "supported": 1.0
+        },
+        "gds_wide": {
+          "recall16": 0.2636506735057298,
+          "recall64": 0.6449648167519333,
+          "reciprocal_rank": 0.05743141081797787,
+          "supported": 1.0
+        },
+        "path": {
+          "recall16": 0.48444444444444446,
+          "recall64": 0.8444444444444444,
+          "reciprocal_rank": 0.16710662670876963,
+          "supported": 1.0
+        },
+        "resource_allocation": {
+          "recall16": 0.5644444444444444,
+          "recall64": 0.8533333333333334,
+          "reciprocal_rank": 0.183952934602684,
+          "supported": 1.0
+        }
+      },
+      "positive_queries": 225
+    }
+  },
+  "retry": {
+    "coverage": {
+      "missing": 0,
+      "requested": 256664,
+      "streamed_pairs": 254658
+    },
+    "dataset": "friendship",
+    "metrics": {
+      "recall16": 0.32990010985552065,
+      "recall64": 0.7474442533348622,
+      "reciprocal_rank": 0.08646717039421273,
+      "supported": 1.0
+    },
+    "original_failed_attempt_retained": true,
+    "previous_archive_sha256": "46cc304e6328267c89f8c7ff5d841ea4494073bb0f8bd828017b874488f83094",
+    "retry_manifest_sha256": "b23ed71221b8d53f7bcccbcfa07e51643ecd727a5eeafe870f8935980bbcaf1b",
+    "transaction_timeout_seconds": 3600
+  },
+  "status": "Four GDS configurations completed on all three development graphs; confirmation sealed; diagnostic timing is not matched application cost"
+}

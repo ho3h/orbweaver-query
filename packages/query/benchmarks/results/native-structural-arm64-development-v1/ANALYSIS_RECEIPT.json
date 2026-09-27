@@ -1,0 +1,8 @@
+{
+  "files": {
+    "analysis.json": "9bf2431578872153b37ca6211e737cf39d290df354c0572636ff2db5627c68d4",
+    "structural_analysis.py": "4101973158320dbfe4776dd41aaa16c5588266e89467028c93c94cb4aa2646f0"
+  },
+  "kind": "post-collection descriptive analysis using the existing structural analysis script",
+  "runtime_manifest_sha256": "0064e96a644954fc880273156bc463504f78296760ff911acbb42d1656db877e"
+}

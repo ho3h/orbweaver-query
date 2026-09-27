@@ -1,0 +1,102 @@
+{
+  "one_expansion": [
+    {
+      "head": "770",
+      "ordinal": 0,
+      "relation": "LINK",
+      "seed": "111"
+    },
+    {
+      "head": "202",
+      "ordinal": 1,
+      "relation": "LINK",
+      "seed": "160"
+    },
+    {
+      "head": "205",
+      "ordinal": 2,
+      "relation": "LINK",
+      "seed": "277"
+    },
+    {
+      "head": "164",
+      "ordinal": 3,
+      "relation": "LINK",
+      "seed": "113"
+    },
+    {
+      "head": "607",
+      "ordinal": 4,
+      "relation": "LINK",
+      "seed": "135"
+    },
+    {
+      "head": "503",
+      "ordinal": 5,
+      "relation": "LINK",
+      "seed": "533"
+    },
+    {
+      "head": "307",
+      "ordinal": 6,
+      "relation": "LINK",
+      "seed": "178"
+    },
+    {
+      "head": "850",
+      "ordinal": 7,
+      "relation": "LINK",
+      "seed": "184"
+    },
+    {
+      "head": "770",
+      "ordinal": 1000,
+      "relation": "LINK",
+      "seed": "111"
+    },
+    {
+      "head": null,
+      "ordinal": -1,
+      "relation": "LINK",
+      "seed": null
+    }
+  ],
+  "two_expansions": [
+    {
+      "head": "770",
+      "ordinal": 0,
+      "relation": "LINK",
+      "seed": "111"
+    },
+    {
+      "head": "202",
+      "ordinal": 1,
+      "relation": "LINK",
+      "seed": "160"
+    },
+    {
+      "head": "205",
+      "ordinal": 2,
+      "relation": "LINK",
+      "seed": "277"
+    },
+    {
+      "head": "164",
+      "ordinal": 3,
+      "relation": "LINK",
+      "seed": "113"
+    },
+    {
+      "head": "770",
+      "ordinal": 1000,
+      "relation": "LINK",
+      "seed": "111"
+    },
+    {
+      "head": null,
+      "ordinal": -1,
+      "relation": "LINK",
+      "seed": null
+    }
+  ]
+}

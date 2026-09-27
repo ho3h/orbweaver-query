@@ -1,0 +1,20 @@
+{
+  "max_absolute_score_error": 0.0,
+  "primary_gate_passed": true,
+  "primary_speedups": {
+    "legacy_consecutive": 4.0436110388337685,
+    "packed_consecutive": 4.310309741455167
+  },
+  "regression_gate_passed": true,
+  "results_sha256": "1ce4d1d5a69b67a7c6450c5f71543f5781500265b6698f0d3c99065ca3d724e5",
+  "scope": "fixed-model execution only; database and quality release gates remain open",
+  "top16_order_exact": true,
+  "verified_workers": 60,
+  "workload_cost_ratios_vs_legacy": {
+    "distinct256": 1.0370122361897431,
+    "hubs16": 1.0346200441925892,
+    "interleaved256": 0.24730370710641184,
+    "shared256": 0.9838863475073959,
+    "single": 1.067927281950812
+  }
+}

@@ -1,0 +1,4 @@
+collaboration: all native/local arms verified
+friendship: all native/local arms verified
+communication: all native/local arms verified
+{"verified_conditions": 144, "max_absolute_error": 1.4210854715202004e-14}

@@ -1,0 +1,995 @@
+{
+  "purpose": "API development probe, not competitive evidence",
+  "nodes": 300,
+  "undirected_edges": 3541,
+  "graph_source_id": "980786923143bc5ee6836df65d9e9bd38670929bb584e551176ce36267380a1f",
+  "stages": [
+    {
+      "stage": "version",
+      "seconds": 1.2157195420004427,
+      "records": [
+        {
+          "gds": "2026.09.0"
+        }
+      ]
+    },
+    {
+      "stage": "nodes",
+      "seconds": 0.697297582984902,
+      "records": []
+    },
+    {
+      "stage": "edges",
+      "seconds": 1.5897544590116013,
+      "records": []
+    },
+    {
+      "stage": "projection",
+      "seconds": 0.8643063749768771,
+      "records": [
+        {
+          "nodeProjection": {
+            "Node": {
+              "properties": {},
+              "label": "Node"
+            }
+          },
+          "relationshipProjection": {
+            "LINK": {
+              "orientation": "UNDIRECTED",
+              "aggregation": "DEFAULT",
+              "type": "LINK",
+              "properties": {},
+              "indexInverse": false
+            }
+          },
+          "graphName": "probe",
+          "nodeCount": 300,
+          "relationshipCount": 7082,
+          "projectMillis": 260
+        }
+      ]
+    },
+    {
+      "stage": "pipeline",
+      "seconds": 0.14916983299190179,
+      "records": [
+        {
+          "name": "pipe",
+          "nodePropertySteps": [],
+          "featureSteps": [],
+          "splitConfig": {
+            "negativeSamplingRatio": 1.0,
+            "trainFraction": 0.1,
+            "testFraction": 0.1,
+            "validationFolds": 3
+          },
+          "autoTuningConfig": {
+            "maxTrials": 10
+          },
+          "parameterSpace": {
+            "MultilayerPerceptron": [],
+            "LogisticRegression": [],
+            "RandomForest": []
+          }
+        }
+      ]
+    },
+    {
+      "stage": "features",
+      "seconds": 0.11410579099901952,
+      "records": [
+        {
+          "name": "pipe",
+          "nodePropertySteps": [
+            {
+              "name": "gds.fastRP.mutate",
+              "config": {
+                "randomSeed": 71,
+                "embeddingDimension": 64,
+                "contextNodeLabels": [],
+                "mutateProperty": "embedding",
+                "contextRelationshipTypes": [],
+                "concurrency": 1
+              }
+            }
+          ],
+          "featureSteps": [],
+          "splitConfig": {
+            "negativeSamplingRatio": 1.0,
+            "trainFraction": 0.1,
+            "testFraction": 0.1,
+            "validationFolds": 3
+          },
+          "autoTuningConfig": {
+            "maxTrials": 10
+          },
+          "parameterSpace": {
+            "MultilayerPerceptron": [],
+            "LogisticRegression": [],
+            "RandomForest": []
+          }
+        }
+      ]
+    },
+    {
+      "stage": "hadamard",
+      "seconds": 0.10545933301909827,
+      "records": [
+        {
+          "name": "pipe",
+          "nodePropertySteps": [
+            {
+              "name": "gds.fastRP.mutate",
+              "config": {
+                "randomSeed": 71,
+                "embeddingDimension": 64,
+                "contextNodeLabels": [],
+                "mutateProperty": "embedding",
+                "contextRelationshipTypes": [],
+                "concurrency": 1
+              }
+            }
+          ],
+          "featureSteps": [
+            {
+              "name": "HADAMARD",
+              "config": {
+                "nodeProperties": [
+                  "embedding"
+                ]
+              }
+            }
+          ],
+          "splitConfig": {
+            "negativeSamplingRatio": 1.0,
+            "trainFraction": 0.1,
+            "testFraction": 0.1,
+            "validationFolds": 3
+          },
+          "autoTuningConfig": {
+            "maxTrials": 10
+          },
+          "parameterSpace": {
+            "MultilayerPerceptron": [],
+            "LogisticRegression": [],
+            "RandomForest": []
+          }
+        }
+      ]
+    },
+    {
+      "stage": "split",
+      "seconds": 0.11797433401807211,
+      "records": [
+        {
+          "name": "pipe",
+          "nodePropertySteps": [
+            {
+              "name": "gds.fastRP.mutate",
+              "config": {
+                "randomSeed": 71,
+                "embeddingDimension": 64,
+                "contextNodeLabels": [],
+                "mutateProperty": "embedding",
+                "contextRelationshipTypes": [],
+                "concurrency": 1
+              }
+            }
+          ],
+          "featureSteps": [
+            {
+              "name": "HADAMARD",
+              "config": {
+                "nodeProperties": [
+                  "embedding"
+                ]
+              }
+            }
+          ],
+          "splitConfig": {
+            "negativeSamplingRatio": 1.0,
+            "trainFraction": 0.3,
+            "testFraction": 0.2,
+            "validationFolds": 3
+          },
+          "autoTuningConfig": {
+            "maxTrials": 10
+          },
+          "parameterSpace": {
+            "MultilayerPerceptron": [],
+            "LogisticRegression": [],
+            "RandomForest": []
+          }
+        }
+      ]
+    },
+    {
+      "stage": "logistic",
+      "seconds": 0.0963564160047099,
+      "records": [
+        {
+          "name": "pipe",
+          "nodePropertySteps": [
+            {
+              "name": "gds.fastRP.mutate",
+              "config": {
+                "randomSeed": 71,
+                "embeddingDimension": 64,
+                "contextNodeLabels": [],
+                "mutateProperty": "embedding",
+                "contextRelationshipTypes": [],
+                "concurrency": 1
+              }
+            }
+          ],
+          "featureSteps": [
+            {
+              "name": "HADAMARD",
+              "config": {
+                "nodeProperties": [
+                  "embedding"
+                ]
+              }
+            }
+          ],
+          "splitConfig": {
+            "negativeSamplingRatio": 1.0,
+            "trainFraction": 0.3,
+            "testFraction": 0.2,
+            "validationFolds": 3
+          },
+          "autoTuningConfig": {
+            "maxTrials": 10
+          },
+          "parameterSpace": {
+            "MultilayerPerceptron": [],
+            "LogisticRegression": [
+              {
+                "maxEpochs": 200,
+                "minEpochs": 1,
+                "classWeights": [],
+                "penalty": 0.1,
+                "patience": 1,
+                "methodName": "LogisticRegression",
+                "focusWeight": 0.0,
+                "batchSize": 100,
+                "tolerance": 0.001,
+                "learningRate": 0.001
+              }
+            ],
+            "RandomForest": []
+          }
+        }
+      ]
+    },
+    {
+      "stage": "forest",
+      "seconds": 0.0817879999813158,
+      "records": [
+        {
+          "name": "pipe",
+          "nodePropertySteps": [
+            {
+              "name": "gds.fastRP.mutate",
+              "config": {
+                "randomSeed": 71,
+                "embeddingDimension": 64,
+                "contextNodeLabels": [],
+                "mutateProperty": "embedding",
+                "contextRelationshipTypes": [],
+                "concurrency": 1
+              }
+            }
+          ],
+          "featureSteps": [
+            {
+              "name": "HADAMARD",
+              "config": {
+                "nodeProperties": [
+                  "embedding"
+                ]
+              }
+            }
+          ],
+          "splitConfig": {
+            "negativeSamplingRatio": 1.0,
+            "trainFraction": 0.3,
+            "testFraction": 0.2,
+            "validationFolds": 3
+          },
+          "autoTuningConfig": {
+            "maxTrials": 10
+          },
+          "parameterSpace": {
+            "MultilayerPerceptron": [],
+            "LogisticRegression": [
+              {
+                "maxEpochs": 200,
+                "minEpochs": 1,
+                "classWeights": [],
+                "penalty": 0.1,
+                "patience": 1,
+                "methodName": "LogisticRegression",
+                "focusWeight": 0.0,
+                "batchSize": 100,
+                "tolerance": 0.001,
+                "learningRate": 0.001
+              }
+            ],
+            "RandomForest": [
+              {
+                "maxDepth": 10,
+                "minLeafSize": 1,
+                "criterion": "GINI",
+                "minSplitSize": 2,
+                "numberOfDecisionTrees": 50,
+                "methodName": "RandomForest",
+                "numberOfSamplesRatio": 1.0
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "stage": "train",
+      "seconds": 2.497200458019506,
+      "records": [
+        {
+          "modelInfo": {
+            "pipeline": {
+              "featureSteps": [
+                {
+                  "name": "HADAMARD",
+                  "config": {
+                    "nodeProperties": [
+                      "embedding"
+                    ]
+                  }
+                }
+              ],
+              "nodePropertySteps": [
+                {
+                  "name": "gds.fastRP.mutate",
+                  "config": {
+                    "randomSeed": 71,
+                    "embeddingDimension": 64,
+                    "contextNodeLabels": [],
+                    "mutateProperty": "embedding",
+                    "contextRelationshipTypes": [],
+                    "concurrency": 1
+                  }
+                }
+              ]
+            },
+            "modelName": "model",
+            "nodePropertySteps": [
+              {
+                "name": "gds.fastRP.mutate",
+                "config": {
+                  "randomSeed": 71,
+                  "embeddingDimension": 64,
+                  "contextNodeLabels": [],
+                  "mutateProperty": "embedding",
+                  "contextRelationshipTypes": [],
+                  "concurrency": 1
+                }
+              }
+            ],
+            "featureSteps": [
+              {
+                "name": "HADAMARD",
+                "config": {
+                  "nodeProperties": [
+                    "embedding"
+                  ]
+                }
+              }
+            ],
+            "modelType": "LinkPrediction",
+            "metrics": {
+              "AUCPR": {
+                "test": 0.9933216288293368,
+                "outerTrain": 0.9977988743522377,
+                "validation": {
+                  "max": 0.9948490102456371,
+                  "min": 0.9808022953872368,
+                  "avg": 0.9885954258600153
+                },
+                "train": {
+                  "max": 0.9990343984693022,
+                  "min": 0.9977579363722244,
+                  "avg": 0.998347199902709
+                }
+              }
+            },
+            "bestParameters": {
+              "maxDepth": 10,
+              "minLeafSize": 1,
+              "criterion": "GINI",
+              "minSplitSize": 2,
+              "numberOfDecisionTrees": 50,
+              "methodName": "RandomForest",
+              "numberOfSamplesRatio": 1.0
+            }
+          },
+          "modelSelectionStats": {
+            "modelCandidates": [
+              {
+                "parameters": {
+                  "maxEpochs": 200,
+                  "minEpochs": 1,
+                  "classWeights": [],
+                  "penalty": 0.1,
+                  "patience": 1,
+                  "methodName": "LogisticRegression",
+                  "focusWeight": 0.0,
+                  "batchSize": 100,
+                  "tolerance": 0.001,
+                  "learningRate": 0.001
+                },
+                "metrics": {
+                  "AUCPR": {
+                    "validation": {
+                      "max": 0.9912556047011629,
+                      "min": 0.9788323477371714,
+                      "avg": 0.9859367180972148
+                    },
+                    "train": {
+                      "max": 0.9895732607221026,
+                      "min": 0.9831094146368669,
+                      "avg": 0.9858345189842402
+                    }
+                  }
+                }
+              },
+              {
+                "parameters": {
+                  "maxDepth": 10,
+                  "minLeafSize": 1,
+                  "criterion": "GINI",
+                  "minSplitSize": 2,
+                  "numberOfDecisionTrees": 50,
+                  "methodName": "RandomForest",
+                  "numberOfSamplesRatio": 1.0
+                },
+                "metrics": {
+                  "AUCPR": {
+                    "validation": {
+                      "max": 0.9948490102456371,
+                      "min": 0.9808022953872368,
+                      "avg": 0.9885954258600153
+                    },
+                    "train": {
+                      "max": 0.9990343984693022,
+                      "min": 0.9977579363722244,
+                      "avg": 0.998347199902709
+                    }
+                  }
+                }
+              }
+            ],
+            "bestParameters": {
+              "maxDepth": 10,
+              "minLeafSize": 1,
+              "criterion": "GINI",
+              "minSplitSize": 2,
+              "numberOfDecisionTrees": 50,
+              "methodName": "RandomForest",
+              "numberOfSamplesRatio": 1.0
+            },
+            "bestTrial": 2
+          },
+          "trainMillis": 2352
+        }
+      ]
+    },
+    {
+      "stage": "predict",
+      "seconds": 0.6983833749836776,
+      "records": [
+        {
+          "head": 3044,
+          "target": 3238,
+          "probability": 1.0
+        },
+        {
+          "head": 2867,
+          "target": 3238,
+          "probability": 1.0
+        },
+        {
+          "head": 3238,
+          "target": 3778,
+          "probability": 1.0
+        },
+        {
+          "head": 3238,
+          "target": 3501,
+          "probability": 1.0
+        },
+        {
+          "head": 3238,
+          "target": 3494,
+          "probability": 1.0
+        },
+        {
+          "head": 3238,
+          "target": 4233,
+          "probability": 1.0
+        },
+        {
+          "head": 3238,
+          "target": 4167,
+          "probability": 1.0
+        },
+        {
+          "head": 3238,
+          "target": 4153,
+          "probability": 1.0
+        },
+        {
+          "head": 3238,
+          "target": 4058,
+          "probability": 1.0
+        },
+        {
+          "head": 3238,
+          "target": 4023,
+          "probability": 1.0
+        },
+        {
+          "head": 3238,
+          "target": 3892,
+          "probability": 1.0
+        },
+        {
+          "head": 2565,
+          "target": 3238,
+          "probability": 1.0
+        },
+        {
+          "head": 2489,
+          "target": 3238,
+          "probability": 1.0
+        },
+        {
+          "head": 2277,
+          "target": 3238,
+          "probability": 1.0
+        },
+        {
+          "head": 2242,
+          "target": 3238,
+          "probability": 1.0
+        },
+        {
+          "head": 1813,
+          "target": 3238,
+          "probability": 1.0
+        },
+        {
+          "head": 1400,
+          "target": 3238,
+          "probability": 1.0
+        },
+        {
+          "head": 3238,
+          "target": 5148,
+          "probability": 1.0
+        },
+        {
+          "head": 3238,
+          "target": 4981,
+          "probability": 1.0
+        },
+        {
+          "head": 3238,
+          "target": 4681,
+          "probability": 1.0
+        },
+        {
+          "head": 3238,
+          "target": 4601,
+          "probability": 1.0
+        },
+        {
+          "head": 3238,
+          "target": 4553,
+          "probability": 1.0
+        },
+        {
+          "head": 3238,
+          "target": 4408,
+          "probability": 1.0
+        },
+        {
+          "head": 3238,
+          "target": 4282,
+          "probability": 1.0
+        },
+        {
+          "head": 1270,
+          "target": 3238,
+          "probability": 1.0
+        },
+        {
+          "head": 934,
+          "target": 3238,
+          "probability": 1.0
+        },
+        {
+          "head": 932,
+          "target": 4553,
+          "probability": 1.0
+        },
+        {
+          "head": 932,
+          "target": 3238,
+          "probability": 1.0
+        },
+        {
+          "head": 932,
+          "target": 934,
+          "probability": 1.0
+        },
+        {
+          "head": 676,
+          "target": 3238,
+          "probability": 1.0
+        },
+        {
+          "head": 598,
+          "target": 3238,
+          "probability": 1.0
+        },
+        {
+          "head": 445,
+          "target": 3238,
+          "probability": 1.0
+        },
+        {
+          "head": 316,
+          "target": 3238,
+          "probability": 1.0
+        },
+        {
+          "head": 147,
+          "target": 3238,
+          "probability": 1.0
+        },
+        {
+          "head": 123,
+          "target": 3238,
+          "probability": 1.0
+        },
+        {
+          "head": 10,
+          "target": 4553,
+          "probability": 1.0
+        },
+        {
+          "head": 10,
+          "target": 3238,
+          "probability": 1.0
+        },
+        {
+          "head": 10,
+          "target": 934,
+          "probability": 1.0
+        },
+        {
+          "head": 9,
+          "target": 3238,
+          "probability": 1.0
+        },
+        {
+          "head": 9,
+          "target": 10,
+          "probability": 1.0
+        },
+        {
+          "head": 2822,
+          "target": 3238,
+          "probability": 1.0
+        },
+        {
+          "head": 2846,
+          "target": 2956,
+          "probability": 0.98
+        },
+        {
+          "head": 2846,
+          "target": 4157,
+          "probability": 0.98
+        },
+        {
+          "head": 2846,
+          "target": 3900,
+          "probability": 0.98
+        },
+        {
+          "head": 2956,
+          "target": 4269,
+          "probability": 0.98
+        },
+        {
+          "head": 2956,
+          "target": 3834,
+          "probability": 0.98
+        },
+        {
+          "head": 4269,
+          "target": 4771,
+          "probability": 0.98
+        },
+        {
+          "head": 4269,
+          "target": 4530,
+          "probability": 0.98
+        },
+        {
+          "head": 4157,
+          "target": 4269,
+          "probability": 0.98
+        },
+        {
+          "head": 3900,
+          "target": 4269,
+          "probability": 0.98
+        },
+        {
+          "head": 3834,
+          "target": 4946,
+          "probability": 0.98
+        },
+        {
+          "head": 3834,
+          "target": 4771,
+          "probability": 0.98
+        },
+        {
+          "head": 3834,
+          "target": 4530,
+          "probability": 0.98
+        },
+        {
+          "head": 3834,
+          "target": 4157,
+          "probability": 0.98
+        },
+        {
+          "head": 3834,
+          "target": 3900,
+          "probability": 0.98
+        },
+        {
+          "head": 3746,
+          "target": 5056,
+          "probability": 0.98
+        },
+        {
+          "head": 494,
+          "target": 1782,
+          "probability": 0.98
+        },
+        {
+          "head": 494,
+          "target": 1502,
+          "probability": 0.98
+        },
+        {
+          "head": 494,
+          "target": 1060,
+          "probability": 0.98
+        },
+        {
+          "head": 445,
+          "target": 3746,
+          "probability": 0.98
+        },
+        {
+          "head": 3746,
+          "target": 4601,
+          "probability": 0.98
+        },
+        {
+          "head": 3746,
+          "target": 4408,
+          "probability": 0.98
+        },
+        {
+          "head": 3746,
+          "target": 4167,
+          "probability": 0.98
+        },
+        {
+          "head": 123,
+          "target": 3746,
+          "probability": 0.98
+        },
+        {
+          "head": 3746,
+          "target": 4153,
+          "probability": 0.98
+        },
+        {
+          "head": 3746,
+          "target": 4058,
+          "probability": 0.98
+        },
+        {
+          "head": 3746,
+          "target": 4023,
+          "probability": 0.98
+        },
+        {
+          "head": 3746,
+          "target": 3778,
+          "probability": 0.98
+        },
+        {
+          "head": 3501,
+          "target": 3746,
+          "probability": 0.98
+        },
+        {
+          "head": 2846,
+          "target": 3007,
+          "probability": 0.98
+        },
+        {
+          "head": 2565,
+          "target": 3746,
+          "probability": 0.98
+        },
+        {
+          "head": 2846,
+          "target": 4946,
+          "probability": 0.98
+        },
+        {
+          "head": 2539,
+          "target": 4269,
+          "probability": 0.98
+        },
+        {
+          "head": 2539,
+          "target": 3834,
+          "probability": 0.98
+        },
+        {
+          "head": 2539,
+          "target": 2846,
+          "probability": 0.98
+        },
+        {
+          "head": 2846,
+          "target": 4771,
+          "probability": 0.98
+        },
+        {
+          "head": 2277,
+          "target": 3746,
+          "probability": 0.98
+        },
+        {
+          "head": 3044,
+          "target": 3746,
+          "probability": 0.98
+        },
+        {
+          "head": 2846,
+          "target": 4530,
+          "probability": 0.98
+        },
+        {
+          "head": 1893,
+          "target": 4946,
+          "probability": 0.98
+        },
+        {
+          "head": 1893,
+          "target": 4771,
+          "probability": 0.98
+        },
+        {
+          "head": 1893,
+          "target": 4530,
+          "probability": 0.98
+        },
+        {
+          "head": 1893,
+          "target": 4157,
+          "probability": 0.98
+        },
+        {
+          "head": 1893,
+          "target": 3900,
+          "probability": 0.98
+        },
+        {
+          "head": 1893,
+          "target": 3007,
+          "probability": 0.98
+        },
+        {
+          "head": 1893,
+          "target": 2956,
+          "probability": 0.98
+        },
+        {
+          "head": 1893,
+          "target": 2539,
+          "probability": 0.98
+        },
+        {
+          "head": 1813,
+          "target": 3746,
+          "probability": 0.98
+        },
+        {
+          "head": 3007,
+          "target": 4269,
+          "probability": 0.98
+        },
+        {
+          "head": 1782,
+          "target": 4269,
+          "probability": 0.98
+        },
+        {
+          "head": 1782,
+          "target": 3834,
+          "probability": 0.98
+        },
+        {
+          "head": 1782,
+          "target": 2846,
+          "probability": 0.98
+        },
+        {
+          "head": 1782,
+          "target": 1893,
+          "probability": 0.98
+        },
+        {
+          "head": 1502,
+          "target": 4530,
+          "probability": 0.98
+        },
+        {
+          "head": 1502,
+          "target": 4269,
+          "probability": 0.98
+        },
+        {
+          "head": 1502,
+          "target": 4158,
+          "probability": 0.98
+        },
+        {
+          "head": 1502,
+          "target": 3900,
+          "probability": 0.98
+        },
+        {
+          "head": 1502,
+          "target": 3834,
+          "probability": 0.98
+        },
+        {
+          "head": 1502,
+          "target": 2956,
+          "probability": 0.98
+        },
+        {
+          "head": 1502,
+          "target": 2846,
+          "probability": 0.98
+        }
+      ]
+    }
+  ]
+}

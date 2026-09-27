@@ -1,0 +1,333 @@
+{
+  "files": {
+    "PROTOCOL.md": "0171308b60f85af837f313c1823272d7ca42f9cbc5c95a4b1a9e6e36be8ad6ec",
+    "explicit.npz": "5156b7751340abb13334733c6f8163117503360bbe9cd3e3b3143e3c5d3888a2",
+    "graph1.npz": "dcabc9422582e7131a1f34641e974d021ac7e0b8b02db48c2ace5e6c5ed57ee4",
+    "queries1-distinct256.npz": "f30582f982405d1c2bec23ddd36b8e11773e2b8c2ccda87e27254176e6d26210",
+    "queries1-hubs16.npz": "3738dd4ffd01c133a287d8ea21fb6e7fcd02e73802dc4e1a74ccaa626d68ae2c",
+    "queries1-interleaved256.npz": "b7f6956bc194276e50675591506070796b362f495f69ebbe7fcd6036712662bf",
+    "queries1-shared256.npz": "36bcf488411900a41ee4072d4951706a05106af3cb1cf6c4331cdef5b5459c34",
+    "queries1-single.npz": "9c9c9594517da1496f61bee8d820e11d981729e6b3331bbd24ff1ae8d4eee243",
+    "runtime.py": "ec04c238e46a039029eb9556b57295354519505c1e97df0a3cd7a3b37fa6f659",
+    "source/orbweaver_query/__init__.py": "50e1f3114caa24ca9fa0c43282ae1292afc57e3f4c0fcd1caaa473caad1afaaa",
+    "source/orbweaver_query/_validation.py": "5085ac437692dfcdb33564ac5bfa4752e982b0a9096f6bf85c42e21bc693c5aa",
+    "source/orbweaver_query/graph.py": "93d08766397cd21e14e78e876bfbeb06cb017d9fa859b76c652a75f4a5aca61d",
+    "source/orbweaver_query/model.py": "783fed6bc168876877faac366daa9444534425ce8e6d4c3c3efe2aa69a6e80be",
+    "source/orbweaver_query/session.py": "821836c71dd5f3aafc417550f4193fa64e45dbefad0a583f7542b7c724563cd4",
+    "source/research/graph_native/bounded_flow.py": "eca8ac9fcf857799f13656f27385cd89734111d9b47856263c11811589a5f0c2",
+    "source/research/graph_native/explicit_path_numpy.py": "d456cfccafd389465573f091fe6e0bfe8beee61c715af5aeb290a710ce11f467"
+  },
+  "fixture_manifest_sha256": "2ffa6b006167b6e80635bff17c214b4088a5366f6e6b9c201799bbc04d836682",
+  "format": "orbweaver-query-runtime-v1",
+  "jobs": [
+    {
+      "arm": "packed_grouped",
+      "replicate": 0,
+      "workload": "single"
+    },
+    {
+      "arm": "packed_consecutive",
+      "replicate": 0,
+      "workload": "hubs16"
+    },
+    {
+      "arm": "packed_grouped",
+      "replicate": 2,
+      "workload": "hubs16"
+    },
+    {
+      "arm": "packed_independent",
+      "replicate": 2,
+      "workload": "hubs16"
+    },
+    {
+      "arm": "packed_grouped",
+      "replicate": 2,
+      "workload": "single"
+    },
+    {
+      "arm": "packed_consecutive",
+      "replicate": 2,
+      "workload": "interleaved256"
+    },
+    {
+      "arm": "packed_independent",
+      "replicate": 1,
+      "workload": "single"
+    },
+    {
+      "arm": "packed_independent",
+      "replicate": 0,
+      "workload": "distinct256"
+    },
+    {
+      "arm": "legacy_consecutive",
+      "replicate": 0,
+      "workload": "interleaved256"
+    },
+    {
+      "arm": "packed_independent",
+      "replicate": 1,
+      "workload": "interleaved256"
+    },
+    {
+      "arm": "legacy_consecutive",
+      "replicate": 0,
+      "workload": "shared256"
+    },
+    {
+      "arm": "packed_independent",
+      "replicate": 0,
+      "workload": "shared256"
+    },
+    {
+      "arm": "packed_grouped",
+      "replicate": 0,
+      "workload": "distinct256"
+    },
+    {
+      "arm": "packed_grouped",
+      "replicate": 0,
+      "workload": "hubs16"
+    },
+    {
+      "arm": "packed_consecutive",
+      "replicate": 0,
+      "workload": "shared256"
+    },
+    {
+      "arm": "packed_consecutive",
+      "replicate": 1,
+      "workload": "hubs16"
+    },
+    {
+      "arm": "packed_grouped",
+      "replicate": 2,
+      "workload": "shared256"
+    },
+    {
+      "arm": "packed_grouped",
+      "replicate": 1,
+      "workload": "single"
+    },
+    {
+      "arm": "packed_grouped",
+      "replicate": 0,
+      "workload": "shared256"
+    },
+    {
+      "arm": "packed_independent",
+      "replicate": 0,
+      "workload": "interleaved256"
+    },
+    {
+      "arm": "legacy_consecutive",
+      "replicate": 2,
+      "workload": "distinct256"
+    },
+    {
+      "arm": "packed_grouped",
+      "replicate": 2,
+      "workload": "distinct256"
+    },
+    {
+      "arm": "packed_independent",
+      "replicate": 0,
+      "workload": "hubs16"
+    },
+    {
+      "arm": "packed_consecutive",
+      "replicate": 0,
+      "workload": "single"
+    },
+    {
+      "arm": "packed_independent",
+      "replicate": 2,
+      "workload": "single"
+    },
+    {
+      "arm": "packed_grouped",
+      "replicate": 1,
+      "workload": "shared256"
+    },
+    {
+      "arm": "legacy_consecutive",
+      "replicate": 1,
+      "workload": "hubs16"
+    },
+    {
+      "arm": "legacy_consecutive",
+      "replicate": 0,
+      "workload": "single"
+    },
+    {
+      "arm": "packed_consecutive",
+      "replicate": 2,
+      "workload": "distinct256"
+    },
+    {
+      "arm": "packed_consecutive",
+      "replicate": 0,
+      "workload": "distinct256"
+    },
+    {
+      "arm": "packed_consecutive",
+      "replicate": 2,
+      "workload": "hubs16"
+    },
+    {
+      "arm": "packed_independent",
+      "replicate": 1,
+      "workload": "shared256"
+    },
+    {
+      "arm": "packed_independent",
+      "replicate": 2,
+      "workload": "distinct256"
+    },
+    {
+      "arm": "packed_grouped",
+      "replicate": 1,
+      "workload": "distinct256"
+    },
+    {
+      "arm": "packed_consecutive",
+      "replicate": 2,
+      "workload": "shared256"
+    },
+    {
+      "arm": "legacy_consecutive",
+      "replicate": 1,
+      "workload": "interleaved256"
+    },
+    {
+      "arm": "packed_independent",
+      "replicate": 1,
+      "workload": "hubs16"
+    },
+    {
+      "arm": "packed_grouped",
+      "replicate": 2,
+      "workload": "interleaved256"
+    },
+    {
+      "arm": "legacy_consecutive",
+      "replicate": 0,
+      "workload": "hubs16"
+    },
+    {
+      "arm": "packed_consecutive",
+      "replicate": 0,
+      "workload": "interleaved256"
+    },
+    {
+      "arm": "packed_consecutive",
+      "replicate": 1,
+      "workload": "distinct256"
+    },
+    {
+      "arm": "packed_independent",
+      "replicate": 1,
+      "workload": "distinct256"
+    },
+    {
+      "arm": "legacy_consecutive",
+      "replicate": 0,
+      "workload": "distinct256"
+    },
+    {
+      "arm": "packed_independent",
+      "replicate": 2,
+      "workload": "interleaved256"
+    },
+    {
+      "arm": "legacy_consecutive",
+      "replicate": 2,
+      "workload": "shared256"
+    },
+    {
+      "arm": "packed_grouped",
+      "replicate": 1,
+      "workload": "interleaved256"
+    },
+    {
+      "arm": "packed_independent",
+      "replicate": 0,
+      "workload": "single"
+    },
+    {
+      "arm": "packed_consecutive",
+      "replicate": 1,
+      "workload": "single"
+    },
+    {
+      "arm": "packed_independent",
+      "replicate": 2,
+      "workload": "shared256"
+    },
+    {
+      "arm": "legacy_consecutive",
+      "replicate": 1,
+      "workload": "shared256"
+    },
+    {
+      "arm": "packed_grouped",
+      "replicate": 1,
+      "workload": "hubs16"
+    },
+    {
+      "arm": "packed_consecutive",
+      "replicate": 1,
+      "workload": "interleaved256"
+    },
+    {
+      "arm": "legacy_consecutive",
+      "replicate": 2,
+      "workload": "interleaved256"
+    },
+    {
+      "arm": "packed_consecutive",
+      "replicate": 2,
+      "workload": "single"
+    },
+    {
+      "arm": "packed_grouped",
+      "replicate": 0,
+      "workload": "interleaved256"
+    },
+    {
+      "arm": "legacy_consecutive",
+      "replicate": 2,
+      "workload": "hubs16"
+    },
+    {
+      "arm": "packed_consecutive",
+      "replicate": 1,
+      "workload": "shared256"
+    },
+    {
+      "arm": "legacy_consecutive",
+      "replicate": 1,
+      "workload": "single"
+    },
+    {
+      "arm": "legacy_consecutive",
+      "replicate": 2,
+      "workload": "single"
+    },
+    {
+      "arm": "legacy_consecutive",
+      "replicate": 1,
+      "workload": "distinct256"
+    }
+  ],
+  "maximum_workload_regression": 1.15,
+  "minimum_primary_speedup": 1.25,
+  "seed": 20260926,
+  "timed_batches": 5,
+  "tolerance": {
+    "atol": 1e-12,
+    "rtol": 1e-12
+  },
+  "warmup_batches": 1
+}
